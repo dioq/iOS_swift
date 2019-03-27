@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyView" customModule="Swift_Info" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="170"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yp6-b6-Jak">
+                    <rect key="frame" x="10" y="10" width="130" height="122.5"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this is a label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Dc-YH-2Gk">
+                    <rect key="frame" x="10" y="137.5" width="130" height="22.5"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.62100448900000005" green="0.99193829300000003" blue="0.22318474990000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="Yp6-b6-Jak" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="5bG-Cx-zLY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Yp6-b6-Jak" secondAttribute="trailing" constant="10" id="KgD-5x-arS"/>
+                <constraint firstItem="7Dc-YH-2Gk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="M5T-4o-haw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="7Dc-YH-2Gk" secondAttribute="bottom" constant="10" id="Oqf-Vb-JzM"/>
+                <constraint firstItem="7Dc-YH-2Gk" firstAttribute="top" secondItem="Yp6-b6-Jak" secondAttribute="bottom" constant="5" id="owd-G5-gmb"/>
+                <constraint firstItem="Yp6-b6-Jak" firstAttribute="height" secondItem="vUN-kp-3ea" secondAttribute="height" multiplier="0.72" id="qXh-QX-9mk"/>
+                <constraint firstItem="Yp6-b6-Jak" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="yDW-aZ-tus"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7Dc-YH-2Gk" secondAttribute="trailing" constant="10" id="yt6-em-4Hi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="MyLabel" destination="7Dc-YH-2Gk" id="I9M-6n-bU9"/>
+                <outlet property="myImageView" destination="Yp6-b6-Jak" id="1kG-jW-YgE"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="153.82308845577214"/>
+        </view>
+    </objects>
+</document>

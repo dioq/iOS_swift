@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnimationVC2" customModule="Swift_Info" customModuleProvider="target">
+            <connections>
+                <outlet property="myImageView" destination="WRN-eU-EeY" id="PyM-3M-kDZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin1.png" translatesAutoresizingMaskIntoConstraints="NO" id="WRN-eU-EeY">
+                    <rect key="frame" x="87.5" y="90" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="WRN-eU-EeY" secondAttribute="height" multiplier="1:1" id="H2a-8h-UZR"/>
+                        <constraint firstAttribute="width" constant="200" id="w7m-1l-srg"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeT-9e-eqa">
+                    <rect key="frame" x="87.5" y="390" width="200" height="40"/>
+                    <color key="backgroundColor" red="0.94356669189999998" green="0.94533273959999997" blue="0.33805400800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="停止"/>
+                    <connections>
+                        <action selector="action02:" destination="-1" eventType="touchUpInside" id="nqM-73-cN9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ge-fK-VSR">
+                    <rect key="frame" x="87.5" y="320" width="200" height="40"/>
+                    <color key="backgroundColor" red="0.94356669189999998" green="0.94533273959999997" blue="0.33805400800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="U4k-QM-wVp"/>
+                    </constraints>
+                    <state key="normal" title="开始"/>
+                    <connections>
+                        <action selector="action01:" destination="-1" eventType="touchUpInside" id="mYn-KL-cA6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WRN-eU-EeY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="8MK-lE-zLz"/>
+                <constraint firstItem="5ge-fK-VSR" firstAttribute="trailing" secondItem="WRN-eU-EeY" secondAttribute="trailing" id="Cmm-RF-2RP"/>
+                <constraint firstItem="5ge-fK-VSR" firstAttribute="leading" secondItem="WRN-eU-EeY" secondAttribute="leading" id="NaV-0Z-L29"/>
+                <constraint firstItem="IeT-9e-eqa" firstAttribute="leading" secondItem="WRN-eU-EeY" secondAttribute="leading" id="Sbo-K0-7L0"/>
+                <constraint firstItem="5ge-fK-VSR" firstAttribute="top" secondItem="WRN-eU-EeY" secondAttribute="bottom" constant="30" id="dX9-yP-BTm"/>
+                <constraint firstItem="IeT-9e-eqa" firstAttribute="trailing" secondItem="WRN-eU-EeY" secondAttribute="trailing" id="fdk-Fr-lm4"/>
+                <constraint firstItem="WRN-eU-EeY" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="lnt-gO-NZ9"/>
+                <constraint firstItem="IeT-9e-eqa" firstAttribute="height" secondItem="5ge-fK-VSR" secondAttribute="height" id="tSX-5E-eUT"/>
+                <constraint firstItem="IeT-9e-eqa" firstAttribute="top" secondItem="5ge-fK-VSR" secondAttribute="bottom" constant="30" id="tn9-qS-bej"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="coin1.png" width="400" height="400"/>
+    </resources>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CollectionFooter" customModule="Swift_Info" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is TAOBAO  ......" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ql2-u9-oDS">
+                    <rect key="frame" x="10" y="10" width="355" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="D9B-DD-0IQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taobaoLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="bg1-vF-ngo">
+                    <rect key="frame" x="10" y="55" width="355" height="85"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bg1-vF-ngo" secondAttribute="trailing" constant="10" id="MaK-Q2-NqB"/>
+                <constraint firstItem="ql2-u9-oDS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="P6R-ze-xbn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ql2-u9-oDS" secondAttribute="trailing" constant="10" id="Q5J-ot-Br5"/>
+                <constraint firstItem="ql2-u9-oDS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="elB-E3-xyk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bg1-vF-ngo" secondAttribute="bottom" constant="10" id="v8u-Ac-6gm"/>
+                <constraint firstItem="bg1-vF-ngo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="wFt-2o-tEG"/>
+                <constraint firstItem="bg1-vF-ngo" firstAttribute="top" secondItem="ql2-u9-oDS" secondAttribute="bottom" constant="5" id="wha-fQ-YDm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="showIMGV" destination="bg1-vF-ngo" id="Bv2-oI-yYO"/>
+                <outlet property="titleLB" destination="ql2-u9-oDS" id="gcb-9P-sIq"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="148.42578710644679"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="taobaoLogo.png" width="920" height="140"/>
+    </resources>
+</document>

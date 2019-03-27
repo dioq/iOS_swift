@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  MySwift
+
+  Created by hello on 2019/3/27.
+  Copyright © 2019 Dio. All rights reserved.
+*/
+
+"mainImage" = "mainImage_cn";
+"mainText" = "中文";

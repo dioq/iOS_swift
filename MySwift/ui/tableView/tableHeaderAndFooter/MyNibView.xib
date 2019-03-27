@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyNibView" customModule="Swift_Info" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xj4-vc-zMB">
+                    <rect key="frame" x="10" y="10" width="130" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Xj4-vc-zMB" secondAttribute="height" multiplier="1:1" id="Arq-me-HbT"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如有志同道合的童鞋，咱们可以加个好友一起学习iOS，Swift，react native，也可以加我新建的群（557162163），欢迎大家一起来技术分享和扯淡" lineBreakMode="tailTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyL-1L-Fnc">
+                    <rect key="frame" x="152" y="10" width="213" height="130"/>
+                    <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.91372549020000005" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="iyL-1L-Fnc" secondAttribute="bottom" constant="10" id="1fg-my-f1G"/>
+                <constraint firstItem="Xj4-vc-zMB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="IB2-q8-tID"/>
+                <constraint firstAttribute="trailing" secondItem="iyL-1L-Fnc" secondAttribute="trailing" constant="10" id="OoW-ZY-3TS"/>
+                <constraint firstItem="Xj4-vc-zMB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="RkM-rj-4zB"/>
+                <constraint firstItem="iyL-1L-Fnc" firstAttribute="leading" secondItem="Xj4-vc-zMB" secondAttribute="trailing" constant="12" id="epB-SF-voO"/>
+                <constraint firstItem="iyL-1L-Fnc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="iTH-Jp-4pC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Xj4-vc-zMB" secondAttribute="bottom" constant="10" id="zRK-pz-bE4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="myIMGV" destination="Xj4-vc-zMB" id="ha3-fh-k4Y"/>
+                <outlet property="myLB" destination="iyL-1L-Fnc" id="XjO-hp-8YE"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="image1.png" width="860" height="536"/>
+    </resources>
+</document>
