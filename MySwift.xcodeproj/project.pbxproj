@@ -324,8 +324,6 @@
 		CE69C401224B6E07004F4FA4 /* RxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C2B3224B6E07004F4FA4 /* RxViewController.xib */; };
 		CE69C402224B6E07004F4FA4 /* SDKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C2B4224B6E07004F4FA4 /* SDKViewController.xib */; };
 		CE69C403224B6E07004F4FA4 /* SDKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2B5224B6E07004F4FA4 /* SDKViewController.swift */; };
-		CE69C404224B6E07004F4FA4 /* BFRefreshVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2B7224B6E07004F4FA4 /* BFRefreshVC.swift */; };
-		CE69C405224B6E07004F4FA4 /* BFRefreshVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C2B8224B6E07004F4FA4 /* BFRefreshVC.xib */; };
 		CE69C406224B6E08004F4FA4 /* MyShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C2BA224B6E07004F4FA4 /* MyShareViewController.xib */; };
 		CE69C407224B6E08004F4FA4 /* MyShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2BB224B6E07004F4FA4 /* MyShareViewController.swift */; };
 		CE69C408224B6E08004F4FA4 /* HGImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C2BD224B6E07004F4FA4 /* HGImageCell.xib */; };
@@ -664,8 +662,6 @@
 		CE69C2B3224B6E07004F4FA4 /* RxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RxViewController.xib; sourceTree = "<group>"; };
 		CE69C2B4224B6E07004F4FA4 /* SDKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKViewController.xib; sourceTree = "<group>"; };
 		CE69C2B5224B6E07004F4FA4 /* SDKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKViewController.swift; sourceTree = "<group>"; };
-		CE69C2B7224B6E07004F4FA4 /* BFRefreshVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFRefreshVC.swift; sourceTree = "<group>"; };
-		CE69C2B8224B6E07004F4FA4 /* BFRefreshVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFRefreshVC.xib; sourceTree = "<group>"; };
 		CE69C2BA224B6E07004F4FA4 /* MyShareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyShareViewController.xib; sourceTree = "<group>"; };
 		CE69C2BB224B6E07004F4FA4 /* MyShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShareViewController.swift; sourceTree = "<group>"; };
 		CE69C2BD224B6E07004F4FA4 /* HGImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HGImageCell.xib; sourceTree = "<group>"; };
@@ -985,8 +981,8 @@
 		CE69C151224B6E06004F4FA4 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C152224B6E06004F4FA4 /* GCDViewController.xib */,
 				CE69C153224B6E06004F4FA4 /* GCDViewController.swift */,
+				CE69C152224B6E06004F4FA4 /* GCDViewController.xib */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -1760,7 +1756,6 @@
 		CE69C267224B6E07004F4FA4 /* sdkuse */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C2B6224B6E07004F4FA4 /* BFRefresh */,
 				CE69C2B9224B6E07004F4FA4 /* share */,
 				CE69C2BC224B6E07004F4FA4 /* HGImage */,
 				CE69C268224B6E07004F4FA4 /* Alamofire */,
@@ -1974,15 +1969,6 @@
 				CE69C2B3224B6E07004F4FA4 /* RxViewController.xib */,
 			);
 			path = Rx;
-			sourceTree = "<group>";
-		};
-		CE69C2B6224B6E07004F4FA4 /* BFRefresh */ = {
-			isa = PBXGroup;
-			children = (
-				CE69C2B7224B6E07004F4FA4 /* BFRefreshVC.swift */,
-				CE69C2B8224B6E07004F4FA4 /* BFRefreshVC.xib */,
-			);
-			path = BFRefresh;
 			sourceTree = "<group>";
 		};
 		CE69C2B9224B6E07004F4FA4 /* share */ = {
@@ -2211,7 +2197,6 @@
 				CE69C306224B6E07004F4FA4 /* TimeViewController.xib in Resources */,
 				CE69C3CA224B6E07004F4FA4 /* RequestVC.xib in Resources */,
 				CE69C340224B6E07004F4FA4 /* MyCell.xib in Resources */,
-				CE69C405224B6E07004F4FA4 /* BFRefreshVC.xib in Resources */,
 				CE69C3B3224B6E07004F4FA4 /* Favor_00020.png in Resources */,
 				CE69C2D8224B6E07004F4FA4 /* JudgeNetworkingVC.xib in Resources */,
 				CE69C416224B7268004F4FA4 /* InfoPlist.strings in Resources */,
@@ -2372,7 +2357,6 @@
 				CE69C376224B6E07004F4FA4 /* DispatchQueue+Extension.swift in Sources */,
 				CE69C2CF224B6E07004F4FA4 /* WriteBoardView.swift in Sources */,
 				CE69C3DF224B6E07004F4FA4 /* FWPopupCategory.swift in Sources */,
-				CE69C404224B6E07004F4FA4 /* BFRefreshVC.swift in Sources */,
 				CE69C35C224B6E07004F4FA4 /* CollectionVC.swift in Sources */,
 				CE69C2E6224B6E07004F4FA4 /* MySegmentVC.swift in Sources */,
 				CE69C397224B6E07004F4FA4 /* PickImageViewController.swift in Sources */,
@@ -2567,7 +2551,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -2623,7 +2607,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -2635,7 +2619,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V64L9N2K5F;
+				DEVELOPMENT_TEAM = 89AGS9KB98;
 				INFOPLIST_FILE = MySwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2644,7 +2628,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dio.MySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -2656,7 +2640,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V64L9N2K5F;
+				DEVELOPMENT_TEAM = 89AGS9KB98;
 				INFOPLIST_FILE = MySwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2665,7 +2649,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dio.MySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

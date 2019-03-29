@@ -41,7 +41,7 @@ class UISegmentedControlVC: UIViewController {
     
     //选择点击后的事件
     @objc func segmentedControlChanged(sender:UISegmentedControl) {
-        print(sender.tintColor)//获取颜色
+        print(sender.tintColor!)//获取颜色
         let index = sender.selectedSegmentIndex
         print(index)//获取下标
         if let title = sender.titleForSegment(at: index) {//获取某一个下标下的标题

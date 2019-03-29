@@ -28,10 +28,6 @@ class SDKViewController: UIViewController, UITableViewDataSource,UITableViewDele
         pageVC.title = "顶部滑动导航"
         dataArray.append(pageVC)
         
-        let bfrefreshVC = BFRefreshVC()
-        bfrefreshVC.title = "网络请求提示"
-        dataArray.append(bfrefreshVC)
-        
         let handleJSONVC = HandleJSONVC()
         handleJSONVC.title = "JSON数据的处理"
         dataArray.append(handleJSONVC)

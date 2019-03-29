@@ -137,20 +137,21 @@ class GCDViewController: UIViewController {
         }
         
         //1,所有任务执行结束汇总，不阻塞当前线程
-        //执行完上面的三个耗时操作, 回到queue队列中执行下一步的任务
+        //执行完上面的三个耗时操作(block1, block2, block3), 回到queue队列中执行下一步的任务
         group.notify(queue: queue) {
             print("group done")
         }
-
-        //2,等待上面任务执行，会阻塞当前线程，超时就执行下面的，上面的继续执行。可以无限等待 .distantFuture
-//        let result = group.wait(timeout: .now() + 10.0)
-//        switch result {
-//        case .success:
-//            print("不超时, 上面所有任务都执行完")
-//        case .timedOut:
-//            print("超时了, 上面的任务还没执行完执行这了")
-//        }
-        print("接下来的操作")
+        print("接下来的操作   1")
+        
+        //2,等待上面任务(block1, block2, block3)执行，会阻塞当前线程，超时就执行下面的，上面的继续执行。可以无限等待 .distantFuture
+        let result = group.wait(timeout: .now() + 10.0)
+        switch result {
+        case .success:
+            print("不超时, 上面所有任务都执行完")
+        case .timedOut:
+            print("超时了, 上面的任务还没执行完执行这了")
+        }
+        print("接下来的操作   2")
     }
     
     
@@ -198,10 +199,23 @@ class GCDViewController: UIViewController {
          */
         
         //1,所有任务执行结束汇总，不阻塞当前线程
-        //执行完上面的三个耗时操作, 回到主队列刷新页面
+        //执行完上面的三个耗时操作(block1, block2, block3), 回到主队列刷新页面
         group.notify(queue: DispatchQueue.main) {
             print("所有网络任务都完成了,刷新页面")
         }
+        print("接下来的操作   1")
+        
+        //2,等待上面任务(block1, block2, block3)执行，会阻塞当前线程，超时就执行下面的，上面的继续执行。可以无限等待 .distantFuture
+        let result = group.wait(timeout: .now() + 10.0)
+        switch result {
+        case .success:
+            sleep(2)
+            print("不超时, 上面所有任务都执行完")
+        case .timedOut:
+            sleep(2)
+            print("超时了, 上面的任务还没执行完执行这了")
+        }
+        print("the last line! ==== go here!")
     }
     
     @IBAction func barrierAction(_ sender: UIButton) {
@@ -210,7 +224,7 @@ class GCDViewController: UIViewController {
             sleep(2)
             print("target1 finished")
         }
-        
+
         currentQueue.async {
             sleep(1)
             print("target2 finished")
@@ -228,7 +242,7 @@ class GCDViewController: UIViewController {
         currentQueue.async {
             print("target4 finished")
         }
-        
+        print("the last line! ==== go here!")
     }
     
     @IBAction func action01(_ sender: UIButton) {
