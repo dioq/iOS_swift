@@ -41,6 +41,7 @@ class JudgeNetworkingVC: UIViewController {
         print("开启监听是否成功:\(isWork!)")
         let connect =  manager?.isReachable //网络是否通畅
         print("网络是否通畅:",connect!)
+        print("the last line! ==== go here!")
     }
 
 }

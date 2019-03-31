@@ -13,8 +13,33 @@ class GCDViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+
+    //同步: 会阻塞当前线程.原因:不开启新的线程,使用当前线程
+    @IBAction func syncAction(_ sender: UIButton) {
+        let queue = DispatchQueue.global(qos: .default)
+        queue.sync {
+            print("target is starting")
+            print(Thread.current,"======  sync")
+            sleep(5)
+            print("target is finished")
+        }
+        print(Thread.current,"======  out")
+        print("the last line! ==== go here!")
+    }
+    //异步: 不会阻塞当前线程.原因:开启一条新线程,不使用当前线程,在新开启的线程中执行任务
+    @IBAction func asyncAction(_ sender: UIButton) {
+        let queue = DispatchQueue.global(qos: .default)
+        queue.async {
+            print("target is starting")
+            print(Thread.current,"======  async")
+            sleep(5)
+            print("target is finished")
+        }
+        print(Thread.current,"======  out")
+        print("the last line! ==== go here!")
+    }
     
-    //并行: 任务以FIFO从序列中移除，然后并发运行，可以按照任何顺序完成。它会自动开启多个线程同时执行任务
+    //并发队列: 任务以FIFO从序列中移除，然后并发运行，可以按照任何顺序完成。用多条线程执行队列中所有任务
     @IBAction func concurrentAction(_ sender: UIButton) {
         let concurrentQueue = DispatchQueue.init(label: "con", qos: .default, attributes: .concurrent, autoreleaseFrequency: .inherit)
 
@@ -43,7 +68,7 @@ class GCDViewController: UIViewController {
         }
     }
     
-    //串行: 任务以FIFO从序列中一个一个执行。一次只调度一个任务，队列中的任务一个接着一个地执行（一个任务执行完毕后，再执行下一个任务）而且只会开启一条线程
+    //串行队列: 任务以FIFO从序列中一个一个执行。一次只调度一个任务，队列中的任务一个接着一个地执行（一个任务执行完毕后，再执行下一个任务）用一条线程处理队列中所有任务
     @IBAction func serialQueue(_ sender: UIButton) {
         let serialQueue = DispatchQueue.init(label: "serial")
         
@@ -147,8 +172,10 @@ class GCDViewController: UIViewController {
         let result = group.wait(timeout: .now() + 10.0)
         switch result {
         case .success:
+            sleep(2)
             print("不超时, 上面所有任务都执行完")
         case .timedOut:
+            sleep(2)
             print("超时了, 上面的任务还没执行完执行这了")
         }
         print("接下来的操作   2")
