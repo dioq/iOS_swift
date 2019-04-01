@@ -7,3 +7,8 @@
 */
 
 CFBundleDisplayName = "English Test";
+
+NSLocationWhenInUseUsageDescription = "Location permissions are required";
+NSMicrophoneUsageDescription = "Require microphone privileges";
+NSCameraUsageDescription = "Camera privileges are required";
+NSPhotoLibraryUsageDescription = "Require photo permissions";

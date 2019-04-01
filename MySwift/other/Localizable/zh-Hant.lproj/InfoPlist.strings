@@ -7,3 +7,8 @@
 */
 
 CFBundleDisplayName = "中文測試";
+
+NSLocationWhenInUseUsageDescription = "需要位置權限";
+NSMicrophoneUsageDescription = "需要麥克風權限";
+NSCameraUsageDescription = "需要相機權限";
+NSPhotoLibraryUsageDescription = "需要相冊權限";
