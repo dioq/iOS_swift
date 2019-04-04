@@ -100,10 +100,6 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
         scrollCell.title = "滚动cell"
         dataArray.append(scrollCell)
         
-        let textViewVC = TextViewVC()
-        textViewVC.title = "TextView"
-        dataArray.append(textViewVC)
-        
         let sessionVC = SessionViewController()
         sessionVC.title = "session的相关处理"
         dataArray.append(sessionVC)
@@ -199,6 +195,10 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
         let buttonViewController = ButtonViewController()
         buttonViewController.title = "button"
         dataArray.append(buttonViewController)
+        
+        let textViewVC = TextViewVC()
+        textViewVC.title = "TextView"
+        dataArray.append(textViewVC)
         
         let textFieldViewController = TextFieldViewController()
         textFieldViewController.title = "TextField"

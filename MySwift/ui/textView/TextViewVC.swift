@@ -28,7 +28,7 @@ class TextViewVC: UIViewController, UITextViewDelegate {
 //        2.1 是否可以被编辑,返回false,就是readOnly
         textview.isEditable = true
 //        2.2 显示文本
-        textview.text = "Hello Swift and Object-C "
+        textview.text = "Hello Swift and Object-C"
 //        2.3 当文本是电话或者是一个网址,那么高亮显示,点击并跳转或者拨打电话
 //        PhoneNumber : 电话号码链接 Link : 网址的链接 All : 电话号码+网址链接 None : 都不创建链接
         textview.dataDetectorTypes = .all
@@ -39,7 +39,7 @@ class TextViewVC: UIViewController, UITextViewDelegate {
 //        2.6 避免用户对选定一定范围内文本进行copy
 //        指定光标一定到指定位置,如果设置selectable为false的话,文字不能被选择,防止用户copy
         textview.scrollRangeToVisible(NSMakeRange(0, 10))
-        textview.isSelectable = false
+        textview.isSelectable = true
 //        2.7 常用的一些代理方法
         textview.delegate = self
         //返回键的类型
@@ -70,21 +70,5 @@ class TextViewVC: UIViewController, UITextViewDelegate {
         }
         return true
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

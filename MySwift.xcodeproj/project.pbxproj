@@ -1330,8 +1330,8 @@
 		CE69C1C0224B6E07004F4FA4 /* textView */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C1C1224B6E07004F4FA4 /* TextViewVC.xib */,
 				CE69C1C2224B6E07004F4FA4 /* TextViewVC.swift */,
+				CE69C1C1224B6E07004F4FA4 /* TextViewVC.xib */,
 			);
 			path = textView;
 			sourceTree = "<group>";
