@@ -16,6 +16,10 @@ class SDKViewController: UIViewController, UITableViewDataSource,UITableViewDele
     lazy var dataArray:[UIViewController] = {
         var dataArray = Array<UIViewController>()
         
+        let lottieVC = LottieViewController()
+        lottieVC.title = "Lottie"
+        dataArray.append(lottieVC)
+        
         let rxVC = RxViewController()
         rxVC.title = "RxSwift"
         dataArray.append(rxVC)

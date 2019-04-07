@@ -338,6 +338,11 @@
 		CE69C411224B6E08004F4FA4 /* RootTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2C8224B6E07004F4FA4 /* RootTabBar.swift */; };
 		CE69C416224B7268004F4FA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE69C418224B7268004F4FA4 /* InfoPlist.strings */; };
 		CE69C419224B726B004F4FA4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE69C41B224B726B004F4FA4 /* Localizable.strings */; };
+		CE7D203F2259E7C700DEE23E /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D203D2259E7C700DEE23E /* LottieViewController.swift */; };
+		CE7D20402259E7C700DEE23E /* LottieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7D203E2259E7C700DEE23E /* LottieViewController.xib */; };
+		CE7D20432259EA0C00DEE23E /* water-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D20412259EA0C00DEE23E /* water-loading.json */; };
+		CE7D20442259EA0C00DEE23E /* vcTransition2.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D20422259EA0C00DEE23E /* vcTransition2.json */; };
+		CE7D2046225A10DF00DEE23E /* Boat_Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D2045225A10DF00DEE23E /* Boat_Loader.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -680,6 +685,11 @@
 		CE69C41D224B7272004F4FA4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CE69C41E224B7277004F4FA4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		CE69C41F224B7277004F4FA4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CE7D203D2259E7C700DEE23E /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
+		CE7D203E2259E7C700DEE23E /* LottieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LottieViewController.xib; sourceTree = "<group>"; };
+		CE7D20412259EA0C00DEE23E /* water-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "water-loading.json"; sourceTree = "<group>"; };
+		CE7D20422259EA0C00DEE23E /* vcTransition2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition2.json; sourceTree = "<group>"; };
+		CE7D2045225A10DF00DEE23E /* Boat_Loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Boat_Loader.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -815,8 +825,8 @@
 		CE69C119224B6E06004F4FA4 /* cleancache */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C11A224B6E06004F4FA4 /* CacheViewController.xib */,
 				CE69C11B224B6E06004F4FA4 /* CacheViewController.swift */,
+				CE69C11A224B6E06004F4FA4 /* CacheViewController.xib */,
 			);
 			path = cleancache;
 			sourceTree = "<group>";
@@ -1740,6 +1750,9 @@
 		CE69C263224B6E07004F4FA4 /* json */ = {
 			isa = PBXGroup;
 			children = (
+				CE7D2045225A10DF00DEE23E /* Boat_Loader.json */,
+				CE7D20422259EA0C00DEE23E /* vcTransition2.json */,
+				CE7D20412259EA0C00DEE23E /* water-loading.json */,
 				CE69C264224B6E07004F4FA4 /* test.json */,
 			);
 			path = json;
@@ -1756,6 +1769,7 @@
 		CE69C267224B6E07004F4FA4 /* sdkuse */ = {
 			isa = PBXGroup;
 			children = (
+				CE7D203C2259E7B600DEE23E /* lottie */,
 				CE69C2B9224B6E07004F4FA4 /* share */,
 				CE69C2BC224B6E07004F4FA4 /* HGImage */,
 				CE69C268224B6E07004F4FA4 /* Alamofire */,
@@ -2019,6 +2033,15 @@
 			path = main;
 			sourceTree = "<group>";
 		};
+		CE7D203C2259E7B600DEE23E /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				CE7D203D2259E7C700DEE23E /* LottieViewController.swift */,
+				CE7D203E2259E7C700DEE23E /* LottieViewController.xib */,
+			);
+			path = lottie;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2093,8 +2116,10 @@
 				CE69C3C2224B6E07004F4FA4 /* angry.png in Resources */,
 				CE69C2E2224B6E07004F4FA4 /* OtherViewController.xib in Resources */,
 				CE69C326224B6E07004F4FA4 /* ClosureVC.xib in Resources */,
+				CE7D2046225A10DF00DEE23E /* Boat_Loader.json in Resources */,
 				CE69C2FD224B6E07004F4FA4 /* GCDViewController.xib in Resources */,
 				CE69C419224B726B004F4FA4 /* Localizable.strings in Resources */,
+				CE7D20442259EA0C00DEE23E /* vcTransition2.json in Resources */,
 				CE69C3F2224B6E07004F4FA4 /* TestAlertView.xib in Resources */,
 				CE69C369224B6E07004F4FA4 /* NibStackView.xib in Resources */,
 				CE69C3BB224B6E07004F4FA4 /* Favor_00018.png in Resources */,
@@ -2130,6 +2155,7 @@
 				CE69C2CC224B6E07004F4FA4 /* WriteBoardView.xib in Resources */,
 				CE69C3C7224B6E07004F4FA4 /* test.json in Resources */,
 				CE69C333224B6E07004F4FA4 /* ScrollCellViewController.xib in Resources */,
+				CE7D20402259E7C700DEE23E /* LottieViewController.xib in Resources */,
 				CE69C363224B6E07004F4FA4 /* MyCVCell.xib in Resources */,
 				CE69C31A224B6E07004F4FA4 /* StringViewController.xib in Resources */,
 				CE69C3D4224B6E07004F4FA4 /* PageViewController.xib in Resources */,
@@ -2178,6 +2204,7 @@
 				CE69C342224B6E07004F4FA4 /* TwoCellTBVC.xib in Resources */,
 				CE69C3B9224B6E07004F4FA4 /* Favor_00025.png in Resources */,
 				CE69C352224B6E07004F4FA4 /* EditCollectionCellVC.xib in Resources */,
+				CE7D20432259EA0C00DEE23E /* water-loading.json in Resources */,
 				CE69C3AC224B6E07004F4FA4 /* Favor_00014.png in Resources */,
 				CE69C345224B6E07004F4FA4 /* OneCell.xib in Resources */,
 				CE69C3F6224B6E07004F4FA4 /* NicooPlayerVC.xib in Resources */,
@@ -2349,6 +2376,7 @@
 				CE69C303224B6E07004F4FA4 /* StudyNibViewController.swift in Sources */,
 				CE69C383224B6E07004F4FA4 /* ToolBarViewController.swift in Sources */,
 				CE69C33C224B6E07004F4FA4 /* MultipleSelectedTBVC.swift in Sources */,
+				CE7D203F2259E7C700DEE23E /* LottieViewController.swift in Sources */,
 				CE69C395224B6E07004F4FA4 /* MyView.swift in Sources */,
 				CE69C319224B6E07004F4FA4 /* StringViewController.swift in Sources */,
 				CE69C2EC224B6E07004F4FA4 /* LLFilledPageControl.swift in Sources */,
