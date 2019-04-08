@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ButtonViewController" customModule="Swift_Info" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ButtonViewController" customModule="MySwift" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -32,12 +32,26 @@
                         <action selector="action01:" destination="-1" eventType="touchUpInside" id="gQm-eD-5SM"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUQ-r8-VYI">
+                    <rect key="frame" x="127.5" y="423.5" width="120" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="OcN-HG-n5I"/>
+                        <constraint firstAttribute="width" constant="120" id="ffR-pE-baE"/>
+                    </constraints>
+                    <state key="normal" title="mainThread"/>
+                    <connections>
+                        <action selector="thread:" destination="-1" eventType="touchUpInside" id="38r-Zv-6Px"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="e0f-ft-lmK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="A96-mq-H1n"/>
                 <constraint firstItem="e0f-ft-lmK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="BpQ-CA-Qj1"/>
+                <constraint firstItem="EUQ-r8-VYI" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="100" id="iYU-fr-IJ9"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e0f-ft-lmK" secondAttribute="trailing" constant="80" id="kBt-a2-07X"/>
+                <constraint firstItem="EUQ-r8-VYI" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="pLS-6h-M95"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="-18.5" y="38.5"/>

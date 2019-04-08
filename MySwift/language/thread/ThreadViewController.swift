@@ -19,31 +19,37 @@ class ThreadViewController: UIViewController {
     
     //开子线程2
     @IBAction func action5(_ sender: UIButton) {
-        //        self.perform(#selector(newTest))
-        self.performSelector(inBackground: #selector(newTest(str:)), with: "aaaaa")
+        self.performSelector(inBackground: #selector(newTest(sender:)), with: "a message")
+        let currentThread = Thread.current
+        print("当前线程为:\(currentThread)\t\tname:\(currentThread.name!)")
     }
-    @objc func newTest(str:String){
-        print(str)
+    @objc func newTest(sender:String){
+        let currentThread = Thread.current
+        print("当前线程为:\(currentThread)\t\tname:\(currentThread.name!)")
+        print(sender)
     }
     
     
     //开子线程
     @IBAction func action04(_ sender: UIButton) {
         // 程序启动后开子线程下载图片,图片下载完成之后回到主线程设置图片
-        Thread.detachNewThreadSelector(#selector(downloadImage), toTarget: self, with: nil)
+//        Thread.detachNewThreadSelector(#selector(downloadImage), toTarget: self, with: nil)
+        let thread = Thread.init(target: self, selector:#selector(downloadImage), object: nil)
+        thread.name = "Dio"
+        thread.start()
     }
     @objc func downloadImage() {
         // 获得要下载图片的url
-        let url = NSURL.init(string: "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png")
+        let url = URL.init(string: "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png")
         // 把url地址指向资源的二进制下载到本地
-        let imageData = NSData.init(contentsOf: url! as URL)
+        let imageData = try? Data.init(contentsOf: url!)
         // 把二进制数据转换为图片
         if imageData != nil{
-            let image = UIImage.init(data: imageData! as Data)
+            let image = UIImage.init(data: imageData!)
             // 打印查看当前线程(应该是在子线程中下载图片)
             print("当前线程为\(Thread.current)")
             
-            // 线程间通信
+            // 线程间通信,回到主线程
             self.performSelector(onMainThread: #selector(showImage(image:)), with: image, waitUntilDone:true)
         }
     }
@@ -83,9 +89,9 @@ class ThreadViewController: UIViewController {
             let temp = totalTickets
             if(temp > 0) {
                 totalTickets = temp - 1
-                print("\(String(describing: Thread.current.name))卖出去了一张票,还剩\(totalTickets)")
+                print("\(Thread.current.name!)卖出去了一张票,还剩\(totalTickets)")
             } else {
-                print("\(String(describing: Thread.current.name))发现票已经卖完了")
+                print("\(Thread.current.name!)发现票已经卖完了")
                 break
             }
             objc_sync_exit(self)
@@ -93,12 +99,10 @@ class ThreadViewController: UIViewController {
     }
     
     
-    
-    
 //    手动开线程
     @IBAction func action02(_ sender: UIButton) {
         let currentThread = Thread.current
-        print("当前线程为:\(currentThread)\t\tname:\(String(describing: currentThread.name!))")
+        print("当前线程为:\(currentThread)\t\tname:\(currentThread.name!)")
         let mythread = Thread.init(target: self, selector: #selector(threadFunc01), object: nil)
         mythread.name = "线程A"
         mythread.start()
@@ -106,10 +110,9 @@ class ThreadViewController: UIViewController {
     }
     @objc func threadFunc01() {
         print("go threadFunc01 up")
-        
         let currentThread = Thread.current
-        print("当前线程为:\(currentThread)\t\tname:\(String(describing: currentThread.name!))")
-        Thread.sleep(forTimeInterval: 20)
+        print("当前线程为:\(currentThread)\t\tname:\(currentThread.name!)")
+        Thread.sleep(forTimeInterval: 10)
         print("go threadFunc01 down")
     }
     

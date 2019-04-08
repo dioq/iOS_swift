@@ -1555,8 +1555,8 @@
 		CE69C213224B6E07004F4FA4 /* button */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C214224B6E07004F4FA4 /* ButtonViewController.xib */,
 				CE69C215224B6E07004F4FA4 /* ButtonViewController.swift */,
+				CE69C214224B6E07004F4FA4 /* ButtonViewController.xib */,
 			);
 			path = button;
 			sourceTree = "<group>";

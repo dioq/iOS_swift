@@ -69,4 +69,12 @@ class ButtonViewController: UIViewController {
         print("点击了右上角按钮")
     }
     
+    
+    @IBAction func thread(_ sender: UIButton) {
+        let currentThread = Thread.current
+        print("当前线程为:\(currentThread)\t\tname:\(currentThread.name!)")
+        sleep(15)
+        print("the last line! ==== go here!")
+    }
+    
 }
