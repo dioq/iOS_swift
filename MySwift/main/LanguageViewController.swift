@@ -64,6 +64,10 @@ class LanguageViewController: UIViewController,UITableViewDataSource,UITableView
         shakeViewController.title = "震动"
         dataArray.append(shakeViewController)
         
+        let delegateVC = BaseDelegateVC()
+        delegateVC.title = "基础delegate"
+        dataArray.append(delegateVC)
+        
         let myDelegateViewController = MyDelegateVC()
         myDelegateViewController.title = "使用Delegate"
         dataArray.append(myDelegateViewController)

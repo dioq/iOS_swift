@@ -16,6 +16,7 @@ protocol DelegateName:NSObjectProtocol {
 class MyDelegateView: UIView {
     //指定协议对象
     weak var delegate:DelegateName?
+    weak var myDelegate:TestProtocol?
     
     var btn:UIButton?
     
@@ -47,6 +48,9 @@ class MyDelegateView: UIView {
         print("MyView内部:click here!!")
         //执行协议
         delegate?.mymethod(str: "sendValue")
+        if myDelegate != nil {
+            myDelegate?.testMethod(str: "单独的Protocol文件")
+        }
     }
 
 }

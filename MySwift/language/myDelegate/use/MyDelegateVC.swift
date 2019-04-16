@@ -8,10 +8,14 @@
 
 import UIKit
 
-class MyDelegateVC: UIViewController, DelegateName {
-
+class MyDelegateVC: UIViewController, DelegateName, TestProtocol {
+    
+    func testMethod(str: String) {
+        print("MyDelegateVC:\(str)")
+    }
+    
     func mymethod(str:String) {
-        print("go ViewController:\(str)")
+        print("MyDelegateVC:\(str)")
     }
     
     override func viewDidLoad() {
@@ -20,6 +24,7 @@ class MyDelegateVC: UIViewController, DelegateName {
         myview.backgroundColor = UIColor.red
         self.view.addSubview(myview)
         myview.delegate = self
+        myview.myDelegate = self
     }
-
+    
 }

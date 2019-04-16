@@ -343,6 +343,11 @@
 		CE7D20432259EA0C00DEE23E /* water-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D20412259EA0C00DEE23E /* water-loading.json */; };
 		CE7D20442259EA0C00DEE23E /* vcTransition2.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D20422259EA0C00DEE23E /* vcTransition2.json */; };
 		CE7D2046225A10DF00DEE23E /* Boat_Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D2045225A10DF00DEE23E /* Boat_Loader.json */; };
+		CED3B8C722660222008988CE /* BaseDelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8C522660222008988CE /* BaseDelegateVC.swift */; };
+		CED3B8C822660222008988CE /* BaseDelegateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED3B8C622660222008988CE /* BaseDelegateVC.xib */; };
+		CED3B8D722660BCE008988CE /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8D622660BCE008988CE /* ExampleProtocol.swift */; };
+		CED3B8D922660C11008988CE /* Man.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8D822660C11008988CE /* Man.swift */; };
+		CED3B8DB22660EE4008988CE /* TestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8DA22660EE4008988CE /* TestProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -690,6 +695,11 @@
 		CE7D20412259EA0C00DEE23E /* water-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "water-loading.json"; sourceTree = "<group>"; };
 		CE7D20422259EA0C00DEE23E /* vcTransition2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition2.json; sourceTree = "<group>"; };
 		CE7D2045225A10DF00DEE23E /* Boat_Loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Boat_Loader.json; sourceTree = "<group>"; };
+		CED3B8C522660222008988CE /* BaseDelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDelegateVC.swift; sourceTree = "<group>"; };
+		CED3B8C622660222008988CE /* BaseDelegateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseDelegateVC.xib; sourceTree = "<group>"; };
+		CED3B8D622660BCE008988CE /* ExampleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleProtocol.swift; sourceTree = "<group>"; };
+		CED3B8D822660C11008988CE /* Man.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Man.swift; sourceTree = "<group>"; };
+		CED3B8DA22660EE4008988CE /* TestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1047,6 +1057,7 @@
 		CE69C165224B6E06004F4FA4 /* myDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				CED3B8C4226601EF008988CE /* base */,
 				CE69C166224B6E06004F4FA4 /* use */,
 				CE69C169224B6E06004F4FA4 /* sendValue */,
 			);
@@ -1056,8 +1067,9 @@
 		CE69C166224B6E06004F4FA4 /* use */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C167224B6E06004F4FA4 /* MyDelegateView.swift */,
 				CE69C168224B6E06004F4FA4 /* MyDelegateVC.swift */,
+				CE69C167224B6E06004F4FA4 /* MyDelegateView.swift */,
+				CED3B8DA22660EE4008988CE /* TestProtocol.swift */,
 			);
 			path = use;
 			sourceTree = "<group>";
@@ -1065,9 +1077,9 @@
 		CE69C169224B6E06004F4FA4 /* sendValue */ = {
 			isa = PBXGroup;
 			children = (
+				CE69C16C224B6E06004F4FA4 /* SendValueVC.swift */,
 				CE69C16A224B6E06004F4FA4 /* SendValueVC.xib */,
 				CE69C16B224B6E06004F4FA4 /* ReceiveVC.swift */,
-				CE69C16C224B6E06004F4FA4 /* SendValueVC.swift */,
 			);
 			path = sendValue;
 			sourceTree = "<group>";
@@ -1604,10 +1616,10 @@
 		CE69C223224B6E07004F4FA4 /* nibView */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C224224B6E07004F4FA4 /* TestModel.swift */,
-				CE69C225224B6E07004F4FA4 /* MyView.xib */,
-				CE69C226224B6E07004F4FA4 /* MyView.swift */,
 				CE69C227224B6E07004F4FA4 /* ViewVC.swift */,
+				CE69C226224B6E07004F4FA4 /* MyView.swift */,
+				CE69C225224B6E07004F4FA4 /* MyView.xib */,
+				CE69C224224B6E07004F4FA4 /* TestModel.swift */,
 			);
 			path = nibView;
 			sourceTree = "<group>";
@@ -2042,6 +2054,17 @@
 			path = lottie;
 			sourceTree = "<group>";
 		};
+		CED3B8C4226601EF008988CE /* base */ = {
+			isa = PBXGroup;
+			children = (
+				CED3B8C522660222008988CE /* BaseDelegateVC.swift */,
+				CED3B8C622660222008988CE /* BaseDelegateVC.xib */,
+				CED3B8D822660C11008988CE /* Man.swift */,
+				CED3B8D622660BCE008988CE /* ExampleProtocol.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2138,6 +2161,7 @@
 				CE69C32F224B6E07004F4FA4 /* MyNibView.xib in Resources */,
 				CE69C3AF224B6E07004F4FA4 /* Favor_00013.png in Resources */,
 				CE69C304224B6E07004F4FA4 /* StudyNibViewController.xib in Resources */,
+				CED3B8C822660222008988CE /* BaseDelegateVC.xib in Resources */,
 				CE69C3B0224B6E07004F4FA4 /* Favor_00012.png in Resources */,
 				CE69C3BE224B6E07004F4FA4 /* taobaoLogo.png in Resources */,
 				CE69C3B2224B6E07004F4FA4 /* Favor_00011.png in Resources */,
@@ -2319,12 +2343,14 @@
 				CE69C37A224B6E07004F4FA4 /* DatePickerVC.swift in Sources */,
 				CE69C3EF224B6E07004F4FA4 /* Database.swift in Sources */,
 				CE69C2D0224B6E07004F4FA4 /* CommentVC.swift in Sources */,
+				CED3B8D922660C11008988CE /* Man.swift in Sources */,
 				CE69C40C224B6E08004F4FA4 /* Common.swift in Sources */,
 				CE69C3FC224B6E07004F4FA4 /* HandyModel.swift in Sources */,
 				CE69C3A0224B6E07004F4FA4 /* AnimationVC2.swift in Sources */,
 				CE69C30F224B6E07004F4FA4 /* SendValueVC.swift in Sources */,
 				CE69C31D224B6E07004F4FA4 /* MyFirstVC.swift in Sources */,
 				CE69C378224B6E07004F4FA4 /* String+Extension.swift in Sources */,
+				CED3B8C722660222008988CE /* BaseDelegateVC.swift in Sources */,
 				CE69C353224B6E07004F4FA4 /* CollectionFooter.swift in Sources */,
 				CE69C322224B6E07004F4FA4 /* LanguageViewController.swift in Sources */,
 				CE69C391224B6E07004F4FA4 /* MyPointView.swift in Sources */,
@@ -2344,6 +2370,7 @@
 				CE69C38E224B6E07004F4FA4 /* MyPointView1.swift in Sources */,
 				CE69C2EB224B6E07004F4FA4 /* LLCycleScrollViewCell.swift in Sources */,
 				CE69C325224B6E07004F4FA4 /* ClosureVC.swift in Sources */,
+				CED3B8DB22660EE4008988CE /* TestProtocol.swift in Sources */,
 				CE69C3D7224B6E07004F4FA4 /* EWPopMenu.swift in Sources */,
 				CE69C3D5224B6E07004F4FA4 /* PageViewController.swift in Sources */,
 				CE69C39F224B6E07004F4FA4 /* AnimationVC.swift in Sources */,
@@ -2488,6 +2515,7 @@
 				CE69C35F224B6E07004F4FA4 /* SingleSelectedCellVC.swift in Sources */,
 				CE69C2D6224B6E07004F4FA4 /* OtherViewController.swift in Sources */,
 				CE69C3EB224B6E07004F4FA4 /* MyGestureVC.swift in Sources */,
+				CED3B8D722660BCE008988CE /* ExampleProtocol.swift in Sources */,
 				CE69C375224B6E07004F4FA4 /* UIImage+Extension.swift in Sources */,
 				CE69C374224B6E07004F4FA4 /* Date+Extension.swift in Sources */,
 				CE69C318224B6E07004F4FA4 /* UIDevice.swift in Sources */,
