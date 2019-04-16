@@ -1226,9 +1226,9 @@
 		CE69C196224B6E06004F4FA4 /* tableHeaderAndFooter */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C197224B6E06004F4FA4 /* MyNibView.swift */,
 				CE69C198224B6E06004F4FA4 /* HeaderFooterTBVC.swift */,
 				CE69C199224B6E06004F4FA4 /* HeaderFooterTBVC.xib */,
+				CE69C197224B6E06004F4FA4 /* MyNibView.swift */,
 				CE69C19A224B6E06004F4FA4 /* MyNibView.xib */,
 			);
 			path = tableHeaderAndFooter;
@@ -1960,9 +1960,9 @@
 		CE69C2A9224B6E07004F4FA4 /* HandyJSON */ = {
 			isa = PBXGroup;
 			children = (
+				CE69C2AC224B6E07004F4FA4 /* HandyModel.swift */,
 				CE69C2AA224B6E07004F4FA4 /* Handy2Model.swift */,
 				CE69C2AB224B6E07004F4FA4 /* Handy3Model.swift */,
-				CE69C2AC224B6E07004F4FA4 /* HandyModel.swift */,
 			);
 			path = HandyJSON;
 			sourceTree = "<group>";
@@ -1970,8 +1970,8 @@
 		CE69C2AE224B6E07004F4FA4 /* Kingfisher */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C2AF224B6E07004F4FA4 /* KingfisherViewController.xib */,
 				CE69C2B0224B6E07004F4FA4 /* KingfisherViewController.swift */,
+				CE69C2AF224B6E07004F4FA4 /* KingfisherViewController.xib */,
 			);
 			path = Kingfisher;
 			sourceTree = "<group>";
@@ -1988,8 +1988,8 @@
 		CE69C2B9224B6E07004F4FA4 /* share */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C2BA224B6E07004F4FA4 /* MyShareViewController.xib */,
 				CE69C2BB224B6E07004F4FA4 /* MyShareViewController.swift */,
+				CE69C2BA224B6E07004F4FA4 /* MyShareViewController.xib */,
 			);
 			path = share;
 			sourceTree = "<group>";

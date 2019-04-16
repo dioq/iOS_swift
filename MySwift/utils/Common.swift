@@ -33,3 +33,13 @@ extension UIColor {
         return UIColor(red: CGFloat(arc4random_uniform(256))/255.0, green: CGFloat(arc4random_uniform(256))/255.0, blue: CGFloat(arc4random_uniform(256))/255.0, alpha: 1.0)
     }
 }
+
+//设置圆角
+func configSideRadius(view: UIView, cornerRadius:CGFloat, color:UIColor?) {
+    view.layer.cornerRadius = cornerRadius
+    view.layer.masksToBounds = true  //是否把圆角边切去
+    view.layer.borderWidth = 1   //设置边框 的宽度
+    if color != nil {
+        view.layer.borderColor = color?.cgColor
+    }
+}
