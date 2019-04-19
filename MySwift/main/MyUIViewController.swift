@@ -16,6 +16,10 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
     lazy var dataArray:[UIViewController] = {
         var dataArray = Array<UIViewController>()
         
+        let imageVC = IMGVViewController()
+        imageVC.title = "imageview"
+        dataArray.append(imageVC)
+        
         let nibVC = NibViewController()
         nibVC.title = "xib使用演示"
         dataArray.append(nibVC)

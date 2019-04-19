@@ -348,6 +348,10 @@
 		CED3B8D722660BCE008988CE /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8D622660BCE008988CE /* ExampleProtocol.swift */; };
 		CED3B8D922660C11008988CE /* Man.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8D822660C11008988CE /* Man.swift */; };
 		CED3B8DB22660EE4008988CE /* TestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8DA22660EE4008988CE /* TestProtocol.swift */; };
+		CED3B9342266D706008988CE /* IMGVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3B9322266D706008988CE /* IMGVViewController.swift */; };
+		CED3B9352266D706008988CE /* IMGVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED3B9332266D706008988CE /* IMGVViewController.xib */; };
+		CED3B9382266D7C3008988CE /* login_bg01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CED3B9372266D7C2008988CE /* login_bg01.jpg */; };
+		CED3B93C2266D7CA008988CE /* login_bg_gif_01.gif in Resources */ = {isa = PBXBuildFile; fileRef = CED3B93A2266D7CA008988CE /* login_bg_gif_01.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -700,6 +704,10 @@
 		CED3B8D622660BCE008988CE /* ExampleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleProtocol.swift; sourceTree = "<group>"; };
 		CED3B8D822660C11008988CE /* Man.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Man.swift; sourceTree = "<group>"; };
 		CED3B8DA22660EE4008988CE /* TestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProtocol.swift; sourceTree = "<group>"; };
+		CED3B9322266D706008988CE /* IMGVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGVViewController.swift; sourceTree = "<group>"; };
+		CED3B9332266D706008988CE /* IMGVViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IMGVViewController.xib; sourceTree = "<group>"; };
+		CED3B9372266D7C2008988CE /* login_bg01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login_bg01.jpg; sourceTree = "<group>"; };
+		CED3B93A2266D7CA008988CE /* login_bg_gif_01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = login_bg_gif_01.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -873,8 +881,8 @@
 			isa = PBXGroup;
 			children = (
 				CE69C128224B6E06004F4FA4 /* UseNetworkingToolVC.swift */,
-				CE69C129224B6E06004F4FA4 /* MyHttp.swift */,
 				CE69C12A224B6E06004F4FA4 /* UseNetworkingToolVC.xib */,
+				CE69C129224B6E06004F4FA4 /* MyHttp.swift */,
 			);
 			path = request;
 			sourceTree = "<group>";
@@ -957,7 +965,7 @@
 				CE69C15C224B6E06004F4FA4 /* time */,
 				CE69C160224B6E06004F4FA4 /* BezierPath */,
 				CE69C162224B6E06004F4FA4 /* Browser */,
-				CE69C165224B6E06004F4FA4 /* myDelegate */,
+				CE69C165224B6E06004F4FA4 /* delegate */,
 				CE69C16D224B6E06004F4FA4 /* singleton */,
 				CE69C171224B6E06004F4FA4 /* lazy */,
 				CE69C173224B6E06004F4FA4 /* audioAndShake */,
@@ -1054,14 +1062,14 @@
 			path = Browser;
 			sourceTree = "<group>";
 		};
-		CE69C165224B6E06004F4FA4 /* myDelegate */ = {
+		CE69C165224B6E06004F4FA4 /* delegate */ = {
 			isa = PBXGroup;
 			children = (
 				CED3B8C4226601EF008988CE /* base */,
 				CE69C166224B6E06004F4FA4 /* use */,
 				CE69C169224B6E06004F4FA4 /* sendValue */,
 			);
-			path = myDelegate;
+			path = delegate;
 			sourceTree = "<group>";
 		};
 		CE69C166224B6E06004F4FA4 /* use */ = {
@@ -1160,6 +1168,7 @@
 		CE69C188224B6E06004F4FA4 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				CED3B9312266D6E3008988CE /* imageview */,
 				CE69C189224B6E06004F4FA4 /* closure */,
 				CE69C18E224B6E06004F4FA4 /* scrollView */,
 				CE69C192224B6E06004F4FA4 /* UISwitch */,
@@ -1425,8 +1434,8 @@
 		CE69C1D8224B6E07004F4FA4 /* xibCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C1D9224B6E07004F4FA4 /* CollectionVC.xib */,
 				CE69C1DA224B6E07004F4FA4 /* CollectionVC.swift */,
+				CE69C1D9224B6E07004F4FA4 /* CollectionVC.xib */,
 			);
 			path = xibCollectionView;
 			sourceTree = "<group>";
@@ -1447,10 +1456,10 @@
 		CE69C1E2224B6E07004F4FA4 /* xibCell */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C1E3224B6E07004F4FA4 /* MyCVCell.xib */,
-				CE69C1E4224B6E07004F4FA4 /* MyCVCell.swift */,
 				CE69C1E5224B6E07004F4FA4 /* CollectionViewVC.swift */,
 				CE69C1E6224B6E07004F4FA4 /* CollectionViewVC.xib */,
+				CE69C1E4224B6E07004F4FA4 /* MyCVCell.swift */,
+				CE69C1E3224B6E07004F4FA4 /* MyCVCell.xib */,
 			);
 			path = xibCell;
 			sourceTree = "<group>";
@@ -1668,6 +1677,7 @@
 		CE69C237224B6E07004F4FA4 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				CED3B9362266D79E008988CE /* gif */,
 				CE69C238224B6E07004F4FA4 /* video */,
 				CE69C23C224B6E07004F4FA4 /* web */,
 				CE69C23F224B6E07004F4FA4 /* cycle */,
@@ -1745,6 +1755,7 @@
 		CE69C258224B6E07004F4FA4 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				CED3B9372266D7C2008988CE /* login_bg01.jpg */,
 				CE69C259224B6E07004F4FA4 /* add.png */,
 				CE69C25A224B6E07004F4FA4 /* taobaoLogo.png */,
 				CE69C25B224B6E07004F4FA4 /* pingtaoge.png */,
@@ -2065,6 +2076,23 @@
 			path = base;
 			sourceTree = "<group>";
 		};
+		CED3B9312266D6E3008988CE /* imageview */ = {
+			isa = PBXGroup;
+			children = (
+				CED3B9322266D706008988CE /* IMGVViewController.swift */,
+				CED3B9332266D706008988CE /* IMGVViewController.xib */,
+			);
+			path = imageview;
+			sourceTree = "<group>";
+		};
+		CED3B9362266D79E008988CE /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				CED3B93A2266D7CA008988CE /* login_bg_gif_01.gif */,
+			);
+			path = gif;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2159,6 +2187,7 @@
 				CE69C3C0224B6E07004F4FA4 /* girl.png in Resources */,
 				CE69C2E3224B6E07004F4FA4 /* LocalizableVC.xib in Resources */,
 				CE69C32F224B6E07004F4FA4 /* MyNibView.xib in Resources */,
+				CED3B9352266D706008988CE /* IMGVViewController.xib in Resources */,
 				CE69C3AF224B6E07004F4FA4 /* Favor_00013.png in Resources */,
 				CE69C304224B6E07004F4FA4 /* StudyNibViewController.xib in Resources */,
 				CED3B8C822660222008988CE /* BaseDelegateVC.xib in Resources */,
@@ -2189,6 +2218,7 @@
 				CE69C3A2224B6E07004F4FA4 /* TPout.swf in Resources */,
 				CE69C35B224B6E07004F4FA4 /* CollectionVC.xib in Resources */,
 				CE69C320224B6E07004F4FA4 /* ThreadViewController.xib in Resources */,
+				CED3B9382266D7C3008988CE /* login_bg01.jpg in Resources */,
 				CE69C3CE224B6E07004F4FA4 /* ViewController2.xib in Resources */,
 				CE69C3A4224B6E07004F4FA4 /* t2.m3u8 in Resources */,
 				CE69C3C1224B6E07004F4FA4 /* placeholder.png in Resources */,
@@ -2217,6 +2247,7 @@
 				CE69C34C224B6E07004F4FA4 /* LabelViewController.xib in Resources */,
 				CE69C3A8224B6E07004F4FA4 /* coin1.png in Resources */,
 				CE69C406224B6E08004F4FA4 /* MyShareViewController.xib in Resources */,
+				CED3B93C2266D7CA008988CE /* login_bg_gif_01.gif in Resources */,
 				CE69C3C8224B6E07004F4FA4 /* soundEffect5.mp3 in Resources */,
 				CE69C3AD224B6E07004F4FA4 /* Favor_00016.png in Resources */,
 				CE69C3A3224B6E07004F4FA4 /* test.mp4 in Resources */,
@@ -2492,6 +2523,7 @@
 				CE69C39D224B6E07004F4FA4 /* PhotosTableViewCell.swift in Sources */,
 				CE69C386224B6E07004F4FA4 /* MyUIViewController.swift in Sources */,
 				CE69C40B224B6E08004F4FA4 /* HGImageCell.swift in Sources */,
+				CED3B9342266D706008988CE /* IMGVViewController.swift in Sources */,
 				CE69C347224B6E07004F4FA4 /* UIPasteboardVC.swift in Sources */,
 				CE69C2E9224B6E07004F4FA4 /* LLCycleScrollView.swift in Sources */,
 				CE69C309224B6E07004F4FA4 /* BrowserVC.swift in Sources */,

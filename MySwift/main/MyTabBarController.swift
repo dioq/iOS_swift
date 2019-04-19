@@ -53,7 +53,9 @@ class MyTabBarController: UITabBarController,RootTabBarDelegate {
         myswift.title = "language"
         /**下面这样加title标题上无效果**/
 //        myswift.tabBarItem.title = "language"
-        myswift.tabBarItem.image = UIImage.init(named: "tab_home_normal")
+        let imageHome:UIImage = UIImage.init(named: "tab_home_normal")!
+        let imageOriginal = imageHome.withRenderingMode(.alwaysOriginal) //获取一张原图
+        myswift.tabBarItem.image = imageOriginal
         myswift.tabBarItem.selectedImage = UIImage.init(named: "tab_home_50")
         let nav1 = MyNavgationController.init(rootViewController: myswift)
         
