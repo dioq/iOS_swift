@@ -1816,9 +1816,9 @@
 		CE69C268224B6E07004F4FA4 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C269224B6E07004F4FA4 /* Model.swift */,
-				CE69C26A224B6E07004F4FA4 /* RequestVC.xib */,
 				CE69C26B224B6E07004F4FA4 /* RequestVC.swift */,
+				CE69C26A224B6E07004F4FA4 /* RequestVC.xib */,
+				CE69C269224B6E07004F4FA4 /* Model.swift */,
 				CE69C26C224B6E07004F4FA4 /* Value.swift */,
 			);
 			path = Alamofire;

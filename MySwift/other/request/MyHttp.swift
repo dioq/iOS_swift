@@ -55,7 +55,7 @@ class MyHttp {
         return canConnect!
     }
     
-    func request(urlString:String, method:MethodType, parameters:Dictionary<String, Any>?, headers:Dictionary<String, String>?, success:@escaping(_ responseObject:Any) -> Void, failure:@escaping(_ error:Error) -> Void) {
+    func request(urlString:String, method:MethodType, parameters:Dictionary<String, Any>?, headers:Dictionary<String, String>?, success:@escaping(_ responseObject:String) -> Void, failure:@escaping(_ error:Error) -> Void) {
         
         //每次网络状态发生改变都会改变self.isConnection值,,当网络不通畅时就不再发起网络请求
         if !MyHttp.isConnection {
@@ -79,6 +79,7 @@ class MyHttp {
             switch response.result{
             case .success:
                 if let value = response.result.value {
+                    print("type:", type(of: value))
                     //先将json对象转换成data
                     let data = try? JSONSerialization.data(withJSONObject: value, options: [])
                     //再将data转换成字符串

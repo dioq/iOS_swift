@@ -37,9 +37,10 @@ class RequestVC: UIViewController {
                     let jsonStr = String(data: data!, encoding: String.Encoding.utf8)
                     //HandyJSON 再解析字符串
                     let result3 = Model.deserialize(from: jsonStr)
-                    for item in (result3?.content)! {
-                        self.dataArray.append(item)
-                    }
+                    self.dataArray = result3!.content
+//                    for item in (result3?.content)! {
+//                        self.dataArray.append(item)
+//                    }
                 }
                 
 //                if let JSON = response.result.value {

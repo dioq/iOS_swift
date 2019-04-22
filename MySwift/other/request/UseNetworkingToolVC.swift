@@ -29,17 +29,14 @@ class UseNetworkingToolVC: UIViewController {
     }
     
     @IBAction func postAction(_ sender: UIButton) {
-
+        let urlStr = "http://api.dxys.live/app/movie/v1/category"
+        let parameters = ["deviceType":"1", "appVersion":"majiabao.test.com.ios@1.0.6"]
+        MyHttp.shareManager().request(urlString:urlStr, method:.post, parameters: parameters , headers: nil, success: { (response) in
+            print("type:", type(of: response))
+            print(response)
+        }, failure: { (error) in
+            print(error)
+        })
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
