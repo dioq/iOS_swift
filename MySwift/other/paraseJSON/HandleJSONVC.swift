@@ -9,6 +9,12 @@
 import UIKit
 import SwiftyJSON
 
+/*
+ json在线解析
+ https://www.json.cn
+ json在线转model
+ http://modelend.com
+ */
 class HandleJSONVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet weak var myTableView: UITableView!

@@ -11,7 +11,7 @@ import UIKit
 class JsonModel: NSObject {
     var name:String!
     var number:String!
-    
+
     override init() {
         super.init()
     }

@@ -17,6 +17,10 @@ class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDel
     func getData() {
         dataArray = Array<UIViewController>()
         
+        let handleJSONVC = HandleJSONVC()
+        handleJSONVC.title = "JSON数据的处理"
+        dataArray.append(handleJSONVC)
+        
         let localizableVC = LocalizableVC()
         localizableVC.title = "本地化"
         dataArray.append(localizableVC)

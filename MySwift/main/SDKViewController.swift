@@ -32,10 +32,6 @@ class SDKViewController: UIViewController, UITableViewDataSource,UITableViewDele
         pageVC.title = "顶部滑动导航"
         dataArray.append(pageVC)
         
-        let handleJSONVC = HandleJSONVC()
-        handleJSONVC.title = "JSON数据的处理"
-        dataArray.append(handleJSONVC)
-        
         let nicooVC = NicooPlayerVC()
         nicooVC.title = "NicooPlayer播放器"
         dataArray.append(nicooVC)

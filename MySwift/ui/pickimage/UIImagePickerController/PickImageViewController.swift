@@ -9,45 +9,61 @@
 import UIKit
 
 class PickImageViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
-
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var editSwitch: UISwitch!
     
-    let pickVC = UIImagePickerController()
-    let pickVC2 = UIImagePickerController()
+    var imagePickerController:UIImagePickerController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pickVC.delegate = self
-        pickVC2.delegate = self
-    }
-
-    @IBAction func fromCamar(_ sender: UIButton) {
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            pickVC.sourceType = .camera
-            pickVC.allowsEditing = editSwitch.isOn
-            self.present(pickVC, animated: true, completion: nil)
-        } else {
-            EWToast.showCenterWithText(text: "This camera is invalid!", duration: 3)
-        }
     }
     
-    @IBAction func pickImageAction(_ sender: UIButton) {
-        //判断设置是否支持图片库
-        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
-            //指定图片控制器类型
-            pickVC2.sourceType = UIImagePickerController.SourceType.photoLibrary
-            //设置是否允许编辑
-            pickVC2.allowsEditing = editSwitch.isOn
-            //弹出控制器，显示界面
-            self.present(pickVC2, animated: true, completion: {() -> Void in
-            })
+    //检测前置摄像头是否可用
+    func isFrontCameraAvailable() -> Bool {
+        return UIImagePickerController.isCameraDeviceAvailable(UIImagePickerController.CameraDevice.front)
+    }
+    //检测后置摄像头是否可用
+    func isRearCameraAvailable() -> Bool {
+        return UIImagePickerController.isCameraDeviceAvailable(UIImagePickerController.CameraDevice.rear)
+    }
+    //photoLibrary是否支持图片库
+    func isPhotoLibraryAvailable() -> Bool {
+        return UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.photoLibrary)
+    }
+    
+    @IBAction func fromCamera(_ sender: UIButton) {
+        if imagePickerController == nil {
+            imagePickerController = UIImagePickerController()//初始化控制器
+            imagePickerController?.delegate = self //代理
+        }
+        if isFrontCameraAvailable() || isRearCameraAvailable() {
+            imagePickerController?.sourceType = .camera
+        }else {
+            print("相机不可用")
+            return
+        }
+        imagePickerController?.allowsEditing = editSwitch.isOn //允许拍照后裁剪
+        self.present(imagePickerController!, animated: true, completion: nil)
+    }
+    
+    @IBAction func fromAlbum(_ sender: UIButton) {
+        if imagePickerController == nil {
+            imagePickerController = UIImagePickerController()//初始化控制器
+            imagePickerController?.delegate = self //代理
+        }
+        if isPhotoLibraryAvailable() {
+            imagePickerController?.sourceType = .photoLibrary
         }else{
-            EWToast.showCenterWithText(text: "相册打不开", duration: 3)
+            print("相册不可用")
+            return
         }
+        imagePickerController?.allowsEditing = editSwitch.isOn //允许拍照后裁剪
+        self.present(imagePickerController!, animated: true, completion: nil)
     }
     
+    ///选择图片完成（从相册或者拍照完成）
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         //查看info对象
         print(info)
@@ -64,13 +80,13 @@ class PickImageViewController: UIViewController,UIImagePickerControllerDelegate,
         
         imageView.image = image
         
-        //图片控制器退出
+        ///取消选择图片（拍照）
         picker.dismiss(animated: true, completion: {() -> Void in
         })
     }
-
+    ///取消选择图片（拍照）
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
-
+    
 }

@@ -777,6 +777,7 @@
 		CE69C108224B6E06004F4FA4 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				CE69C2A5224B6E07004F4FA4 /* paraseJSON */,
 				CE69C12E224B6E06004F4FA4 /* Localizable */,
 				CE69C109224B6E06004F4FA4 /* drawer */,
 				CE69C10D224B6E06004F4FA4 /* autoWriteBoard */,
@@ -1806,7 +1807,6 @@
 				CE69C29A224B6E07004F4FA4 /* JXPopupView */,
 				CE69C29F224B6E07004F4FA4 /* GTMRefresh */,
 				CE69C2A2224B6E07004F4FA4 /* NicooPlayer */,
-				CE69C2A5224B6E07004F4FA4 /* json */,
 				CE69C2AE224B6E07004F4FA4 /* Kingfisher */,
 				CE69C2B1224B6E07004F4FA4 /* Rx */,
 			);
@@ -1961,14 +1961,14 @@
 			path = NicooPlayer;
 			sourceTree = "<group>";
 		};
-		CE69C2A5224B6E07004F4FA4 /* json */ = {
+		CE69C2A5224B6E07004F4FA4 /* paraseJSON */ = {
 			isa = PBXGroup;
 			children = (
 				CE69C2A6224B6E07004F4FA4 /* HandleJSONVC.swift */,
 				CE69C2A7224B6E07004F4FA4 /* HandleJSONVC.xib */,
 				CE69C2A8224B6E07004F4FA4 /* model */,
 			);
-			path = json;
+			path = paraseJSON;
 			sourceTree = "<group>";
 		};
 		CE69C2A8224B6E07004F4FA4 /* model */ = {
