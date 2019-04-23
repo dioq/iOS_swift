@@ -110,5 +110,9 @@
 	</array>
 	<key>NSAppleMusicUsageDescription</key>
 	<string>是否允许App访问您的媒体资料库？</string>
+	<key>NSContactsUsageDescription</key>
+	<string>通讯录</string>
+	<key>NSHomeKitUsageDescription</key>
+	<string>家庭自动化</string>
 </dict>
 </plist>
