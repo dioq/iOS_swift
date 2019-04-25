@@ -8,6 +8,10 @@
 
 import UIKit
 
+/*
+ iPhone机型相关信息
+ https://www.theiphonewiki.com/wiki/Models
+ **/
 //扩展UIDevice
 extension UIDevice {
     //获取设备具体详细的型号
