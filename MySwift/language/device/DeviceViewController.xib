@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeviceViewController" customModule="MySwift" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a0-Wy-zzH">
+                    <rect key="frame" x="100" y="69" width="214" height="40"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="zpr-TV-60K"/>
+                    </constraints>
+                    <state key="normal" title="应用程序信息"/>
+                    <connections>
+                        <action selector="applicationInfo:" destination="-1" eventType="touchUpInside" id="We8-xJ-SeH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcL-jn-uaH">
+                    <rect key="frame" x="100" y="134" width="214" height="40"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jPp-sK-fR7"/>
+                    </constraints>
+                    <state key="normal" title="设备信息"/>
+                    <connections>
+                        <action selector="deviceInfo:" destination="-1" eventType="touchUpInside" id="t3g-KE-hY9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0a0-Wy-zzH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="46U-DV-Y69"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CcL-jn-uaH" secondAttribute="trailing" constant="100" id="F3y-a5-DOO"/>
+                <constraint firstItem="CcL-jn-uaH" firstAttribute="top" secondItem="0a0-Wy-zzH" secondAttribute="bottom" constant="25" id="ZdL-Be-JFI"/>
+                <constraint firstItem="CcL-jn-uaH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="biY-AA-ZYr"/>
+                <constraint firstItem="0a0-Wy-zzH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="rE4-PK-8Ke"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0a0-Wy-zzH" secondAttribute="trailing" constant="100" id="xJL-gY-AZC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

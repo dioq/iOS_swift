@@ -87,8 +87,6 @@
 		CE69C314224B6E07004F4FA4 /* AudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C174224B6E06004F4FA4 /* AudioViewController.xib */; };
 		CE69C315224B6E07004F4FA4 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C175224B6E06004F4FA4 /* AudioViewController.swift */; };
 		CE69C316224B6E07004F4FA4 /* ShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C176224B6E06004F4FA4 /* ShakeViewController.swift */; };
-		CE69C317224B6E07004F4FA4 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C178224B6E06004F4FA4 /* DeviceViewController.swift */; };
-		CE69C318224B6E07004F4FA4 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C179224B6E06004F4FA4 /* UIDevice.swift */; };
 		CE69C319224B6E07004F4FA4 /* StringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C17B224B6E06004F4FA4 /* StringViewController.swift */; };
 		CE69C31A224B6E07004F4FA4 /* StringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C17C224B6E06004F4FA4 /* StringViewController.xib */; };
 		CE69C31B224B6E07004F4FA4 /* RegularViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C17E224B6E06004F4FA4 /* RegularViewController.xib */; };
@@ -343,6 +341,8 @@
 		CE7D20432259EA0C00DEE23E /* water-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D20412259EA0C00DEE23E /* water-loading.json */; };
 		CE7D20442259EA0C00DEE23E /* vcTransition2.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D20422259EA0C00DEE23E /* vcTransition2.json */; };
 		CE7D2046225A10DF00DEE23E /* Boat_Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D2045225A10DF00DEE23E /* Boat_Loader.json */; };
+		CECDACF12272B3140020A98F /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDACEF2272B3140020A98F /* DeviceViewController.swift */; };
+		CECDACF22272B3140020A98F /* DeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECDACF02272B3140020A98F /* DeviceViewController.xib */; };
 		CED3B8C722660222008988CE /* BaseDelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8C522660222008988CE /* BaseDelegateVC.swift */; };
 		CED3B8C822660222008988CE /* BaseDelegateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED3B8C622660222008988CE /* BaseDelegateVC.xib */; };
 		CED3B8D722660BCE008988CE /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8D622660BCE008988CE /* ExampleProtocol.swift */; };
@@ -439,8 +439,6 @@
 		CE69C174224B6E06004F4FA4 /* AudioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioViewController.xib; sourceTree = "<group>"; };
 		CE69C175224B6E06004F4FA4 /* AudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
 		CE69C176224B6E06004F4FA4 /* ShakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeViewController.swift; sourceTree = "<group>"; };
-		CE69C178224B6E06004F4FA4 /* DeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
-		CE69C179224B6E06004F4FA4 /* UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 		CE69C17B224B6E06004F4FA4 /* StringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringViewController.swift; sourceTree = "<group>"; };
 		CE69C17C224B6E06004F4FA4 /* StringViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringViewController.xib; sourceTree = "<group>"; };
 		CE69C17E224B6E06004F4FA4 /* RegularViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegularViewController.xib; sourceTree = "<group>"; };
@@ -699,6 +697,8 @@
 		CE7D20412259EA0C00DEE23E /* water-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "water-loading.json"; sourceTree = "<group>"; };
 		CE7D20422259EA0C00DEE23E /* vcTransition2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition2.json; sourceTree = "<group>"; };
 		CE7D2045225A10DF00DEE23E /* Boat_Loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Boat_Loader.json; sourceTree = "<group>"; };
+		CECDACEF2272B3140020A98F /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
+		CECDACF02272B3140020A98F /* DeviceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceViewController.xib; sourceTree = "<group>"; };
 		CED3B8C522660222008988CE /* BaseDelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDelegateVC.swift; sourceTree = "<group>"; };
 		CED3B8C622660222008988CE /* BaseDelegateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseDelegateVC.xib; sourceTree = "<group>"; };
 		CED3B8D622660BCE008988CE /* ExampleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleProtocol.swift; sourceTree = "<group>"; };
@@ -1124,8 +1124,8 @@
 		CE69C177224B6E06004F4FA4 /* device */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C178224B6E06004F4FA4 /* DeviceViewController.swift */,
-				CE69C179224B6E06004F4FA4 /* UIDevice.swift */,
+				CECDACEF2272B3140020A98F /* DeviceViewController.swift */,
+				CECDACF02272B3140020A98F /* DeviceViewController.xib */,
 			);
 			path = device;
 			sourceTree = "<group>";
@@ -2131,7 +2131,7 @@
 				};
 			};
 			buildConfigurationList = CE69C0E9224B6C92004F4FA4 /* Build configuration list for PBXProject "MySwift" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -2187,6 +2187,7 @@
 				CE69C3C0224B6E07004F4FA4 /* girl.png in Resources */,
 				CE69C2E3224B6E07004F4FA4 /* LocalizableVC.xib in Resources */,
 				CE69C32F224B6E07004F4FA4 /* MyNibView.xib in Resources */,
+				CECDACF22272B3140020A98F /* DeviceViewController.xib in Resources */,
 				CED3B9352266D706008988CE /* IMGVViewController.xib in Resources */,
 				CE69C3AF224B6E07004F4FA4 /* Favor_00013.png in Resources */,
 				CE69C304224B6E07004F4FA4 /* StudyNibViewController.xib in Resources */,
@@ -2463,7 +2464,6 @@
 				CE69C3E5224B6E07004F4FA4 /* FWPopupWindow.swift in Sources */,
 				CE69C2ED224B6E07004F4FA4 /* LLImagePageControl.swift in Sources */,
 				CE69C2F2224B6E07004F4FA4 /* HGImageCollectionViewCell.swift in Sources */,
-				CE69C317224B6E07004F4FA4 /* DeviceViewController.swift in Sources */,
 				CE69C328224B6E07004F4FA4 /* Scroll2ViewController.swift in Sources */,
 				CE69C39B224B6E07004F4FA4 /* PhotosViewController.swift in Sources */,
 				CE69C3DD224B6E07004F4FA4 /* FWRadioButton.swift in Sources */,
@@ -2514,6 +2514,7 @@
 				CE69C300224B6E07004F4FA4 /* SonObject.swift in Sources */,
 				CE69C2E7224B6E07004F4FA4 /* LLViewExtensions.swift in Sources */,
 				CE69C308224B6E07004F4FA4 /* BezierPathViewController.swift in Sources */,
+				CECDACF12272B3140020A98F /* DeviceViewController.swift in Sources */,
 				CE69C357224B6E07004F4FA4 /* CollectionHeader.swift in Sources */,
 				CE69C3E0224B6E07004F4FA4 /* FWCustomSheetView.swift in Sources */,
 				CE69C3FF224B6E07004F4FA4 /* KingfisherViewController.swift in Sources */,
@@ -2550,7 +2551,6 @@
 				CED3B8D722660BCE008988CE /* ExampleProtocol.swift in Sources */,
 				CE69C375224B6E07004F4FA4 /* UIImage+Extension.swift in Sources */,
 				CE69C374224B6E07004F4FA4 /* Date+Extension.swift in Sources */,
-				CE69C318224B6E07004F4FA4 /* UIDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
