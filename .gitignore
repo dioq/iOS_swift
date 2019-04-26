@@ -2,5 +2,5 @@
 /MySwift.xcworkspace
 Podfile.lock
 /Pods
-MySwift.xcodeproj/*
 MySwift/resource/.DS_Store
+MySwift.xcodeproj/project.xcworkspace/xcuserdata/
