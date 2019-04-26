@@ -20,7 +20,7 @@ class DeviceViewController: UIViewController {
         let infoDictionary = Bundle.main.infoDictionary!
         let appDisplayName = infoDictionary["CFBundleDisplayName"] //app的名字
         if appDisplayName != nil {
-            print("Display Name：\(appDisplayName!)")
+            print("Display Name: \(appDisplayName!)")
         }
         let bundleID = infoDictionary["CFBundleIdentifier"] //bundle identifier
         if bundleID != nil {
@@ -28,11 +28,11 @@ class DeviceViewController: UIViewController {
         }
         let majorVersion = infoDictionary["CFBundleShortVersionString"]//主程序版本号
         if majorVersion != nil {
-            print("Version：\(majorVersion!)")
+            print("Version: \(majorVersion!)")
         }
-        let minorVersion = infoDictionary["CFBundleVersion"]//版本号（内部标示）
-        if minorVersion != nil {
-            print("Build：\(minorVersion!)")
+        let buildVersion = infoDictionary["CFBundleVersion"]//版本号（内部标示）
+        if buildVersion != nil {
+            print("Build: \(buildVersion!)")
         }
     }
     
