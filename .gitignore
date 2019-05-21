@@ -1,7 +1,7 @@
 .DS_Store
-/MySwift.xcworkspace
+MySwift/resource/.DS_Store
 Podfile.lock
 /Pods
-MySwift/resource/.DS_Store
+
+/MySwift.xcworkspace
 MySwift.xcodeproj/xcuserdata/
-MySwift.xcodeproj/project.pbxproj
