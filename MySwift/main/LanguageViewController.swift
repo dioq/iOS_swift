@@ -16,6 +16,10 @@ class LanguageViewController: UIViewController,UITableViewDataSource,UITableView
     lazy var dataArray:[UIViewController] = {
         var dataArray = Array<UIViewController>()
         
+        let reflectVC = ReflectViewController()
+        reflectVC.title = "反射"
+        dataArray.append(reflectVC)
+        
         let fVC = FViewController()
         fVC.title = "函数的特性"
         dataArray.append(fVC)
