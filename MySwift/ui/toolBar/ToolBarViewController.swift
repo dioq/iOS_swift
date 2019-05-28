@@ -10,6 +10,15 @@ import UIKit
 
 class ToolBarViewController: UIViewController {
     
+    //状态栏的样式系统的默认样式是黑色的,但可以修改
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .default
+    }
+    // 控制状态栏的现实与隐藏
+    override var prefersStatusBarHidden: Bool{
+        return false
+    }
+    
     func showHeight() {
         //状态栏
         let statusHeight = UIApplication.shared.statusBarFrame.size.height
