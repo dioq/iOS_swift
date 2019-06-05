@@ -100,6 +100,10 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
         moveVC.title = "cell交换位置"
         dataArray.append(moveVC)
         
+        let waterFallVC = WaterFallViewController()
+        waterFallVC.title = "瀑布流"
+        dataArray.append(waterFallVC)
+ 
         let scrollCell = ScrollCellViewController()
         scrollCell.title = "滚动cell"
         dataArray.append(scrollCell)
