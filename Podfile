@@ -18,5 +18,7 @@ target 'MySwift' do
   pod 'KSGuideController', '~> 0.1.2'#新手引导
   pod 'DNSPageView', '~> 1.1.2'
   pod 'lottie-ios', '~> 3.0.3'
+  pod 'RealmSwift', '~> 3.16.1'
+  pod 'Realm', '~> 3.16.1'
   
 end

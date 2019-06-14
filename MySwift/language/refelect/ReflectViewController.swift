@@ -77,29 +77,29 @@ class ReflectViewController: UIViewController {
         print(name, nickname, age, emails, tel)
         
         //当然对于获取到的值也可以进行类型判断
-        if name is NSNull {
-            print("name这个属性不存在")
-        }else if (name as AnyObject) == nil {
-            print("name这个属性是个可选类型，且为nil")
-        }else if name is String {
-            print("name这个属性String类型，其值为：\(name)")
-        }
-        
-        if nickname is NSNull {
-            print("nickname这个属性不存在")
-        }else if (nickname as AnyObject) == nil {
-            print("nickname这个属性是个可选类型，且为nil")
-        }else if nickname is String {
-            print("nickname这个属性String类型，其值为：\(nickname)")
-        }
-        
-        if tel is NSNull {
-            print("tel这个属性不存在")
-        }else if (tel as? AnyObject) == nil {
-            print("tel这个属性是个可选类型，且为nil")
-        }else if tel is String {
-            print("tel这个属性String类型，其值为：\(tel)")
-        }
+//        if name is NSNull {
+//            print("name这个属性不存在")
+//        }else if name == nil {
+//            print("name这个属性是个可选类型，且为nil")
+//        }else if name is String {
+//            print("name这个属性String类型，其值为：\(name)")
+//        }
+//        
+//        if nickname is NSNull {
+//            print("nickname这个属性不存在")
+//        }else if (nickname as AnyObject) == nil {
+//            print("nickname这个属性是个可选类型，且为nil")
+//        }else if nickname is String {
+//            print("nickname这个属性String类型，其值为：\(nickname)")
+//        }
+//        
+//        if tel is NSNull {
+//            print("tel这个属性不存在")
+//        }else if (tel as? AnyObject) == nil {
+//            print("tel这个属性是个可选类型，且为nil")
+//        }else if tel is String {
+//            print("tel这个属性String类型，其值为：\(tel)")
+//        }
     }
     
 }

@@ -39,6 +39,19 @@ class ButtonViewController: UIViewController {
         button2.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         button2.addTarget(self, action: #selector(action2(button:)), for: UIControl.Event.touchUpInside)
         self.view.addSubview(button2)
+        
+        
+        let button3 = UIButton(frame: CGRect(x: 0, y: view.center.y + 10, width: 250, height: 90))
+        button3.center.x = self.view.center.x
+        button3.backgroundColor = UIColor.cyan
+//        button3.setTitle("title", for: .normal)//title会和image在位置上有冲突
+        button3.setImage(UIImage.init(named: "star_hollow"), for: .normal)
+        button3.addTarget(self, action: #selector(action3(button:)), for: UIControl.Event.touchUpInside)
+        self.view.addSubview(button3)
+    }
+    
+    @objc func action3(button:UIButton) {
+        print("click")
     }
     
     @objc func action2(button:UIButton) {
