@@ -6,7 +6,6 @@
 //  Copyright © 2018年 xfg. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 /// 状态栏高度
@@ -89,6 +88,7 @@ class FWMenuViewDemoVC: UIViewController {
         btn.addTarget(self, action: #selector(btnAction(_:)), for: .touchUpInside)
         btn.frame = CGRect(x: 0, y: 0, width: 100, height: 44)
         btn.setTitle("下拉▼", for: .normal)
+        btn.setTitleColor(UIColor.blue, for: .normal)
         btn.tag = 0
         self.navigationItem.titleView = btn
 

@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import CoreTelephony
 
 class JudgeNetworkingVC: UIViewController {
 
@@ -18,6 +19,44 @@ class JudgeNetworkingVC: UIViewController {
         print(isConnectiong)
     }
 
+    //获取运营商
+    @IBAction func deviceSupplier(_ sender: UIButton) {
+        let which = zz_deviceSupplier()
+        print(which)
+    }
+    private func zz_deviceSupplier() -> String {
+        let info = CTTelephonyNetworkInfo()
+        var supplier:String = ""
+        if #available(iOS 12.0, *) {
+            if let carriers = info.serviceSubscriberCellularProviders {
+                if carriers.keys.count == 0 {
+                    return "无手机卡"
+                } else { //获取运营商信息
+                    for (index, carrier) in carriers.values.enumerated() {
+                        print(carrier)
+                        guard carrier.carrierName != nil else { return "无手机卡" }
+                        //查看运营商信息 通过CTCarrier类
+                        if index == 0 {
+                            supplier = carrier.carrierName!
+                        } else {
+                            supplier = supplier + "," + carrier.carrierName!
+                        }
+                    }
+                    return supplier
+                }
+            } else{
+                return "无手机卡"
+            }
+        } else {
+            if let carrier = info.subscriberCellularProvider {
+                guard carrier.carrierName != nil else { return "无手机卡" }
+                return carrier.carrierName!
+            } else{
+                return "无手机卡"
+            }
+        }
+    }
+    
     @IBAction func judgeAction(_ sender: UIButton) {
         let manager = NetworkReachabilityManager()
         manager?.listener = { status in    // 当网络状态发生改变的时候调用这个closure
