@@ -17,6 +17,10 @@ class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDel
     func getData() {
         dataArray = Array<UIViewController>()
         
+        let changeIconVC = ChangeIconViewController()
+        changeIconVC.title = "更换App icon"
+        dataArray.append(changeIconVC)
+        
         let handleJSONVC = HandleJSONVC()
         handleJSONVC.title = "JSON数据的处理"
         dataArray.append(handleJSONVC)
