@@ -15,8 +15,6 @@ class JudgeNetworkingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let isConnectiong = MyHttp.shareManager().monitorNetworking()
-        print(isConnectiong)
     }
 
     //获取运营商

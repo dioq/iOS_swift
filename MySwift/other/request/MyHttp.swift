@@ -20,48 +20,20 @@ class MyHttp {
     private static var instance:MyHttp? = nil
     private init (){}
     
-    class func shareManager() -> MyHttp {
+    static func shareManager() -> MyHttp {
         if instance == nil {
             instance = MyHttp.init()
         }
         return instance!
     }
     
-    private static var isConnection:Bool = true
-    func monitorNetworking() -> Bool {
-        let manager = NetworkReachabilityManager()
-        manager?.listener = { status in
-            var statusStr: String?
-            switch status {
-            case .unknown: //未识别的网络
-                statusStr = "未识别的网络"
-                MyHttp.isConnection = false
-                EWToast.showCenterWithText(text: statusStr!, duration: 3)
-            case .notReachable://不可用的网络(未连接)
-                statusStr = "不可用的网络(未连接)"
-                MyHttp.isConnection = false
-                EWToast.showCenterWithText(text: statusStr!, duration: 3)
-            case .reachable://网络连接正常
-                MyHttp.isConnection = true
-                if (manager?.isReachableOnWWAN)! {
-                    statusStr = "2G,3G,4G...的网络"
-                } else if (manager?.isReachableOnEthernetOrWiFi)! {
-                    statusStr = "wifi的网络";
-                }
-            }
-        }
-        manager?.startListening()
-        let canConnect = manager?.isReachable
-        return canConnect!
-    }
+    private let sharedSessionManager: Alamofire.SessionManager = {
+        let configuration = URLSessionConfiguration.default
+        configuration.timeoutIntervalForRequest = 30 //设置超时时间
+        return Alamofire.SessionManager(configuration: configuration)
+    }()
     
     func request(urlString:String, method:MethodType, parameters:Dictionary<String, Any>?, headers:Dictionary<String, String>?, success:@escaping(_ responseObject:String) -> Void, failure:@escaping(_ error:Error) -> Void) {
-        
-        //每次网络状态发生改变都会改变self.isConnection值,,当网络不通畅时就不再发起网络请求
-        if !MyHttp.isConnection {
-            return
-        }
-        
         
         let myMethod:HTTPMethod
         switch method {
@@ -75,7 +47,8 @@ class MyHttp {
             myMethod = .get
         }
         
-        Alamofire.request(urlString, method:myMethod, parameters:parameters, encoding:JSONEncoding.default, headers: headers).responseJSON { (response) in
+        sharedSessionManager.request(urlString, method:myMethod, parameters:parameters, encoding:JSONEncoding.default, headers: headers).responseJSON { (response) in
+            
             switch response.result{
             case .success:
                 if let value = response.result.value {
@@ -89,23 +62,18 @@ class MyHttp {
             case .failure(let error):
                 failure(error)
             }
+            
         }
-        
     }
     
     //上传图片
     func uploadImages(urlString:String, header:Dictionary<String, String>?, images:Array<UIImage>, withName:String ,fileName:String, mimeType:String = "image/jpeg",success:@escaping(_ responseObject:Any) -> Void, failure:@escaping(_ error:Error) -> Void) {
         
-        //每次网络状态发生改变都会改变self.isConnection值,当网络不通畅时就不再发起网络请求
-        if !MyHttp.isConnection {
-            return
-        }
-        
         Alamofire.upload(multipartFormData: { multipartFormData in
             //采用post表单上传
             // 参数解释：
             //withName:和后台服务器的name要一致 ；fileName:可以充分利用写成用户的id，但是格式要写对； mimeType：规定的，要上传其他格式可以自行百度查一下
-//            multipartFormData.append(imageData, withName: "fileName", fileName: "article\(userID).jpeg", mimeType: "image/jpeg")
+            //            multipartFormData.append(imageData, withName: "fileName", fileName: "article\(userID).jpeg", mimeType: "image/jpeg")
             
             //如果需要上传多个文件,就多添加几个
             //multipartFormData.append(imageData, withName: "file", fileName: "123456.jpg", mimeType: "image/jpeg")

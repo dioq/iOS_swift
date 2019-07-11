@@ -14,9 +14,6 @@ class UseNetworkingToolVC: UIViewController {
         super.viewDidLoad()
         navigationItem.title = "测试封装的Alamofire"
         
-        //开启网络监听
-        let isConnectiong = MyHttp.shareManager().monitorNetworking()
-        print(isConnectiong)
     }
     
     @IBAction func getAction(_ sender: UIButton) {
