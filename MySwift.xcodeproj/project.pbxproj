@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		CB1FA90C3B5B02927B5D38D3 /* Pods_MySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD046A5AA03CAB50BACDEC1 /* Pods_MySwift.framework */; };
+		CE24EA0122BCD6CC00CB80BB /* ChangeIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24E9FF22BCD6CC00CB80BB /* ChangeIconViewController.swift */; };
+		CE24EA0222BCD6CC00CB80BB /* ChangeIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0022BCD6CC00CB80BB /* ChangeIconViewController.xib */; };
+		CE24EA0F22BCDACC00CB80BB /* iWiBi-orange-two@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0522BCDACB00CB80BB /* iWiBi-orange-two@3x.png */; };
+		CE24EA1022BCDACC00CB80BB /* AppIcon-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0622BCDACB00CB80BB /* AppIcon-default@2x.png */; };
+		CE24EA1122BCDACC00CB80BB /* AppIcon-default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0722BCDACB00CB80BB /* AppIcon-default@3x.png */; };
+		CE24EA1222BCDACC00CB80BB /* iWiBi-orange-two@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0822BCDACB00CB80BB /* iWiBi-orange-two@2x.png */; };
+		CE24EA1322BCDACC00CB80BB /* iWiBi-orange-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0922BCDACB00CB80BB /* iWiBi-orange-icon@3x.png */; };
+		CE24EA1422BCDACC00CB80BB /* iWiBi-orange-icon-light@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0A22BCDACB00CB80BB /* iWiBi-orange-icon-light@3x.png */; };
+		CE24EA1522BCDACC00CB80BB /* iWiBi-orange-blank@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0B22BCDACB00CB80BB /* iWiBi-orange-blank@3x.png */; };
+		CE24EA1622BCDACC00CB80BB /* iWiBi-orange-blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0C22BCDACB00CB80BB /* iWiBi-orange-blank@2x.png */; };
+		CE24EA1722BCDACC00CB80BB /* iWiBi-orange-icon-light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0D22BCDACB00CB80BB /* iWiBi-orange-icon-light@2x.png */; };
+		CE24EA1822BCDACC00CB80BB /* iWiBi-orange-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0E22BCDACB00CB80BB /* iWiBi-orange-icon@2x.png */; };
+		CE24EA1B22BCE37C00CB80BB /* AppLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA1A22BCE37C00CB80BB /* AppLaunchScreen.storyboard */; };
 		CE69C0F9224B6C93004F4FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE69C0F8224B6C93004F4FA4 /* Assets.xcassets */; };
 		CE69C2C9224B6E07004F4FA4 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C10A224B6E06004F4FA4 /* DrawerViewController.swift */; };
 		CE69C2CA224B6E07004F4FA4 /* Target2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C10B224B6E06004F4FA4 /* Target2ViewController.swift */; };
@@ -336,11 +349,15 @@
 		CE69C411224B6E08004F4FA4 /* RootTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2C8224B6E07004F4FA4 /* RootTabBar.swift */; };
 		CE69C416224B7268004F4FA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE69C418224B7268004F4FA4 /* InfoPlist.strings */; };
 		CE69C419224B726B004F4FA4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE69C41B224B726B004F4FA4 /* Localizable.strings */; };
+		CE73D3CE2298015D002C537C /* ReflectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73D3CC2298015D002C537C /* ReflectViewController.swift */; };
+		CE73D3CF2298015D002C537C /* ReflectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE73D3CD2298015D002C537C /* ReflectViewController.xib */; };
 		CE7D203F2259E7C700DEE23E /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D203D2259E7C700DEE23E /* LottieViewController.swift */; };
 		CE7D20402259E7C700DEE23E /* LottieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7D203E2259E7C700DEE23E /* LottieViewController.xib */; };
 		CE7D20432259EA0C00DEE23E /* water-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D20412259EA0C00DEE23E /* water-loading.json */; };
 		CE7D20442259EA0C00DEE23E /* vcTransition2.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D20422259EA0C00DEE23E /* vcTransition2.json */; };
 		CE7D2046225A10DF00DEE23E /* Boat_Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D2045225A10DF00DEE23E /* Boat_Loader.json */; };
+		CEAC323422B232BC0046E850 /* star_soild.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAC323222B232BB0046E850 /* star_soild.png */; };
+		CEAC323522B232BC0046E850 /* star_hollow.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAC323322B232BB0046E850 /* star_hollow.png */; };
 		CECDACF12272B3140020A98F /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDACEF2272B3140020A98F /* DeviceViewController.swift */; };
 		CECDACF22272B3140020A98F /* DeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECDACF02272B3140020A98F /* DeviceViewController.xib */; };
 		CED3B8C722660222008988CE /* BaseDelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8C522660222008988CE /* BaseDelegateVC.swift */; };
@@ -352,12 +369,27 @@
 		CED3B9352266D706008988CE /* IMGVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED3B9332266D706008988CE /* IMGVViewController.xib */; };
 		CED3B9382266D7C3008988CE /* login_bg01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CED3B9372266D7C2008988CE /* login_bg01.jpg */; };
 		CED3B93C2266D7CA008988CE /* login_bg_gif_01.gif in Resources */ = {isa = PBXBuildFile; fileRef = CED3B93A2266D7CA008988CE /* login_bg_gif_01.gif */; };
+		CED832ED22A7C76900ABC725 /* WaterFallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED832EC22A7C76900ABC725 /* WaterFallViewController.swift */; };
+		CED832EF22A7C7AB00ABC725 /* WaterFallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED832EE22A7C7AB00ABC725 /* WaterFallLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		32F7714E770754C61BBD0BA8 /* Pods-MySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwift.debug.xcconfig"; path = "Target Support Files/Pods-MySwift/Pods-MySwift.debug.xcconfig"; sourceTree = "<group>"; };
 		9AD046A5AA03CAB50BACDEC1 /* Pods_MySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C790BE9ABE19EB49FDF58AFD /* Pods-MySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwift.release.xcconfig"; path = "Target Support Files/Pods-MySwift/Pods-MySwift.release.xcconfig"; sourceTree = "<group>"; };
+		CE24E9FF22BCD6CC00CB80BB /* ChangeIconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeIconViewController.swift; sourceTree = "<group>"; };
+		CE24EA0022BCD6CC00CB80BB /* ChangeIconViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeIconViewController.xib; sourceTree = "<group>"; };
+		CE24EA0522BCDACB00CB80BB /* iWiBi-orange-two@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-two@3x.png"; sourceTree = "<group>"; };
+		CE24EA0622BCDACB00CB80BB /* AppIcon-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-default@2x.png"; sourceTree = "<group>"; };
+		CE24EA0722BCDACB00CB80BB /* AppIcon-default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-default@3x.png"; sourceTree = "<group>"; };
+		CE24EA0822BCDACB00CB80BB /* iWiBi-orange-two@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-two@2x.png"; sourceTree = "<group>"; };
+		CE24EA0922BCDACB00CB80BB /* iWiBi-orange-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon@3x.png"; sourceTree = "<group>"; };
+		CE24EA0A22BCDACB00CB80BB /* iWiBi-orange-icon-light@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon-light@3x.png"; sourceTree = "<group>"; };
+		CE24EA0B22BCDACB00CB80BB /* iWiBi-orange-blank@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-blank@3x.png"; sourceTree = "<group>"; };
+		CE24EA0C22BCDACB00CB80BB /* iWiBi-orange-blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-blank@2x.png"; sourceTree = "<group>"; };
+		CE24EA0D22BCDACB00CB80BB /* iWiBi-orange-icon-light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon-light@2x.png"; sourceTree = "<group>"; };
+		CE24EA0E22BCDACB00CB80BB /* iWiBi-orange-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon@2x.png"; sourceTree = "<group>"; };
+		CE24EA1A22BCE37C00CB80BB /* AppLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppLaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE69C0EE224B6C92004F4FA4 /* MySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE69C0F8224B6C93004F4FA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE69C0FD224B6C93004F4FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -692,11 +724,15 @@
 		CE69C41D224B7272004F4FA4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CE69C41E224B7277004F4FA4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		CE69C41F224B7277004F4FA4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CE73D3CC2298015D002C537C /* ReflectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectViewController.swift; sourceTree = "<group>"; };
+		CE73D3CD2298015D002C537C /* ReflectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReflectViewController.xib; sourceTree = "<group>"; };
 		CE7D203D2259E7C700DEE23E /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
 		CE7D203E2259E7C700DEE23E /* LottieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LottieViewController.xib; sourceTree = "<group>"; };
 		CE7D20412259EA0C00DEE23E /* water-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "water-loading.json"; sourceTree = "<group>"; };
 		CE7D20422259EA0C00DEE23E /* vcTransition2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition2.json; sourceTree = "<group>"; };
 		CE7D2045225A10DF00DEE23E /* Boat_Loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Boat_Loader.json; sourceTree = "<group>"; };
+		CEAC323222B232BB0046E850 /* star_soild.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_soild.png; sourceTree = "<group>"; };
+		CEAC323322B232BB0046E850 /* star_hollow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_hollow.png; sourceTree = "<group>"; };
 		CECDACEF2272B3140020A98F /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
 		CECDACF02272B3140020A98F /* DeviceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceViewController.xib; sourceTree = "<group>"; };
 		CED3B8C522660222008988CE /* BaseDelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDelegateVC.swift; sourceTree = "<group>"; };
@@ -708,6 +744,8 @@
 		CED3B9332266D706008988CE /* IMGVViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IMGVViewController.xib; sourceTree = "<group>"; };
 		CED3B9372266D7C2008988CE /* login_bg01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login_bg01.jpg; sourceTree = "<group>"; };
 		CED3B93A2266D7CA008988CE /* login_bg_gif_01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = login_bg_gif_01.gif; sourceTree = "<group>"; };
+		CED832EC22A7C76900ABC725 /* WaterFallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallViewController.swift; sourceTree = "<group>"; };
+		CED832EE22A7C7AB00ABC725 /* WaterFallLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -739,6 +777,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE24E9FE22BCD6A800CB80BB /* changeIcon */ = {
+			isa = PBXGroup;
+			children = (
+				CE24E9FF22BCD6CC00CB80BB /* ChangeIconViewController.swift */,
+				CE24EA0022BCD6CC00CB80BB /* ChangeIconViewController.xib */,
+			);
+			path = changeIcon;
+			sourceTree = "<group>";
+		};
+		CE24EA0422BCDACB00CB80BB /* app-icon */ = {
+			isa = PBXGroup;
+			children = (
+				CE24EA0522BCDACB00CB80BB /* iWiBi-orange-two@3x.png */,
+				CE24EA0622BCDACB00CB80BB /* AppIcon-default@2x.png */,
+				CE24EA0722BCDACB00CB80BB /* AppIcon-default@3x.png */,
+				CE24EA0822BCDACB00CB80BB /* iWiBi-orange-two@2x.png */,
+				CE24EA0922BCDACB00CB80BB /* iWiBi-orange-icon@3x.png */,
+				CE24EA0A22BCDACB00CB80BB /* iWiBi-orange-icon-light@3x.png */,
+				CE24EA0B22BCDACB00CB80BB /* iWiBi-orange-blank@3x.png */,
+				CE24EA0C22BCDACB00CB80BB /* iWiBi-orange-blank@2x.png */,
+				CE24EA0D22BCDACB00CB80BB /* iWiBi-orange-icon-light@2x.png */,
+				CE24EA0E22BCDACB00CB80BB /* iWiBi-orange-icon@2x.png */,
+			);
+			path = "app-icon";
+			sourceTree = "<group>";
+		};
+		CE24EA1922BCE36800CB80BB /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CE24EA1A22BCE37C00CB80BB /* AppLaunchScreen.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
 		CE69C0E5224B6C92004F4FA4 = {
 			isa = PBXGroup;
 			children = (
@@ -767,6 +839,7 @@
 				CE69C134224B6E06004F4FA4 /* lib */,
 				CE69C2C1224B6E07004F4FA4 /* utils */,
 				CE69C237224B6E07004F4FA4 /* resource */,
+				CE24EA1922BCE36800CB80BB /* storyboard */,
 				CE69C2C4224B6E07004F4FA4 /* main */,
 				CE69C0F8224B6C93004F4FA4 /* Assets.xcassets */,
 				CE69C0FD224B6C93004F4FA4 /* Info.plist */,
@@ -777,6 +850,7 @@
 		CE69C108224B6E06004F4FA4 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				CE24E9FE22BCD6A800CB80BB /* changeIcon */,
 				CE69C2A5224B6E07004F4FA4 /* paraseJSON */,
 				CE69C12E224B6E06004F4FA4 /* Localizable */,
 				CE69C109224B6E06004F4FA4 /* drawer */,
@@ -957,6 +1031,7 @@
 		CE69C146224B6E06004F4FA4 /* language */ = {
 			isa = PBXGroup;
 			children = (
+				CE73D3CB22980136002C537C /* refelect */,
 				CE69C147224B6E06004F4FA4 /* closure */,
 				CE69C14A224B6E06004F4FA4 /* property */,
 				CE69C14C224B6E06004F4FA4 /* notification */,
@@ -1276,8 +1351,8 @@
 		CE69C1A0224B6E06004F4FA4 /* scrollCell */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C1A1224B6E06004F4FA4 /* ScrollCellViewController.xib */,
 				CE69C1A2224B6E06004F4FA4 /* ScrollCellViewController.swift */,
+				CE69C1A1224B6E06004F4FA4 /* ScrollCellViewController.xib */,
 			);
 			path = scrollCell;
 			sourceTree = "<group>";
@@ -1389,6 +1464,7 @@
 		CE69C1C9224B6E07004F4FA4 /* collectionView */ = {
 			isa = PBXGroup;
 			children = (
+				CED832EB22A7C71700ABC725 /* WaterFall */,
 				CE69C1CA224B6E07004F4FA4 /* codeCollectionView */,
 				CE69C1CC224B6E07004F4FA4 /* editCell */,
 				CE69C1CF224B6E07004F4FA4 /* section */,
@@ -1541,9 +1617,9 @@
 			isa = PBXGroup;
 			children = (
 				CE69C205224B6E07004F4FA4 /* WKWebViewVC.swift */,
-				CE69C206224B6E07004F4FA4 /* UIWebViewVC.xib */,
 				CE69C207224B6E07004F4FA4 /* WKWebViewVC.xib */,
 				CE69C208224B6E07004F4FA4 /* UIWebViewVC.swift */,
+				CE69C206224B6E07004F4FA4 /* UIWebViewVC.xib */,
 				CE69C209224B6E07004F4FA4 /* WKWebViewHandleVC.swift */,
 			);
 			path = webview;
@@ -1678,6 +1754,7 @@
 		CE69C237224B6E07004F4FA4 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				CE24EA0422BCDACB00CB80BB /* app-icon */,
 				CED3B9362266D79E008988CE /* gif */,
 				CE69C238224B6E07004F4FA4 /* video */,
 				CE69C23C224B6E07004F4FA4 /* web */,
@@ -1756,6 +1833,8 @@
 		CE69C258224B6E07004F4FA4 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				CEAC323322B232BB0046E850 /* star_hollow.png */,
+				CEAC323222B232BB0046E850 /* star_soild.png */,
 				CED3B9372266D7C2008988CE /* login_bg01.jpg */,
 				CE69C259224B6E07004F4FA4 /* add.png */,
 				CE69C25A224B6E07004F4FA4 /* taobaoLogo.png */,
@@ -1850,9 +1929,9 @@
 		CE69C278224B6E07004F4FA4 /* popmenu */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C279224B6E07004F4FA4 /* EWPopMenu */,
 				CE69C27D224B6E07004F4FA4 /* FWMenuViewDemoVC.swift */,
 				CE69C27E224B6E07004F4FA4 /* PopMenuViewController.swift */,
+				CE69C279224B6E07004F4FA4 /* EWPopMenu */,
 				CE69C27F224B6E07004F4FA4 /* FWPopupView */,
 			);
 			path = popmenu;
@@ -2056,6 +2135,15 @@
 			path = main;
 			sourceTree = "<group>";
 		};
+		CE73D3CB22980136002C537C /* refelect */ = {
+			isa = PBXGroup;
+			children = (
+				CE73D3CC2298015D002C537C /* ReflectViewController.swift */,
+				CE73D3CD2298015D002C537C /* ReflectViewController.xib */,
+			);
+			path = refelect;
+			sourceTree = "<group>";
+		};
 		CE7D203C2259E7B600DEE23E /* lottie */ = {
 			isa = PBXGroup;
 			children = (
@@ -2091,6 +2179,15 @@
 				CED3B93A2266D7CA008988CE /* login_bg_gif_01.gif */,
 			);
 			path = gif;
+			sourceTree = "<group>";
+		};
+		CED832EB22A7C71700ABC725 /* WaterFall */ = {
+			isa = PBXGroup;
+			children = (
+				CED832EC22A7C76900ABC725 /* WaterFallViewController.swift */,
+				CED832EE22A7C7AB00ABC725 /* WaterFallLayout.swift */,
+			);
+			path = WaterFall;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2159,10 +2256,12 @@
 				CE69C34E224B6E07004F4FA4 /* UISegmentedControlVC.xib in Resources */,
 				CE69C3B7224B6E07004F4FA4 /* Favor_00026.png in Resources */,
 				CE69C2FA224B6E07004F4FA4 /* MyViewController.xib in Resources */,
+				CE24EA1522BCDACC00CB80BB /* iWiBi-orange-blank@3x.png in Resources */,
 				CE69C35A224B6E07004F4FA4 /* CollectionFooter.xib in Resources */,
 				CE69C2CE224B6E07004F4FA4 /* MyComentVC.xib in Resources */,
 				CE69C388224B6E07004F4FA4 /* ButtonViewController.xib in Resources */,
 				CE69C3E1224B6E07004F4FA4 /* FWPopupView.bundle in Resources */,
+				CE24EA1122BCDACC00CB80BB /* AppIcon-default@3x.png in Resources */,
 				CE69C3FE224B6E07004F4FA4 /* KingfisherViewController.xib in Resources */,
 				CE69C3C2224B6E07004F4FA4 /* angry.png in Resources */,
 				CE69C2E2224B6E07004F4FA4 /* OtherViewController.xib in Resources */,
@@ -2182,6 +2281,7 @@
 				CE69C2F7224B6E07004F4FA4 /* MyClosureVC.xib in Resources */,
 				CE69C37B224B6E07004F4FA4 /* DatePickerVC.xib in Resources */,
 				CE69C2D2224B6E07004F4FA4 /* BeginnerguideVC.xib in Resources */,
+				CE24EA0222BCD6CC00CB80BB /* ChangeIconViewController.xib in Resources */,
 				CE69C0F9224B6C93004F4FA4 /* Assets.xcassets in Resources */,
 				CE69C402224B6E07004F4FA4 /* SDKViewController.xib in Resources */,
 				CE69C3C0224B6E07004F4FA4 /* girl.png in Resources */,
@@ -2206,13 +2306,17 @@
 				CE69C2F0224B6E07004F4FA4 /* HGImage.storyboard in Resources */,
 				CE69C38B224B6E07004F4FA4 /* GestureVC.xib in Resources */,
 				CE69C2DA224B6E07004F4FA4 /* JumpAppVC.xib in Resources */,
+				CE73D3CF2298015D002C537C /* ReflectViewController.xib in Resources */,
 				CE69C2CC224B6E07004F4FA4 /* WriteBoardView.xib in Resources */,
 				CE69C3C7224B6E07004F4FA4 /* test.json in Resources */,
 				CE69C333224B6E07004F4FA4 /* ScrollCellViewController.xib in Resources */,
 				CE7D20402259E7C700DEE23E /* LottieViewController.xib in Resources */,
 				CE69C363224B6E07004F4FA4 /* MyCVCell.xib in Resources */,
 				CE69C31A224B6E07004F4FA4 /* StringViewController.xib in Resources */,
+				CE24EA0F22BCDACC00CB80BB /* iWiBi-orange-two@3x.png in Resources */,
 				CE69C3D4224B6E07004F4FA4 /* PageViewController.xib in Resources */,
+				CEAC323422B232BC0046E850 /* star_soild.png in Resources */,
+				CE24EA1622BCDACC00CB80BB /* iWiBi-orange-blank@2x.png in Resources */,
 				CE69C35E224B6E07004F4FA4 /* SingleSelectedCellVC.xib in Resources */,
 				CE69C3BF224B6E07004F4FA4 /* pingtaoge.png in Resources */,
 				CE69C382224B6E07004F4FA4 /* MyUIViewController.xib in Resources */,
@@ -2222,23 +2326,29 @@
 				CED3B9382266D7C3008988CE /* login_bg01.jpg in Resources */,
 				CE69C3CE224B6E07004F4FA4 /* ViewController2.xib in Resources */,
 				CE69C3A4224B6E07004F4FA4 /* t2.m3u8 in Resources */,
+				CEAC323522B232BC0046E850 /* star_hollow.png in Resources */,
 				CE69C3C1224B6E07004F4FA4 /* placeholder.png in Resources */,
 				CE69C3C4224B6E07004F4FA4 /* image1.png in Resources */,
 				CE69C30A224B6E07004F4FA4 /* BrowserVC.xib in Resources */,
 				CE69C3B6224B6E07004F4FA4 /* Favor_00022.png in Resources */,
 				CE69C399224B6E07004F4FA4 /* ShowPhotosVC.xib in Resources */,
+				CE24EA1B22BCE37C00CB80BB /* AppLaunchScreen.storyboard in Resources */,
+				CE24EA1822BCDACC00CB80BB /* iWiBi-orange-icon@2x.png in Resources */,
 				CE69C354224B6E07004F4FA4 /* MyCollectionViewCell.xib in Resources */,
 				CE69C36B224B6E07004F4FA4 /* NibViewController.xib in Resources */,
 				CE69C3BD224B6E07004F4FA4 /* add.png in Resources */,
 				CE69C348224B6E07004F4FA4 /* VideoPlayerViewController.xib in Resources */,
 				CE69C360224B6E07004F4FA4 /* SelectedCollectionCell.xib in Resources */,
 				CE69C385224B6E07004F4FA4 /* TextFieldViewController.xib in Resources */,
+				CE24EA1222BCDACC00CB80BB /* iWiBi-orange-two@2x.png in Resources */,
 				CE69C371224B6E07004F4FA4 /* PickerViewVC.xib in Resources */,
 				CE69C2F9224B6E07004F4FA4 /* MyNotificationVC.xib in Resources */,
 				CE69C3B5224B6E07004F4FA4 /* Favor_00023.png in Resources */,
 				CE69C408224B6E08004F4FA4 /* HGImageCell.xib in Resources */,
+				CE24EA1322BCDACC00CB80BB /* iWiBi-orange-icon@3x.png in Resources */,
 				CE69C3A5224B6E07004F4FA4 /* t2.html in Resources */,
 				CE69C3BA224B6E07004F4FA4 /* Favor_00019.png in Resources */,
+				CE24EA1722BCDACC00CB80BB /* iWiBi-orange-icon-light@2x.png in Resources */,
 				CE69C3F9224B6E07004F4FA4 /* HandleJSONVC.xib in Resources */,
 				CE69C3AE224B6E07004F4FA4 /* Favor_00017.png in Resources */,
 				CE69C3BC224B6E07004F4FA4 /* Favor_00024.png in Resources */,
@@ -2281,6 +2391,7 @@
 				CE69C3CA224B6E07004F4FA4 /* RequestVC.xib in Resources */,
 				CE69C340224B6E07004F4FA4 /* MyCell.xib in Resources */,
 				CE69C3B3224B6E07004F4FA4 /* Favor_00020.png in Resources */,
+				CE24EA1422BCDACC00CB80BB /* iWiBi-orange-icon-light@3x.png in Resources */,
 				CE69C2D8224B6E07004F4FA4 /* JudgeNetworkingVC.xib in Resources */,
 				CE69C416224B7268004F4FA4 /* InfoPlist.strings in Resources */,
 				CE69C3F1224B6E07004F4FA4 /* JXPopupViewVC.xib in Resources */,
@@ -2289,6 +2400,7 @@
 				CE69C359224B6E07004F4FA4 /* CollectionHeader.xib in Resources */,
 				CE69C338224B6E07004F4FA4 /* HandleCellVC.xib in Resources */,
 				CE69C37C224B6E07004F4FA4 /* DatePickerView.xib in Resources */,
+				CE24EA1022BCDACC00CB80BB /* AppIcon-default@2x.png in Resources */,
 				CE69C368224B6E07004F4FA4 /* NibViewController.temp_caseinsensitive_rename.xib in Resources */,
 				CE69C3A6224B6E07004F4FA4 /* myweb.html in Resources */,
 				CE69C33D224B6E07004F4FA4 /* SelectedCell.xib in Resources */,
@@ -2373,6 +2485,7 @@
 				CE69C32D224B6E07004F4FA4 /* HeaderFooterTBVC.swift in Sources */,
 				CE69C350224B6E07004F4FA4 /* MyCollectionViewVC.swift in Sources */,
 				CE69C37A224B6E07004F4FA4 /* DatePickerVC.swift in Sources */,
+				CE73D3CE2298015D002C537C /* ReflectViewController.swift in Sources */,
 				CE69C3EF224B6E07004F4FA4 /* Database.swift in Sources */,
 				CE69C2D0224B6E07004F4FA4 /* CommentVC.swift in Sources */,
 				CED3B8D922660C11008988CE /* Man.swift in Sources */,
@@ -2383,7 +2496,9 @@
 				CE69C31D224B6E07004F4FA4 /* MyFirstVC.swift in Sources */,
 				CE69C378224B6E07004F4FA4 /* String+Extension.swift in Sources */,
 				CED3B8C722660222008988CE /* BaseDelegateVC.swift in Sources */,
+				CED832ED22A7C76900ABC725 /* WaterFallViewController.swift in Sources */,
 				CE69C353224B6E07004F4FA4 /* CollectionFooter.swift in Sources */,
+				CE24EA0122BCD6CC00CB80BB /* ChangeIconViewController.swift in Sources */,
 				CE69C322224B6E07004F4FA4 /* LanguageViewController.swift in Sources */,
 				CE69C391224B6E07004F4FA4 /* MyPointView.swift in Sources */,
 				CE69C2DD224B6E07004F4FA4 /* BallView.swift in Sources */,
@@ -2468,6 +2583,7 @@
 				CE69C39B224B6E07004F4FA4 /* PhotosViewController.swift in Sources */,
 				CE69C3DD224B6E07004F4FA4 /* FWRadioButton.swift in Sources */,
 				CE69C3E8224B6E07004F4FA4 /* ToastViewController.swift in Sources */,
+				CED832EF22A7C7AB00ABC725 /* WaterFallLayout.swift in Sources */,
 				CE69C33F224B6E07004F4FA4 /* MyTabelviewVC.swift in Sources */,
 				CE69C400224B6E07004F4FA4 /* RxViewController.swift in Sources */,
 				CE69C3CF224B6E07004F4FA4 /* ContentViewController.swift in Sources */,
