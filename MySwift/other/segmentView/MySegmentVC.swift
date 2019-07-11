@@ -12,7 +12,7 @@ class MySegmentVC: UIViewController {
 
     var titlesScrollView:UIScrollView!
     var scrollContainer:UIScrollView!
-    var titlesArray = ["头条", "视频", "娱乐", "要问", "体育" , "科技" , "汽车" , "时尚" , "图片" , "游戏" , "房产"]
+    var titlesArray = ["头条", "视频", "娱乐", "要闻", "体育" , "科技" , "汽车" , "时尚" , "图片" , "游戏" , "房产"]
     var widthS:CGFloat = 0
     var heightS:CGFloat = 0
     
