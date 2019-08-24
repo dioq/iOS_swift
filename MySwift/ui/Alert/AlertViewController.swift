@@ -35,6 +35,10 @@ class AlertViewController: UIViewController {
     
     @IBAction func action03(_ sender: UIButton) {
         let alertController = UIAlertController(title:"提示哦",message:"我是提示信息",preferredStyle: .actionSheet)
+        /*当在iPad上运行上面这段代码的时候，如果没有设置如下两个属性*/
+        alertController.popoverPresentationController?.sourceView = self.view
+        alertController.popoverPresentationController?.sourceRect = CGRect.init(x: 0, y: 0, width: 1.0, height: 1.0)
+        /*会导致程序crash。然而在iPhone上没有这样的问题。*/
         let cancelAction = UIAlertAction(title:"取消",style:.cancel,handler:nil);
         let okAciton = UIAlertAction(title:"确定",style:.default,handler: {
             action in

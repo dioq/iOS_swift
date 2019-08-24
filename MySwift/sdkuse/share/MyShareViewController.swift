@@ -24,6 +24,11 @@ class MyShareViewController: UIViewController {
         let urlToShare = NSURL.init(string: "http://www.google.com")
         let items = [textToShare,imageToShare ?? "WeShare",urlToShare ?? "WeShare"] as [Any]
         let activityVC = UIActivityViewController(activityItems: items,applicationActivities: nil)
+        /*当在iPad上运行上面这段代码的时候，如果没有设置如下两个属性*/
+        activityVC.popoverPresentationController?.sourceView = self.view
+        activityVC.popoverPresentationController?.sourceRect = CGRect.init(x: 0, y: 0, width: 1.0, height: 1.0)
+        /*会导致程序crash。然而在iPhone上没有这样的问题。*/
+
         activityVC.completionWithItemsHandler =  { activity, success, items, error in
             if activity != nil{
                 print(activity!)
@@ -76,16 +81,5 @@ class MyShareViewController: UIViewController {
      // 在iBooks内打开
      UIActivityTypeOpenInIBooks       NS_AVAILABLE_IOS(9_0);
      */
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+
 }
