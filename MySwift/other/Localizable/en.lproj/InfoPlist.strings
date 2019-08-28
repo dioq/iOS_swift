@@ -1,10 +1,10 @@
 /* 
-  InfoPlist.strings
-  MySwift
-
-  Created by hello on 2019/3/27.
-  Copyright © 2019 Dio. All rights reserved.
-*/
+ InfoPlist.strings
+ MySwift
+ 
+ Created by hello on 2019/3/27.
+ Copyright © 2019 Dio. All rights reserved.
+ */
 
 CFBundleDisplayName = "English Test";
 
@@ -73,6 +73,10 @@ CFBundleDisplayName = "English Test";
  <key>NSPhotoLibraryUsageDescription</key>
  <string>App需要您的同意,才能访问相册</string>
  
+ <!-- APP保存图片到相册 -->
+ <key>NSPhotoLibraryAddUsageDescription</key>
+ <string>请允许APP保存图片到相册</string>
+ 
  <!-- 提醒事项 -->
  <key>NSRemindersUsageDescription</key>
  <string>App需要您的同意,才能访问提醒事项</string>
@@ -88,6 +92,7 @@ CFBundleDisplayName = "English Test";
  <!-- 电视提供商 -->
  <key>NSVideoSubscriberAccountUsageDescription</key>
  <string>App需要您的同意,才能访问电视提供商</string>
+ 
  */
 NSLocationWhenInUseUsageDescription = "Location permissions are required";
 NSMicrophoneUsageDescription = "Require microphone privileges";
