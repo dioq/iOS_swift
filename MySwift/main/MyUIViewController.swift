@@ -16,6 +16,10 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
     lazy var dataArray:[UIViewController] = {
         var dataArray = Array<UIViewController>()
         
+        let fontVC = MyFontViewController()
+        fontVC.title = "自定义字体"
+        dataArray.append(fontVC)
+        
         let imageVC = IMGVViewController()
         imageVC.title = "imageview"
         dataArray.append(imageVC)

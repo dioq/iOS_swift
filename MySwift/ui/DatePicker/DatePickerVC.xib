@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatePickerVC" customModule="Swift_UI" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatePickerVC" customModule="MySwift" customModuleProvider="target">
             <connections>
-                <outlet property="buttonYMDHM" destination="Fu5-3r-ytO" id="Jb5-MM-lnX"/>
                 <outlet property="myDatePicker" destination="bYj-lC-Hj7" id="zGo-p4-ZMg"/>
                 <outlet property="myTextField" destination="C16-Hn-Yfk" id="b4H-nA-bpE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -43,26 +42,15 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fu5-3r-ytO">
-                    <rect key="frame" x="100" y="220" width="175" height="30"/>
-                    <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="3nC-op-U7W"/>
-                    </constraints>
-                    <state key="normal" title="pickDate"/>
-                </button>
             </subviews>
             <color key="backgroundColor" red="0.45291987160000002" green="0.94088566849999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Fu5-3r-ytO" firstAttribute="top" secondItem="C16-Hn-Yfk" secondAttribute="bottom" constant="5" id="F4l-BF-JO8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="C16-Hn-Yfk" secondAttribute="trailing" constant="100" id="OSL-Di-feu"/>
-                <constraint firstItem="Fu5-3r-ytO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="Qg1-Nl-zTh"/>
                 <constraint firstItem="C16-Hn-Yfk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="aV8-8J-E71"/>
                 <constraint firstItem="bYj-lC-Hj7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="c9G-MC-BB9"/>
                 <constraint firstItem="bYj-lC-Hj7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lsG-gn-dMS"/>
                 <constraint firstItem="C16-Hn-Yfk" firstAttribute="top" secondItem="bYj-lC-Hj7" secondAttribute="bottom" constant="15" id="tUM-Py-1O4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bYj-lC-Hj7" secondAttribute="trailing" id="ybT-2g-914"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Fu5-3r-ytO" secondAttribute="trailing" constant="100" id="ze2-tg-s3P"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="24.5" y="51.5"/>

@@ -15,7 +15,7 @@ enum DateStyle {
     case yearMonthDayHourMinute // 年月日时分
 }
 
-class DatePickerView: UIView, NibLoadable, UIGestureRecognizerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+class DatePickerView: UIView, UIGestureRecognizerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
     // MARK: - 公开属性
     
@@ -123,7 +123,7 @@ class DatePickerView: UIView, NibLoadable, UIGestureRecognizerDelegate, UIPicker
     /// - Returns: 新的DatePickerView
     class func datePicker(style: DateStyle = .all, scrollToDate: Date = Date(), completionHandler: @escaping (_ date: Date?) -> Void) -> DatePickerView {
         
-        let view: DatePickerView = DatePickerView.loadViewFromNib()
+        let view: DatePickerView =  Bundle.main.loadNibNamed("DatePickerView", owner: nil, options: nil)?.last as! DatePickerView
         
         view.style = style
         
@@ -150,7 +150,7 @@ class DatePickerView: UIView, NibLoadable, UIGestureRecognizerDelegate, UIPicker
             
             self.bottomViewBottom.constant = 0
             
-            self.backgroundColor = UIColor.hexRGB(0x000000, 0.5)
+            self.backgroundColor = UIColor.hexColor(0x000000, 0.5)
             
             self.layoutIfNeeded()
         }, completion: { (finish) in
@@ -166,7 +166,7 @@ class DatePickerView: UIView, NibLoadable, UIGestureRecognizerDelegate, UIPicker
             
             self.bottomViewBottom.constant = self.bottomView.frame.size.height
             
-            self.backgroundColor = UIColor.hexRGB(0x000000, 0.0)
+            self.backgroundColor = UIColor.hexColor(0x000000, 0.0)
             
             self.layoutIfNeeded()
             
@@ -207,7 +207,7 @@ extension DatePickerView {
 
         bottomViewBottom.constant = bottomView.frame.size.height
         
-        backgroundColor = UIColor.hexRGB(0x000000, 0.0)
+        backgroundColor = UIColor.hexColor(0x000000, 0.0)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismiss))
         tap.delegate = self
@@ -454,7 +454,12 @@ extension DatePickerView {
         if minLimitDate.haveSameYearAndMonth(maxLimitDate) {
             componentsArray.append([dayKey : Array(minLimitDate.day...maxLimitDate.day)])
         } else {
-            componentsArray.append([dayKey : Array(1...scrollToDate.numberOfDaysInMonth())])
+//            componentsArray.append([dayKey : Array(1...scrollToDate.numberOfDaysInMonth())])
+            let year = Date.getCurrentYear()
+            let month = Date.getCurrentMonth()
+            let days = Date.getDaysInMonth(year: year, month: month)
+            
+            componentsArray.append([dayKey : Array(1...days)])
         }
         
         if minLimitDate.haveSameYearMonthAndDay(maxLimitDate) {
@@ -489,7 +494,11 @@ extension DatePickerView {
         if minLimitDate.haveSameYearAndMonth(maxLimitDate) {
             componentsArray.append([dayKey : Array(minLimitDate.day...maxLimitDate.day)])
         } else {
-            componentsArray.append([dayKey : Array(1...scrollToDate.numberOfDaysInMonth())])
+//            componentsArray.append([dayKey : Array(1...scrollToDate.numberOfDaysInMonth())])
+            let year = Date.getCurrentYear()
+            let month = Date.getCurrentMonth()
+            let days = Date.getDaysInMonth(year: year, month: month)
+            componentsArray.append([dayKey : Array(1...days)])
         }
     }
     
@@ -530,7 +539,11 @@ extension DatePickerView {
         if minLimitDate.haveSameYearAndMonth(maxLimitDate) {
             componentsArray.append([dayKey : Array(minLimitDate.day...maxLimitDate.day)])
         } else {
-            componentsArray.append([dayKey : Array(1...scrollToDate.numberOfDaysInMonth())])
+//            componentsArray.append([dayKey : Array(1...scrollToDate.numberOfDaysInMonth())])
+            let year = Date.getCurrentYear()
+            let month = Date.getCurrentMonth()
+            let days = Date.getDaysInMonth(year: year, month: month)
+            componentsArray.append([dayKey : Array(1...days)])
         }
         
         if minLimitDate.haveSameYearMonthAndDay(maxLimitDate) {
@@ -662,10 +675,11 @@ extension DatePickerView {
             scrollToValidTimeRange()
             
             return
-            
         }
 
-        let numberOfDays = date.numberOfDaysInMonth() // 当前月的天数
+        let year2 = Date.getCurrentYear()
+        let month2 = Date.getCurrentMonth()
+        let numberOfDays = Date.getDaysInMonth(year: year2, month: month2)//date.numberOfDaysInMonth() // 当前月的天数
         
         if numberOfDays != 0 && numberOfDays == componentsArray[2][dayKey]!.count {
             // 天数没有变化，不需要任何操作

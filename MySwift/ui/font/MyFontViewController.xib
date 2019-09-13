@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyFontViewController" customModule="MySwift" customModuleProvider="target">
+            <connections>
+                <outlet property="myLabel" destination="mXv-nt-yNw" id="iL9-Yj-ieQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXv-nt-yNw">
+                    <rect key="frame" x="10" y="54" width="394" height="162.5"/>
+                    <color key="backgroundColor" red="0.62100448900000005" green="0.99193829300000003" blue="0.22318474990000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <string key="text">人活着真不容易，明知以后会死，还要努力地活着，人活一辈子到底是为什么？
+复杂的社会，看不透的人心，放不下的牵挂，经历不完的酸甜苦辣，走不完的坎坷，越不过的无奈，忘不了的昨天，忙不完的今天，想不到的明天，最后不知道会消失在哪一天，这就是人生。
+所以再忙再累别忘了心疼自己，一定要记得好好照顾自己</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mXv-nt-yNw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="Bmz-q2-aQ7"/>
+                <constraint firstItem="mXv-nt-yNw" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="eea-OU-zZo"/>
+                <constraint firstItem="mXv-nt-yNw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="v5p-Fk-NoS"/>
+                <constraint firstAttribute="trailing" secondItem="mXv-nt-yNw" secondAttribute="trailing" constant="10" id="y1w-u5-WLX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
