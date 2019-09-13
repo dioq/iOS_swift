@@ -6,3 +6,4 @@ Podfile.lock
 /MySwift.xcworkspace
 MySwift.xcodeproj/xcuserdata/
 MySwift/sdkuse/.DS_Store
+MySwift/language/.DS_Store

@@ -8,6 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		CB1FA90C3B5B02927B5D38D3 /* Pods_MySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD046A5AA03CAB50BACDEC1 /* Pods_MySwift.framework */; };
+		CE1CBAC423224AAC00D3AE39 /* MyFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CBAC223224AAC00D3AE39 /* MyFontViewController.swift */; };
+		CE1CBAC523224AAC00D3AE39 /* MyFontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAC323224AAC00D3AE39 /* MyFontViewController.xib */; };
+		CE1CBAD723224FB600D3AE39 /* 华康少女体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAC723224FB600D3AE39 /* 华康少女体.ttf */; };
+		CE1CBAD823224FB600D3AE39 /* 文鼎中特广告体.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAC823224FB600D3AE39 /* 文鼎中特广告体.TTF */; };
+		CE1CBAD923224FB600D3AE39 /* 晴圆.ttc in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAC923224FB600D3AE39 /* 晴圆.ttc */; };
+		CE1CBADA23224FB600D3AE39 /* 段宁毛笔行书.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBACA23224FB600D3AE39 /* 段宁毛笔行书.ttf */; };
+		CE1CBADB23224FB600D3AE39 /* msyhbd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBACB23224FB600D3AE39 /* msyhbd.ttf */; };
+		CE1CBADC23224FB600D3AE39 /* 华康雅宋体.TTf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBACC23224FB600D3AE39 /* 华康雅宋体.TTf */; };
+		CE1CBADD23224FB600D3AE39 /* 浪漫雅圆.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBACD23224FB600D3AE39 /* 浪漫雅圆.ttf */; };
+		CE1CBADE23224FB600D3AE39 /* 蒙纳简超刚黑.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBACE23224FB600D3AE39 /* 蒙纳简超刚黑.ttf */; };
+		CE1CBADF23224FB600D3AE39 /* 百度综艺简体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBACF23224FB600D3AE39 /* 百度综艺简体.ttf */; };
+		CE1CBAE023224FB600D3AE39 /* 苏新诗卵石体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAD023224FB600D3AE39 /* 苏新诗卵石体.ttf */; };
+		CE1CBAE123224FB600D3AE39 /* msyh.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAD123224FB600D3AE39 /* msyh.ttf */; };
+		CE1CBAE223224FB600D3AE39 /* 时尚中黑简体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAD223224FB600D3AE39 /* 时尚中黑简体.ttf */; };
+		CE1CBAE323224FB600D3AE39 /* 汉真广标.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAD323224FB600D3AE39 /* 汉真广标.ttf */; };
+		CE1CBAE423224FB600D3AE39 /* 文鼎霹雳体.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAD423224FB600D3AE39 /* 文鼎霹雳体.TTF */; };
+		CE1CBAE523224FB600D3AE39 /* 胡晓波美心常规体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAD523224FB600D3AE39 /* 胡晓波美心常规体.ttf */; };
+		CE1CBAE623224FB600D3AE39 /* 汉鼎简行书.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAD623224FB600D3AE39 /* 汉鼎简行书.TTF */; };
 		CE24EA0122BCD6CC00CB80BB /* ChangeIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24E9FF22BCD6CC00CB80BB /* ChangeIconViewController.swift */; };
 		CE24EA0222BCD6CC00CB80BB /* ChangeIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0022BCD6CC00CB80BB /* ChangeIconViewController.xib */; };
 		CE24EA0F22BCDACC00CB80BB /* iWiBi-orange-two@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0522BCDACB00CB80BB /* iWiBi-orange-two@3x.png */; };
@@ -82,7 +100,6 @@
 		CE69C302224B6E07004F4FA4 /* StudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C159224B6E06004F4FA4 /* StudyViewController.swift */; };
 		CE69C303224B6E07004F4FA4 /* StudyNibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C15A224B6E06004F4FA4 /* StudyNibViewController.swift */; };
 		CE69C304224B6E07004F4FA4 /* StudyNibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C15B224B6E06004F4FA4 /* StudyNibViewController.xib */; };
-		CE69C305224B6E07004F4FA4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C15D224B6E06004F4FA4 /* Date.swift */; };
 		CE69C306224B6E07004F4FA4 /* TimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C15E224B6E06004F4FA4 /* TimeViewController.xib */; };
 		CE69C307224B6E07004F4FA4 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C15F224B6E06004F4FA4 /* TimeViewController.swift */; };
 		CE69C308224B6E07004F4FA4 /* BezierPathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C161224B6E06004F4FA4 /* BezierPathViewController.swift */; };
@@ -189,17 +206,11 @@
 		CE69C36F224B6E07004F4FA4 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C1F3224B6E07004F4FA4 /* AlertViewController.swift */; };
 		CE69C370224B6E07004F4FA4 /* PickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C1F5224B6E07004F4FA4 /* PickerViewVC.swift */; };
 		CE69C371224B6E07004F4FA4 /* PickerViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C1F6224B6E07004F4FA4 /* PickerViewVC.xib */; };
-		CE69C372224B6E07004F4FA4 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C1F9224B6E07004F4FA4 /* UIDevice+Extension.swift */; };
 		CE69C373224B6E07004F4FA4 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C1FA224B6E07004F4FA4 /* UIColor+Extension.swift */; };
 		CE69C374224B6E07004F4FA4 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C1FB224B6E07004F4FA4 /* Date+Extension.swift */; };
-		CE69C375224B6E07004F4FA4 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C1FC224B6E07004F4FA4 /* UIImage+Extension.swift */; };
-		CE69C376224B6E07004F4FA4 /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C1FD224B6E07004F4FA4 /* DispatchQueue+Extension.swift */; };
-		CE69C377224B6E07004F4FA4 /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C1FE224B6E07004F4FA4 /* UIKit+Extension.swift */; };
 		CE69C378224B6E07004F4FA4 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C1FF224B6E07004F4FA4 /* String+Extension.swift */; };
-		CE69C379224B6E07004F4FA4 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C200224B6E07004F4FA4 /* DatePickerView.swift */; };
 		CE69C37A224B6E07004F4FA4 /* DatePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C201224B6E07004F4FA4 /* DatePickerVC.swift */; };
 		CE69C37B224B6E07004F4FA4 /* DatePickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C202224B6E07004F4FA4 /* DatePickerVC.xib */; };
-		CE69C37C224B6E07004F4FA4 /* DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C203224B6E07004F4FA4 /* DatePickerView.xib */; };
 		CE69C37D224B6E07004F4FA4 /* WKWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C205224B6E07004F4FA4 /* WKWebViewVC.swift */; };
 		CE69C37E224B6E07004F4FA4 /* UIWebViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C206224B6E07004F4FA4 /* UIWebViewVC.xib */; };
 		CE69C37F224B6E07004F4FA4 /* WKWebViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C207224B6E07004F4FA4 /* WKWebViewVC.xib */; };
@@ -341,7 +352,7 @@
 		CE69C409224B6E08004F4FA4 /* HGImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C2BE224B6E07004F4FA4 /* HGImageViewController.xib */; };
 		CE69C40A224B6E08004F4FA4 /* HGImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2BF224B6E07004F4FA4 /* HGImageViewController.swift */; };
 		CE69C40B224B6E08004F4FA4 /* HGImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2C0224B6E07004F4FA4 /* HGImageCell.swift */; };
-		CE69C40C224B6E08004F4FA4 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2C2224B6E07004F4FA4 /* Common.swift */; };
+		CE69C40C224B6E08004F4FA4 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2C2224B6E07004F4FA4 /* Const.swift */; };
 		CE69C40D224B6E08004F4FA4 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2C3224B6E07004F4FA4 /* Urls.swift */; };
 		CE69C40E224B6E08004F4FA4 /* MyNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2C5224B6E07004F4FA4 /* MyNavgationController.swift */; };
 		CE69C40F224B6E08004F4FA4 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2C6224B6E07004F4FA4 /* MyTabBarController.swift */; };
@@ -377,6 +388,24 @@
 		32F7714E770754C61BBD0BA8 /* Pods-MySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwift.debug.xcconfig"; path = "Target Support Files/Pods-MySwift/Pods-MySwift.debug.xcconfig"; sourceTree = "<group>"; };
 		9AD046A5AA03CAB50BACDEC1 /* Pods_MySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C790BE9ABE19EB49FDF58AFD /* Pods-MySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwift.release.xcconfig"; path = "Target Support Files/Pods-MySwift/Pods-MySwift.release.xcconfig"; sourceTree = "<group>"; };
+		CE1CBAC223224AAC00D3AE39 /* MyFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFontViewController.swift; sourceTree = "<group>"; };
+		CE1CBAC323224AAC00D3AE39 /* MyFontViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFontViewController.xib; sourceTree = "<group>"; };
+		CE1CBAC723224FB600D3AE39 /* 华康少女体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "华康少女体.ttf"; sourceTree = "<group>"; };
+		CE1CBAC823224FB600D3AE39 /* 文鼎中特广告体.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "文鼎中特广告体.TTF"; sourceTree = "<group>"; };
+		CE1CBAC923224FB600D3AE39 /* 晴圆.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "晴圆.ttc"; sourceTree = "<group>"; };
+		CE1CBACA23224FB600D3AE39 /* 段宁毛笔行书.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "段宁毛笔行书.ttf"; sourceTree = "<group>"; };
+		CE1CBACB23224FB600D3AE39 /* msyhbd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = msyhbd.ttf; sourceTree = "<group>"; };
+		CE1CBACC23224FB600D3AE39 /* 华康雅宋体.TTf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "华康雅宋体.TTf"; sourceTree = "<group>"; };
+		CE1CBACD23224FB600D3AE39 /* 浪漫雅圆.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "浪漫雅圆.ttf"; sourceTree = "<group>"; };
+		CE1CBACE23224FB600D3AE39 /* 蒙纳简超刚黑.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "蒙纳简超刚黑.ttf"; sourceTree = "<group>"; };
+		CE1CBACF23224FB600D3AE39 /* 百度综艺简体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "百度综艺简体.ttf"; sourceTree = "<group>"; };
+		CE1CBAD023224FB600D3AE39 /* 苏新诗卵石体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "苏新诗卵石体.ttf"; sourceTree = "<group>"; };
+		CE1CBAD123224FB600D3AE39 /* msyh.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = msyh.ttf; sourceTree = "<group>"; };
+		CE1CBAD223224FB600D3AE39 /* 时尚中黑简体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "时尚中黑简体.ttf"; sourceTree = "<group>"; };
+		CE1CBAD323224FB600D3AE39 /* 汉真广标.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "汉真广标.ttf"; sourceTree = "<group>"; };
+		CE1CBAD423224FB600D3AE39 /* 文鼎霹雳体.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "文鼎霹雳体.TTF"; sourceTree = "<group>"; };
+		CE1CBAD523224FB600D3AE39 /* 胡晓波美心常规体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "胡晓波美心常规体.ttf"; sourceTree = "<group>"; };
+		CE1CBAD623224FB600D3AE39 /* 汉鼎简行书.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "汉鼎简行书.TTF"; sourceTree = "<group>"; };
 		CE24E9FF22BCD6CC00CB80BB /* ChangeIconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeIconViewController.swift; sourceTree = "<group>"; };
 		CE24EA0022BCD6CC00CB80BB /* ChangeIconViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeIconViewController.xib; sourceTree = "<group>"; };
 		CE24EA0522BCDACB00CB80BB /* iWiBi-orange-two@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-two@3x.png"; sourceTree = "<group>"; };
@@ -453,7 +482,6 @@
 		CE69C159224B6E06004F4FA4 /* StudyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyViewController.swift; sourceTree = "<group>"; };
 		CE69C15A224B6E06004F4FA4 /* StudyNibViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyNibViewController.swift; sourceTree = "<group>"; };
 		CE69C15B224B6E06004F4FA4 /* StudyNibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudyNibViewController.xib; sourceTree = "<group>"; };
-		CE69C15D224B6E06004F4FA4 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		CE69C15E224B6E06004F4FA4 /* TimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeViewController.xib; sourceTree = "<group>"; };
 		CE69C15F224B6E06004F4FA4 /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		CE69C161224B6E06004F4FA4 /* BezierPathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BezierPathViewController.swift; sourceTree = "<group>"; };
@@ -560,17 +588,11 @@
 		CE69C1F3224B6E07004F4FA4 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		CE69C1F5224B6E07004F4FA4 /* PickerViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewVC.swift; sourceTree = "<group>"; };
 		CE69C1F6224B6E07004F4FA4 /* PickerViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerViewVC.xib; sourceTree = "<group>"; };
-		CE69C1F9224B6E07004F4FA4 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		CE69C1FA224B6E07004F4FA4 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		CE69C1FB224B6E07004F4FA4 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		CE69C1FC224B6E07004F4FA4 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		CE69C1FD224B6E07004F4FA4 /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
-		CE69C1FE224B6E07004F4FA4 /* UIKit+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Extension.swift"; sourceTree = "<group>"; };
 		CE69C1FF224B6E07004F4FA4 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
-		CE69C200224B6E07004F4FA4 /* DatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		CE69C201224B6E07004F4FA4 /* DatePickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerVC.swift; sourceTree = "<group>"; };
 		CE69C202224B6E07004F4FA4 /* DatePickerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerVC.xib; sourceTree = "<group>"; };
-		CE69C203224B6E07004F4FA4 /* DatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerView.xib; sourceTree = "<group>"; };
 		CE69C205224B6E07004F4FA4 /* WKWebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewVC.swift; sourceTree = "<group>"; };
 		CE69C206224B6E07004F4FA4 /* UIWebViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIWebViewVC.xib; sourceTree = "<group>"; };
 		CE69C207224B6E07004F4FA4 /* WKWebViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKWebViewVC.xib; sourceTree = "<group>"; };
@@ -712,7 +734,7 @@
 		CE69C2BE224B6E07004F4FA4 /* HGImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HGImageViewController.xib; sourceTree = "<group>"; };
 		CE69C2BF224B6E07004F4FA4 /* HGImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGImageViewController.swift; sourceTree = "<group>"; };
 		CE69C2C0224B6E07004F4FA4 /* HGImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGImageCell.swift; sourceTree = "<group>"; };
-		CE69C2C2224B6E07004F4FA4 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		CE69C2C2224B6E07004F4FA4 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		CE69C2C3224B6E07004F4FA4 /* Urls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		CE69C2C5224B6E07004F4FA4 /* MyNavgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavgationController.swift; sourceTree = "<group>"; };
 		CE69C2C6224B6E07004F4FA4 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
@@ -775,6 +797,38 @@
 				9AD046A5AA03CAB50BACDEC1 /* Pods_MySwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE1CBAC123224A7200D3AE39 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				CE1CBAC223224AAC00D3AE39 /* MyFontViewController.swift */,
+				CE1CBAC323224AAC00D3AE39 /* MyFontViewController.xib */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		CE1CBAC623224D6100D3AE39 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				CE1CBACF23224FB600D3AE39 /* 百度综艺简体.ttf */,
+				CE1CBACA23224FB600D3AE39 /* 段宁毛笔行书.ttf */,
+				CE1CBAD623224FB600D3AE39 /* 汉鼎简行书.TTF */,
+				CE1CBAD323224FB600D3AE39 /* 汉真广标.ttf */,
+				CE1CBAD523224FB600D3AE39 /* 胡晓波美心常规体.ttf */,
+				CE1CBAC723224FB600D3AE39 /* 华康少女体.ttf */,
+				CE1CBACC23224FB600D3AE39 /* 华康雅宋体.TTf */,
+				CE1CBACD23224FB600D3AE39 /* 浪漫雅圆.ttf */,
+				CE1CBACE23224FB600D3AE39 /* 蒙纳简超刚黑.ttf */,
+				CE1CBAC923224FB600D3AE39 /* 晴圆.ttc */,
+				CE1CBAD223224FB600D3AE39 /* 时尚中黑简体.ttf */,
+				CE1CBAD023224FB600D3AE39 /* 苏新诗卵石体.ttf */,
+				CE1CBAD423224FB600D3AE39 /* 文鼎霹雳体.TTF */,
+				CE1CBAC823224FB600D3AE39 /* 文鼎中特广告体.TTF */,
+				CE1CBAD123224FB600D3AE39 /* msyh.ttf */,
+				CE1CBACB23224FB600D3AE39 /* msyhbd.ttf */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 		CE24E9FE22BCD6A800CB80BB /* changeIcon */ = {
@@ -1114,9 +1168,8 @@
 		CE69C15C224B6E06004F4FA4 /* time */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C15D224B6E06004F4FA4 /* Date.swift */,
-				CE69C15E224B6E06004F4FA4 /* TimeViewController.xib */,
 				CE69C15F224B6E06004F4FA4 /* TimeViewController.swift */,
+				CE69C15E224B6E06004F4FA4 /* TimeViewController.xib */,
 			);
 			path = time;
 			sourceTree = "<group>";
@@ -1244,6 +1297,7 @@
 		CE69C188224B6E06004F4FA4 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				CE1CBAC123224A7200D3AE39 /* font */,
 				CED3B9312266D6E3008988CE /* imageview */,
 				CE69C189224B6E06004F4FA4 /* closure */,
 				CE69C18E224B6E06004F4FA4 /* scrollView */,
@@ -1590,11 +1644,8 @@
 		CE69C1F7224B6E07004F4FA4 /* DatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C1F8224B6E07004F4FA4 /* Extension */,
-				CE69C200224B6E07004F4FA4 /* DatePickerView.swift */,
 				CE69C201224B6E07004F4FA4 /* DatePickerVC.swift */,
 				CE69C202224B6E07004F4FA4 /* DatePickerVC.xib */,
-				CE69C203224B6E07004F4FA4 /* DatePickerView.xib */,
 			);
 			path = DatePicker;
 			sourceTree = "<group>";
@@ -1602,12 +1653,8 @@
 		CE69C1F8224B6E07004F4FA4 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C1F9224B6E07004F4FA4 /* UIDevice+Extension.swift */,
 				CE69C1FA224B6E07004F4FA4 /* UIColor+Extension.swift */,
 				CE69C1FB224B6E07004F4FA4 /* Date+Extension.swift */,
-				CE69C1FC224B6E07004F4FA4 /* UIImage+Extension.swift */,
-				CE69C1FD224B6E07004F4FA4 /* DispatchQueue+Extension.swift */,
-				CE69C1FE224B6E07004F4FA4 /* UIKit+Extension.swift */,
 				CE69C1FF224B6E07004F4FA4 /* String+Extension.swift */,
 			);
 			path = Extension;
@@ -1754,6 +1801,7 @@
 		CE69C237224B6E07004F4FA4 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				CE1CBAC623224D6100D3AE39 /* font */,
 				CE24EA0422BCDACB00CB80BB /* app-icon */,
 				CED3B9362266D79E008988CE /* gif */,
 				CE69C238224B6E07004F4FA4 /* video */,
@@ -2110,7 +2158,8 @@
 		CE69C2C1224B6E07004F4FA4 /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C2C2224B6E07004F4FA4 /* Common.swift */,
+				CE69C1F8224B6E07004F4FA4 /* Extension */,
+				CE69C2C2224B6E07004F4FA4 /* Const.swift */,
 				CE69C2C3224B6E07004F4FA4 /* Urls.swift */,
 			);
 			path = utils;
@@ -2254,6 +2303,7 @@
 			files = (
 				CE69C409224B6E08004F4FA4 /* HGImageViewController.xib in Resources */,
 				CE69C34E224B6E07004F4FA4 /* UISegmentedControlVC.xib in Resources */,
+				CE1CBADE23224FB600D3AE39 /* 蒙纳简超刚黑.ttf in Resources */,
 				CE69C3B7224B6E07004F4FA4 /* Favor_00026.png in Resources */,
 				CE69C2FA224B6E07004F4FA4 /* MyViewController.xib in Resources */,
 				CE24EA1522BCDACC00CB80BB /* iWiBi-orange-blank@3x.png in Resources */,
@@ -2264,6 +2314,7 @@
 				CE24EA1122BCDACC00CB80BB /* AppIcon-default@3x.png in Resources */,
 				CE69C3FE224B6E07004F4FA4 /* KingfisherViewController.xib in Resources */,
 				CE69C3C2224B6E07004F4FA4 /* angry.png in Resources */,
+				CE1CBAD823224FB600D3AE39 /* 文鼎中特广告体.TTF in Resources */,
 				CE69C2E2224B6E07004F4FA4 /* OtherViewController.xib in Resources */,
 				CE69C326224B6E07004F4FA4 /* ClosureVC.xib in Resources */,
 				CE7D2046225A10DF00DEE23E /* Boat_Loader.json in Resources */,
@@ -2275,12 +2326,16 @@
 				CE69C3BB224B6E07004F4FA4 /* Favor_00018.png in Resources */,
 				CE69C3B8224B6E07004F4FA4 /* Favor_00027.png in Resources */,
 				CE69C355224B6E07004F4FA4 /* SectionCollectionView.xib in Resources */,
+				CE1CBAE323224FB600D3AE39 /* 汉真广标.ttf in Resources */,
 				CE69C332224B6E07004F4FA4 /* SessionViewController.xib in Resources */,
 				CE69C32A224B6E07004F4FA4 /* UISwitchVC.xib in Resources */,
 				CE69C3A9224B6E07004F4FA4 /* coin3.png in Resources */,
+				CE1CBAE423224FB600D3AE39 /* 文鼎霹雳体.TTF in Resources */,
 				CE69C2F7224B6E07004F4FA4 /* MyClosureVC.xib in Resources */,
 				CE69C37B224B6E07004F4FA4 /* DatePickerVC.xib in Resources */,
 				CE69C2D2224B6E07004F4FA4 /* BeginnerguideVC.xib in Resources */,
+				CE1CBADF23224FB600D3AE39 /* 百度综艺简体.ttf in Resources */,
+				CE1CBAE623224FB600D3AE39 /* 汉鼎简行书.TTF in Resources */,
 				CE24EA0222BCD6CC00CB80BB /* ChangeIconViewController.xib in Resources */,
 				CE69C0F9224B6C93004F4FA4 /* Assets.xcassets in Resources */,
 				CE69C402224B6E07004F4FA4 /* SDKViewController.xib in Resources */,
@@ -2293,6 +2348,7 @@
 				CE69C304224B6E07004F4FA4 /* StudyNibViewController.xib in Resources */,
 				CED3B8C822660222008988CE /* BaseDelegateVC.xib in Resources */,
 				CE69C3B0224B6E07004F4FA4 /* Favor_00012.png in Resources */,
+				CE1CBAC523224AAC00D3AE39 /* MyFontViewController.xib in Resources */,
 				CE69C3BE224B6E07004F4FA4 /* taobaoLogo.png in Resources */,
 				CE69C3B2224B6E07004F4FA4 /* Favor_00011.png in Resources */,
 				CE69C329224B6E07004F4FA4 /* Scroll2ViewController.xib in Resources */,
@@ -2303,6 +2359,7 @@
 				CE69C3C5224B6E07004F4FA4 /* image2.png in Resources */,
 				CE69C37F224B6E07004F4FA4 /* WKWebViewVC.xib in Resources */,
 				CE69C366224B6E07004F4FA4 /* CollectionViewVC.xib in Resources */,
+				CE1CBADC23224FB600D3AE39 /* 华康雅宋体.TTf in Resources */,
 				CE69C2F0224B6E07004F4FA4 /* HGImage.storyboard in Resources */,
 				CE69C38B224B6E07004F4FA4 /* GestureVC.xib in Resources */,
 				CE69C2DA224B6E07004F4FA4 /* JumpAppVC.xib in Resources */,
@@ -2342,6 +2399,7 @@
 				CE69C385224B6E07004F4FA4 /* TextFieldViewController.xib in Resources */,
 				CE24EA1222BCDACC00CB80BB /* iWiBi-orange-two@2x.png in Resources */,
 				CE69C371224B6E07004F4FA4 /* PickerViewVC.xib in Resources */,
+				CE1CBAD923224FB600D3AE39 /* 晴圆.ttc in Resources */,
 				CE69C2F9224B6E07004F4FA4 /* MyNotificationVC.xib in Resources */,
 				CE69C3B5224B6E07004F4FA4 /* Favor_00023.png in Resources */,
 				CE69C408224B6E08004F4FA4 /* HGImageCell.xib in Resources */,
@@ -2352,6 +2410,8 @@
 				CE69C3F9224B6E07004F4FA4 /* HandleJSONVC.xib in Resources */,
 				CE69C3AE224B6E07004F4FA4 /* Favor_00017.png in Resources */,
 				CE69C3BC224B6E07004F4FA4 /* Favor_00024.png in Resources */,
+				CE1CBAE523224FB600D3AE39 /* 胡晓波美心常规体.ttf in Resources */,
+				CE1CBADD23224FB600D3AE39 /* 浪漫雅圆.ttf in Resources */,
 				CE69C401224B6E07004F4FA4 /* RxViewController.xib in Resources */,
 				CE69C3A7224B6E07004F4FA4 /* coin4.png in Resources */,
 				CE69C35D224B6E07004F4FA4 /* MultipleSelectedCVVC.xib in Resources */,
@@ -2380,6 +2440,8 @@
 				CE69C37E224B6E07004F4FA4 /* UIWebViewVC.xib in Resources */,
 				CE69C30D224B6E07004F4FA4 /* SendValueVC.xib in Resources */,
 				CE69C38F224B6E07004F4FA4 /* MyPointView1.xib in Resources */,
+				CE1CBAE223224FB600D3AE39 /* 时尚中黑简体.ttf in Resources */,
+				CE1CBAE023224FB600D3AE39 /* 苏新诗卵石体.ttf in Resources */,
 				CE69C31B224B6E07004F4FA4 /* RegularViewController.xib in Resources */,
 				CE69C321224B6E07004F4FA4 /* LanguageViewController.xib in Resources */,
 				CE69C324224B6E07004F4FA4 /* FilterView.xib in Resources */,
@@ -2393,18 +2455,21 @@
 				CE69C3B3224B6E07004F4FA4 /* Favor_00020.png in Resources */,
 				CE24EA1422BCDACC00CB80BB /* iWiBi-orange-icon-light@3x.png in Resources */,
 				CE69C2D8224B6E07004F4FA4 /* JudgeNetworkingVC.xib in Resources */,
+				CE1CBAE123224FB600D3AE39 /* msyh.ttf in Resources */,
 				CE69C416224B7268004F4FA4 /* InfoPlist.strings in Resources */,
 				CE69C3F1224B6E07004F4FA4 /* JXPopupViewVC.xib in Resources */,
 				CE69C39A224B6E07004F4FA4 /* PhotosCollectionViewCell.xib in Resources */,
 				CE69C3AA224B6E07004F4FA4 /* coin2.png in Resources */,
 				CE69C359224B6E07004F4FA4 /* CollectionHeader.xib in Resources */,
+				CE1CBAD723224FB600D3AE39 /* 华康少女体.ttf in Resources */,
+				CE1CBADB23224FB600D3AE39 /* msyhbd.ttf in Resources */,
 				CE69C338224B6E07004F4FA4 /* HandleCellVC.xib in Resources */,
-				CE69C37C224B6E07004F4FA4 /* DatePickerView.xib in Resources */,
 				CE24EA1022BCDACC00CB80BB /* AppIcon-default@2x.png in Resources */,
 				CE69C368224B6E07004F4FA4 /* NibViewController.temp_caseinsensitive_rename.xib in Resources */,
 				CE69C3A6224B6E07004F4FA4 /* myweb.html in Resources */,
 				CE69C33D224B6E07004F4FA4 /* SelectedCell.xib in Resources */,
 				CE69C343224B6E07004F4FA4 /* TwoCell.xib in Resources */,
+				CE1CBADA23224FB600D3AE39 /* 段宁毛笔行书.ttf in Resources */,
 				CE69C36E224B6E07004F4FA4 /* AlertViewController.xib in Resources */,
 				CE69C3B4224B6E07004F4FA4 /* Favor_00021.png in Resources */,
 			);
@@ -2471,7 +2536,6 @@
 				CE69C2FE224B6E07004F4FA4 /* GCDViewController.swift in Sources */,
 				CE69C3E4224B6E07004F4FA4 /* FWDateView.swift in Sources */,
 				CE69C3FA224B6E07004F4FA4 /* Handy2Model.swift in Sources */,
-				CE69C377224B6E07004F4FA4 /* UIKit+Extension.swift in Sources */,
 				CE69C2D1224B6E07004F4FA4 /* AutoWriteBoard.swift in Sources */,
 				CE69C373224B6E07004F4FA4 /* UIColor+Extension.swift in Sources */,
 				CE69C3D3224B6E07004F4FA4 /* ViewController3.swift in Sources */,
@@ -2489,7 +2553,7 @@
 				CE69C3EF224B6E07004F4FA4 /* Database.swift in Sources */,
 				CE69C2D0224B6E07004F4FA4 /* CommentVC.swift in Sources */,
 				CED3B8D922660C11008988CE /* Man.swift in Sources */,
-				CE69C40C224B6E08004F4FA4 /* Common.swift in Sources */,
+				CE69C40C224B6E08004F4FA4 /* Const.swift in Sources */,
 				CE69C3FC224B6E07004F4FA4 /* HandyModel.swift in Sources */,
 				CE69C3A0224B6E07004F4FA4 /* AnimationVC2.swift in Sources */,
 				CE69C30F224B6E07004F4FA4 /* SendValueVC.swift in Sources */,
@@ -2539,12 +2603,10 @@
 				CE69C370224B6E07004F4FA4 /* PickerViewVC.swift in Sources */,
 				CE69C38C224B6E07004F4FA4 /* LayoutView.swift in Sources */,
 				CE69C323224B6E07004F4FA4 /* FilterView.swift in Sources */,
-				CE69C379224B6E07004F4FA4 /* DatePickerView.swift in Sources */,
 				CE69C2CA224B6E07004F4FA4 /* Target2ViewController.swift in Sources */,
 				CE69C307224B6E07004F4FA4 /* TimeViewController.swift in Sources */,
 				CE69C3D8224B6E07004F4FA4 /* EWPopMenuView.swift in Sources */,
 				CE69C3CB224B6E07004F4FA4 /* RequestVC.swift in Sources */,
-				CE69C372224B6E07004F4FA4 /* UIDevice+Extension.swift in Sources */,
 				CE69C403224B6E07004F4FA4 /* SDKViewController.swift in Sources */,
 				CE69C302224B6E07004F4FA4 /* StudyViewController.swift in Sources */,
 				CE69C303224B6E07004F4FA4 /* StudyNibViewController.swift in Sources */,
@@ -2554,9 +2616,7 @@
 				CE69C395224B6E07004F4FA4 /* MyView.swift in Sources */,
 				CE69C319224B6E07004F4FA4 /* StringViewController.swift in Sources */,
 				CE69C2EC224B6E07004F4FA4 /* LLFilledPageControl.swift in Sources */,
-				CE69C305224B6E07004F4FA4 /* Date.swift in Sources */,
 				CE69C39E224B6E07004F4FA4 /* ShowPhotosVC.swift in Sources */,
-				CE69C376224B6E07004F4FA4 /* DispatchQueue+Extension.swift in Sources */,
 				CE69C2CF224B6E07004F4FA4 /* WriteBoardView.swift in Sources */,
 				CE69C3DF224B6E07004F4FA4 /* FWPopupCategory.swift in Sources */,
 				CE69C35C224B6E07004F4FA4 /* CollectionVC.swift in Sources */,
@@ -2592,6 +2652,7 @@
 				CE69C2F8224B6E07004F4FA4 /* PropertyViewController.swift in Sources */,
 				CE69C2FB224B6E07004F4FA4 /* MyViewController.swift in Sources */,
 				CE69C36F224B6E07004F4FA4 /* AlertViewController.swift in Sources */,
+				CE1CBAC423224AAC00D3AE39 /* MyFontViewController.swift in Sources */,
 				CE69C3EA224B6E07004F4FA4 /* PointView.swift in Sources */,
 				CE69C358224B6E07004F4FA4 /* SectionCollectionView.swift in Sources */,
 				CE69C3CC224B6E07004F4FA4 /* Value.swift in Sources */,
@@ -2665,7 +2726,6 @@
 				CE69C2D6224B6E07004F4FA4 /* OtherViewController.swift in Sources */,
 				CE69C3EB224B6E07004F4FA4 /* MyGestureVC.swift in Sources */,
 				CED3B8D722660BCE008988CE /* ExampleProtocol.swift in Sources */,
-				CE69C375224B6E07004F4FA4 /* UIImage+Extension.swift in Sources */,
 				CE69C374224B6E07004F4FA4 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2833,7 +2893,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dio.MySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -2854,7 +2914,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dio.MySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
