@@ -127,7 +127,7 @@ class GCDViewController: UIViewController {
          因为concurrentPerform函数也与sync函数一样，会等待处理结束，因此推荐在async函数中异步执行concurrentPerform函数。concurrentPerform函数可以实现高性能的循环迭代。
          */
         
-        //获取系统存在的全局队列
+        //获取系统存在的全局并发队列
         let queue = DispatchQueue.global(qos: .default)
         //定义一个异步步代码块
         queue.async {
@@ -145,7 +145,7 @@ class GCDViewController: UIViewController {
     
     //多任务等待
     @IBAction func manyTagetAction(_ sender: UIButton) {
-        //获取系统存在的全局队列
+        //获取系统存在的全局并发队列
         let queue = DispatchQueue.global(qos: .default)
         //定义一个group
         let group = DispatchGroup()
@@ -176,7 +176,7 @@ class GCDViewController: UIViewController {
             print("不超时, 上面所有任务都执行完")
         case .timedOut:
             sleep(2)
-            print("超时了, 上面的任务还没执行完执行这了")
+            print("超时了, 上面的任务还没执行完")
         }
         print("接下来的操作   2")
     }
@@ -187,7 +187,7 @@ class GCDViewController: UIViewController {
      使用dispatch_group_enter(group)和dispatch_group_leave(group)，这种方式使用更为灵活，enter和leave必须配合使用，有几次enter就要有几次leave，否则group会一直存在, 造成死锁。当所有enter的block都leave后，会执行dispatch_group_notify的block。
      */
     @IBAction func targetFinished(_ sender: UIButton) {
-        //创建一个队列
+        //创建一个并发队列
         let queue = DispatchQueue(label: "labelname", qos: .default, attributes: .concurrent, autoreleaseFrequency: .inherit)
         //定义一个group
         let group = DispatchGroup()
@@ -256,7 +256,7 @@ class GCDViewController: UIViewController {
             sleep(1)
             print("target2 finished")
         }
-        
+        //障碍,等队列前面的所有任务都执行完，后面的才会执行
         currentQueue.async(flags: .barrier) {
             print("taget1 target2 is finished")
         }
