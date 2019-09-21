@@ -14,8 +14,6 @@
  ***************************************************
  */
 
-
-import Foundation
 import UIKit
 
 class FWMenuViewTableViewCell: UITableViewCell {

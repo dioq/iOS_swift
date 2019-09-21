@@ -360,6 +360,8 @@
 		CE69C411224B6E08004F4FA4 /* RootTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2C8224B6E07004F4FA4 /* RootTabBar.swift */; };
 		CE69C416224B7268004F4FA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE69C418224B7268004F4FA4 /* InfoPlist.strings */; };
 		CE69C419224B726B004F4FA4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE69C41B224B726B004F4FA4 /* Localizable.strings */; };
+		CE6DC08623362F2700A894DC /* PolyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6DC08523362F2700A894DC /* PolyViewController.swift */; };
+		CE6DC08823362F5700A894DC /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6DC08723362F5700A894DC /* Animal.swift */; };
 		CE73D3CE2298015D002C537C /* ReflectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73D3CC2298015D002C537C /* ReflectViewController.swift */; };
 		CE73D3CF2298015D002C537C /* ReflectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE73D3CD2298015D002C537C /* ReflectViewController.xib */; };
 		CE7D203F2259E7C700DEE23E /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D203D2259E7C700DEE23E /* LottieViewController.swift */; };
@@ -369,6 +371,10 @@
 		CE7D2046225A10DF00DEE23E /* Boat_Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D2045225A10DF00DEE23E /* Boat_Loader.json */; };
 		CEAC323422B232BC0046E850 /* star_soild.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAC323222B232BB0046E850 /* star_soild.png */; };
 		CEAC323522B232BC0046E850 /* star_hollow.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAC323322B232BB0046E850 /* star_hollow.png */; };
+		CEC164812336383E00F91A8D /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC164802336383E00F91A8D /* Cat.swift */; };
+		CEC164832336387B00F91A8D /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC164822336387B00F91A8D /* Dog.swift */; };
+		CEC1648623363C1500F91A8D /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1648523363C1500F91A8D /* GenericViewController.swift */; };
+		CEC1648823363EEC00F91A8D /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1648723363EEC00F91A8D /* Stack.swift */; };
 		CECDACF12272B3140020A98F /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDACEF2272B3140020A98F /* DeviceViewController.swift */; };
 		CECDACF22272B3140020A98F /* DeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECDACF02272B3140020A98F /* DeviceViewController.xib */; };
 		CED3B8C722660222008988CE /* BaseDelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8C522660222008988CE /* BaseDelegateVC.swift */; };
@@ -746,6 +752,8 @@
 		CE69C41D224B7272004F4FA4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CE69C41E224B7277004F4FA4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		CE69C41F224B7277004F4FA4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CE6DC08523362F2700A894DC /* PolyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolyViewController.swift; sourceTree = "<group>"; };
+		CE6DC08723362F5700A894DC /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		CE73D3CC2298015D002C537C /* ReflectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectViewController.swift; sourceTree = "<group>"; };
 		CE73D3CD2298015D002C537C /* ReflectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReflectViewController.xib; sourceTree = "<group>"; };
 		CE7D203D2259E7C700DEE23E /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
@@ -755,6 +763,10 @@
 		CE7D2045225A10DF00DEE23E /* Boat_Loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Boat_Loader.json; sourceTree = "<group>"; };
 		CEAC323222B232BB0046E850 /* star_soild.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_soild.png; sourceTree = "<group>"; };
 		CEAC323322B232BB0046E850 /* star_hollow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_hollow.png; sourceTree = "<group>"; };
+		CEC164802336383E00F91A8D /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		CEC164822336387B00F91A8D /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		CEC1648523363C1500F91A8D /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
+		CEC1648723363EEC00F91A8D /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		CECDACEF2272B3140020A98F /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
 		CECDACF02272B3140020A98F /* DeviceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceViewController.xib; sourceTree = "<group>"; };
 		CED3B8C522660222008988CE /* BaseDelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDelegateVC.swift; sourceTree = "<group>"; };
@@ -1085,11 +1097,12 @@
 		CE69C146224B6E06004F4FA4 /* language */ = {
 			isa = PBXGroup;
 			children = (
+				CEC1648423363C0000F91A8D /* generic */,
+				CE6DC08423362EFF00A894DC /* polymorphism */,
 				CE73D3CB22980136002C537C /* refelect */,
 				CE69C147224B6E06004F4FA4 /* closure */,
 				CE69C14A224B6E06004F4FA4 /* property */,
 				CE69C14C224B6E06004F4FA4 /* notification */,
-				CE69C151224B6E06004F4FA4 /* GCD */,
 				CE69C154224B6E06004F4FA4 /* function */,
 				CE69C158224B6E06004F4FA4 /* controller */,
 				CE69C15C224B6E06004F4FA4 /* time */,
@@ -1128,6 +1141,7 @@
 		CE69C14C224B6E06004F4FA4 /* notification */ = {
 			isa = PBXGroup;
 			children = (
+				CE69C151224B6E06004F4FA4 /* GCD */,
 				CE69C14D224B6E06004F4FA4 /* MyNotificationVC.xib */,
 				CE69C14E224B6E06004F4FA4 /* MyViewController.xib */,
 				CE69C14F224B6E06004F4FA4 /* MyViewController.swift */,
@@ -2184,6 +2198,17 @@
 			path = main;
 			sourceTree = "<group>";
 		};
+		CE6DC08423362EFF00A894DC /* polymorphism */ = {
+			isa = PBXGroup;
+			children = (
+				CE6DC08523362F2700A894DC /* PolyViewController.swift */,
+				CE6DC08723362F5700A894DC /* Animal.swift */,
+				CEC164802336383E00F91A8D /* Cat.swift */,
+				CEC164822336387B00F91A8D /* Dog.swift */,
+			);
+			path = polymorphism;
+			sourceTree = "<group>";
+		};
 		CE73D3CB22980136002C537C /* refelect */ = {
 			isa = PBXGroup;
 			children = (
@@ -2200,6 +2225,15 @@
 				CE7D203E2259E7C700DEE23E /* LottieViewController.xib */,
 			);
 			path = lottie;
+			sourceTree = "<group>";
+		};
+		CEC1648423363C0000F91A8D /* generic */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1648523363C1500F91A8D /* GenericViewController.swift */,
+				CEC1648723363EEC00F91A8D /* Stack.swift */,
+			);
+			path = generic;
 			sourceTree = "<group>";
 		};
 		CED3B8C4226601EF008988CE /* base */ = {
@@ -2542,10 +2576,14 @@
 				CE69C2F4224B6E07004F4FA4 /* HGImagePickerCell.swift in Sources */,
 				CE69C315224B6E07004F4FA4 /* AudioViewController.swift in Sources */,
 				CE69C33A224B6E07004F4FA4 /* SelectedCell.swift in Sources */,
+				CEC1648623363C1500F91A8D /* GenericViewController.swift in Sources */,
 				CE69C32C224B6E07004F4FA4 /* MyNibView.swift in Sources */,
 				CE69C393224B6E07004F4FA4 /* TestModel.swift in Sources */,
+				CEC164812336383E00F91A8D /* Cat.swift in Sources */,
 				CE69C2D3224B6E07004F4FA4 /* BeginnerguideVC.swift in Sources */,
 				CE69C3E6224B6E07004F4FA4 /* FWMenuView.swift in Sources */,
+				CEC164832336387B00F91A8D /* Dog.swift in Sources */,
+				CE6DC08623362F2700A894DC /* PolyViewController.swift in Sources */,
 				CE69C32D224B6E07004F4FA4 /* HeaderFooterTBVC.swift in Sources */,
 				CE69C350224B6E07004F4FA4 /* MyCollectionViewVC.swift in Sources */,
 				CE69C37A224B6E07004F4FA4 /* DatePickerVC.swift in Sources */,
@@ -2613,6 +2651,7 @@
 				CE69C383224B6E07004F4FA4 /* ToolBarViewController.swift in Sources */,
 				CE69C33C224B6E07004F4FA4 /* MultipleSelectedTBVC.swift in Sources */,
 				CE7D203F2259E7C700DEE23E /* LottieViewController.swift in Sources */,
+				CEC1648823363EEC00F91A8D /* Stack.swift in Sources */,
 				CE69C395224B6E07004F4FA4 /* MyView.swift in Sources */,
 				CE69C319224B6E07004F4FA4 /* StringViewController.swift in Sources */,
 				CE69C2EC224B6E07004F4FA4 /* LLFilledPageControl.swift in Sources */,
@@ -2647,6 +2686,7 @@
 				CE69C33F224B6E07004F4FA4 /* MyTabelviewVC.swift in Sources */,
 				CE69C400224B6E07004F4FA4 /* RxViewController.swift in Sources */,
 				CE69C3CF224B6E07004F4FA4 /* ContentViewController.swift in Sources */,
+				CE6DC08823362F5700A894DC /* Animal.swift in Sources */,
 				CE69C313224B6E07004F4FA4 /* LazyViewController.swift in Sources */,
 				CE69C327224B6E07004F4FA4 /* ScrollViewController.swift in Sources */,
 				CE69C2F8224B6E07004F4FA4 /* PropertyViewController.swift in Sources */,

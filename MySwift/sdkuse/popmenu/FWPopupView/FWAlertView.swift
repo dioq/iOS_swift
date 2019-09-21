@@ -14,8 +14,6 @@
  ***************************************************
  */
 
-
-import Foundation
 import UIKit
 
 public typealias FWPopupInputBlock = (_ text: String) -> Void

@@ -16,6 +16,14 @@ class LanguageViewController: UIViewController,UITableViewDataSource,UITableView
     lazy var dataArray:[UIViewController] = {
         var dataArray = Array<UIViewController>()
         
+        let genericVC = GenericViewController()
+        genericVC.title = "泛型"
+        dataArray.append(genericVC)
+        
+        let polyVC = PolyViewController()
+        polyVC.title = "多态"
+        dataArray.append(polyVC)
+        
         let reflectVC = ReflectViewController()
         reflectVC.title = "反射"
         dataArray.append(reflectVC)

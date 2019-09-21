@@ -46,6 +46,10 @@ class NicooPlayerVC: UIViewController {
 
 extension NicooPlayerVC: NicooPlayerDelegate {
     
+    func retryToPlayVideo(_ videoModel: NicooVideoModel?, _ fatherView: UIView?) {
+        
+    }
+    
     func retryToPlayVideo(_ player: NicooPlayerView, _ videoModel: NicooVideoModel?, _ fatherView: UIView?) {
         print("网络不可用时调用")
         let url = URL(string: videoModel?.videoUrl ?? "")
