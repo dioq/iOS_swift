@@ -25,7 +25,7 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
         dataArray.append(imageVC)
         
         let nibVC = NibViewController()
-        nibVC.title = "xib使用演示"
+        nibVC.title = "演示xib + autolayerout"
         dataArray.append(nibVC)
         
         let touchVC = UITouchViewController()
