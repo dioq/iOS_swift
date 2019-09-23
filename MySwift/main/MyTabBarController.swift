@@ -117,7 +117,8 @@ extension MyTabBarController:UITabBarControllerDelegate {
 //            return false
 //        }
         
-        
+        //tabBar上做动画的功能在Xcode11运行会出问题,等以后找到解决方法再做
+        /*
         let index = tabBarController.children.firstIndex(of: viewController)
         let tabBarBtn = tabBarController.tabBar.subviews[index! + 1]
         let imageView:UIImageView = tabBarBtn.subviews.first as! UIImageView
@@ -129,7 +130,7 @@ extension MyTabBarController:UITabBarControllerDelegate {
         }else{//点击其他item停止动画
             imageView.stopAnimating()
         }
-        
+        */
         
         return true
     }
