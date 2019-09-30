@@ -8,6 +8,57 @@
 	<string>MySwift</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundleAlternateIcons</key>
+		<dict>
+			<key>iWiBi-orange-blank</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>iWiBi-orange-blank</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>iWiBi-orange-icon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>iWiBi-orange-icon</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>iWiBi-orange-icon-light</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>iWiBi-orange-icon-light</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>iWiBi-orange-two</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>iWiBi-orange-two</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+		</dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string></string>
+			</array>
+			<key>UIPrerenderedIcon</key>
+			<false/>
+		</dict>
+	</dict>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -65,16 +116,22 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>是否允许App访问您的媒体资料库？</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>需要您的同意,才能访问蓝牙</string>
 	<key>NSCalendarsUsageDescription</key>
 	<string>需要您的同意,才能访问日历</string>
 	<key>NSCameraUsageDescription</key>
 	<string>是否允许此App使用你的相机</string>
+	<key>NSContactsUsageDescription</key>
+	<string>通讯录</string>
 	<key>NSHealthShareUsageDescription</key>
 	<string>需要您的同意,才能访问健康分享</string>
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>需要您的同意,才能访问健康更新</string>
+	<key>NSHomeKitUsageDescription</key>
+	<string>家庭自动化</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>需要您的同意,才能始终访问位置</string>
 	<key>NSLocationUsageDescription</key>
@@ -91,80 +148,6 @@
 	<string>要访问你的相册</string>
 	<key>NSRemindersUsageDescription</key>
 	<string>需要您的同意,才能访问提醒事项</string>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>NSAppleMusicUsageDescription</key>
-	<string>是否允许App访问您的媒体资料库？</string>
-	<key>NSContactsUsageDescription</key>
-	<string>通讯录</string>
-	<key>NSHomeKitUsageDescription</key>
-	<string>家庭自动化</string>
-	<key>CFBundleIcons</key>
-	<dict>
-		<key>CFBundleAlternateIcons</key>
-		<dict>
-			<key>iWiBi-orange-blank</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>iWiBi-orange-blank</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-			<key>iWiBi-orange-icon</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>iWiBi-orange-icon</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-			<key>iWiBi-orange-icon-light</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>iWiBi-orange-icon-light</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-			<key>iWiBi-orange-two</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>iWiBi-orange-two</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-		</dict>
-		<key>CFBundlePrimaryIcon</key>
-		<dict>
-			<key>CFBundleIconFiles</key>
-			<array>
-				<string></string>
-			</array>
-			<key>UIPrerenderedIcon</key>
-			<false/>
-		</dict>
-	</dict>
 	<key>UIAppFonts</key>
 	<array>
 		<string>msyh.ttf</string>
@@ -183,6 +166,23 @@
 		<string>胡晓波美心常规体.ttf</string>
 		<string>苏新诗卵石体.ttf</string>
 		<string>蒙纳简超刚黑.ttf</string>
+	</array>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>
