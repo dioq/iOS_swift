@@ -196,7 +196,6 @@
 		CE69C365224B6E07004F4FA4 /* CollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C1E5224B6E07004F4FA4 /* CollectionViewVC.swift */; };
 		CE69C366224B6E07004F4FA4 /* CollectionViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C1E6224B6E07004F4FA4 /* CollectionViewVC.xib */; };
 		CE69C367224B6E07004F4FA4 /* HotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C1E8224B6E07004F4FA4 /* HotCell.swift */; };
-		CE69C368224B6E07004F4FA4 /* NibViewController.temp_caseinsensitive_rename.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C1EA224B6E07004F4FA4 /* NibViewController.temp_caseinsensitive_rename.xib */; };
 		CE69C369224B6E07004F4FA4 /* NibStackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C1EB224B6E07004F4FA4 /* NibStackView.xib */; };
 		CE69C36A224B6E07004F4FA4 /* NibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C1EC224B6E07004F4FA4 /* NibViewController.swift */; };
 		CE69C36B224B6E07004F4FA4 /* NibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C1ED224B6E07004F4FA4 /* NibViewController.xib */; };
@@ -584,7 +583,6 @@
 		CE69C1E5224B6E07004F4FA4 /* CollectionViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewVC.swift; sourceTree = "<group>"; };
 		CE69C1E6224B6E07004F4FA4 /* CollectionViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewVC.xib; sourceTree = "<group>"; };
 		CE69C1E8224B6E07004F4FA4 /* HotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotCell.swift; sourceTree = "<group>"; };
-		CE69C1EA224B6E07004F4FA4 /* NibViewController.temp_caseinsensitive_rename.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibViewController.temp_caseinsensitive_rename.xib; sourceTree = "<group>"; };
 		CE69C1EB224B6E07004F4FA4 /* NibStackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibStackView.xib; sourceTree = "<group>"; };
 		CE69C1EC224B6E07004F4FA4 /* NibViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibViewController.swift; sourceTree = "<group>"; };
 		CE69C1ED224B6E07004F4FA4 /* NibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibViewController.xib; sourceTree = "<group>"; };
@@ -1116,6 +1114,7 @@
 				CE69C17A224B6E06004F4FA4 /* string */,
 				CE69C17D224B6E06004F4FA4 /* regular */,
 				CE69C180224B6E06004F4FA4 /* sendValue */,
+				CE69C151224B6E06004F4FA4 /* GCD */,
 				CE69C183224B6E06004F4FA4 /* thread */,
 			);
 			path = language;
@@ -1141,11 +1140,10 @@
 		CE69C14C224B6E06004F4FA4 /* notification */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C151224B6E06004F4FA4 /* GCD */,
-				CE69C14D224B6E06004F4FA4 /* MyNotificationVC.xib */,
-				CE69C14E224B6E06004F4FA4 /* MyViewController.xib */,
-				CE69C14F224B6E06004F4FA4 /* MyViewController.swift */,
 				CE69C150224B6E06004F4FA4 /* MyNotificationVC.swift */,
+				CE69C14D224B6E06004F4FA4 /* MyNotificationVC.xib */,
+				CE69C14F224B6E06004F4FA4 /* MyViewController.swift */,
+				CE69C14E224B6E06004F4FA4 /* MyViewController.xib */,
 			);
 			path = notification;
 			sourceTree = "<group>";
@@ -1465,8 +1463,8 @@
 		CE69C1B0224B6E07004F4FA4 /* xibCell */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C1B1224B6E07004F4FA4 /* MyCell.swift */,
 				CE69C1B2224B6E07004F4FA4 /* MyTabelviewVC.swift */,
+				CE69C1B1224B6E07004F4FA4 /* MyCell.swift */,
 				CE69C1B3224B6E07004F4FA4 /* MyCell.xib */,
 			);
 			path = xibCell;
@@ -1620,11 +1618,10 @@
 		CE69C1E9224B6E07004F4FA4 /* nib */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C1EA224B6E07004F4FA4 /* NibViewController.temp_caseinsensitive_rename.xib */,
-				CE69C1EB224B6E07004F4FA4 /* NibStackView.xib */,
 				CE69C1EC224B6E07004F4FA4 /* NibViewController.swift */,
 				CE69C1ED224B6E07004F4FA4 /* NibViewController.xib */,
 				CE69C1EE224B6E07004F4FA4 /* NibStackView.swift */,
+				CE69C1EB224B6E07004F4FA4 /* NibStackView.xib */,
 			);
 			path = nib;
 			sourceTree = "<group>";
@@ -2499,7 +2496,6 @@
 				CE1CBADB23224FB600D3AE39 /* msyhbd.ttf in Resources */,
 				CE69C338224B6E07004F4FA4 /* HandleCellVC.xib in Resources */,
 				CE24EA1022BCDACC00CB80BB /* AppIcon-default@2x.png in Resources */,
-				CE69C368224B6E07004F4FA4 /* NibViewController.temp_caseinsensitive_rename.xib in Resources */,
 				CE69C3A6224B6E07004F4FA4 /* myweb.html in Resources */,
 				CE69C33D224B6E07004F4FA4 /* SelectedCell.xib in Resources */,
 				CE69C343224B6E07004F4FA4 /* TwoCell.xib in Resources */,

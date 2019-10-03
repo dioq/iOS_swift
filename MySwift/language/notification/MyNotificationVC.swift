@@ -29,6 +29,7 @@ class MyNotificationVC: UIViewController {
     @IBAction func notificationBtn(_ sender: UIButton) {
         let vc = MyViewController()
         self.navigationController?.pushViewController(vc, animated: true)
+        self.hidesBottomBarWhenPushed = true
     }
     
     override func didReceiveMemoryWarning() {
