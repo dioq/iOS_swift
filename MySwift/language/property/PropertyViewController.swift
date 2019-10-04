@@ -11,21 +11,11 @@ import UIKit
 class PropertyViewController: UIViewController {
     
     /*
-     在Swift中有计算属性set{}和get{}和存储属性didSet{}和willSet{}，与OC不同的是，在Swift中get与set方法并不常用，也不会重写getter也setter方法，非要重写的话，可以这样：
+     存储属性：存储在特定类或结构体实例里的一个常量(let)或变量(var)，作为实例的一部分；
+     计算属性：计算属性不直接存储值，而是提供一个getter和一个可选的setter，来间接设置其他属性或变量值；
+
+     在Swift中有计算属性set{}和get{}和存储属性didSet{}和willSet{}，
      **/
-    private  var _name: String?
-    var name: String? {
-        get {
-            // oc  返回 _成员变量
-            print("get")
-            return _name
-        }
-        set {
-            //使用 _成员变量 记录值
-            print("set")
-            _name = newValue
-        }
-    }
     
     /*
      属性观察者：存储属性 didSet{}和willSet{} 差不多是代替OC的Set方法 ，再也不需要考虑 _成员变量 = 值，可以在内设置UI
@@ -63,14 +53,19 @@ class PropertyViewController: UIViewController {
         let barButtonItem = UIBarButtonItem.init(title: "改变值", style: .plain, target: self, action: #selector(add))
         self.navigationItem.rightBarButtonItem = barButtonItem
         
-        /* 调用第1种写法 */
-        self.name = "a new value"
-        print(self.name!)
+        //调用计算属性
+        //创建一个长方形
+        let rect = Rectangle(origin: Point(x: 0, y: 0), size: Size(width: 100, height: 100))
+//        rect.center = Point.init(x: 80, y: 80) //调用计算属性的set方法,重新设置center
+        let center = rect.center
+        let area = rect.area
+        print("center:\(center)     area:\(area)")
         
+        //给存储属性赋初值
         self.number = 0
     }
     
-    @objc func add() {
+    @objc func add() {//改变存储属性的值
         if let tmp = self.number {
             if tmp == 5 {
                 self.number = nil
@@ -81,5 +76,5 @@ class PropertyViewController: UIViewController {
             self.number = 6
         }
     }
-
+    
 }

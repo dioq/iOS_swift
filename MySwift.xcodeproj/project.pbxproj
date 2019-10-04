@@ -39,6 +39,7 @@
 		CE24EA1722BCDACC00CB80BB /* iWiBi-orange-icon-light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0D22BCDACB00CB80BB /* iWiBi-orange-icon-light@2x.png */; };
 		CE24EA1822BCDACC00CB80BB /* iWiBi-orange-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0E22BCDACB00CB80BB /* iWiBi-orange-icon@2x.png */; };
 		CE24EA1B22BCE37C00CB80BB /* AppLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA1A22BCE37C00CB80BB /* AppLaunchScreen.storyboard */; };
+		CE28CC892347309B00444FCD /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28CC882347309B00444FCD /* Rectangle.swift */; };
 		CE69C0F9224B6C93004F4FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE69C0F8224B6C93004F4FA4 /* Assets.xcassets */; };
 		CE69C2C9224B6E07004F4FA4 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C10A224B6E06004F4FA4 /* DrawerViewController.swift */; };
 		CE69C2CA224B6E07004F4FA4 /* Target2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C10B224B6E06004F4FA4 /* Target2ViewController.swift */; };
@@ -424,6 +425,7 @@
 		CE24EA0D22BCDACB00CB80BB /* iWiBi-orange-icon-light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon-light@2x.png"; sourceTree = "<group>"; };
 		CE24EA0E22BCDACB00CB80BB /* iWiBi-orange-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon@2x.png"; sourceTree = "<group>"; };
 		CE24EA1A22BCE37C00CB80BB /* AppLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppLaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE28CC882347309B00444FCD /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
 		CE69C0EE224B6C92004F4FA4 /* MySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE69C0F8224B6C93004F4FA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE69C0FD224B6C93004F4FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1133,6 +1135,7 @@
 			isa = PBXGroup;
 			children = (
 				CE69C14B224B6E06004F4FA4 /* PropertyViewController.swift */,
+				CE28CC882347309B00444FCD /* Rectangle.swift */,
 			);
 			path = property;
 			sourceTree = "<group>";
@@ -2749,6 +2752,7 @@
 				CE69C410224B6E08004F4FA4 /* AppDelegate.swift in Sources */,
 				CE69C3EC224B6E07004F4FA4 /* GestureBlockView.swift in Sources */,
 				CE69C31E224B6E07004F4FA4 /* SecondVC.swift in Sources */,
+				CE28CC892347309B00444FCD /* Rectangle.swift in Sources */,
 				CE69C2E4224B6E07004F4FA4 /* LocalizableVC.swift in Sources */,
 				CE69C3E9224B6E07004F4FA4 /* EWToast.swift in Sources */,
 				CE69C32B224B6E07004F4FA4 /* UISwitchVC.swift in Sources */,

@@ -10,7 +10,7 @@ target 'MySwift' do
   pod 'SQLite.swift', '0.11.5'
   pod 'Kingfisher', '5.3.0'
   pod 'Alamofire', '4.8.0'
-  pod 'HandyJSON', '5.0.0-beta'
+  pod 'HandyJSON', '5.0.0'
   pod 'SnapKit', '4.2.0'
   pod 'JXPopupView', '0.0.3' #自定义弹出框
   pod 'NicooPlayer', '1.3.0'
