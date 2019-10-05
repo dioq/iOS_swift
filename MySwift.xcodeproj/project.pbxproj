@@ -357,7 +357,6 @@
 		CE69C40E224B6E08004F4FA4 /* MyNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2C5224B6E07004F4FA4 /* MyNavgationController.swift */; };
 		CE69C40F224B6E08004F4FA4 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2C6224B6E07004F4FA4 /* MyTabBarController.swift */; };
 		CE69C410224B6E08004F4FA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2C7224B6E07004F4FA4 /* AppDelegate.swift */; };
-		CE69C411224B6E08004F4FA4 /* RootTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2C8224B6E07004F4FA4 /* RootTabBar.swift */; };
 		CE69C416224B7268004F4FA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE69C418224B7268004F4FA4 /* InfoPlist.strings */; };
 		CE69C419224B726B004F4FA4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE69C41B224B726B004F4FA4 /* Localizable.strings */; };
 		CE6DC08623362F2700A894DC /* PolyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6DC08523362F2700A894DC /* PolyViewController.swift */; };
@@ -745,7 +744,6 @@
 		CE69C2C5224B6E07004F4FA4 /* MyNavgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavgationController.swift; sourceTree = "<group>"; };
 		CE69C2C6224B6E07004F4FA4 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		CE69C2C7224B6E07004F4FA4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE69C2C8224B6E07004F4FA4 /* RootTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBar.swift; sourceTree = "<group>"; };
 		CE69C417224B7268004F4FA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE69C41A224B726B004F4FA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE69C41C224B7272004F4FA4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -2193,7 +2191,6 @@
 				CE69C2C5224B6E07004F4FA4 /* MyNavgationController.swift */,
 				CE69C2C6224B6E07004F4FA4 /* MyTabBarController.swift */,
 				CE69C2C7224B6E07004F4FA4 /* AppDelegate.swift */,
-				CE69C2C8224B6E07004F4FA4 /* RootTabBar.swift */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -2662,7 +2659,6 @@
 				CE69C397224B6E07004F4FA4 /* PickImageViewController.swift in Sources */,
 				CE69C335224B6E07004F4FA4 /* MyTBViewVC.swift in Sources */,
 				CE69C2D7224B6E07004F4FA4 /* JudgeNetworkingVC.swift in Sources */,
-				CE69C411224B6E08004F4FA4 /* RootTabBar.swift in Sources */,
 				CE69C3CD224B6E07004F4FA4 /* AutoImageViewController.swift in Sources */,
 				CE69C2FF224B6E07004F4FA4 /* FatherObject.swift in Sources */,
 				CE69C40F224B6E08004F4FA4 /* MyTabBarController.swift in Sources */,
