@@ -32,10 +32,6 @@ class SDKViewController: UIViewController, UITableViewDataSource,UITableViewDele
         pageVC.title = "顶部滑动导航"
         dataArray.append(pageVC)
         
-        let nicooVC = NicooPlayerVC()
-        nicooVC.title = "NicooPlayer播放器"
-        dataArray.append(nicooVC)
-        
         let kingfisherVC = KingfisherViewController()
         kingfisherVC.title = "Kingfisher"
         dataArray.append(kingfisherVC)
@@ -89,7 +85,7 @@ class SDKViewController: UIViewController, UITableViewDataSource,UITableViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.title = "SDK"
         //设置数据源
         myTableView.dataSource = self
         //设置代理

@@ -122,7 +122,7 @@ class LanguageViewController: UIViewController,UITableViewDataSource,UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.title = "Language"
         //设置数据源
         myTableView.dataSource = self
         //设置代理

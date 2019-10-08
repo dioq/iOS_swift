@@ -13,7 +13,6 @@ target 'MySwift' do
   pod 'HandyJSON', '5.0.0'
   pod 'SnapKit', '4.2.0'
   pod 'JXPopupView', '0.0.3' #自定义弹出框
-  pod 'NicooPlayer', '1.3.0'
   pod 'SwiftyJSON', '4.2.0'
   pod 'KSGuideController', '0.1.2'#新手引导
   pod 'DNSPageView', '1.1.2'

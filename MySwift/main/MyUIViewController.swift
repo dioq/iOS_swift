@@ -221,6 +221,7 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "UI"
         //设置数据源
         myTableView.dataSource = self
         //设置代理
