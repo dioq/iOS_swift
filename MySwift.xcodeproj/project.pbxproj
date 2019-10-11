@@ -38,7 +38,6 @@
 		CE24EA1622BCDACC00CB80BB /* iWiBi-orange-blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0C22BCDACB00CB80BB /* iWiBi-orange-blank@2x.png */; };
 		CE24EA1722BCDACC00CB80BB /* iWiBi-orange-icon-light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0D22BCDACB00CB80BB /* iWiBi-orange-icon-light@2x.png */; };
 		CE24EA1822BCDACC00CB80BB /* iWiBi-orange-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0E22BCDACB00CB80BB /* iWiBi-orange-icon@2x.png */; };
-		CE24EA1B22BCE37C00CB80BB /* AppLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA1A22BCE37C00CB80BB /* AppLaunchScreen.storyboard */; };
 		CE28CC892347309B00444FCD /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28CC882347309B00444FCD /* Rectangle.swift */; };
 		CE69C0F9224B6C93004F4FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE69C0F8224B6C93004F4FA4 /* Assets.xcassets */; };
 		CE69C2C9224B6E07004F4FA4 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C10A224B6E06004F4FA4 /* DrawerViewController.swift */; };
@@ -332,8 +331,6 @@
 		CE69C3F3224B6E07004F4FA4 /* TestAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C29E224B6E07004F4FA4 /* TestAlertView.swift */; };
 		CE69C3F4224B6E07004F4FA4 /* GTMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2A0224B6E07004F4FA4 /* GTMViewController.swift */; };
 		CE69C3F5224B6E07004F4FA4 /* DianpingRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2A1224B6E07004F4FA4 /* DianpingRefreshHeader.swift */; };
-		CE69C3F6224B6E07004F4FA4 /* NicooPlayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C2A3224B6E07004F4FA4 /* NicooPlayerVC.xib */; };
-		CE69C3F7224B6E07004F4FA4 /* NicooPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2A4224B6E07004F4FA4 /* NicooPlayerVC.swift */; };
 		CE69C3F8224B6E07004F4FA4 /* HandleJSONVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2A6224B6E07004F4FA4 /* HandleJSONVC.swift */; };
 		CE69C3F9224B6E07004F4FA4 /* HandleJSONVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C2A7224B6E07004F4FA4 /* HandleJSONVC.xib */; };
 		CE69C3FA224B6E07004F4FA4 /* Handy2Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2AA224B6E07004F4FA4 /* Handy2Model.swift */; };
@@ -342,8 +339,6 @@
 		CE69C3FD224B6E07004F4FA4 /* JsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2AD224B6E07004F4FA4 /* JsonModel.swift */; };
 		CE69C3FE224B6E07004F4FA4 /* KingfisherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C2AF224B6E07004F4FA4 /* KingfisherViewController.xib */; };
 		CE69C3FF224B6E07004F4FA4 /* KingfisherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2B0224B6E07004F4FA4 /* KingfisherViewController.swift */; };
-		CE69C400224B6E07004F4FA4 /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2B2224B6E07004F4FA4 /* RxViewController.swift */; };
-		CE69C401224B6E07004F4FA4 /* RxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C2B3224B6E07004F4FA4 /* RxViewController.xib */; };
 		CE69C402224B6E07004F4FA4 /* SDKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C2B4224B6E07004F4FA4 /* SDKViewController.xib */; };
 		CE69C403224B6E07004F4FA4 /* SDKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C2B5224B6E07004F4FA4 /* SDKViewController.swift */; };
 		CE69C406224B6E08004F4FA4 /* MyShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C2BA224B6E07004F4FA4 /* MyShareViewController.xib */; };
@@ -423,7 +418,6 @@
 		CE24EA0C22BCDACB00CB80BB /* iWiBi-orange-blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-blank@2x.png"; sourceTree = "<group>"; };
 		CE24EA0D22BCDACB00CB80BB /* iWiBi-orange-icon-light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon-light@2x.png"; sourceTree = "<group>"; };
 		CE24EA0E22BCDACB00CB80BB /* iWiBi-orange-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon@2x.png"; sourceTree = "<group>"; };
-		CE24EA1A22BCE37C00CB80BB /* AppLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppLaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE28CC882347309B00444FCD /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
 		CE69C0EE224B6C92004F4FA4 /* MySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE69C0F8224B6C93004F4FA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -719,8 +713,6 @@
 		CE69C29E224B6E07004F4FA4 /* TestAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAlertView.swift; sourceTree = "<group>"; };
 		CE69C2A0224B6E07004F4FA4 /* GTMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTMViewController.swift; sourceTree = "<group>"; };
 		CE69C2A1224B6E07004F4FA4 /* DianpingRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DianpingRefreshHeader.swift; sourceTree = "<group>"; };
-		CE69C2A3224B6E07004F4FA4 /* NicooPlayerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NicooPlayerVC.xib; sourceTree = "<group>"; };
-		CE69C2A4224B6E07004F4FA4 /* NicooPlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NicooPlayerVC.swift; sourceTree = "<group>"; };
 		CE69C2A6224B6E07004F4FA4 /* HandleJSONVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandleJSONVC.swift; sourceTree = "<group>"; };
 		CE69C2A7224B6E07004F4FA4 /* HandleJSONVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HandleJSONVC.xib; sourceTree = "<group>"; };
 		CE69C2AA224B6E07004F4FA4 /* Handy2Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Handy2Model.swift; sourceTree = "<group>"; };
@@ -729,8 +721,6 @@
 		CE69C2AD224B6E07004F4FA4 /* JsonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonModel.swift; sourceTree = "<group>"; };
 		CE69C2AF224B6E07004F4FA4 /* KingfisherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KingfisherViewController.xib; sourceTree = "<group>"; };
 		CE69C2B0224B6E07004F4FA4 /* KingfisherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherViewController.swift; sourceTree = "<group>"; };
-		CE69C2B2224B6E07004F4FA4 /* RxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
-		CE69C2B3224B6E07004F4FA4 /* RxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RxViewController.xib; sourceTree = "<group>"; };
 		CE69C2B4224B6E07004F4FA4 /* SDKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKViewController.xib; sourceTree = "<group>"; };
 		CE69C2B5224B6E07004F4FA4 /* SDKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKViewController.swift; sourceTree = "<group>"; };
 		CE69C2BA224B6E07004F4FA4 /* MyShareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyShareViewController.xib; sourceTree = "<group>"; };
@@ -867,14 +857,6 @@
 			path = "app-icon";
 			sourceTree = "<group>";
 		};
-		CE24EA1922BCE36800CB80BB /* storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				CE24EA1A22BCE37C00CB80BB /* AppLaunchScreen.storyboard */,
-			);
-			path = storyboard;
-			sourceTree = "<group>";
-		};
 		CE69C0E5224B6C92004F4FA4 = {
 			isa = PBXGroup;
 			children = (
@@ -903,7 +885,6 @@
 				CE69C134224B6E06004F4FA4 /* lib */,
 				CE69C2C1224B6E07004F4FA4 /* utils */,
 				CE69C237224B6E07004F4FA4 /* resource */,
-				CE24EA1922BCE36800CB80BB /* storyboard */,
 				CE69C2C4224B6E07004F4FA4 /* main */,
 				CE69C0F8224B6C93004F4FA4 /* Assets.xcassets */,
 				CE69C0FD224B6C93004F4FA4 /* Info.plist */,
@@ -1283,8 +1264,8 @@
 		CE69C17D224B6E06004F4FA4 /* regular */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C17E224B6E06004F4FA4 /* RegularViewController.xib */,
 				CE69C17F224B6E06004F4FA4 /* RegularViewController.swift */,
+				CE69C17E224B6E06004F4FA4 /* RegularViewController.xib */,
 			);
 			path = regular;
 			sourceTree = "<group>";
@@ -1945,9 +1926,7 @@
 				CE69C296224B6E07004F4FA4 /* sqlite */,
 				CE69C29A224B6E07004F4FA4 /* JXPopupView */,
 				CE69C29F224B6E07004F4FA4 /* GTMRefresh */,
-				CE69C2A2224B6E07004F4FA4 /* NicooPlayer */,
 				CE69C2AE224B6E07004F4FA4 /* Kingfisher */,
-				CE69C2B1224B6E07004F4FA4 /* Rx */,
 			);
 			path = sdkuse;
 			sourceTree = "<group>";
@@ -2091,15 +2070,6 @@
 			path = GTMRefresh;
 			sourceTree = "<group>";
 		};
-		CE69C2A2224B6E07004F4FA4 /* NicooPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				CE69C2A3224B6E07004F4FA4 /* NicooPlayerVC.xib */,
-				CE69C2A4224B6E07004F4FA4 /* NicooPlayerVC.swift */,
-			);
-			path = NicooPlayer;
-			sourceTree = "<group>";
-		};
 		CE69C2A5224B6E07004F4FA4 /* paraseJSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -2136,15 +2106,6 @@
 				CE69C2AF224B6E07004F4FA4 /* KingfisherViewController.xib */,
 			);
 			path = Kingfisher;
-			sourceTree = "<group>";
-		};
-		CE69C2B1224B6E07004F4FA4 /* Rx */ = {
-			isa = PBXGroup;
-			children = (
-				CE69C2B2224B6E07004F4FA4 /* RxViewController.swift */,
-				CE69C2B3224B6E07004F4FA4 /* RxViewController.xib */,
-			);
-			path = Rx;
 			sourceTree = "<group>";
 		};
 		CE69C2B9224B6E07004F4FA4 /* share */ = {
@@ -2420,7 +2381,6 @@
 				CE69C30A224B6E07004F4FA4 /* BrowserVC.xib in Resources */,
 				CE69C3B6224B6E07004F4FA4 /* Favor_00022.png in Resources */,
 				CE69C399224B6E07004F4FA4 /* ShowPhotosVC.xib in Resources */,
-				CE24EA1B22BCE37C00CB80BB /* AppLaunchScreen.storyboard in Resources */,
 				CE24EA1822BCDACC00CB80BB /* iWiBi-orange-icon@2x.png in Resources */,
 				CE69C354224B6E07004F4FA4 /* MyCollectionViewCell.xib in Resources */,
 				CE69C36B224B6E07004F4FA4 /* NibViewController.xib in Resources */,
@@ -2443,7 +2403,6 @@
 				CE69C3BC224B6E07004F4FA4 /* Favor_00024.png in Resources */,
 				CE1CBAE523224FB600D3AE39 /* 胡晓波美心常规体.ttf in Resources */,
 				CE1CBADD23224FB600D3AE39 /* 浪漫雅圆.ttf in Resources */,
-				CE69C401224B6E07004F4FA4 /* RxViewController.xib in Resources */,
 				CE69C3A7224B6E07004F4FA4 /* coin4.png in Resources */,
 				CE69C35D224B6E07004F4FA4 /* MultipleSelectedCVVC.xib in Resources */,
 				CE69C34C224B6E07004F4FA4 /* LabelViewController.xib in Resources */,
@@ -2464,7 +2423,6 @@
 				CE7D20432259EA0C00DEE23E /* water-loading.json in Resources */,
 				CE69C3AC224B6E07004F4FA4 /* Favor_00014.png in Resources */,
 				CE69C345224B6E07004F4FA4 /* OneCell.xib in Resources */,
-				CE69C3F6224B6E07004F4FA4 /* NicooPlayerVC.xib in Resources */,
 				CE69C3EE224B6E07004F4FA4 /* SQLiteViewController.xib in Resources */,
 				CE69C3C6224B6E07004F4FA4 /* smile.png in Resources */,
 				CE69C34A224B6E07004F4FA4 /* TextViewVC.xib in Resources */,
@@ -2679,7 +2637,6 @@
 				CE69C3E8224B6E07004F4FA4 /* ToastViewController.swift in Sources */,
 				CED832EF22A7C7AB00ABC725 /* WaterFallLayout.swift in Sources */,
 				CE69C33F224B6E07004F4FA4 /* MyTabelviewVC.swift in Sources */,
-				CE69C400224B6E07004F4FA4 /* RxViewController.swift in Sources */,
 				CE69C3CF224B6E07004F4FA4 /* ContentViewController.swift in Sources */,
 				CE6DC08823362F5700A894DC /* Animal.swift in Sources */,
 				CE69C313224B6E07004F4FA4 /* LazyViewController.swift in Sources */,
@@ -2744,7 +2701,6 @@
 				CE69C30B224B6E07004F4FA4 /* MyDelegateView.swift in Sources */,
 				CE69C349224B6E07004F4FA4 /* VideoPlayerViewController.swift in Sources */,
 				CE69C2C9224B6E07004F4FA4 /* DrawerViewController.swift in Sources */,
-				CE69C3F7224B6E07004F4FA4 /* NicooPlayerVC.swift in Sources */,
 				CE69C410224B6E08004F4FA4 /* AppDelegate.swift in Sources */,
 				CE69C3EC224B6E07004F4FA4 /* GestureBlockView.swift in Sources */,
 				CE69C31E224B6E07004F4FA4 /* SecondVC.swift in Sources */,

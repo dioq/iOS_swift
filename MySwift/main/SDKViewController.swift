@@ -20,10 +20,6 @@ class SDKViewController: UIViewController, UITableViewDataSource,UITableViewDele
         lottieVC.title = "Lottie"
         dataArray.append(lottieVC)
         
-        let rxVC = RxViewController()
-        rxVC.title = "RxSwift"
-        dataArray.append(rxVC)
-        
         let hGIMageVC = HGImageViewController()
         hGIMageVC.title = "多图选择HGImage"
         dataArray.append(hGIMageVC)
