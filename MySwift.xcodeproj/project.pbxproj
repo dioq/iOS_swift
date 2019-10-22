@@ -1188,7 +1188,7 @@
 		CE69C165224B6E06004F4FA4 /* delegate */ = {
 			isa = PBXGroup;
 			children = (
-				CED3B8C4226601EF008988CE /* base */,
+				CED3B8C4226601EF008988CE /* protocol */,
 				CE69C166224B6E06004F4FA4 /* use */,
 				CE69C169224B6E06004F4FA4 /* sendValue */,
 			);
@@ -2194,7 +2194,7 @@
 			path = generic;
 			sourceTree = "<group>";
 		};
-		CED3B8C4226601EF008988CE /* base */ = {
+		CED3B8C4226601EF008988CE /* protocol */ = {
 			isa = PBXGroup;
 			children = (
 				CED3B8C522660222008988CE /* BaseDelegateVC.swift */,
@@ -2202,7 +2202,7 @@
 				CED3B8D822660C11008988CE /* Man.swift */,
 				CED3B8D622660BCE008988CE /* ExampleProtocol.swift */,
 			);
-			path = base;
+			path = protocol;
 			sourceTree = "<group>";
 		};
 		CED3B9312266D6E3008988CE /* imageview */ = {
