@@ -12,12 +12,32 @@ class MyClosureVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        study01()
-        //        study2()
-        //        study3()
-        //        study4()
-        //        study5()
-        study6()
+//        study01()
+//        study2()
+//        study3()
+//        study4()
+//        study5()
+//        study6()
+        study7()
+    }
+    
+    //closure回调
+    func study7() {
+        let url:String = "https://codeload.github.com/AFNetworking/AFNetworking/zip/master"
+        let para:Dictionary<String, Any> = ["age":18]
+        
+        let handler:(_ receiveData:Data?, _ error:Error?) -> Void
+        handler = {(receiveData:Data?, error:Error?) in
+            if error != nil {
+                print("下载失败:\(error!)")
+            }
+            if receiveData != nil {
+                print("下载成功:\(receiveData!)")
+            }
+        }
+        
+        let downloadManager = DownloadManager()
+        downloadManager.downloadWithURL(url: url, parameters: para, handler: handler)
     }
     
     //@escaping @noescaping
@@ -47,34 +67,32 @@ class MyClosureVC: UIViewController {
             print(data)
         }
         loadData(callBack: closure1)
-        //代码执行顺序（1），（2），（3）
         
         loadOtherData(callBack: closure1)
-        //代码执行顺序:(1)，(3)，(2)
     }
     //非逃逸闭包
-    func loadData(callBack:(String) -> Void) {  ///(1)
+    func loadData(callBack:(String) -> Void) {
         print("-- 非逃逸闭包 -- 1")
-        callBack("*** 非逃逸闭包 ***")   ///(2)
+        callBack("*** 非逃逸闭包 ***")
         print("-- 非逃逸闭包 -- 2")
-    }   ///(3)
+    }
     //逃逸闭包
     func loadOtherData(callBack: @escaping (String) -> Void) {
         /*
-         如果此时去掉 @escaping 会报错, 这因为当程序运行完(3) 走到[==6]处时,最外面的loadOtherData函数的生命周期就结束了,而在loadOtherData函数内部还开了另一条线程来运行函数callBack,callBack还在运行,因此callBack的生命土周期还不能结束,这就需要callBack的生命周期不能小于loadOtherData
+         如果此时去掉 @escaping 会报错, 这因为当程序 执行完[==6]处时,最外面的loadOtherData函数的生命周期就结束了,而在loadOtherData函数内部还开了另一条线程来运行函数callBack,callBack还在运行,因此callBack的生命土周期还不能结束,这就需要callBack的生命周期不能小于loadOtherData
         **/
         print("== 逃逸闭包 == 1")
-        DispatchQueue.global().async {  ///(1)
+        DispatchQueue.global().async {
             print("== 逃逸闭包 == 2")
             sleep(2)
             DispatchQueue.main.async {
                 sleep(3)
                 print("== 逃逸闭包 == 3")
-                callBack("**** 逃逸闭包 ***")    ///(2)
+                callBack("**** 逃逸闭包 ***")
                 print("== 逃逸闭包 == 4")
             }
             print("== 逃逸闭包 == 5")
-        }   ///(3)
+        }
         print("== 逃逸闭包 == 6")
     }
     
@@ -182,11 +200,9 @@ class MyClosureVC: UIViewController {
         }
         print(result5)
     }
-    
     /*
      operation: 是一个闭包类型的参数
      该闭包有两个参数（Int, Int） ,并有一个Int型返回值
-     
      要整体看待，不要蒙圈。
      */
     func myOperation(_ a: Int , _ b: Int, operation: @escaping(Int , Int) -> Int) -> Int {
@@ -194,16 +210,6 @@ class MyClosureVC: UIViewController {
         return res
     }
     
-    
-    //eg.: 2
-    func countingClosure() -> () -> Int {
-        var counter = 0
-        let incrementCounter: () -> Int = {
-            counter += 1
-            return counter
-        }
-        return incrementCounter
-    }
     
     //捕获
     func study3() {
@@ -220,7 +226,6 @@ class MyClosureVC: UIViewController {
          故闭包可以捕获并访问变量counter。
          对变量counter做的任何改变，对闭包来说都是透明可见的。
          */
-        
         incrementCounter() //1
         print(counter)
         incrementCounter() //2
@@ -229,7 +234,6 @@ class MyClosureVC: UIViewController {
         /*
          该例子中，闭包捕获了封闭空间（函数实体内）的内部变量counter。
          */
-
         let counter1 = countingClosure()
         let counter2 = countingClosure()
         
@@ -243,6 +247,14 @@ class MyClosureVC: UIViewController {
         print(res4)
         let res5 =  counter2() // 2
         print(res5)
+    }
+    func countingClosure() -> () -> Int {
+        var counter = 0
+        let incrementCounter: () -> Int = {
+            counter += 1
+            return counter
+        }
+        return incrementCounter
     }
     
     

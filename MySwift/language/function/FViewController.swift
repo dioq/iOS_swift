@@ -13,6 +13,7 @@ class FViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "函数的特性"
+        //        test01(9, secondParameterName: 8)
         //        test1()
         //        test2()
         //        test3()
@@ -63,4 +64,8 @@ class FViewController: UIViewController {
         return param1 + param2 + param3
     }
     
+    //“_”是代表函数调用时，可以忽略参数名称
+    func test01(_ firstParameterName: Int, secondParameterName: Int) {
+        // 在函数体内，firstParameterName 和 secondParameterName 代表参数中的第一个和第二个参数值
+    }
 }
