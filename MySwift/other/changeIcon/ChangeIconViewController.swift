@@ -19,48 +19,43 @@ class ChangeIconViewController: UIViewController {
         
         // icon1
         let image1 = UIImage.init(named: "AppIcon-default")!
-        let defaltIcon = UIAlertAction(title: "默认图标", style: .default, handler: { (action: UIAlertAction!) in
+        let defaultAlertAction = UIAlertAction(title: "默认图标", style: .default, handler: { (action: UIAlertAction!) in
             self.changeAppIconWithName(iconName: nil)
-            return
         })
-        defaltIcon.setValue(image1.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), forKey: "image")
-        refreshAlert.addAction(defaltIcon)
+        defaultAlertAction.setValue(image1.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), forKey: "image")
+        refreshAlert.addAction(defaultAlertAction)
         // icon2
         let name2 = "iWiBi-orange-icon-light"
         let image2 = UIImage.init(named: name2)!
-        let newIcon1 = UIAlertAction(title: "橙色图标-轻亮", style: .default, handler: { (action: UIAlertAction!) in
+        let alertAction2 = UIAlertAction(title: "橙色图标-轻亮", style: .default, handler: { (action: UIAlertAction!) in
             self.changeAppIconWithName(iconName: name2)
-            return
         })
-        newIcon1.setValue(image2.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), forKey: "image")
-        refreshAlert.addAction(newIcon1)
+        alertAction2.setValue(image2.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), forKey: "image")
+        refreshAlert.addAction(alertAction2)
         // icon3
         let name3 = "iWiBi-orange-icon"
         let image3 = UIImage.init(named: name3)!
-        let newIcon3 = UIAlertAction(title: "橙色图标-墨深", style: .default, handler: { (action: UIAlertAction!) in
+        let alertAction3 = UIAlertAction(title: "橙色图标-墨深", style: .default, handler: { (action: UIAlertAction!) in
             self.changeAppIconWithName(iconName: name3)
-            return
         })
-        newIcon3.setValue(image3.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), forKey: "image")
-        refreshAlert.addAction(newIcon3)
+        alertAction3.setValue(image3.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), forKey: "image")
+        refreshAlert.addAction(alertAction3)
         // icon4
         let name4 = "iWiBi-orange-two"
         let image4 = UIImage.init(named: name4)!
-        let newIcon4 = UIAlertAction(title: "橙色图标-全彩", style: .default, handler: { (action: UIAlertAction!) in
+        let alertAction4 = UIAlertAction(title: "橙色图标-全彩", style: .default, handler: { (action: UIAlertAction!) in
             self.changeAppIconWithName(iconName: name4)
-            return
         })
-        newIcon4.setValue(image4.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), forKey: "image")
-        refreshAlert.addAction(newIcon4)
+        alertAction4.setValue(image4.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), forKey: "image")
+        refreshAlert.addAction(alertAction4)
         // icon5
         let name5 = "iWiBi-orange-blank"
         let image5 = UIImage.init(named: name5)!
-        let newIcon5 = UIAlertAction(title: "橙色图标-留白", style: .default, handler: { (action: UIAlertAction!) in
+        let alertAction5 = UIAlertAction(title: "橙色图标-留白", style: .default, handler: { (action: UIAlertAction!) in
             self.changeAppIconWithName(iconName: name5)
-            return
         })
-        newIcon5.setValue(image5.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), forKey: "image")
-        refreshAlert.addAction(newIcon5)
+        alertAction5.setValue(image5.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), forKey: "image")
+        refreshAlert.addAction(alertAction5)
         
         let cancel = UIAlertAction(title:  "取消", style: .cancel, handler: nil)
         refreshAlert.addAction(cancel)
