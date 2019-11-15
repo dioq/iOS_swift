@@ -42,6 +42,9 @@ class DeviceViewController: UIViewController {
         print("系统类型: \(systemName)")
         let iosVersion = UIDevice.current.systemVersion //iOS版本
         print("系统版本: \(iosVersion)")
+        if #available(iOS 10.3, *) {
+            print("系统版本大于等于10.3")
+        }
         let model = UIDevice.current.model //设备型号
         print("设备型号: \(model)")
         let modelName = detailDevice() //设备具体型号

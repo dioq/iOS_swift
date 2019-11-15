@@ -31,7 +31,7 @@ class IMGVViewController: UIViewController {
         let imgCount = CGImageSourceGetCount(imgSource)
         
         // 4、遍历所有图片
-        var imgs = [UIImage]()
+        var imgs = Array<UIImage>()
         var totalDuration: TimeInterval = 0
         for i in 0..<imgCount {
             // 4.1、取出图片
@@ -53,8 +53,8 @@ class IMGVViewController: UIViewController {
         
         // 5、设置imageView的属性
         imageV.animationImages = imgs
-        imageV.animationDuration = totalDuration
-        imageV.animationRepeatCount = 0  // 执行一次，设置为0时无限执行
+        imageV.animationDuration = totalDuration //执行完一次循环持续的时间
+        imageV.animationRepeatCount = 0  // 执行次数，设置为0时执行无穷次
         
         // 6、开始播放
         imageV.startAnimating()
