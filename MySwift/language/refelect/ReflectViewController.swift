@@ -102,6 +102,40 @@ class ReflectViewController: UIViewController {
 //        }
     }
     
+    
+    @IBAction func three(_ sender: UIButton) {
+        //1:动态获取命名空间
+        guard let nameSpace = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String else {
+            print("获取命名空间失败")
+            return
+        }
+        //根据 命名空间和类名 获取到对应的类
+        let originClass: AnyClass? = NSClassFromString(nameSpace + "." + "TestClass")
+        //Swift中如果想通过一个Class来创建一个对象, 必须告诉系统这个Class的确切类型
+        guard let typeClass = originClass as? TestClass.Type else {
+            print("originClas不能当做TestClass")
+            return
+        }
+        let myObject = typeClass.init(name: "William", nickName: "Dio")
+        //或者加载xib;   let myObject = typeClass.init(nibName: name, bundle: nil)
+        print("类名:",type(of: myObject))
+        print("name:\(myObject.name), nickName:\(myObject.nickname!)")
+    }
+    
+}
+
+class TestClass {
+    var name:String = ""  //姓名
+    var nickname:String?  //昵称
+    
+    required init(name:String?, nickName:String?) {
+        if name != nil {
+            self.name = name!
+        }
+        if nickName != nil {
+            self.nickname = nickName!
+        }
+    }
 }
 
 //用户类
