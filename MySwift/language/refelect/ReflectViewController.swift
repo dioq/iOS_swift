@@ -113,7 +113,7 @@ class ReflectViewController: UIViewController {
         let originClass: AnyClass? = NSClassFromString(nameSpace + "." + "TestClass")
         //Swift中如果想通过一个Class来创建一个对象, 必须告诉系统这个Class的确切类型
         guard let typeClass = originClass as? TestClass.Type else {
-            print("originClas不能当做TestClass")
+            print("originClass不能当做TestClass")
             return
         }
         let myObject = typeClass.init(name: "William", nickName: "Dio")

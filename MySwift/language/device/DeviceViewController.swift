@@ -17,7 +17,7 @@ class DeviceViewController: UIViewController {
     
     //应用程序信息
     @IBAction func applicationInfo(_ sender: UIButton) {
-        let infoDictionary = Bundle.main.infoDictionary!
+        let infoDictionary = Bundle.main.infoDictionary! //获取Info.plist里的内容
         let appDisplayName = infoDictionary["CFBundleDisplayName"] //app的名字
         if appDisplayName != nil {
             print("Display Name: \(appDisplayName!)")
@@ -33,6 +33,10 @@ class DeviceViewController: UIViewController {
         let buildVersion = infoDictionary["CFBundleVersion"]//版本号（内部标示）
         if buildVersion != nil {
             print("Build: \(buildVersion!)")
+        }
+        let nameSpace = infoDictionary["CFBundleExecutable"] //动态获取命名空间
+        if nameSpace != nil {
+            print("nameSpace:", nameSpace!)
         }
     }
     
