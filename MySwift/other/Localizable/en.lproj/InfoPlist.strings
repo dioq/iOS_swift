@@ -6,7 +6,7 @@
  Copyright © 2019 Dio. All rights reserved.
  */
 
-CFBundleDisplayName = "English Test";
+CFBundleDisplayName = "My Swift";
 
 /*
  <!-- 蓝牙 -->

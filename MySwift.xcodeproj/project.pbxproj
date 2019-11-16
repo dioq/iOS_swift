@@ -12,16 +12,6 @@
 		CE1CBAC523224AAC00D3AE39 /* MyFontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAC323224AAC00D3AE39 /* MyFontViewController.xib */; };
 		CE24EA0122BCD6CC00CB80BB /* ChangeIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24E9FF22BCD6CC00CB80BB /* ChangeIconViewController.swift */; };
 		CE24EA0222BCD6CC00CB80BB /* ChangeIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0022BCD6CC00CB80BB /* ChangeIconViewController.xib */; };
-		CE24EA0F22BCDACC00CB80BB /* iWiBi-orange-two@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0522BCDACB00CB80BB /* iWiBi-orange-two@3x.png */; };
-		CE24EA1022BCDACC00CB80BB /* AppIcon-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0622BCDACB00CB80BB /* AppIcon-default@2x.png */; };
-		CE24EA1122BCDACC00CB80BB /* AppIcon-default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0722BCDACB00CB80BB /* AppIcon-default@3x.png */; };
-		CE24EA1222BCDACC00CB80BB /* iWiBi-orange-two@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0822BCDACB00CB80BB /* iWiBi-orange-two@2x.png */; };
-		CE24EA1322BCDACC00CB80BB /* iWiBi-orange-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0922BCDACB00CB80BB /* iWiBi-orange-icon@3x.png */; };
-		CE24EA1422BCDACC00CB80BB /* iWiBi-orange-icon-light@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0A22BCDACB00CB80BB /* iWiBi-orange-icon-light@3x.png */; };
-		CE24EA1522BCDACC00CB80BB /* iWiBi-orange-blank@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0B22BCDACB00CB80BB /* iWiBi-orange-blank@3x.png */; };
-		CE24EA1622BCDACC00CB80BB /* iWiBi-orange-blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0C22BCDACB00CB80BB /* iWiBi-orange-blank@2x.png */; };
-		CE24EA1722BCDACC00CB80BB /* iWiBi-orange-icon-light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0D22BCDACB00CB80BB /* iWiBi-orange-icon-light@2x.png */; };
-		CE24EA1822BCDACC00CB80BB /* iWiBi-orange-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE24EA0E22BCDACB00CB80BB /* iWiBi-orange-icon@2x.png */; };
 		CE28CC892347309B00444FCD /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28CC882347309B00444FCD /* Rectangle.swift */; };
 		CE427A3E237006F0001A90B4 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE427A3D237006F0001A90B4 /* DownloadManager.swift */; };
 		CE69C0F9224B6C93004F4FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE69C0F8224B6C93004F4FA4 /* Assets.xcassets */; };
@@ -341,6 +331,17 @@
 		CE69C419224B726B004F4FA4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE69C41B224B726B004F4FA4 /* Localizable.strings */; };
 		CE6DC08623362F2700A894DC /* PolyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6DC08523362F2700A894DC /* PolyViewController.swift */; };
 		CE6DC08823362F5700A894DC /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6DC08723362F5700A894DC /* Animal.swift */; };
+		CE71654F237FC39100D476C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE71654E237FC39100D476C3 /* LaunchScreen.storyboard */; };
+		CE716570237FC5CD00D476C3 /* iWiBi-orange-two@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE716566237FC5CD00D476C3 /* iWiBi-orange-two@3x.png */; };
+		CE716571237FC5CD00D476C3 /* AppIcon-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE716567237FC5CD00D476C3 /* AppIcon-default@2x.png */; };
+		CE716572237FC5CD00D476C3 /* AppIcon-default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE716568237FC5CD00D476C3 /* AppIcon-default@3x.png */; };
+		CE716573237FC5CD00D476C3 /* iWiBi-orange-two@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE716569237FC5CD00D476C3 /* iWiBi-orange-two@2x.png */; };
+		CE716574237FC5CD00D476C3 /* iWiBi-orange-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE71656A237FC5CD00D476C3 /* iWiBi-orange-icon@3x.png */; };
+		CE716575237FC5CD00D476C3 /* iWiBi-orange-icon-light@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE71656B237FC5CD00D476C3 /* iWiBi-orange-icon-light@3x.png */; };
+		CE716576237FC5CD00D476C3 /* iWiBi-orange-blank@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE71656C237FC5CD00D476C3 /* iWiBi-orange-blank@3x.png */; };
+		CE716577237FC5CD00D476C3 /* iWiBi-orange-blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE71656D237FC5CD00D476C3 /* iWiBi-orange-blank@2x.png */; };
+		CE716578237FC5CD00D476C3 /* iWiBi-orange-icon-light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE71656E237FC5CD00D476C3 /* iWiBi-orange-icon-light@2x.png */; };
+		CE716579237FC5CD00D476C3 /* iWiBi-orange-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE71656F237FC5CD00D476C3 /* iWiBi-orange-icon@2x.png */; };
 		CE73D3CE2298015D002C537C /* ReflectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73D3CC2298015D002C537C /* ReflectViewController.swift */; };
 		CE73D3CF2298015D002C537C /* ReflectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE73D3CD2298015D002C537C /* ReflectViewController.xib */; };
 		CE757CE2237E70AC0039C29D /* 时尚中黑简体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE757CD2237E70AB0039C29D /* 时尚中黑简体.ttf */; };
@@ -393,16 +394,6 @@
 		CE1CBAC323224AAC00D3AE39 /* MyFontViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFontViewController.xib; sourceTree = "<group>"; };
 		CE24E9FF22BCD6CC00CB80BB /* ChangeIconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeIconViewController.swift; sourceTree = "<group>"; };
 		CE24EA0022BCD6CC00CB80BB /* ChangeIconViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeIconViewController.xib; sourceTree = "<group>"; };
-		CE24EA0522BCDACB00CB80BB /* iWiBi-orange-two@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-two@3x.png"; sourceTree = "<group>"; };
-		CE24EA0622BCDACB00CB80BB /* AppIcon-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-default@2x.png"; sourceTree = "<group>"; };
-		CE24EA0722BCDACB00CB80BB /* AppIcon-default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-default@3x.png"; sourceTree = "<group>"; };
-		CE24EA0822BCDACB00CB80BB /* iWiBi-orange-two@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-two@2x.png"; sourceTree = "<group>"; };
-		CE24EA0922BCDACB00CB80BB /* iWiBi-orange-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon@3x.png"; sourceTree = "<group>"; };
-		CE24EA0A22BCDACB00CB80BB /* iWiBi-orange-icon-light@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon-light@3x.png"; sourceTree = "<group>"; };
-		CE24EA0B22BCDACB00CB80BB /* iWiBi-orange-blank@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-blank@3x.png"; sourceTree = "<group>"; };
-		CE24EA0C22BCDACB00CB80BB /* iWiBi-orange-blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-blank@2x.png"; sourceTree = "<group>"; };
-		CE24EA0D22BCDACB00CB80BB /* iWiBi-orange-icon-light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon-light@2x.png"; sourceTree = "<group>"; };
-		CE24EA0E22BCDACB00CB80BB /* iWiBi-orange-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon@2x.png"; sourceTree = "<group>"; };
 		CE28CC882347309B00444FCD /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
 		CE427A3D237006F0001A90B4 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		CE69C0EE224B6C92004F4FA4 /* MySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -728,6 +719,17 @@
 		CE69C41F224B7277004F4FA4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CE6DC08523362F2700A894DC /* PolyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolyViewController.swift; sourceTree = "<group>"; };
 		CE6DC08723362F5700A894DC /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		CE71654E237FC39100D476C3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE716566237FC5CD00D476C3 /* iWiBi-orange-two@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-two@3x.png"; sourceTree = "<group>"; };
+		CE716567237FC5CD00D476C3 /* AppIcon-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-default@2x.png"; sourceTree = "<group>"; };
+		CE716568237FC5CD00D476C3 /* AppIcon-default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-default@3x.png"; sourceTree = "<group>"; };
+		CE716569237FC5CD00D476C3 /* iWiBi-orange-two@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-two@2x.png"; sourceTree = "<group>"; };
+		CE71656A237FC5CD00D476C3 /* iWiBi-orange-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon@3x.png"; sourceTree = "<group>"; };
+		CE71656B237FC5CD00D476C3 /* iWiBi-orange-icon-light@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon-light@3x.png"; sourceTree = "<group>"; };
+		CE71656C237FC5CD00D476C3 /* iWiBi-orange-blank@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-blank@3x.png"; sourceTree = "<group>"; };
+		CE71656D237FC5CD00D476C3 /* iWiBi-orange-blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-blank@2x.png"; sourceTree = "<group>"; };
+		CE71656E237FC5CD00D476C3 /* iWiBi-orange-icon-light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon-light@2x.png"; sourceTree = "<group>"; };
+		CE71656F237FC5CD00D476C3 /* iWiBi-orange-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon@2x.png"; sourceTree = "<group>"; };
 		CE73D3CC2298015D002C537C /* ReflectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectViewController.swift; sourceTree = "<group>"; };
 		CE73D3CD2298015D002C537C /* ReflectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReflectViewController.xib; sourceTree = "<group>"; };
 		CE757CD2237E70AB0039C29D /* 时尚中黑简体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "时尚中黑简体.ttf"; sourceTree = "<group>"; };
@@ -842,23 +844,6 @@
 			path = changeIcon;
 			sourceTree = "<group>";
 		};
-		CE24EA0422BCDACB00CB80BB /* app-icon */ = {
-			isa = PBXGroup;
-			children = (
-				CE24EA0522BCDACB00CB80BB /* iWiBi-orange-two@3x.png */,
-				CE24EA0622BCDACB00CB80BB /* AppIcon-default@2x.png */,
-				CE24EA0722BCDACB00CB80BB /* AppIcon-default@3x.png */,
-				CE24EA0822BCDACB00CB80BB /* iWiBi-orange-two@2x.png */,
-				CE24EA0922BCDACB00CB80BB /* iWiBi-orange-icon@3x.png */,
-				CE24EA0A22BCDACB00CB80BB /* iWiBi-orange-icon-light@3x.png */,
-				CE24EA0B22BCDACB00CB80BB /* iWiBi-orange-blank@3x.png */,
-				CE24EA0C22BCDACB00CB80BB /* iWiBi-orange-blank@2x.png */,
-				CE24EA0D22BCDACB00CB80BB /* iWiBi-orange-icon-light@2x.png */,
-				CE24EA0E22BCDACB00CB80BB /* iWiBi-orange-icon@2x.png */,
-			);
-			path = "app-icon";
-			sourceTree = "<group>";
-		};
 		CE69C0E5224B6C92004F4FA4 = {
 			isa = PBXGroup;
 			children = (
@@ -890,6 +875,7 @@
 				CE69C2C4224B6E07004F4FA4 /* main */,
 				CE69C0F8224B6C93004F4FA4 /* Assets.xcassets */,
 				CE69C0FD224B6C93004F4FA4 /* Info.plist */,
+				CE71654E237FC39100D476C3 /* LaunchScreen.storyboard */,
 			);
 			path = MySwift;
 			sourceTree = "<group>";
@@ -1797,8 +1783,8 @@
 		CE69C237224B6E07004F4FA4 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				CE716565237FC5CD00D476C3 /* appicon */,
 				CE1CBAC623224D6100D3AE39 /* font */,
-				CE24EA0422BCDACB00CB80BB /* app-icon */,
 				CED3B9362266D79E008988CE /* gif */,
 				CE69C238224B6E07004F4FA4 /* video */,
 				CE69C23C224B6E07004F4FA4 /* web */,
@@ -2170,6 +2156,23 @@
 			path = polymorphism;
 			sourceTree = "<group>";
 		};
+		CE716565237FC5CD00D476C3 /* appicon */ = {
+			isa = PBXGroup;
+			children = (
+				CE716566237FC5CD00D476C3 /* iWiBi-orange-two@3x.png */,
+				CE716567237FC5CD00D476C3 /* AppIcon-default@2x.png */,
+				CE716568237FC5CD00D476C3 /* AppIcon-default@3x.png */,
+				CE716569237FC5CD00D476C3 /* iWiBi-orange-two@2x.png */,
+				CE71656A237FC5CD00D476C3 /* iWiBi-orange-icon@3x.png */,
+				CE71656B237FC5CD00D476C3 /* iWiBi-orange-icon-light@3x.png */,
+				CE71656C237FC5CD00D476C3 /* iWiBi-orange-blank@3x.png */,
+				CE71656D237FC5CD00D476C3 /* iWiBi-orange-blank@2x.png */,
+				CE71656E237FC5CD00D476C3 /* iWiBi-orange-icon-light@2x.png */,
+				CE71656F237FC5CD00D476C3 /* iWiBi-orange-icon@2x.png */,
+			);
+			path = appicon;
+			sourceTree = "<group>";
+		};
 		CE73D3CB22980136002C537C /* refelect */ = {
 			isa = PBXGroup;
 			children = (
@@ -2302,14 +2305,13 @@
 				CE757CEA237E70AC0039C29D /* 蒙纳简超刚黑.ttf in Resources */,
 				CE69C3B7224B6E07004F4FA4 /* Favor_00026.png in Resources */,
 				CE69C2FA224B6E07004F4FA4 /* MyViewController.xib in Resources */,
-				CE24EA1522BCDACC00CB80BB /* iWiBi-orange-blank@3x.png in Resources */,
 				CE757CEF237E70AC0039C29D /* 汉鼎简行书.TTF in Resources */,
 				CE757CF1237E70AC0039C29D /* 晴圆.ttc in Resources */,
 				CE69C35A224B6E07004F4FA4 /* CollectionFooter.xib in Resources */,
 				CE69C2CE224B6E07004F4FA4 /* MyComentVC.xib in Resources */,
+				CE716570237FC5CD00D476C3 /* iWiBi-orange-two@3x.png in Resources */,
 				CE69C388224B6E07004F4FA4 /* ButtonViewController.xib in Resources */,
 				CE69C3E1224B6E07004F4FA4 /* FWPopupView.bundle in Resources */,
-				CE24EA1122BCDACC00CB80BB /* AppIcon-default@3x.png in Resources */,
 				CE69C3FE224B6E07004F4FA4 /* KingfisherViewController.xib in Resources */,
 				CE69C3C2224B6E07004F4FA4 /* angry.png in Resources */,
 				CE757CF0237E70AC0039C29D /* 文鼎霹雳体.TTF in Resources */,
@@ -2321,6 +2323,7 @@
 				CE7D20442259EA0C00DEE23E /* vcTransition2.json in Resources */,
 				CE69C3F2224B6E07004F4FA4 /* TestAlertView.xib in Resources */,
 				CE69C369224B6E07004F4FA4 /* NibStackView.xib in Resources */,
+				CE716579237FC5CD00D476C3 /* iWiBi-orange-icon@2x.png in Resources */,
 				CE69C3BB224B6E07004F4FA4 /* Favor_00018.png in Resources */,
 				CE69C3B8224B6E07004F4FA4 /* Favor_00027.png in Resources */,
 				CE69C355224B6E07004F4FA4 /* SectionCollectionView.xib in Resources */,
@@ -2368,15 +2371,14 @@
 				CE7D20402259E7C700DEE23E /* LottieViewController.xib in Resources */,
 				CE69C363224B6E07004F4FA4 /* MyCVCell.xib in Resources */,
 				CE69C31A224B6E07004F4FA4 /* StringViewController.xib in Resources */,
-				CE24EA0F22BCDACC00CB80BB /* iWiBi-orange-two@3x.png in Resources */,
 				CE757CE8237E70AC0039C29D /* msyh.ttf in Resources */,
 				CE69C3D4224B6E07004F4FA4 /* PageViewController.xib in Resources */,
 				CE757CE5237E70AC0039C29D /* 浪漫雅圆.ttf in Resources */,
 				CEAC323422B232BC0046E850 /* star_soild.png in Resources */,
-				CE24EA1622BCDACC00CB80BB /* iWiBi-orange-blank@2x.png in Resources */,
 				CE69C35E224B6E07004F4FA4 /* SingleSelectedCellVC.xib in Resources */,
 				CE69C3BF224B6E07004F4FA4 /* pingtaoge.png in Resources */,
 				CE69C382224B6E07004F4FA4 /* MyUIViewController.xib in Resources */,
+				CE71654F237FC39100D476C3 /* LaunchScreen.storyboard in Resources */,
 				CE69C3A2224B6E07004F4FA4 /* TPout.swf in Resources */,
 				CE69C35B224B6E07004F4FA4 /* CollectionVC.xib in Resources */,
 				CE757CE2237E70AC0039C29D /* 时尚中黑简体.ttf in Resources */,
@@ -2386,38 +2388,40 @@
 				CE69C3A4224B6E07004F4FA4 /* t2.m3u8 in Resources */,
 				CEAC323522B232BC0046E850 /* star_hollow.png in Resources */,
 				CE69C3C1224B6E07004F4FA4 /* placeholder.png in Resources */,
+				CE716578237FC5CD00D476C3 /* iWiBi-orange-icon-light@2x.png in Resources */,
 				CE69C3C4224B6E07004F4FA4 /* image1.png in Resources */,
 				CE69C30A224B6E07004F4FA4 /* BrowserVC.xib in Resources */,
 				CE69C3B6224B6E07004F4FA4 /* Favor_00022.png in Resources */,
 				CE69C399224B6E07004F4FA4 /* ShowPhotosVC.xib in Resources */,
-				CE24EA1822BCDACC00CB80BB /* iWiBi-orange-icon@2x.png in Resources */,
+				CE716574237FC5CD00D476C3 /* iWiBi-orange-icon@3x.png in Resources */,
+				CE716572237FC5CD00D476C3 /* AppIcon-default@3x.png in Resources */,
 				CE69C354224B6E07004F4FA4 /* MyCollectionViewCell.xib in Resources */,
 				CE69C36B224B6E07004F4FA4 /* NibViewController.xib in Resources */,
 				CE69C3BD224B6E07004F4FA4 /* add.png in Resources */,
 				CE69C348224B6E07004F4FA4 /* VideoPlayerViewController.xib in Resources */,
 				CE69C360224B6E07004F4FA4 /* SelectedCollectionCell.xib in Resources */,
 				CE69C385224B6E07004F4FA4 /* TextFieldViewController.xib in Resources */,
-				CE24EA1222BCDACC00CB80BB /* iWiBi-orange-two@2x.png in Resources */,
 				CE69C371224B6E07004F4FA4 /* PickerViewVC.xib in Resources */,
 				CE69C2F9224B6E07004F4FA4 /* MyNotificationVC.xib in Resources */,
+				CE716577237FC5CD00D476C3 /* iWiBi-orange-blank@2x.png in Resources */,
 				CE69C3B5224B6E07004F4FA4 /* Favor_00023.png in Resources */,
 				CE69C408224B6E08004F4FA4 /* HGImageCell.xib in Resources */,
-				CE24EA1322BCDACC00CB80BB /* iWiBi-orange-icon@3x.png in Resources */,
 				CE757CE7237E70AC0039C29D /* 华康雅宋体.TTf in Resources */,
 				CE69C3A5224B6E07004F4FA4 /* t2.html in Resources */,
 				CE69C3BA224B6E07004F4FA4 /* Favor_00019.png in Resources */,
-				CE24EA1722BCDACC00CB80BB /* iWiBi-orange-icon-light@2x.png in Resources */,
 				CE69C3F9224B6E07004F4FA4 /* HandleJSONVC.xib in Resources */,
 				CE69C3AE224B6E07004F4FA4 /* Favor_00017.png in Resources */,
 				CE69C3BC224B6E07004F4FA4 /* Favor_00024.png in Resources */,
 				CE69C3A7224B6E07004F4FA4 /* coin4.png in Resources */,
 				CE69C35D224B6E07004F4FA4 /* MultipleSelectedCVVC.xib in Resources */,
 				CE757CE6237E70AC0039C29D /* 文鼎中特广告体.TTF in Resources */,
+				CE716571237FC5CD00D476C3 /* AppIcon-default@2x.png in Resources */,
 				CE69C34C224B6E07004F4FA4 /* LabelViewController.xib in Resources */,
 				CE69C3A8224B6E07004F4FA4 /* coin1.png in Resources */,
 				CE69C406224B6E08004F4FA4 /* MyShareViewController.xib in Resources */,
 				CED3B93C2266D7CA008988CE /* login_bg_gif_01.gif in Resources */,
 				CE757CED237E70AC0039C29D /* 胡晓波美心常规体.ttf in Resources */,
+				CE716573237FC5CD00D476C3 /* iWiBi-orange-two@2x.png in Resources */,
 				CE69C3C8224B6E07004F4FA4 /* soundEffect5.mp3 in Resources */,
 				CE69C3AD224B6E07004F4FA4 /* Favor_00016.png in Resources */,
 				CE69C3A3224B6E07004F4FA4 /* test.mp4 in Resources */,
@@ -2449,7 +2453,6 @@
 				CE69C3CA224B6E07004F4FA4 /* RequestVC.xib in Resources */,
 				CE69C340224B6E07004F4FA4 /* MyCell.xib in Resources */,
 				CE69C3B3224B6E07004F4FA4 /* Favor_00020.png in Resources */,
-				CE24EA1422BCDACC00CB80BB /* iWiBi-orange-icon-light@3x.png in Resources */,
 				CE69C2D8224B6E07004F4FA4 /* JudgeNetworkingVC.xib in Resources */,
 				CE69C416224B7268004F4FA4 /* InfoPlist.strings in Resources */,
 				CE69C3F1224B6E07004F4FA4 /* JXPopupViewVC.xib in Resources */,
@@ -2457,9 +2460,10 @@
 				CE69C3AA224B6E07004F4FA4 /* coin2.png in Resources */,
 				CE69C359224B6E07004F4FA4 /* CollectionHeader.xib in Resources */,
 				CE69C338224B6E07004F4FA4 /* HandleCellVC.xib in Resources */,
-				CE24EA1022BCDACC00CB80BB /* AppIcon-default@2x.png in Resources */,
 				CE69C3A6224B6E07004F4FA4 /* myweb.html in Resources */,
 				CE69C33D224B6E07004F4FA4 /* SelectedCell.xib in Resources */,
+				CE716576237FC5CD00D476C3 /* iWiBi-orange-blank@3x.png in Resources */,
+				CE716575237FC5CD00D476C3 /* iWiBi-orange-icon-light@3x.png in Resources */,
 				CE69C343224B6E07004F4FA4 /* TwoCell.xib in Resources */,
 				CE69C36E224B6E07004F4FA4 /* AlertViewController.xib in Resources */,
 				CE69C3B4224B6E07004F4FA4 /* Favor_00021.png in Resources */,
@@ -2877,7 +2881,7 @@
 			baseConfigurationReference = 32F7714E770754C61BBD0BA8 /* Pods-MySwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89AGS9KB98;
 				INFOPLIST_FILE = MySwift/Info.plist;
@@ -2889,7 +2893,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dio.MySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -2898,7 +2902,7 @@
 			baseConfigurationReference = C790BE9ABE19EB49FDF58AFD /* Pods-MySwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89AGS9KB98;
 				INFOPLIST_FILE = MySwift/Info.plist;
@@ -2910,7 +2914,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dio.MySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

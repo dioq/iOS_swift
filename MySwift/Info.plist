@@ -167,6 +167,8 @@
 		<string>苏新诗卵石体.ttf</string>
 		<string>蒙纳简超刚黑.ttf</string>
 	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

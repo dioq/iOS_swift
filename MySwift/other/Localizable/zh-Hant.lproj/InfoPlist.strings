@@ -6,7 +6,7 @@
   Copyright © 2019 Dio. All rights reserved.
 */
 
-CFBundleDisplayName = "中文測試";
+CFBundleDisplayName = "雨燕項目";
 
 NSLocationWhenInUseUsageDescription = "需要位置權限";
 NSMicrophoneUsageDescription = "需要麥克風權限";
