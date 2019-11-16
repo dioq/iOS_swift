@@ -15,7 +15,7 @@ target 'MySwift' do
   pod 'JXPopupView', '0.0.3' #自定义弹出框
   pod 'SwiftyJSON', '4.2.0'
   pod 'KSGuideController', '0.1.2'#新手引导
-  pod 'DNSPageView', '1.1.2'
-  pod 'lottie-ios', '3.0.3'
+  pod 'DNSPageView', '1.2.1'
+  pod 'lottie-ios', '3.1.5'
   
 end

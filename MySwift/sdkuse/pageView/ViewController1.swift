@@ -15,7 +15,7 @@ class ViewController1: UIViewController {
         super.viewDidLoad()
 
         // 创建DNSPageStyle，设置样式
-        let style = DNSPageStyle()
+        let style = PageStyle()
         style.isTitleViewScrollEnabled = true //滑动块是否可以移动
         style.isTitleScaleEnabled = true
         style.isShowBottomLine = true
@@ -34,7 +34,7 @@ class ViewController1: UIViewController {
         let size = UIScreen.main.bounds.size
 
         // 创建对应的DNSPageView，并设置它的frame
-        let pageView = DNSPageView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height), style: style, titles: titles, childViewControllers: childViewControllers)
+        let pageView = PageView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height), style: style, titles: titles, childViewControllers: childViewControllers)
         view.addSubview(pageView)
     }
 

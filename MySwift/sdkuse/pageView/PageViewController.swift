@@ -12,7 +12,7 @@ class PageViewController: UIViewController {
 
     @IBOutlet weak var myTableView: UITableView!
     let indentifier = "SwiftCell"
-    var dataArray = ["直接使用DNSPageView初始化","使用xib初始化","使用DNSPageViewManager分别设置","iOS 11风格"]
+    var dataArray = ["直接使用DNSPageView初始化","使用DNSPageViewManager分别设置"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,11 +50,7 @@ extension PageViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
             vc = ViewController1()
         case 1:
-            vc = ViewController2()
-        case 2:
             vc = ViewController3()
-        case 3:
-            vc = ViewController4()
         default:
             print("error")
         }

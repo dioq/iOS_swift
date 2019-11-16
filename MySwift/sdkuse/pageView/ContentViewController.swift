@@ -19,21 +19,21 @@ class ContentViewController: UIViewController  {
 
 }
 
-extension ContentViewController: DNSPageTitleViewDelegate {
+extension ContentViewController: PageTitleViewDelegate {
     
-    func titleView(_ titleView: DNSPageTitleView, didSelectAt index: Int) {
+    func titleView(_ titleView: PageTitleView, didSelectAt index: Int) {
         print("点击了第\(index)个title")
     }
     
 }
 
-extension ContentViewController: DNSPageContentViewDelegate {
+extension ContentViewController: PageContentViewDelegate {
     
-    func contentView(_ contentView: DNSPageContentView, didEndScrollAt index: Int) {
+    func contentView(_ contentView: PageContentView, didEndScrollAt index: Int) {
         print("didEndScrollAt index : \(index)")
     }
     
-    func contentView(_ contentView: DNSPageContentView, scrollingWith sourceIndex: Int, targetIndex: Int, progress: CGFloat) {
+    func contentView(_ contentView: PageContentView, scrollingWith sourceIndex: Int, targetIndex: Int, progress: CGFloat) {
         print("scrollingWith sourceIndex : \(sourceIndex)")
     }
     

@@ -266,10 +266,7 @@
 		CE69C3CB224B6E07004F4FA4 /* RequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C26B224B6E07004F4FA4 /* RequestVC.swift */; };
 		CE69C3CC224B6E07004F4FA4 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C26C224B6E07004F4FA4 /* Value.swift */; };
 		CE69C3CD224B6E07004F4FA4 /* AutoImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C26E224B6E07004F4FA4 /* AutoImageViewController.swift */; };
-		CE69C3CE224B6E07004F4FA4 /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C270224B6E07004F4FA4 /* ViewController2.xib */; };
 		CE69C3CF224B6E07004F4FA4 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C271224B6E07004F4FA4 /* ContentViewController.swift */; };
-		CE69C3D0224B6E07004F4FA4 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C272224B6E07004F4FA4 /* ViewController2.swift */; };
-		CE69C3D1224B6E07004F4FA4 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C273224B6E07004F4FA4 /* ViewController4.swift */; };
 		CE69C3D2224B6E07004F4FA4 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C274224B6E07004F4FA4 /* ViewController1.swift */; };
 		CE69C3D3224B6E07004F4FA4 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C275224B6E07004F4FA4 /* ViewController3.swift */; };
 		CE69C3D4224B6E07004F4FA4 /* PageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C276224B6E07004F4FA4 /* PageViewController.xib */; };
@@ -650,10 +647,7 @@
 		CE69C26B224B6E07004F4FA4 /* RequestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestVC.swift; sourceTree = "<group>"; };
 		CE69C26C224B6E07004F4FA4 /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
 		CE69C26E224B6E07004F4FA4 /* AutoImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoImageViewController.swift; sourceTree = "<group>"; };
-		CE69C270224B6E07004F4FA4 /* ViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
 		CE69C271224B6E07004F4FA4 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
-		CE69C272224B6E07004F4FA4 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
-		CE69C273224B6E07004F4FA4 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		CE69C274224B6E07004F4FA4 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		CE69C275224B6E07004F4FA4 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		CE69C276224B6E07004F4FA4 /* PageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageViewController.xib; sourceTree = "<group>"; };
@@ -1942,14 +1936,11 @@
 		CE69C26F224B6E07004F4FA4 /* pageView */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C270224B6E07004F4FA4 /* ViewController2.xib */,
+				CE69C277224B6E07004F4FA4 /* PageViewController.swift */,
+				CE69C276224B6E07004F4FA4 /* PageViewController.xib */,
 				CE69C271224B6E07004F4FA4 /* ContentViewController.swift */,
-				CE69C272224B6E07004F4FA4 /* ViewController2.swift */,
-				CE69C273224B6E07004F4FA4 /* ViewController4.swift */,
 				CE69C274224B6E07004F4FA4 /* ViewController1.swift */,
 				CE69C275224B6E07004F4FA4 /* ViewController3.swift */,
-				CE69C276224B6E07004F4FA4 /* PageViewController.xib */,
-				CE69C277224B6E07004F4FA4 /* PageViewController.swift */,
 			);
 			path = pageView;
 			sourceTree = "<group>";
@@ -2384,7 +2375,6 @@
 				CE757CE2237E70AC0039C29D /* 时尚中黑简体.ttf in Resources */,
 				CE69C320224B6E07004F4FA4 /* ThreadViewController.xib in Resources */,
 				CED3B9382266D7C3008988CE /* login_bg01.jpg in Resources */,
-				CE69C3CE224B6E07004F4FA4 /* ViewController2.xib in Resources */,
 				CE69C3A4224B6E07004F4FA4 /* t2.m3u8 in Resources */,
 				CEAC323522B232BC0046E850 /* star_hollow.png in Resources */,
 				CE69C3C1224B6E07004F4FA4 /* placeholder.png in Resources */,
@@ -2599,7 +2589,6 @@
 				CE69C2D5224B6E07004F4FA4 /* CacheViewController.swift in Sources */,
 				CE69C3DB224B6E07004F4FA4 /* FWPopupRootViewController.swift in Sources */,
 				CE69C3E3224B6E07004F4FA4 /* FWAlertView.swift in Sources */,
-				CE69C3D1224B6E07004F4FA4 /* ViewController4.swift in Sources */,
 				CE69C370224B6E07004F4FA4 /* PickerViewVC.swift in Sources */,
 				CE69C38C224B6E07004F4FA4 /* LayoutView.swift in Sources */,
 				CE69C323224B6E07004F4FA4 /* FilterView.swift in Sources */,
@@ -2721,7 +2710,6 @@
 				CE69C346224B6E07004F4FA4 /* OneCell.swift in Sources */,
 				CE69C3DC224B6E07004F4FA4 /* FWPopupView.swift in Sources */,
 				CE69C387224B6E07004F4FA4 /* SearchViewController.swift in Sources */,
-				CE69C3D0224B6E07004F4FA4 /* ViewController2.swift in Sources */,
 				CE69C35F224B6E07004F4FA4 /* SingleSelectedCellVC.swift in Sources */,
 				CE69C2D6224B6E07004F4FA4 /* OtherViewController.swift in Sources */,
 				CE69C3EB224B6E07004F4FA4 /* MyGestureVC.swift in Sources */,

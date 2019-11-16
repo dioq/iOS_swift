@@ -11,9 +11,9 @@ import DNSPageView
 
 class ViewController3: UIViewController {
 
-    private lazy var pageViewManager: DNSPageViewManager = {
+    private lazy var pageViewManager: PageViewManager = {
         // 创建DNSPageStyle，设置样式
-        let style = DNSPageStyle()
+        let style = PageStyle()
         style.isShowBottomLine = true
         style.isTitleViewScrollEnabled = true
         style.titleViewBackgroundColor = UIColor.clear
@@ -28,7 +28,7 @@ class ViewController3: UIViewController {
             return controller
         }
 
-        return DNSPageViewManager(style: style, titles: titles, childViewControllers: childViewControllers)
+        return PageViewManager(style: style, titles: titles, childViewControllers: childViewControllers)
     }()
 
     override func viewDidLoad() {
