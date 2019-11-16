@@ -62,7 +62,7 @@ class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDel
         dataArray.append(judgeNetVC)
         
         let jumpVC = JumpAppVC()
-        jumpVC.title = "跳转到其他App"
+        jumpVC.title = "App间跳转"
         dataArray.append(jumpVC)
         
         let cacheVC = CacheViewController()
