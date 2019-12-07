@@ -1,9 +1,11 @@
-.DS_Store
-MySwift/resource/.DS_Store
 Podfile.lock
 /Pods
 
+.DS_Store
+/MySwift/sdkuse/.DS_Store
+MySwift/resource/.DS_Store
+/MySwift/language/.DS_Store
+
 /MySwift.xcworkspace
+MySwift.xcodeproj/project.xcworkspace/xcuserdata/
 MySwift.xcodeproj/xcuserdata/
-MySwift/sdkuse/.DS_Store
-MySwift/language/.DS_Store

@@ -20,7 +20,7 @@ struct Database {
     // 与数据库建立连接
     mutating func connectDatabase(filePath: String = "/Documents") -> Void {
         let sqlFilePath = NSHomeDirectory() + filePath + "/db.sqlite3"
-        
+        print(sqlFilePath)
         do { // 与数据库建立连接
             db = try Connection(sqlFilePath)
             print("与数据库建立连接 成功")
