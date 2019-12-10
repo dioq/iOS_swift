@@ -863,7 +863,7 @@
 				CE69C267224B6E07004F4FA4 /* sdkuse */,
 				CE69C188224B6E06004F4FA4 /* ui */,
 				CE69C146224B6E06004F4FA4 /* language */,
-				CE69C134224B6E06004F4FA4 /* lib */,
+				CE69C134224B6E06004F4FA4 /* library */,
 				CE69C2C1224B6E07004F4FA4 /* utils */,
 				CE69C237224B6E07004F4FA4 /* resource */,
 				CE69C2C4224B6E07004F4FA4 /* main */,
@@ -1017,14 +1017,14 @@
 			path = segmentView;
 			sourceTree = "<group>";
 		};
-		CE69C134224B6E06004F4FA4 /* lib */ = {
+		CE69C134224B6E06004F4FA4 /* library */ = {
 			isa = PBXGroup;
 			children = (
 				CE69C135224B6E06004F4FA4 /* LLCycleScrollView */,
 				CE69C13D224B6E06004F4FA4 /* LLCycleScrollView.bundle */,
 				CE69C13E224B6E06004F4FA4 /* HGImage */,
 			);
-			path = lib;
+			path = library;
 			sourceTree = "<group>";
 		};
 		CE69C135224B6E06004F4FA4 /* LLCycleScrollView */ = {
