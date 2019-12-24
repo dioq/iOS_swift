@@ -100,6 +100,10 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
         gesture.title = "手势"
         dataArray.append(gesture)
         
+        let foldCellVC = FoldCellViewController()
+        foldCellVC.title = "折叠 Cell"
+        dataArray.append(foldCellVC)
+        
         let moveVC = MoveCellVC()
         moveVC.title = "cell交换位置"
         dataArray.append(moveVC)

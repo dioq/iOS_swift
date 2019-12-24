@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9321B1A723A2916C0028B245 /* EncryptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321B1A523A2916C0028B245 /* EncryptionViewController.swift */; };
+		9321B1A823A2916C0028B245 /* EncryptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9321B1A623A2916C0028B245 /* EncryptionViewController.xib */; };
+		936DCD1923B2255800E38DB5 /* FoldCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936DCD1823B2255800E38DB5 /* FoldCellViewController.swift */; };
+		936DCD1D23B225DF00E38DB5 /* MySetionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936DCD1A23B225DF00E38DB5 /* MySetionHeaderView.swift */; };
+		936DCD1E23B225DF00E38DB5 /* MySetionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936DCD1B23B225DF00E38DB5 /* MySetionHeaderView.xib */; };
+		936DCD1F23B225DF00E38DB5 /* FoldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936DCD1C23B225DF00E38DB5 /* FoldModel.swift */; };
 		CB1FA90C3B5B02927B5D38D3 /* Pods_MySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD046A5AA03CAB50BACDEC1 /* Pods_MySwift.framework */; };
 		CE1CBAC423224AAC00D3AE39 /* MyFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CBAC223224AAC00D3AE39 /* MyFontViewController.swift */; };
 		CE1CBAC523224AAC00D3AE39 /* MyFontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAC323224AAC00D3AE39 /* MyFontViewController.xib */; };
@@ -385,6 +391,12 @@
 
 /* Begin PBXFileReference section */
 		32F7714E770754C61BBD0BA8 /* Pods-MySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwift.debug.xcconfig"; path = "Target Support Files/Pods-MySwift/Pods-MySwift.debug.xcconfig"; sourceTree = "<group>"; };
+		9321B1A523A2916C0028B245 /* EncryptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionViewController.swift; sourceTree = "<group>"; };
+		9321B1A623A2916C0028B245 /* EncryptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EncryptionViewController.xib; sourceTree = "<group>"; };
+		936DCD1823B2255800E38DB5 /* FoldCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldCellViewController.swift; sourceTree = "<group>"; };
+		936DCD1A23B225DF00E38DB5 /* MySetionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySetionHeaderView.swift; sourceTree = "<group>"; };
+		936DCD1B23B225DF00E38DB5 /* MySetionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySetionHeaderView.xib; sourceTree = "<group>"; };
+		936DCD1C23B225DF00E38DB5 /* FoldModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldModel.swift; sourceTree = "<group>"; };
 		9AD046A5AA03CAB50BACDEC1 /* Pods_MySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C790BE9ABE19EB49FDF58AFD /* Pods-MySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwift.release.xcconfig"; path = "Target Support Files/Pods-MySwift/Pods-MySwift.release.xcconfig"; sourceTree = "<group>"; };
 		CE1CBAC223224AAC00D3AE39 /* MyFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFontViewController.swift; sourceTree = "<group>"; };
@@ -789,6 +801,26 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9321B19523A222D80028B245 /* encryption */ = {
+			isa = PBXGroup;
+			children = (
+				9321B1A523A2916C0028B245 /* EncryptionViewController.swift */,
+				9321B1A623A2916C0028B245 /* EncryptionViewController.xib */,
+			);
+			path = encryption;
+			sourceTree = "<group>";
+		};
+		936DCD1723B2252300E38DB5 /* foldCell */ = {
+			isa = PBXGroup;
+			children = (
+				936DCD1823B2255800E38DB5 /* FoldCellViewController.swift */,
+				936DCD1C23B225DF00E38DB5 /* FoldModel.swift */,
+				936DCD1A23B225DF00E38DB5 /* MySetionHeaderView.swift */,
+				936DCD1B23B225DF00E38DB5 /* MySetionHeaderView.xib */,
+			);
+			path = foldCell;
+			sourceTree = "<group>";
+		};
 		9659CEB6C5FFEDEC8B9BD34A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -877,6 +909,7 @@
 		CE69C108224B6E06004F4FA4 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				9321B19523A222D80028B245 /* encryption */,
 				CE24E9FE22BCD6A800CB80BB /* changeIcon */,
 				CE69C2A5224B6E07004F4FA4 /* paraseJSON */,
 				CE69C12E224B6E06004F4FA4 /* Localizable */,
@@ -1337,6 +1370,7 @@
 		CE69C195224B6E06004F4FA4 /* tableView */ = {
 			isa = PBXGroup;
 			children = (
+				936DCD1723B2252300E38DB5 /* foldCell */,
 				CE69C196224B6E06004F4FA4 /* tableHeaderAndFooter */,
 				CE69C19B224B6E06004F4FA4 /* editCell */,
 				CE69C19D224B6E06004F4FA4 /* section */,
@@ -1528,9 +1562,9 @@
 			isa = PBXGroup;
 			children = (
 				CE69C1D0224B6E07004F4FA4 /* CollectionFooter.swift */,
-				CE69C1D1224B6E07004F4FA4 /* MyCollectionViewCell.xib */,
 				CE69C1D2224B6E07004F4FA4 /* SectionCollectionView.xib */,
 				CE69C1D3224B6E07004F4FA4 /* MyCollectionViewCell.swift */,
+				CE69C1D1224B6E07004F4FA4 /* MyCollectionViewCell.xib */,
 				CE69C1D4224B6E07004F4FA4 /* CollectionHeader.swift */,
 				CE69C1D5224B6E07004F4FA4 /* SectionCollectionView.swift */,
 				CE69C1D6224B6E07004F4FA4 /* CollectionHeader.xib */,
@@ -2321,6 +2355,7 @@
 				CE757CE3237E70AC0039C29D /* 段宁毛笔行书.ttf in Resources */,
 				CE69C332224B6E07004F4FA4 /* SessionViewController.xib in Resources */,
 				CE69C32A224B6E07004F4FA4 /* UISwitchVC.xib in Resources */,
+				9321B1A823A2916C0028B245 /* EncryptionViewController.xib in Resources */,
 				CE69C3A9224B6E07004F4FA4 /* coin3.png in Resources */,
 				CE69C2F7224B6E07004F4FA4 /* MyClosureVC.xib in Resources */,
 				CE69C37B224B6E07004F4FA4 /* DatePickerVC.xib in Resources */,
@@ -2425,6 +2460,7 @@
 				CE69C352224B6E07004F4FA4 /* EditCollectionCellVC.xib in Resources */,
 				CE7D20432259EA0C00DEE23E /* water-loading.json in Resources */,
 				CE69C3AC224B6E07004F4FA4 /* Favor_00014.png in Resources */,
+				936DCD1E23B225DF00E38DB5 /* MySetionHeaderView.xib in Resources */,
 				CE69C345224B6E07004F4FA4 /* OneCell.xib in Resources */,
 				CE69C3EE224B6E07004F4FA4 /* SQLiteViewController.xib in Resources */,
 				CE69C3C6224B6E07004F4FA4 /* smile.png in Resources */,
@@ -2581,9 +2617,11 @@
 				CE69C3FB224B6E07004F4FA4 /* Handy3Model.swift in Sources */,
 				CE69C2CD224B6E07004F4FA4 /* MyComentVC.swift in Sources */,
 				CE69C2F6224B6E07004F4FA4 /* MyClosureVC.swift in Sources */,
+				936DCD1F23B225DF00E38DB5 /* FoldModel.swift in Sources */,
 				CE69C316224B6E07004F4FA4 /* ShakeViewController.swift in Sources */,
 				CE69C3DE224B6E07004F4FA4 /* FWSheetView.swift in Sources */,
 				CE69C36C224B6E07004F4FA4 /* NibStackView.swift in Sources */,
+				936DCD1923B2255800E38DB5 /* FoldCellViewController.swift in Sources */,
 				CE69C3F8224B6E07004F4FA4 /* HandleJSONVC.swift in Sources */,
 				CE69C2FC224B6E07004F4FA4 /* MyNotificationVC.swift in Sources */,
 				CE69C2D5224B6E07004F4FA4 /* CacheViewController.swift in Sources */,
@@ -2609,6 +2647,7 @@
 				CE69C39E224B6E07004F4FA4 /* ShowPhotosVC.swift in Sources */,
 				CE69C2CF224B6E07004F4FA4 /* WriteBoardView.swift in Sources */,
 				CE69C3DF224B6E07004F4FA4 /* FWPopupCategory.swift in Sources */,
+				9321B1A723A2916C0028B245 /* EncryptionViewController.swift in Sources */,
 				CE69C35C224B6E07004F4FA4 /* CollectionVC.swift in Sources */,
 				CE69C2E6224B6E07004F4FA4 /* MySegmentVC.swift in Sources */,
 				CE69C397224B6E07004F4FA4 /* PickImageViewController.swift in Sources */,
@@ -2683,6 +2722,7 @@
 				CECDACF12272B3140020A98F /* DeviceViewController.swift in Sources */,
 				CE69C357224B6E07004F4FA4 /* CollectionHeader.swift in Sources */,
 				CE69C3E0224B6E07004F4FA4 /* FWCustomSheetView.swift in Sources */,
+				936DCD1D23B225DF00E38DB5 /* MySetionHeaderView.swift in Sources */,
 				CE69C3FF224B6E07004F4FA4 /* KingfisherViewController.swift in Sources */,
 				CE69C351224B6E07004F4FA4 /* EditCollectionCellVC.swift in Sources */,
 				CE69C40E224B6E08004F4FA4 /* MyNavgationController.swift in Sources */,

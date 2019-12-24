@@ -17,6 +17,10 @@ class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDel
     func getData() {
         dataArray = Array<UIViewController>()
         
+        let encryptionVC = EncryptionViewController()
+        encryptionVC.title = "加密与解密"
+        dataArray.append(encryptionVC)
+        
         let changeIconVC = ChangeIconViewController()
         changeIconVC.title = "更换App icon"
         dataArray.append(changeIconVC)

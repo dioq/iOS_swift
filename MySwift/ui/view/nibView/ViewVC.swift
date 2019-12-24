@@ -62,6 +62,7 @@ class ViewVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        navigationItem.title = "自定义xib view"
         self.setUpView(x: centeyX, y: 70 + 10 + heightV, color: UIColor.green)//虽然不会形变,但是会出现多次加载的问题
         self.view.addSubview(testView2)//在view视图出现后，再加载就不会形变，而且懒加载可以避免重复加载(建议用这种方法,添加nib视图)
     }
