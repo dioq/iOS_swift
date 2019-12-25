@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,7 +14,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qba-ug-QLn">
-                    <rect key="frame" x="20" y="5" width="200" height="70"/>
+                    <rect key="frame" x="10" y="5" width="200" height="70"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="0NS-H5-dTf"/>
                     </constraints>
@@ -24,9 +23,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DP2-Bo-IAl">
-                    <rect key="frame" x="324" y="5" width="70" height="70"/>
+                    <rect key="frame" x="364" y="30" width="30" height="20"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="DP2-Bo-IAl" secondAttribute="height" id="5hI-GY-sPQ"/>
+                        <constraint firstAttribute="width" secondItem="DP2-Bo-IAl" secondAttribute="height" multiplier="3:2" id="5hI-GY-sPQ"/>
+                        <constraint firstAttribute="width" constant="30" id="qdf-Um-BO9"/>
                     </constraints>
                     <state key="normal" backgroundImage="arrow_down"/>
                     <connections>
@@ -34,17 +34,15 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="DP2-Bo-IAl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="3fU-TW-tcv"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="DP2-Bo-IAl" secondAttribute="bottom" constant="5" id="6Zb-A0-KsR"/>
-                <constraint firstItem="qba-ug-QLn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ZOZ-1v-cbD"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qba-ug-QLn" secondAttribute="bottom" constant="5" id="nyW-LZ-Eyj"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DP2-Bo-IAl" secondAttribute="trailing" constant="20" id="pf7-yv-Ly4"/>
+                <constraint firstItem="DP2-Bo-IAl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7gb-eo-QOF"/>
+                <constraint firstItem="qba-ug-QLn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="ZOZ-1v-cbD"/>
+                <constraint firstAttribute="bottom" secondItem="qba-ug-QLn" secondAttribute="bottom" constant="5" id="nyW-LZ-Eyj"/>
+                <constraint firstAttribute="trailing" secondItem="DP2-Bo-IAl" secondAttribute="trailing" constant="20" id="pf7-yv-Ly4"/>
                 <constraint firstItem="qba-ug-QLn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="sR9-QJ-SeB"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="openBtn" destination="DP2-Bo-IAl" id="CRu-7l-Thd"/>
                 <outlet property="sectionTitleLabel" destination="qba-ug-QLn" id="mSd-hy-Dps"/>
@@ -53,6 +51,6 @@
         </view>
     </objects>
     <resources>
-        <image name="arrow_down" width="24" height="24"/>
+        <image name="arrow_down" width="15.5" height="9"/>
     </resources>
 </document>

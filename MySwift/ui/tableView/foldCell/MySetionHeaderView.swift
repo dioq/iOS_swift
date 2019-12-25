@@ -10,7 +10,7 @@ import UIKit
 
 protocol OpenDelegate:NSObjectProtocol {
     //设置协议方法
-    func openWhichOn(index: Int)
+    func openWhichOne(index: Int)
 }
 
 class MySetionHeaderView: UIView {
@@ -21,7 +21,7 @@ class MySetionHeaderView: UIView {
     
     var sectionTitle: String!
     var section: Int = 0
-    
+    var isOpen = false
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,12 +32,21 @@ class MySetionHeaderView: UIView {
         if sectionTitle != nil {
             self.sectionTitleLabel.text = sectionTitle
         }
+        
+        var imageName:String?
+        if isOpen {
+            imageName = "arrow_up"
+        }else {
+            imageName = "arrow_down"
+        }
+        let imageBg = UIImage.init(named: imageName!)
+        openBtn.setBackgroundImage(imageBg!, for: .normal)
     }
     
     
     @IBAction func openAction(_ sender: UIButton) {
         if openSectionDelegate != nil {
-            openSectionDelegate?.openWhichOn(index: section)
+            openSectionDelegate?.openWhichOne(index: section)
         }
     }
     

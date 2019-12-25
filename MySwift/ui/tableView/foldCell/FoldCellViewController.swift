@@ -19,10 +19,10 @@ class FoldCellViewController: UIViewController {
         
         for i in 0...3 {
             let model = FoldModel()
-            model.sectionName = "Section: \(i)"
+            model.sectionName = "Section \(i)"
             var rowNameArr = Array<String>()
             for j in 0...3 {
-                let rowName = "Section: \(i)  ======== row : \(j)"
+                let rowName = "  section: \(i)  ======== row : \(j)"
                 rowNameArr.append(rowName)
             }
             model.rowContent = rowNameArr
@@ -31,43 +31,33 @@ class FoldCellViewController: UIViewController {
         
         //设置UItabView的位置
         myTableView = UITableView.init(frame: self.view.frame, style: UITableView.Style.plain)
-        myTableView.backgroundColor = UIColor.white
-        myTableView.separatorStyle = UITableViewCell.SeparatorStyle.singleLine //分割线样式
         self.view.addSubview(myTableView)
         
         //设置数据源
         myTableView.dataSource = self
         //设置代理
         myTableView.delegate = self
-        //在初始化tableview的时候就去register这个自顶一个的cell, 这种写法在cellForRowAtIndexPath部分就不用去判断这个cell是否非空
         myTableView.register(UITableViewCell.self, forCellReuseIdentifier:identifier)
     }
     
     
 }
 
-extension FoldCellViewController:UITableViewDataSource,UITableViewDelegate,OpenDelegate {
+extension FoldCellViewController:UITableViewDataSource,UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let sectionHeaderView = Bundle.main.loadNibNamed("MySetionHeaderView", owner: self, options: nil)?.last as! MySetionHeaderView
         let model = self.dataArray[section]
+        sectionHeaderView.isOpen = model.isOpen
         sectionHeaderView.sectionTitle = model.sectionName!
         sectionHeaderView.section = section
         sectionHeaderView.openSectionDelegate = self
         return sectionHeaderView
     }
-    
-    func openWhichOn(index: Int) {
-        let model = self.dataArray[index]
-        model.isOpen = !model.isOpen
-        self.dataArray[index] = model
-        self.myTableView.reloadData()
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 60
     }
-    
-    //section尾的高度
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 80
-    }
-    
     
     func numberOfSections(in tableView:UITableView) ->Int {
         return dataArray.count
@@ -97,7 +87,15 @@ extension FoldCellViewController:UITableViewDataSource,UITableViewDelegate,OpenD
     
     //处理选中事件
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true) //选中背景变灰 后 恢复
-        print("选中的Cell 为:\(self.dataArray[indexPath.row])")
+        print("点击的Cell 为 section:\(indexPath.section) row:\(indexPath.row)")
+    }
+}
+
+extension FoldCellViewController:OpenDelegate {
+    func openWhichOne(index: Int) {
+        let model = self.dataArray[index]
+        model.isOpen = !model.isOpen
+        self.dataArray[index] = model
+        self.myTableView.reloadData()
     }
 }
