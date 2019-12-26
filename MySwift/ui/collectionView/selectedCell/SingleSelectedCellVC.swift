@@ -9,11 +9,10 @@
 import UIKit
 
 class SingleSelectedCellVC: UIViewController {
-
+    
     @IBOutlet weak var myCollectionView: UICollectionView!
     let identifier = "mycell"
     var dataArray = Array<String>()
-    var selectedIndexPath:IndexPath!
     
     
     override func viewDidLoad() {
@@ -44,7 +43,7 @@ class SingleSelectedCellVC: UIViewController {
             dataArray.append(value)
         }
     }
-
+    
     @objc func showAllSelected() {
         if let selectedItems = myCollectionView.indexPathsForSelectedItems {
             for item in selectedItems {
@@ -64,12 +63,6 @@ extension SingleSelectedCellVC:UICollectionViewDataSource,UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! SelectedCollectionCell
         cell.myTitle.text = dataArray[indexPath.row]
-        
-        if !cell.isSelected {
-            collectionView.reloadItems(at: [indexPath])
-        }
-        cell.setSelectedStatus()
-        
         return cell
     }
     
@@ -80,16 +73,17 @@ extension SingleSelectedCellVC:UICollectionViewDataSource,UICollectionViewDelega
     
     //选中状态 触发
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        selectedIndexPath = indexPath
-        if let cell = collectionView.cellForItem(at: indexPath) as? SelectedCollectionCell {
-            cell.setSelectedStatus()
+        if let cell = collectionView.cellForItem(at: indexPath) {
+            cell.isSelected = true
+            cell.layoutSubviews()
         }
     }
     
     //取消选中状态 触发
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        if let cell = collectionView.cellForItem(at: indexPath) as? SelectedCollectionCell {
-            cell.setSelectedStatus()
+        if let cell = collectionView.cellForItem(at: indexPath) {
+            cell.isSelected = false
+            cell.layoutSubviews()
         }
     }
     

@@ -15,10 +15,10 @@ class MyCell: UITableViewCell {
     @IBOutlet weak var myMark: UIView!
     
     var isNeedLabel:UILabel!//加*号
-    var isRequire = false      // 01  03 05 08 10
+    var isRequire = false
     
     //初始化
-    override func awakeFromNib() {   //02  06 09
+    override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         
@@ -27,8 +27,8 @@ class MyCell: UITableViewCell {
         print("awakeFromNib:\t",isRequire)
     }
     
-    //加载视图 (在初始化之后才执行)
-    override func layoutSubviews() {   //04  07 11
+    //加载视图
+    override func layoutSubviews() {
         super.layoutSubviews()
         
         isNeedLabel.text = "*"
