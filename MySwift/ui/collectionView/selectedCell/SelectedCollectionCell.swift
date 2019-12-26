@@ -18,7 +18,7 @@ class SelectedCollectionCell: UICollectionViewCell {
         myTitle.sizeToFit()
     }
 
-//    在cell复用之前把cell恢复到初始化状态(cell复用之前调用)
+//    在cell复用之前调用,可以对cell中某些控件进行初始化,避免上一次遗留数据干扰本次使用
 //    override func prepareForReuse() {
 //        myTitle.textColor = UIColor.black
 //        selectDot.setBackgroundImage(UIImage.init(named: "selected_off"), for: .normal)

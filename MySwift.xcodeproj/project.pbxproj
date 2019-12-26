@@ -1452,9 +1452,9 @@
 			isa = PBXGroup;
 			children = (
 				CE69C1AC224B6E07004F4FA4 /* SelectedCell.swift */,
+				CE69C1AF224B6E07004F4FA4 /* SelectedCell.xib */,
 				CE69C1AD224B6E07004F4FA4 /* SingleSelectedVC.swift */,
 				CE69C1AE224B6E07004F4FA4 /* MultipleSelectedTBVC.swift */,
-				CE69C1AF224B6E07004F4FA4 /* SelectedCell.xib */,
 			);
 			path = selectedCell;
 			sourceTree = "<group>";
@@ -1474,10 +1474,10 @@
 			children = (
 				CE69C1B5224B6E07004F4FA4 /* TwoCellTBVC.swift */,
 				CE69C1B6224B6E07004F4FA4 /* TwoCellTBVC.xib */,
-				CE69C1B7224B6E07004F4FA4 /* TwoCell.xib */,
 				CE69C1B8224B6E07004F4FA4 /* TwoCell.swift */,
-				CE69C1B9224B6E07004F4FA4 /* OneCell.xib */,
+				CE69C1B7224B6E07004F4FA4 /* TwoCell.xib */,
 				CE69C1BA224B6E07004F4FA4 /* OneCell.swift */,
+				CE69C1B9224B6E07004F4FA4 /* OneCell.xib */,
 			);
 			path = difficentCell;
 			sourceTree = "<group>";
@@ -1561,14 +1561,14 @@
 		CE69C1CF224B6E07004F4FA4 /* section */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C1D0224B6E07004F4FA4 /* CollectionFooter.swift */,
+				CE69C1D5224B6E07004F4FA4 /* SectionCollectionView.swift */,
 				CE69C1D2224B6E07004F4FA4 /* SectionCollectionView.xib */,
+				CE69C1D0224B6E07004F4FA4 /* CollectionFooter.swift */,
+				CE69C1D7224B6E07004F4FA4 /* CollectionFooter.xib */,
 				CE69C1D3224B6E07004F4FA4 /* MyCollectionViewCell.swift */,
 				CE69C1D1224B6E07004F4FA4 /* MyCollectionViewCell.xib */,
 				CE69C1D4224B6E07004F4FA4 /* CollectionHeader.swift */,
-				CE69C1D5224B6E07004F4FA4 /* SectionCollectionView.swift */,
 				CE69C1D6224B6E07004F4FA4 /* CollectionHeader.xib */,
-				CE69C1D7224B6E07004F4FA4 /* CollectionFooter.xib */,
 			);
 			path = section;
 			sourceTree = "<group>";
@@ -1585,12 +1585,12 @@
 		CE69C1DB224B6E07004F4FA4 /* selectedCell */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C1DC224B6E07004F4FA4 /* MultipleSelectedCVVC.xib */,
-				CE69C1DD224B6E07004F4FA4 /* SingleSelectedCellVC.xib */,
 				CE69C1DE224B6E07004F4FA4 /* SingleSelectedCellVC.swift */,
-				CE69C1DF224B6E07004F4FA4 /* SelectedCollectionCell.xib */,
-				CE69C1E0224B6E07004F4FA4 /* SelectedCollectionCell.swift */,
+				CE69C1DD224B6E07004F4FA4 /* SingleSelectedCellVC.xib */,
 				CE69C1E1224B6E07004F4FA4 /* MultipleSelectedCVVC.swift */,
+				CE69C1DC224B6E07004F4FA4 /* MultipleSelectedCVVC.xib */,
+				CE69C1E0224B6E07004F4FA4 /* SelectedCollectionCell.swift */,
+				CE69C1DF224B6E07004F4FA4 /* SelectedCollectionCell.xib */,
 			);
 			path = selectedCell;
 			sourceTree = "<group>";
