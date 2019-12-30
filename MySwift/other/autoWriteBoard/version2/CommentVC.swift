@@ -9,10 +9,8 @@
 import UIKit
 
 class CommentVC: UIViewController {
-    
-    var writeview:WriteBoardView!
-    var writeviewHeight:CGFloat = 50
-    
+
+    var writeviewHeight:CGFloat = 50    
     
     override func viewDidLoad() {
         super.viewDidLoad()

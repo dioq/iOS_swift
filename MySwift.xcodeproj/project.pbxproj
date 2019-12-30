@@ -949,10 +949,10 @@
 		CE69C10E224B6E06004F4FA4 /* version1 */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C10F224B6E06004F4FA4 /* WriteBoardView.xib */,
 				CE69C110224B6E06004F4FA4 /* MyComentVC.swift */,
 				CE69C111224B6E06004F4FA4 /* MyComentVC.xib */,
 				CE69C112224B6E06004F4FA4 /* WriteBoardView.swift */,
+				CE69C10F224B6E06004F4FA4 /* WriteBoardView.xib */,
 			);
 			path = version1;
 			sourceTree = "<group>";
