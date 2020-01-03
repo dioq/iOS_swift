@@ -15,12 +15,13 @@ class MyComentVC: UIViewController {
     var writeviewHeight:CGFloat = 50
     var navigationBarHeight:CGFloat = 0
     var startY:CGFloat = 0
+    var bottomHeight:CGFloat = 44
     
  
     override func viewDidLoad() {
         super.viewDidLoad()
         // 灰色背景视图
-        maskView.frame = self.view.bounds
+        maskView.frame = CGRect.init(x: 0, y: 0, width: ScreenWIDTH, height: ScreenHEIGHT)
         maskView.backgroundColor = UIColor(white: 0.1, alpha: 0.3)
         maskView.isHidden = true
         //给遮罩层加手势
@@ -29,10 +30,13 @@ class MyComentVC: UIViewController {
         self.view.addSubview(maskView)
         
         writeview = Bundle.main.loadNibNamed("WriteBoardView", owner: self, options: nil)?.last as? WriteBoardView
-        startY = ScreenHEIGHT - (statusBarHeight + getNavigationBarHeight() + writeviewHeight)
+        var otherHeight = statusBarHeight + getNavigationBarHeight() + writeviewHeight
+        otherHeight += bottomHeight //有刘海时底部会额外加44
+        startY = ScreenHEIGHT - otherHeight
         writeview.frame = CGRect(x: 0, y: startY, width: ScreenWIDTH, height: writeviewHeight)
         let deadline = DispatchTime.now() + 0.2
-        DispatchQueue.main.asyncAfter(deadline: deadline) {//延时执行，等待self.view加载完后再加载自定义xib视图
+        //延时执行，等待self.view加载完后再加载自定义xib视图
+        DispatchQueue.main.asyncAfter(deadline: deadline) {
             self.view.addSubview(self.writeview)
         }
 
@@ -53,7 +57,7 @@ class MyComentVC: UIViewController {
         let duration = kbInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as! Double //取到键盘弹出持续时间
         UIView.animate(withDuration: duration) {
             self.maskView.isHidden = false
-            self.writeview.frame.origin.y -= height
+            self.writeview.frame.origin.y -= (height - self.bottomHeight)
         }
     }
     // 键盘隐藏

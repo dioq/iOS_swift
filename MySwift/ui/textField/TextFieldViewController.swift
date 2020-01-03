@@ -30,7 +30,12 @@ class TextFieldViewController: UIViewController,UITextFieldDelegate {
         textField3.clearButtonMode = .always
         
         textField2.isSecureTextEntry = true //输入内容会显示成小黑点
-        textField3.isSecureTextEntry = true 
+        textField3.isSecureTextEntry = true
+        
+        //弹出的键盘样式
+        textField1.keyboardType = .default
+        textField2.keyboardType = .numbersAndPunctuation
+        textField3.keyboardType = .numberPad
     }
 
     //开始编辑

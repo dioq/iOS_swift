@@ -9,7 +9,7 @@
 import UIKit
 
 class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-
+    
     @IBOutlet weak var myTableView: UITableView!
     
     //懒加载
@@ -23,6 +23,10 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
         let imageVC = IMGVViewController()
         imageVC.title = "imageview"
         dataArray.append(imageVC)
+        
+        let skillNiblVC = Nib1ViewController()
+        skillNiblVC.title = "xib使用技巧"
+        dataArray.append(skillNiblVC)
         
         let nibVC = NibViewController()
         nibVC.title = "演示xib + autolayerout"
@@ -111,7 +115,7 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
         let waterFallVC = WaterFallViewController()
         waterFallVC.title = "瀑布流"
         dataArray.append(waterFallVC)
- 
+        
         let scrollCell = ScrollCellViewController()
         scrollCell.title = "滚动cell"
         dataArray.append(scrollCell)
@@ -147,7 +151,7 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
         let headerFooterTBVC = HeaderFooterTBVC()
         headerFooterTBVC.title = "tableView HeaderAndFooter"
         dataArray.append(headerFooterTBVC)
-
+        
         let twoCellTBVC = TwoCellTBVC()
         twoCellTBVC.title = "加载两种不同的cell"
         dataArray.append(twoCellTBVC)
@@ -257,5 +261,5 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
         self.navigationController?.pushViewController(vc, animated: true)
         self.hidesBottomBarWhenPushed = false
     }
-
+    
 }
