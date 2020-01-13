@@ -13,6 +13,8 @@
 		936DCD1D23B225DF00E38DB5 /* MySetionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936DCD1A23B225DF00E38DB5 /* MySetionHeaderView.swift */; };
 		936DCD1E23B225DF00E38DB5 /* MySetionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936DCD1B23B225DF00E38DB5 /* MySetionHeaderView.xib */; };
 		936DCD1F23B225DF00E38DB5 /* FoldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936DCD1C23B225DF00E38DB5 /* FoldModel.swift */; };
+		93EFF48623BDC09600A4BC67 /* Nib1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EFF48423BDC09600A4BC67 /* Nib1ViewController.swift */; };
+		93EFF48723BDC09600A4BC67 /* Nib1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93EFF48523BDC09600A4BC67 /* Nib1ViewController.xib */; };
 		CB1FA90C3B5B02927B5D38D3 /* Pods_MySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD046A5AA03CAB50BACDEC1 /* Pods_MySwift.framework */; };
 		CE1CBAC423224AAC00D3AE39 /* MyFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CBAC223224AAC00D3AE39 /* MyFontViewController.swift */; };
 		CE1CBAC523224AAC00D3AE39 /* MyFontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAC323224AAC00D3AE39 /* MyFontViewController.xib */; };
@@ -397,6 +399,8 @@
 		936DCD1A23B225DF00E38DB5 /* MySetionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySetionHeaderView.swift; sourceTree = "<group>"; };
 		936DCD1B23B225DF00E38DB5 /* MySetionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySetionHeaderView.xib; sourceTree = "<group>"; };
 		936DCD1C23B225DF00E38DB5 /* FoldModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldModel.swift; sourceTree = "<group>"; };
+		93EFF48423BDC09600A4BC67 /* Nib1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib1ViewController.swift; sourceTree = "<group>"; };
+		93EFF48523BDC09600A4BC67 /* Nib1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Nib1ViewController.xib; sourceTree = "<group>"; };
 		9AD046A5AA03CAB50BACDEC1 /* Pods_MySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C790BE9ABE19EB49FDF58AFD /* Pods-MySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwift.release.xcconfig"; path = "Target Support Files/Pods-MySwift/Pods-MySwift.release.xcconfig"; sourceTree = "<group>"; };
 		CE1CBAC223224AAC00D3AE39 /* MyFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFontViewController.swift; sourceTree = "<group>"; };
@@ -819,6 +823,26 @@
 				936DCD1B23B225DF00E38DB5 /* MySetionHeaderView.xib */,
 			);
 			path = foldCell;
+			sourceTree = "<group>";
+		};
+		93EFF48223BDC00B00A4BC67 /* autolayerout */ = {
+			isa = PBXGroup;
+			children = (
+				CE69C1EC224B6E07004F4FA4 /* NibViewController.swift */,
+				CE69C1ED224B6E07004F4FA4 /* NibViewController.xib */,
+				CE69C1EE224B6E07004F4FA4 /* NibStackView.swift */,
+				CE69C1EB224B6E07004F4FA4 /* NibStackView.xib */,
+			);
+			path = autolayerout;
+			sourceTree = "<group>";
+		};
+		93EFF48323BDC01600A4BC67 /* skill */ = {
+			isa = PBXGroup;
+			children = (
+				93EFF48423BDC09600A4BC67 /* Nib1ViewController.swift */,
+				93EFF48523BDC09600A4BC67 /* Nib1ViewController.xib */,
+			);
+			path = skill;
 			sourceTree = "<group>";
 		};
 		9659CEB6C5FFEDEC8B9BD34A /* Frameworks */ = {
@@ -1617,10 +1641,8 @@
 		CE69C1E9224B6E07004F4FA4 /* nib */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C1EC224B6E07004F4FA4 /* NibViewController.swift */,
-				CE69C1ED224B6E07004F4FA4 /* NibViewController.xib */,
-				CE69C1EE224B6E07004F4FA4 /* NibStackView.swift */,
-				CE69C1EB224B6E07004F4FA4 /* NibStackView.xib */,
+				93EFF48323BDC01600A4BC67 /* skill */,
+				93EFF48223BDC00B00A4BC67 /* autolayerout */,
 			);
 			path = nib;
 			sourceTree = "<group>";
@@ -2438,6 +2460,7 @@
 				CE69C3AE224B6E07004F4FA4 /* Favor_00017.png in Resources */,
 				CE69C3BC224B6E07004F4FA4 /* Favor_00024.png in Resources */,
 				CE69C3A7224B6E07004F4FA4 /* coin4.png in Resources */,
+				93EFF48723BDC09600A4BC67 /* Nib1ViewController.xib in Resources */,
 				CE69C35D224B6E07004F4FA4 /* MultipleSelectedCVVC.xib in Resources */,
 				CE757CE6237E70AC0039C29D /* 文鼎中特广告体.TTF in Resources */,
 				CE716571237FC5CD00D476C3 /* AppIcon-default@2x.png in Resources */,
@@ -2579,6 +2602,7 @@
 				CE69C2D0224B6E07004F4FA4 /* CommentVC.swift in Sources */,
 				CED3B8D922660C11008988CE /* Man.swift in Sources */,
 				CE69C40C224B6E08004F4FA4 /* Const.swift in Sources */,
+				93EFF48623BDC09600A4BC67 /* Nib1ViewController.swift in Sources */,
 				CE69C3FC224B6E07004F4FA4 /* HandyModel.swift in Sources */,
 				CE69C3A0224B6E07004F4FA4 /* AnimationVC2.swift in Sources */,
 				CE69C30F224B6E07004F4FA4 /* SendValueVC.swift in Sources */,
@@ -2911,7 +2935,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P7M4387Y6U;
 				INFOPLIST_FILE = MySwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2932,7 +2956,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P7M4387Y6U;
 				INFOPLIST_FILE = MySwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

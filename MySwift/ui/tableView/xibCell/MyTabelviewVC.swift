@@ -10,14 +10,14 @@ import UIKit
 
 class MyTabelviewVC: UIViewController, UITableViewDataSource,UITableViewDelegate {
     
-    var table:UITableView!
-    let arry:[String] = ["我是谁", "我从哪里来", "要到哪里去","我是谁", "我从哪里来", "要到哪里去","我是谁", "我从哪里来", "要到哪里去","我是谁", "我从哪里来", "要到哪里去","我是谁", "我从哪里来", "要到哪里去"]
+    var myTableView:UITableView!
+    let dataArray:[String] = ["我是谁", "我从哪里来", "要到哪里去","我是谁", "我从哪里来", "要到哪里去","我是谁", "我从哪里来", "要到哪里去","我是谁", "我从哪里来", "要到哪里去","我是谁", "我从哪里来", "要到哪里去"]
     
     let identifier = "cell"
     
     // 设置每个seccion的row数量
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arry.count
+        return dataArray.count
     }
     //设置section的数量
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -32,7 +32,7 @@ class MyTabelviewVC: UIViewController, UITableViewDataSource,UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:MyCell? = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? MyCell
         cell?.imageView?.image = UIImage.init(named: "more icon")
-        cell?.myLabel.text = arry[indexPath.row]
+        cell?.myLabel.text = dataArray[indexPath.row]
         if indexPath.row == 1 {
             tableView.selectRow(at: indexPath, animated: true, scrollPosition:UITableView.ScrollPosition.none)
             cell?.accessoryType = .checkmark //右边选中 状态的标记
@@ -53,15 +53,15 @@ class MyTabelviewVC: UIViewController, UITableViewDataSource,UITableViewDelegate
         super.viewDidLoad()
         self.title = "table自定义xib cell"
         //设置UITableView的位置
-        table = UITableView(frame: self.view.frame, style: UITableView.Style.plain)
-        self.table.backgroundColor = UIColor.blue
+        myTableView = UITableView(frame: self.view.frame, style: UITableView.Style.plain)
+        myTableView.backgroundColor = UIColor.blue
         
         //设置数据源
-        self.table.dataSource = self
+        myTableView.dataSource = self
         //设置代理
-        self.table.delegate = self
-        self.view.addSubview(table)
-        self.table.register(UINib.init(nibName: "MyCell", bundle: nil), forCellReuseIdentifier: identifier)
+        myTableView.delegate = self
+        self.view.addSubview(myTableView)
+        myTableView.register(UINib.init(nibName: "MyCell", bundle: nil), forCellReuseIdentifier: identifier)
     }
 
 }
