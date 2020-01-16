@@ -26,7 +26,8 @@ class BrowserVC: UIViewController {
         }
         
         if #available(iOS 10.0, *) { //iOS10 以后
-            UIApplication.shared.open(url!, options: [UIApplication.OpenExternalURLOptionsKey(rawValue: ""):""]) { (yes) in
+            let dict = Dictionary<UIApplication.OpenExternalURLOptionsKey, Any>()
+            UIApplication.shared.open(url!, options: dict) { (yes) in
                 if yes {
                     print("10.x跳转成功")
                 }else {

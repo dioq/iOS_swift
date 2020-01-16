@@ -1,4 +1,3 @@
-
 //
 //  JumpAppVC.swift
 //  Swift_Info
@@ -10,11 +9,11 @@
 import UIKit
 
 class JumpAppVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var myTableView: UITableView!
     let indentifier = "mycell"
-    var dataArray:[String] = ["调自己的ObjectiveC","调微信","调起QQ","调mail",]
-    var schemesInfoArray = ["ObjectiveC2.718://William2.718?message=hiOC","weixin://scanqrcode","mqq://qq2019","mailto:william17162018@gmail.com"]
+    var dataArray:[String] = ["调自己的ObjectiveC","调微信","调起QQ","调起淘宝","调mail",]
+    var schemesInfoArray = ["ObjectiveC2.718://William2.718?message=hiOC","weixin://scanqrcode","mqq://qq2019","taobao://taobao2019","mailto:william17162018@gmail.com"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +21,8 @@ class JumpAppVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         self.myTableView.dataSource = self
         self.myTableView.register(UITableViewCell.self, forCellReuseIdentifier: indentifier)
     }
-
-
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
     }
@@ -43,8 +42,8 @@ class JumpAppVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
                 print(make)
             }
         } else {
-            print("不可以打开")
+            print("没安装对应的App")
         }
     }
-
+    
 }
