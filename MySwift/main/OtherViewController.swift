@@ -9,13 +9,18 @@
 import UIKit
 
 class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-
+    
     @IBOutlet weak var myTableView: UITableView!
     let indentifier = "SwiftCell"
     var dataArray:[UIViewController]!
     
     func getData() {
         dataArray = Array<UIViewController>()
+        
+        
+        let networkVC = NetworkVC()
+        networkVC.title = "网络请求的封装"
+        dataArray.append(networkVC)
         
         let encryptionVC = EncryptionViewController()
         encryptionVC.title = "加密与解密"
@@ -84,7 +89,7 @@ class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "小功能集合"
+        self.navigationItem.title = "自己实现的功能"
         getData()
         //设置数据源
         myTableView.dataSource = self
@@ -93,7 +98,7 @@ class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDel
         myTableView.register(UITableViewCell.self, forCellReuseIdentifier: indentifier)
         myTableView.tableFooterView = UIView()
     }
-
+    
     //设置每个seccion的row数量
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
@@ -122,17 +127,17 @@ class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDel
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-//        self.hidesBottomBarWhenPushed = false
+        //        self.hidesBottomBarWhenPushed = false
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
