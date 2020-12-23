@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EncryptionViewController" customModule="MySwift" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CryptoViewController" customModule="MySwift" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,39 +19,39 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tNX-nq-V2c">
-                    <rect key="frame" x="20" y="64" width="374" height="220"/>
+                    <rect key="frame" x="20" y="54" width="374" height="190"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmx-dj-lYg">
-                            <rect key="frame" x="0.0" y="0.0" width="374" height="47.5"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmx-dj-lYg">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
                             <color key="backgroundColor" red="0.96848052740000001" green="0.7818095182" blue="0.78308995159999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <state key="normal" title="RSA  加密"/>
                             <connections>
                                 <action selector="RSAencrypt:" destination="-1" eventType="touchUpInside" id="rgt-6o-ZE3"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbx-Wp-A7g">
-                            <rect key="frame" x="0.0" y="57.5" width="374" height="47.5"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbx-Wp-A7g">
+                            <rect key="frame" x="0.0" y="50" width="374" height="40"/>
                             <color key="backgroundColor" red="0.96848052740000001" green="0.7818095182" blue="0.78308995159999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <state key="normal" title="RSA  解密"/>
                             <connections>
                                 <action selector="RSAdecrypt:" destination="-1" eventType="touchUpInside" id="7e4-te-8dO"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsN-LA-LgW">
-                            <rect key="frame" x="0.0" y="115" width="374" height="47.5"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsN-LA-LgW">
+                            <rect key="frame" x="0.0" y="100" width="374" height="40"/>
                             <color key="backgroundColor" red="0.96848052740000001" green="0.7818095182" blue="0.78308995159999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <state key="normal" title="MD5 加密"/>
                             <connections>
                                 <action selector="MD5:" destination="-1" eventType="touchUpInside" id="VfT-DO-YX4"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXm-sg-I49">
-                            <rect key="frame" x="0.0" y="172.5" width="374" height="47.5"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXm-sg-I49">
+                            <rect key="frame" x="0.0" y="150" width="374" height="40"/>
                             <color key="backgroundColor" red="0.96848052740000001" green="0.7818095182" blue="0.78308995159999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <state key="normal" title="Base64 加密"/>
                             <connections>
                                 <action selector="Base64:" destination="-1" eventType="touchUpInside" id="Hta-BV-sXL"/>
@@ -59,18 +59,18 @@
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="220" id="5JE-Mc-0mm"/>
+                        <constraint firstAttribute="height" constant="190" id="5JE-Mc-0mm"/>
                     </constraints>
                 </stackView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="tNX-nq-V2c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="6CG-93-9mY"/>
-                <constraint firstItem="tNX-nq-V2c" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Dlh-wj-TNO"/>
+                <constraint firstItem="tNX-nq-V2c" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="Dlh-wj-TNO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tNX-nq-V2c" secondAttribute="trailing" constant="20" id="rYn-NI-zOl"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="144"/>
+            <point key="canvasLocation" x="137.68115942028987" y="143.97321428571428"/>
         </view>
     </objects>
 </document>

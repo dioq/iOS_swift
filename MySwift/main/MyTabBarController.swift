@@ -34,9 +34,9 @@ class MyTabBarController: UITabBarController{
         nav2.tabBarItem.image = image2NormalOriRender
         nav2.tabBarItem.selectedImage = image2SelectedOriRender
         
-        let sdkVC = SDKViewController()
+        let sdkVC = VenderViewController()
         let nav3 = MyNavgationController.init(rootViewController: sdkVC)
-        nav3.tabBarItem.title = "SDK"
+        nav3.tabBarItem.title = "Vender"
         let image3Normal = UIImage.init(named: "tab_team_normal")
         let image3NormalOriRender = image3Normal!.withRenderingMode(.alwaysOriginal)
         let image3Selected = UIImage.init(named: "tab_team_50")

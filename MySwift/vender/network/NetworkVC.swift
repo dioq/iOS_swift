@@ -12,7 +12,7 @@ class NetworkVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.title = "测试封装的Alamofire"
     }
     
     @IBAction func get_func(_ sender: UIButton) {

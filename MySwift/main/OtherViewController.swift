@@ -17,12 +17,11 @@ class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDel
     func getData() {
         dataArray = Array<UIViewController>()
         
+        let urlSessionVC = URLSessionVC()
+        urlSessionVC.title = "原生网络请求"
+        dataArray.append(urlSessionVC)
         
-        let networkVC = NetworkVC()
-        networkVC.title = "网络请求的封装"
-        dataArray.append(networkVC)
-        
-        let encryptionVC = EncryptionViewController()
+        let encryptionVC = CryptoViewController()
         encryptionVC.title = "加密与解密"
         dataArray.append(encryptionVC)
         
@@ -61,10 +60,6 @@ class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDel
         let beginnerguideVC = BeginnerguideVC()
         beginnerguideVC.title = "新手引导"
         dataArray.append(beginnerguideVC)
-        
-        let useNetworkingVC = UseNetworkingToolVC()
-        useNetworkingVC.title = "测试封装的Alamofire"
-        dataArray.append(useNetworkingVC)
         
         let judgeNetVC = JudgeNetworkingVC()
         judgeNetVC.title = "网络监听"

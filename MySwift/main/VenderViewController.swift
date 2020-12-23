@@ -8,13 +8,17 @@
 
 import UIKit
 
-class SDKViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
+class VenderViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
 
     @IBOutlet weak var myTableView: UITableView!
     
     //懒加载
     lazy var dataArray:[UIViewController] = {
         var dataArray = Array<UIViewController>()
+        
+        let networkVC = NetworkVC()
+        networkVC.title = "测试封装的Alamofire"
+        dataArray.append(networkVC)
         
         let lottieVC = LottieViewController()
         lottieVC.title = "Lottie"
@@ -81,7 +85,7 @@ class SDKViewController: UIViewController, UITableViewDataSource,UITableViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "SDK"
+        navigationItem.title = "Vender"
         //设置数据源
         myTableView.dataSource = self
         //设置代理

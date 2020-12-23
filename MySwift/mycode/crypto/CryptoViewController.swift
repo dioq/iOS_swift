@@ -8,11 +8,11 @@
 
 import UIKit
 
-class EncryptionViewController: UIViewController {
+class CryptoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     @IBAction func RSAencrypt(_ sender: UIButton) {

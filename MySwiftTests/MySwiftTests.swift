@@ -22,26 +22,11 @@ class MySwiftTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         //        default_param()
-        test_str()
     }
     
-    public func test_str(){
-        let str = "aaaa"
-        guard let data =  str.data(using: String.Encoding.utf8) else { return }
-        if let str2 = String.init(data: data, encoding: .utf8) {
-            print("result : \(str2)")
-        }
-//        if let data =  Data.init(base64Encoded: str) {
-//
-//            if let str2 = String.init(data: data, encoding: .utf8) {
-//                print("result : \(str2)")
-//            }
-//
-//        }
-    }
-    
-    func default_param(mimeType:String = "image/jpeg") {
-        print(mimeType)
+    public func test_json(){
+        let tmp =  UUID()
+        print(tmp)
     }
     
     func testPerformanceExample() throws {

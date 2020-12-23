@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="i0H-Z3-pnT">
-                    <rect key="frame" x="10" y="64" width="394" height="260"/>
+                    <rect key="frame" x="10" y="54" width="394" height="260"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Amq-i7-Snb">
                             <rect key="frame" x="0.0" y="0.0" width="394" height="57.5"/>
@@ -65,7 +65,7 @@
             <constraints>
                 <constraint firstItem="i0H-Z3-pnT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="J3D-0I-Jmk"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i0H-Z3-pnT" secondAttribute="trailing" constant="10" id="QTr-sq-ist"/>
-                <constraint firstItem="i0H-Z3-pnT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="p1d-q1-0S6"/>
+                <constraint firstItem="i0H-Z3-pnT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="p1d-q1-0S6"/>
             </constraints>
             <point key="canvasLocation" x="-323" y="59"/>
         </view>
