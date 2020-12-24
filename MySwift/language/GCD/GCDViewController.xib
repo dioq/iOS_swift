@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,132 +18,102 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75c-bC-4Kr">
-                    <rect key="frame" x="100" y="35" width="175" height="30"/>
-                    <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TuT-x4-fWa">
+                    <rect key="frame" x="10" y="10" width="355" height="500"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75c-bC-4Kr">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="41"/>
+                            <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="延时执行"/>
+                            <connections>
+                                <action selector="action01:" destination="-1" eventType="touchUpInside" id="PXS-30-5lQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghr-6p-rF7">
+                            <rect key="frame" x="0.0" y="51" width="355" height="41"/>
+                            <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="group notify1"/>
+                            <connections>
+                                <action selector="manyTagetAction:" destination="-1" eventType="touchUpInside" id="bAh-Qf-zHv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrg-Uo-xx3">
+                            <rect key="frame" x="0.0" y="102" width="355" height="41"/>
+                            <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="concurrentPerform"/>
+                            <connections>
+                                <action selector="action02:" destination="-1" eventType="touchUpInside" id="Ap7-PV-ezX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoG-PU-CGH">
+                            <rect key="frame" x="0.0" y="153" width="355" height="41"/>
+                            <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="semaphore 信号、信号量"/>
+                            <connections>
+                                <action selector="action03:" destination="-1" eventType="touchUpInside" id="E6A-z2-mh3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fj-Y7-AVc">
+                            <rect key="frame" x="0.0" y="204" width="355" height="41"/>
+                            <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="group notify2"/>
+                            <connections>
+                                <action selector="targetFinished:" destination="-1" eventType="touchUpInside" id="MVs-TN-crl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBP-8P-rxi">
+                            <rect key="frame" x="0.0" y="255" width="355" height="41"/>
+                            <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="barrier"/>
+                            <connections>
+                                <action selector="barrierAction:" destination="-1" eventType="touchUpInside" id="SP3-vE-eRY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNe-Na-j5e">
+                            <rect key="frame" x="0.0" y="306" width="355" height="41"/>
+                            <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Concurrent Dispatch Queue"/>
+                            <connections>
+                                <action selector="concurrentAction:" destination="-1" eventType="touchUpInside" id="eru-F6-FDz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvh-jB-f4S">
+                            <rect key="frame" x="0.0" y="357" width="355" height="41"/>
+                            <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="SerialDispatch Queue"/>
+                            <connections>
+                                <action selector="serialQueue:" destination="-1" eventType="touchUpInside" id="Rgc-oP-ksk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jB4-5q-UU3">
+                            <rect key="frame" x="0.0" y="408" width="355" height="41"/>
+                            <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="synchronous"/>
+                            <connections>
+                                <action selector="syncAction:" destination="-1" eventType="touchUpInside" id="28L-Xa-o9a"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ja5-k9-gVj">
+                            <rect key="frame" x="0.0" y="459" width="355" height="41"/>
+                            <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="asynchronous"/>
+                            <connections>
+                                <action selector="asyncAction:" destination="-1" eventType="touchUpInside" id="kCO-kk-jc9"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="ZiJ-4x-jyg"/>
+                        <constraint firstAttribute="height" constant="500" id="RhZ-2Q-8Pu"/>
                     </constraints>
-                    <state key="normal" title="延时执行"/>
-                    <connections>
-                        <action selector="action01:" destination="-1" eventType="touchUpInside" id="PXS-30-5lQ"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghr-6p-rF7">
-                    <rect key="frame" x="100" y="80" width="175" height="30"/>
-                    <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="group notify1"/>
-                    <connections>
-                        <action selector="manyTagetAction:" destination="-1" eventType="touchUpInside" id="bAh-Qf-zHv"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrg-Uo-xx3">
-                    <rect key="frame" x="100" y="160" width="175" height="30"/>
-                    <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="concurrentPerform"/>
-                    <connections>
-                        <action selector="action02:" destination="-1" eventType="touchUpInside" id="Ap7-PV-ezX"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoG-PU-CGH">
-                    <rect key="frame" x="100" y="205" width="175" height="30"/>
-                    <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="semaphore 信号、信号量"/>
-                    <connections>
-                        <action selector="action03:" destination="-1" eventType="touchUpInside" id="E6A-z2-mh3"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fj-Y7-AVc">
-                    <rect key="frame" x="100" y="120" width="175" height="30"/>
-                    <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="group notify2"/>
-                    <connections>
-                        <action selector="targetFinished:" destination="-1" eventType="touchUpInside" id="MVs-TN-crl"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBP-8P-rxi">
-                    <rect key="frame" x="100" y="245" width="175" height="30"/>
-                    <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="barrier"/>
-                    <connections>
-                        <action selector="barrierAction:" destination="-1" eventType="touchUpInside" id="SP3-vE-eRY"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNe-Na-j5e">
-                    <rect key="frame" x="92" y="285" width="191" height="30"/>
-                    <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="Concurrent Dispatch Queue"/>
-                    <connections>
-                        <action selector="concurrentAction:" destination="-1" eventType="touchUpInside" id="eru-F6-FDz"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvh-jB-f4S">
-                    <rect key="frame" x="100" y="325" width="175" height="30"/>
-                    <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="SerialDispatch Queue"/>
-                    <connections>
-                        <action selector="serialQueue:" destination="-1" eventType="touchUpInside" id="Rgc-oP-ksk"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jB4-5q-UU3">
-                    <rect key="frame" x="100" y="370" width="175" height="30"/>
-                    <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="synchronous"/>
-                    <connections>
-                        <action selector="syncAction:" destination="-1" eventType="touchUpInside" id="28L-Xa-o9a"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ja5-k9-gVj">
-                    <rect key="frame" x="100" y="415" width="175" height="30"/>
-                    <color key="backgroundColor" red="0.65772779830000005" green="0.94533273959999997" blue="0.3653924744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="asynchronous"/>
-                    <connections>
-                        <action selector="asyncAction:" destination="-1" eventType="touchUpInside" id="kCO-kk-jc9"/>
-                    </connections>
-                </button>
+                </stackView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="JBP-8P-rxi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="0yM-yV-63K"/>
-                <constraint firstItem="jB4-5q-UU3" firstAttribute="top" secondItem="Rvh-jB-f4S" secondAttribute="bottom" constant="15" id="2b9-eR-DGK"/>
-                <constraint firstItem="Nrg-Uo-xx3" firstAttribute="top" secondItem="0fj-Y7-AVc" secondAttribute="bottom" constant="10" id="2dA-bK-WYe"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JBP-8P-rxi" secondAttribute="trailing" constant="100" id="4ei-dB-QWC"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rvh-jB-f4S" secondAttribute="trailing" constant="100" id="6OD-c8-VBC"/>
-                <constraint firstItem="ghr-6p-rF7" firstAttribute="height" secondItem="75c-bC-4Kr" secondAttribute="height" id="6sj-hJ-8ta"/>
-                <constraint firstItem="QoG-PU-CGH" firstAttribute="height" secondItem="75c-bC-4Kr" secondAttribute="height" id="7pO-ek-lXm"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QoG-PU-CGH" secondAttribute="trailing" constant="100" id="8wX-rJ-z1d"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0fj-Y7-AVc" secondAttribute="trailing" constant="100" id="9V1-va-pln"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="75c-bC-4Kr" secondAttribute="trailing" constant="100" id="Al9-Jv-Uh1"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Nrg-Uo-xx3" secondAttribute="trailing" constant="100" id="DMu-g7-DYI"/>
-                <constraint firstItem="jB4-5q-UU3" firstAttribute="width" secondItem="75c-bC-4Kr" secondAttribute="width" id="FFb-w1-Gft"/>
-                <constraint firstItem="ja5-k9-gVj" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Fq5-qm-kot"/>
-                <constraint firstItem="0fj-Y7-AVc" firstAttribute="top" secondItem="ghr-6p-rF7" secondAttribute="bottom" constant="10" id="JZD-Ya-buI"/>
-                <constraint firstItem="JBP-8P-rxi" firstAttribute="height" secondItem="75c-bC-4Kr" secondAttribute="height" id="LtP-94-HoZ"/>
-                <constraint firstItem="Nrg-Uo-xx3" firstAttribute="height" secondItem="75c-bC-4Kr" secondAttribute="height" id="MMA-PT-c4r"/>
-                <constraint firstItem="jB4-5q-UU3" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="MVW-oL-b13"/>
-                <constraint firstItem="QoG-PU-CGH" firstAttribute="top" secondItem="Nrg-Uo-xx3" secondAttribute="bottom" constant="15" id="MwL-nf-m17"/>
-                <constraint firstItem="MNe-Na-j5e" firstAttribute="height" secondItem="75c-bC-4Kr" secondAttribute="height" id="NHO-Iw-fmQ"/>
-                <constraint firstItem="ja5-k9-gVj" firstAttribute="width" secondItem="75c-bC-4Kr" secondAttribute="width" id="QG2-k1-Jn2"/>
-                <constraint firstItem="75c-bC-4Kr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="QyU-9B-ywX"/>
-                <constraint firstItem="Rvh-jB-f4S" firstAttribute="top" secondItem="MNe-Na-j5e" secondAttribute="bottom" constant="10" id="Rjg-4B-wiK"/>
-                <constraint firstItem="0fj-Y7-AVc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="Uxi-kr-zT0"/>
-                <constraint firstItem="ja5-k9-gVj" firstAttribute="height" secondItem="75c-bC-4Kr" secondAttribute="height" id="V3N-8h-665"/>
-                <constraint firstItem="MNe-Na-j5e" firstAttribute="top" secondItem="JBP-8P-rxi" secondAttribute="bottom" constant="10" id="VtQ-3y-8xZ"/>
-                <constraint firstItem="ja5-k9-gVj" firstAttribute="top" secondItem="jB4-5q-UU3" secondAttribute="bottom" constant="15" id="Was-wi-37s"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ghr-6p-rF7" secondAttribute="trailing" constant="100" id="XXn-wK-9ky"/>
-                <constraint firstItem="JBP-8P-rxi" firstAttribute="top" secondItem="QoG-PU-CGH" secondAttribute="bottom" constant="10" id="ayM-3d-vkW"/>
-                <constraint firstItem="MNe-Na-j5e" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="df7-l8-VYL"/>
-                <constraint firstItem="Nrg-Uo-xx3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="h44-VD-QUV"/>
-                <constraint firstItem="QoG-PU-CGH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="hbI-Sa-nBb"/>
-                <constraint firstItem="jB4-5q-UU3" firstAttribute="height" secondItem="75c-bC-4Kr" secondAttribute="height" id="m4I-4B-UvJ"/>
-                <constraint firstItem="ghr-6p-rF7" firstAttribute="top" secondItem="75c-bC-4Kr" secondAttribute="bottom" constant="15" id="n64-Ui-w5z"/>
-                <constraint firstItem="Rvh-jB-f4S" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="odp-KO-fHq"/>
-                <constraint firstItem="Rvh-jB-f4S" firstAttribute="height" secondItem="75c-bC-4Kr" secondAttribute="height" id="pg1-EI-Qcr"/>
-                <constraint firstItem="75c-bC-4Kr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="u12-S2-jPf"/>
-                <constraint firstItem="ghr-6p-rF7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="ygo-zs-iwb"/>
-                <constraint firstItem="0fj-Y7-AVc" firstAttribute="height" secondItem="75c-bC-4Kr" secondAttribute="height" id="zbK-pk-2IQ"/>
+                <constraint firstItem="TuT-x4-fWa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="O2N-Sa-U7x"/>
+                <constraint firstItem="TuT-x4-fWa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="h8J-5I-PER"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TuT-x4-fWa" secondAttribute="trailing" constant="10" id="ugD-mk-RzN"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="23.199999999999999" y="50.824587706146929"/>
         </view>
     </objects>

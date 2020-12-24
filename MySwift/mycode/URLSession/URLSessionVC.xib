@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="URLSessionVC">
             <connections>
+                <outlet property="showLB" destination="Td1-wd-RqQ" id="Xeh-cH-xXk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -75,11 +76,19 @@
                         <constraint firstAttribute="height" constant="310" id="Bot-tH-aWT"/>
                     </constraints>
                 </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="显示内容..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Td1-wd-RqQ">
+                    <rect key="frame" x="10" y="379" width="69.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="Td1-wd-RqQ" firstAttribute="top" secondItem="B5r-N4-e6n" secondAttribute="bottom" constant="15" id="2Tw-Pw-ZNe"/>
                 <constraint firstItem="B5r-N4-e6n" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="NLU-RE-OHH"/>
+                <constraint firstItem="Td1-wd-RqQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="aWQ-4S-WNz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="B5r-N4-e6n" secondAttribute="trailing" constant="10" id="g6g-sT-z8O"/>
                 <constraint firstItem="B5r-N4-e6n" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="pP0-Q2-WpA"/>
             </constraints>

@@ -10,9 +10,13 @@ import UIKit
 
 class URLSessionVC: UIViewController {
     
+    @IBOutlet weak var showLB: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "原生网络请求"
+        showLB.preferredMaxLayoutWidth = ScreenWIDTH - 20
+        showLB.sizeToFit()
     }
     
     @IBAction func get_func(_ sender: UIButton) {
@@ -40,6 +44,9 @@ class URLSessionVC: UIViewController {
                 do {
                     let dict  = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
                     print(dict)
+                    DispatchQueue.main.async {
+                        self.showLB.text = String.init(data: data!, encoding: String.Encoding.utf8)
+                    }
                 } catch {
                     print("catch")
                 }
@@ -79,6 +86,9 @@ class URLSessionVC: UIViewController {
                 do {
                     let dict  = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
                     print(dict)
+                    DispatchQueue.main.async {
+                        self.showLB.text = String.init(data: data!, encoding: String.Encoding.utf8)
+                    }
                 } catch {
                     print("catch")
                 }
@@ -109,6 +119,9 @@ class URLSessionVC: UIViewController {
                 do {
                     let dict  = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
                     print(dict)
+                    DispatchQueue.main.async {
+                        self.showLB.text = String.init(data: data!, encoding: String.Encoding.utf8)
+                    }
                 } catch {
                     print("catch")
                 }
@@ -201,6 +214,9 @@ class URLSessionVC: UIViewController {
                 do {
                     let dict  = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
                     print(dict)
+                    DispatchQueue.main.async {
+                        self.showLB.text = String.init(data: data!, encoding: String.Encoding.utf8)
+                    }
                 } catch {
                     print("catch")
                 }
@@ -237,6 +253,9 @@ class URLSessionVC: UIViewController {
                 do {
                     let dict  = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
                     print(dict)
+                    DispatchQueue.main.async {
+                        self.showLB.text = String.init(data: data!, encoding: String.Encoding.utf8)
+                    }
                 } catch {
                     print("catch")
                 }

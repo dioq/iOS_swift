@@ -13,7 +13,7 @@ class GCDViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     //同步: 会阻塞当前线程.原因:不开启新的线程,使用当前线程
     @IBAction func syncAction(_ sender: UIButton) {
         let queue = DispatchQueue.global(qos: .default)
@@ -42,7 +42,7 @@ class GCDViewController: UIViewController {
     //并发队列: 任务以FIFO从序列中移除，然后并发运行，可以按照任何顺序完成。用多条线程执行队列中所有任务
     @IBAction func concurrentAction(_ sender: UIButton) {
         let concurrentQueue = DispatchQueue.init(label: "con", qos: .default, attributes: .concurrent, autoreleaseFrequency: .inherit)
-
+        
         concurrentQueue.async {
             sleep(4)
             print(Thread.current,"======  1")
@@ -251,7 +251,7 @@ class GCDViewController: UIViewController {
             sleep(2)
             print("target1 finished")
         }
-
+        
         currentQueue.async {
             sleep(1)
             print("target2 finished")
@@ -274,17 +274,24 @@ class GCDViewController: UIViewController {
     
     @IBAction func action01(_ sender: UIButton) {
         let deadline = DispatchTime.now() + 2.0
-        print("Start")
+        print(#line,"Start")
         DispatchQueue.main.asyncAfter(deadline: deadline) {//在主线程执行
-            print("End")
+            print(#line,"End")
         }
-        print("the last line! ==== go here!")
+        print(#line," go here!")
         
-        print("Start")
-        DispatchQueue.global().asyncAfter(deadline: deadline) {//在子线程执行
-            print("End")
+        //把任务添加到主队列中,一般用在子线程任务完成后更新UI(无延迟或延迟为0)
+        print(#line,"Start")
+        DispatchQueue.main.async {
+            print(#line,"End")
         }
-        print("the last line! ==== go here!")
+        print(#line," go here!")
+        
+        print(#line,"Start")
+        DispatchQueue.global().asyncAfter(deadline: deadline) {//在子线程执行
+            print(#line,"End")
+        }
+        print(#line," go here!")
     }
-
+    
 }

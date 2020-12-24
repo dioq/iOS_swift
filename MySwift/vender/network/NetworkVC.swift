@@ -15,7 +15,7 @@ class NetworkVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "测试封装的Alamofire"
-        showLB.preferredMaxLayoutWidth = self.view.bounds.width - 30
+        showLB.preferredMaxLayoutWidth = ScreenWIDTH - 20
         showLB.sizeToFit()
     }
     
@@ -24,7 +24,9 @@ class NetworkVC: UIViewController {
         
         MyNet.shareManager().doGet(urlString: urlStr) { (response) in
             print(response)
-            self.showLB.text = response
+            DispatchQueue.main.async {
+                self.showLB.text = response
+            }
         } failure: { (error) in
             print(error)
         }
@@ -73,7 +75,7 @@ class NetworkVC: UIViewController {
         imageArr.append(image1!)
         MyNet.shareManager().uploadImages(urlString: urlStr, images: imageArr, fileName: "random_name") { (response) in
             print(response)
-            self.showLB.text = response as? String
+            self.showLB.text = response
         } failure: { (error) in
             print(error)
         }

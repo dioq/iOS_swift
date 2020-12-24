@@ -61,8 +61,8 @@
                     </constraints>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="显示内容 ..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mef-A6-oZt">
-                    <rect key="frame" x="15" y="329" width="78" height="18"/>
-                    <color key="backgroundColor" systemColor="linkColor"/>
+                    <rect key="frame" x="10" y="329" width="78" height="18"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -75,15 +75,12 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i0H-Z3-pnT" secondAttribute="trailing" constant="10" id="QTr-sq-ist"/>
                 <constraint firstItem="mef-A6-oZt" firstAttribute="top" secondItem="i0H-Z3-pnT" secondAttribute="bottom" constant="15" id="Qwr-Ef-lXk"/>
                 <constraint firstItem="i0H-Z3-pnT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="p1d-q1-0S6"/>
-                <constraint firstItem="mef-A6-oZt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="r1v-5d-H0w"/>
+                <constraint firstItem="mef-A6-oZt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="r1v-5d-H0w"/>
             </constraints>
             <point key="canvasLocation" x="-323" y="59"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

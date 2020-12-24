@@ -113,7 +113,7 @@ class MyNet {
      form-data 表单里的 value类型 只有两种 Text 和 File
      这里所有的类型都是File 并且 File是图片,实现了图片上传的功能
      **/
-    func uploadImages(urlString:String, header:Dictionary<String, String>? = nil, images:Array<UIImage>, withName:String = "file" ,fileName:String, mimeType:String = "image/*",success:@escaping(_ responseObject:Any) -> Void, failure:@escaping(_ error:Error) -> Void) {
+    func uploadImages(urlString:String, header:Dictionary<String, String>? = nil, images:Array<UIImage>, withName:String = "file" ,fileName:String, mimeType:String = "image/*",success:@escaping(_ responseObject:String) -> Void, failure:@escaping(_ error:Error) -> Void) {
         
         Alamofire.upload(multipartFormData: { multipartFormData in
             //采用post表单上传

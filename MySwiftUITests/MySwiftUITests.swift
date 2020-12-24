@@ -36,18 +36,29 @@ class MySwiftUITests: XCTestCase {
     }
     
     func testNetwork() throws {
-//        app.tabBars["Tab Bar"].buttons["Other"].tap()
-        let tabbar = app.tabBars.allElementsBoundByIndex[0]
-        let tabbarItems = tabbar.children(matching: XCUIElement.ElementType.button)
-        let page3 = tabbarItems.element(boundBy: 3)
-        page3.tap()
+////        app.tabBars["Tab Bar"].buttons["Other"].tap()
+//        let tabbar = app.tabBars.allElementsBoundByIndex[0]
+//        let tabbarItems = tabbar.children(matching: XCUIElement.ElementType.button)
+//        let page3 = tabbarItems.element(boundBy: 3)
+//        page3.tap()
+//
+//        app.tables/*@START_MENU_TOKEN@*/.cells.staticTexts["原生网络请求"]/*[[".cells.staticTexts[\"原生网络请求\"]",".staticTexts[\"原生网络请求\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
+//        app.buttons["Get"].tap()
+//        Thread.sleep(forTimeInterval: 5)
+//        app.buttons["Post"].tap()
+//        app.buttons["Form data"].tap()
+//        app/*@START_MENU_TOKEN@*/.staticTexts["uploadTask"]/*[[".buttons[\"uploadTask\"].staticTexts[\"uploadTask\"]",".staticTexts[\"uploadTask\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         
-        app.tables/*@START_MENU_TOKEN@*/.cells.staticTexts["原生网络请求"]/*[[".cells.staticTexts[\"原生网络请求\"]",".staticTexts[\"原生网络请求\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
-        app.buttons["Get"].tap()
-        Thread.sleep(forTimeInterval: 5)
-        app.buttons["Post"].tap()
-        app.buttons["Form data"].tap()
-        app/*@START_MENU_TOKEN@*/.staticTexts["uploadTask"]/*[[".buttons[\"uploadTask\"].staticTexts[\"uploadTask\"]",".staticTexts[\"uploadTask\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        app.tabBars["Tab Bar"].buttons["Vender"].tap()
+        
+        let app2 = app
+        app2.tables/*@START_MENU_TOKEN@*/.staticTexts["测试封装的Alamofire"]/*[[".cells.staticTexts[\"测试封装的Alamofire\"]",".staticTexts[\"测试封装的Alamofire\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["GET"].tap()
+        app2/*@START_MENU_TOKEN@*/.staticTexts["POST"]/*[[".buttons[\"POST\"].staticTexts[\"POST\"]",".staticTexts[\"POST\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app2/*@START_MENU_TOKEN@*/.staticTexts["Form Data"]/*[[".buttons[\"Form Data\"].staticTexts[\"Form Data\"]",".staticTexts[\"Form Data\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["Uoload Image"].tap()
+        
     }
     
     func testLaunchPerformance() throws {
