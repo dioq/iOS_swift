@@ -10,30 +10,44 @@ import UIKit
 import SnapKit
 
 class LabelViewController: UIViewController {
-
+    
     @IBOutlet weak var myLabel: UILabel!
     var testLabel:UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "label功能测试"
-//        test()
-//        test2()
-        test3()
+        navigationItem.title = "UILabel"
+        
+        //统一延迟加载(因为nib 视图在刚加载进来时长宽是在xxx.nib里设置的,需要加载进来后等一会才会适配成当前手机屏幕的长宽)
+        //        print("frame:",self.view.frame)
+        //        print("bounds:",self.view.bounds)
+        //        let deadline = DispatchTime.now() + 0.3
+        //        DispatchQueue.main.asyncAfter(deadline: deadline) {//在主线程执行
+        //            print("frame:",self.view.frame)
+        //            print("bounds:",self.view.bounds)
+        //            self.delayLoad()
+        //        }
+        
+        test()
+        //        test2()
+        //        test3()
     }
     
+    //最大宽度及自适应大小
     func test3() {
         let myLabel = UILabel()
         myLabel.backgroundColor = UIColor.purple
-        myLabel.text = "本着依法依规依事实的原则"
+        myLabel.text = "I dreamed a dream in time gone by, when hope was high and life worth living. I dreamed that love would never die. I dreamed that God would be forgiving. Then I was young and unafraid. And dreams were made and used and wasted. There was no ransom to be paid, no song unsung, no wine untasted. But the tigers come at night with their voices soft as thunder. As they tear your hope apart, as they turn your dream to shame."
+        myLabel.numberOfLines = 0
         self.view.addSubview(myLabel)
         myLabel.snp.makeConstraints { (maker) in
             maker.center.equalTo(self.view)
         }
         myLabel.sizeToFit()//渲染视图需要时间
+        myLabel.preferredMaxLayoutWidth = 360   //UILabel设置最大宽度
         let deadline = DispatchTime.now() + 0.3
         DispatchQueue.main.asyncAfter(deadline: deadline) {//在主线程执行
-            print(myLabel.frame)//延迟后才能打印出渲染后的坐标
+            print("myLabel.frame:",myLabel.frame)//延迟后才能打印出渲染后的坐标
         }
     }
     
@@ -50,20 +64,20 @@ class LabelViewController: UIViewController {
             make.height.equalTo(90)
         }
         
-//        myLabel.font = UIFont.systemFont(ofSize: 16)//字体大小
+        //        myLabel.font = UIFont.systemFont(ofSize: 16)//字体大小
         myLabel.font = UIFont.boldSystemFont(ofSize: 16)//加粗类型
-//        myLabel.font = UIFont.italicSystemFont(ofSize: 16) //斜体类型
-//        myLabel.font = UIFont.fontNames(forFamilyName: "")[0]
+        //        myLabel.font = UIFont.italicSystemFont(ofSize: 16) //斜体类型
+        //        myLabel.font = UIFont.fontNames(forFamilyName: "")[0]
         myLabel.textAlignment = .left//字体靠左 居中 靠右
         myLabel.numberOfLines = 0//最多显示行数, 0代表显示无穷多行
-//        myLabel.adjustsFontSizeToFitWidth = true //根据文本框 自动调整字体大小
-//        myLabel.shadowColor = UIColor.gray//label阴影颜色【要设置偏移位置】(字体的阴影颜色)
-//        myLabel.shadowOffset = CGSize(width: 3, height: 3)//label阴影偏移位置
+        //        myLabel.adjustsFontSizeToFitWidth = true //根据文本框 自动调整字体大小
+        //        myLabel.shadowColor = UIColor.gray//label阴影颜色【要设置偏移位置】(字体的阴影颜色)
+        //        myLabel.shadowOffset = CGSize(width: 3, height: 3)//label阴影偏移位置
     }
-
+    
     //可以计算加载文字后label的高度
     func test() {
-        let article = "自“权健事件”联合调查组进驻以来，经过调查取证，事件处理工作取得了阶段性进展。本着依法依规依事实的原则，相关部门对权健公司涉嫌传销犯罪和涉嫌虚假广告犯罪进行立案侦查。据联合调查组介绍，经前期工作发现，权健公司在经营活动中，涉嫌传销犯罪和涉嫌虚假广告犯罪，公安机关已于2019年1月1日依法对其涉嫌犯罪行为立案侦查。同时，相关部门依法查处取缔不符合消防安全规定的火疗养生场所、开展集中打击清理整顿保健品乱象专项行动。"
+        let article = "I dreamed a dream in time gone by, when hope was high and life worth living. I dreamed that love would never die. I dreamed that God would be forgiving. Then I was young and unafraid. And dreams were made and used and wasted. There was no ransom to be paid, no song unsung, no wine untasted. But the tigers come at night with their voices soft as thunder. As they tear your hope apart, as they turn your dream to shame."
         myLabel.text = article
         myLabel.sizeToFit()
         
@@ -80,8 +94,11 @@ class LabelViewController: UIViewController {
         testLabel.textAlignment = .left//字体靠左 居中 靠右
         testLabel.numberOfLines = 0
         testLabel.sizeToFit()
-        let labelHeight = testLabel.frame.height
-        print(labelHeight)
+        let deadline = DispatchTime.now() + 0.3
+        DispatchQueue.main.asyncAfter(deadline: deadline) {//在主线程执行
+            //延迟后才能打印出渲染后的坐标
+            print(testLabel.frame)
+        }
     }
-
+    
 }

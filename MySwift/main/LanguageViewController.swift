@@ -16,6 +16,10 @@ class LanguageViewController: UIViewController,UITableViewDataSource,UITableView
     lazy var dataArray:[UIViewController] = {
         var dataArray = Array<UIViewController>()
         
+        let auxiliarySkillsVC = AuxiliarySkillsVC()
+        auxiliarySkillsVC.title = "开发中一些辅助技巧"
+        dataArray.append(auxiliarySkillsVC)
+        
         let genericVC = GenericViewController()
         genericVC.title = "泛型"
         dataArray.append(genericVC)
@@ -131,7 +135,7 @@ class LanguageViewController: UIViewController,UITableViewDataSource,UITableView
         myTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellID")
         myTableView.tableFooterView = UIView()
     }
-
+    
     //设置每个seccion的row数量
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
@@ -161,15 +165,15 @@ class LanguageViewController: UIViewController,UITableViewDataSource,UITableView
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

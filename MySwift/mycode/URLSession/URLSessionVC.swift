@@ -103,7 +103,7 @@ class URLSessionVC: UIViewController {
         config.timeoutIntervalForRequest = 30
         config.requestCachePolicy = .reloadIgnoringLocalCacheData
         let session:URLSession = URLSession(configuration: config)
-        let dataTask: URLSessionDataTask = session.dataTask(with: request as URLRequest) { (data, response, error) in
+        let dataTask: URLSessionDataTask = session.dataTask(with: request) { (data, response, error) in
             if(error == nil){
                 //（此处返回的数据是JSON格式的，因此使用NSJSONSerialization进行反序列化处理）
                 do {

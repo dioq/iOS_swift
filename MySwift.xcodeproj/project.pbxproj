@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5F2F0F172592653600197207 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2F0F162592653600197207 /* MD5.swift */; };
+		5FE898372593656A0020059D /* MySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE898362593656A0020059D /* MySwiftUITests.swift */; };
+		5FE8990725940D9D0020059D /* AuxiliarySkillsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8990525940D9D0020059D /* AuxiliarySkillsVC.swift */; };
+		5FE8990825940D9D0020059D /* AuxiliarySkillsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FE8990625940D9D0020059D /* AuxiliarySkillsVC.xib */; };
+		5FE8991025940E980020059D /* AuxiliarySkillsTestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8990F25940E980020059D /* AuxiliarySkillsTestFile.swift */; };
 		5FF092E92590C1E4002B2D70 /* NetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF092E72590C1E4002B2D70 /* NetworkVC.swift */; };
 		5FF092EA2590C1E4002B2D70 /* NetworkVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FF092E82590C1E4002B2D70 /* NetworkVC.xib */; };
 		5FF092ED2590C65A002B2D70 /* MyNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF092EC2590C65A002B2D70 /* MyNet.swift */; };
@@ -396,6 +400,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5FE898392593656A0020059D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE69C0E6224B6C92004F4FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE69C0ED224B6C92004F4FA4;
+			remoteInfo = MySwift;
+		};
 		5FFCAF7725910D420073009E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE69C0E6224B6C92004F4FA4 /* Project object */;
@@ -408,6 +419,12 @@
 /* Begin PBXFileReference section */
 		32F7714E770754C61BBD0BA8 /* Pods-MySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwift.debug.xcconfig"; path = "Target Support Files/Pods-MySwift/Pods-MySwift.debug.xcconfig"; sourceTree = "<group>"; };
 		5F2F0F162592653600197207 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		5FE898342593656A0020059D /* MySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE898362593656A0020059D /* MySwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUITests.swift; sourceTree = "<group>"; };
+		5FE898382593656A0020059D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FE8990525940D9D0020059D /* AuxiliarySkillsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliarySkillsVC.swift; sourceTree = "<group>"; };
+		5FE8990625940D9D0020059D /* AuxiliarySkillsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuxiliarySkillsVC.xib; sourceTree = "<group>"; };
+		5FE8990F25940E980020059D /* AuxiliarySkillsTestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliarySkillsTestFile.swift; sourceTree = "<group>"; };
 		5FF092E72590C1E4002B2D70 /* NetworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkVC.swift; sourceTree = "<group>"; };
 		5FF092E82590C1E4002B2D70 /* NetworkVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkVC.xib; sourceTree = "<group>"; };
 		5FF092EC2590C65A002B2D70 /* MyNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNet.swift; sourceTree = "<group>"; };
@@ -805,6 +822,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5FE898312593656A0020059D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5FFCAF6F25910D420073009E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -830,6 +854,25 @@
 				C790BE9ABE19EB49FDF58AFD /* Pods-MySwift.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5FE898352593656A0020059D /* MySwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5FE898362593656A0020059D /* MySwiftUITests.swift */,
+				5FE898382593656A0020059D /* Info.plist */,
+			);
+			path = MySwiftUITests;
+			sourceTree = "<group>";
+		};
+		5FE8990425940D0C0020059D /* AuxiliarySkills */ = {
+			isa = PBXGroup;
+			children = (
+				5FE8990525940D9D0020059D /* AuxiliarySkillsVC.swift */,
+				5FE8990625940D9D0020059D /* AuxiliarySkillsVC.xib */,
+				5FE8990F25940E980020059D /* AuxiliarySkillsTestFile.swift */,
+			);
+			path = AuxiliarySkills;
 			sourceTree = "<group>";
 		};
 		5FF092E62590C1B2002B2D70 /* network */ = {
@@ -881,7 +924,7 @@
 			path = foldCell;
 			sourceTree = "<group>";
 		};
-		93EFF48223BDC00B00A4BC67 /* autolayerout */ = {
+		93EFF48223BDC00B00A4BC67 /* nib */ = {
 			isa = PBXGroup;
 			children = (
 				CE69C1EC224B6E07004F4FA4 /* NibViewController.swift */,
@@ -889,7 +932,7 @@
 				CE69C1EE224B6E07004F4FA4 /* NibStackView.swift */,
 				CE69C1EB224B6E07004F4FA4 /* NibStackView.xib */,
 			);
-			path = autolayerout;
+			path = nib;
 			sourceTree = "<group>";
 		};
 		93EFF48323BDC01600A4BC67 /* skill */ = {
@@ -955,6 +998,7 @@
 			children = (
 				CE69C0F0224B6C92004F4FA4 /* MySwift */,
 				5FFCAF7325910D420073009E /* MySwiftTests */,
+				5FE898352593656A0020059D /* MySwiftUITests */,
 				CE69C0EF224B6C92004F4FA4 /* Products */,
 				260B268476C2C1B73538CA04 /* Pods */,
 				9659CEB6C5FFEDEC8B9BD34A /* Frameworks */,
@@ -966,6 +1010,7 @@
 			children = (
 				CE69C0EE224B6C92004F4FA4 /* MySwift.app */,
 				5FFCAF7225910D420073009E /* MySwiftTests.xctest */,
+				5FE898342593656A0020059D /* MySwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1163,6 +1208,7 @@
 		CE69C146224B6E06004F4FA4 /* language */ = {
 			isa = PBXGroup;
 			children = (
+				5FE8990425940D0C0020059D /* AuxiliarySkills */,
 				CEC1648423363C0000F91A8D /* generic */,
 				CE6DC08423362EFF00A894DC /* polymorphism */,
 				CE73D3CB22980136002C537C /* refelect */,
@@ -1690,7 +1736,7 @@
 			isa = PBXGroup;
 			children = (
 				93EFF48323BDC01600A4BC67 /* skill */,
-				93EFF48223BDC00B00A4BC67 /* autolayerout */,
+				93EFF48223BDC00B00A4BC67 /* nib */,
 			);
 			path = nib;
 			sourceTree = "<group>";
@@ -1819,8 +1865,8 @@
 			children = (
 				CE69C21E224B6E07004F4FA4 /* MyPointView1.swift */,
 				CE69C21F224B6E07004F4FA4 /* MyPointView1.xib */,
-				CE69C220224B6E07004F4FA4 /* MyPointView.xib */,
 				CE69C221224B6E07004F4FA4 /* MyPointView.swift */,
+				CE69C220224B6E07004F4FA4 /* MyPointView.xib */,
 				CE69C222224B6E07004F4FA4 /* PointViewController.swift */,
 			);
 			path = point;
@@ -2336,6 +2382,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5FE898332593656A0020059D /* MySwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FE8983D2593656A0020059D /* Build configuration list for PBXNativeTarget "MySwiftUITests" */;
+			buildPhases = (
+				5FE898302593656A0020059D /* Sources */,
+				5FE898312593656A0020059D /* Frameworks */,
+				5FE898322593656A0020059D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FE8983A2593656A0020059D /* PBXTargetDependency */,
+			);
+			name = MySwiftUITests;
+			productName = MySwiftUITests;
+			productReference = 5FE898342593656A0020059D /* MySwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		5FFCAF7125910D420073009E /* MySwiftTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FFCAF7B25910D420073009E /* Build configuration list for PBXNativeTarget "MySwiftTests" */;
@@ -2383,6 +2447,10 @@
 				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = Dio;
 				TargetAttributes = {
+					5FE898332593656A0020059D = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CE69C0ED224B6C92004F4FA4;
+					};
 					5FFCAF7125910D420073009E = {
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = CE69C0ED224B6C92004F4FA4;
@@ -2409,11 +2477,19 @@
 			targets = (
 				CE69C0ED224B6C92004F4FA4 /* MySwift */,
 				5FFCAF7125910D420073009E /* MySwiftTests */,
+				5FE898332593656A0020059D /* MySwiftUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5FE898322593656A0020059D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5FFCAF7025910D420073009E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2506,6 +2582,7 @@
 				CEAC323422B232BC0046E850 /* star_soild.png in Resources */,
 				CE69C35E224B6E07004F4FA4 /* SingleSelectedCellVC.xib in Resources */,
 				CE69C3BF224B6E07004F4FA4 /* pingtaoge.png in Resources */,
+				5FE8990825940D9D0020059D /* AuxiliarySkillsVC.xib in Resources */,
 				CE69C382224B6E07004F4FA4 /* MyUIViewController.xib in Resources */,
 				CE71654F237FC39100D476C3 /* LaunchScreen.storyboard in Resources */,
 				CE69C3A2224B6E07004F4FA4 /* TPout.swf in Resources */,
@@ -2644,6 +2721,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5FE898302593656A0020059D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE898372593656A0020059D /* MySwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5FFCAF6E25910D420073009E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2711,6 +2796,7 @@
 				CE69C364224B6E07004F4FA4 /* MyCVCell.swift in Sources */,
 				CE69C34F224B6E07004F4FA4 /* UISegmentedControlVC.swift in Sources */,
 				CE69C33B224B6E07004F4FA4 /* SingleSelectedVC.swift in Sources */,
+				5FE8991025940E980020059D /* AuxiliarySkillsTestFile.swift in Sources */,
 				CE69C344224B6E07004F4FA4 /* TwoCell.swift in Sources */,
 				CE69C40D224B6E08004F4FA4 /* Urls.swift in Sources */,
 				CE69C407224B6E08004F4FA4 /* MyShareViewController.swift in Sources */,
@@ -2865,6 +2951,7 @@
 				CE69C3DC224B6E07004F4FA4 /* FWPopupView.swift in Sources */,
 				CE69C387224B6E07004F4FA4 /* SearchViewController.swift in Sources */,
 				CE69C35F224B6E07004F4FA4 /* SingleSelectedCellVC.swift in Sources */,
+				5FE8990725940D9D0020059D /* AuxiliarySkillsVC.swift in Sources */,
 				CE69C2D6224B6E07004F4FA4 /* OtherViewController.swift in Sources */,
 				CE69C3EB224B6E07004F4FA4 /* MyGestureVC.swift in Sources */,
 				CED3B8D722660BCE008988CE /* ExampleProtocol.swift in Sources */,
@@ -2875,6 +2962,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5FE8983A2593656A0020059D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE69C0ED224B6C92004F4FA4 /* MySwift */;
+			targetProxy = 5FE898392593656A0020059D /* PBXContainerItemProxy */;
+		};
 		5FFCAF7825910D420073009E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE69C0ED224B6C92004F4FA4 /* MySwift */;
@@ -2906,6 +2998,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5FE8983B2593656A0020059D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37J2F4W4WM;
+				INFOPLIST_FILE = MySwiftUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = myself.MySwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MySwift;
+			};
+			name = Debug;
+		};
+		5FE8983C2593656A0020059D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37J2F4W4WM;
+				INFOPLIST_FILE = MySwiftUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = myself.MySwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MySwift;
+			};
+			name = Release;
+		};
 		5FFCAF7925910D420073009E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2922,7 +3054,6 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = myself.MySwiftTests;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2946,7 +3077,6 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = myself.MySwiftTests;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3121,6 +3251,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5FE8983D2593656A0020059D /* Build configuration list for PBXNativeTarget "MySwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FE8983B2593656A0020059D /* Debug */,
+				5FE8983C2593656A0020059D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5FFCAF7B25910D420073009E /* Build configuration list for PBXNativeTarget "MySwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

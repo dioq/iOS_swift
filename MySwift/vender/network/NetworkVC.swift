@@ -10,9 +10,13 @@ import UIKit
 
 class NetworkVC: UIViewController {
     
+    @IBOutlet weak var showLB: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "测试封装的Alamofire"
+        showLB.preferredMaxLayoutWidth = self.view.bounds.width - 30
+        showLB.sizeToFit()
     }
     
     @IBAction func get_func(_ sender: UIButton) {
@@ -20,6 +24,7 @@ class NetworkVC: UIViewController {
         
         MyNet.shareManager().doGet(urlString: urlStr) { (response) in
             print(response)
+            self.showLB.text = response
         } failure: { (error) in
             print(error)
         }
@@ -37,6 +42,7 @@ class NetworkVC: UIViewController {
         headers["Accept-Encoding"] = "gzip, deflate, br"
         MyNet.shareManager().doPost(urlString: urlStr, parameters: param, headers: headers) { (response) in
             print(response)
+            self.showLB.text = response
         } failure: { (error) in
             print(error)
         }
@@ -53,6 +59,7 @@ class NetworkVC: UIViewController {
         
         MyNet.shareManager().submitFormdata(urlStr: urlStr, parameters: params) { (response) in
             print(response)
+            self.showLB.text = response
         } failure: { (error) in
             print(error)
         }
@@ -66,6 +73,7 @@ class NetworkVC: UIViewController {
         imageArr.append(image1!)
         MyNet.shareManager().uploadImages(urlString: urlStr, images: imageArr, fileName: "random_name") { (response) in
             print(response)
+            self.showLB.text = response as? String
         } failure: { (error) in
             print(error)
         }

@@ -61,7 +61,7 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
         dataArray.append(switchVC)
         
         let labelVC = LabelViewController()
-        labelVC.title = "label功能测试"
+        labelVC.title = "UILabel"
         dataArray.append(labelVC)
         
         let photoVC = PhotosViewController()
