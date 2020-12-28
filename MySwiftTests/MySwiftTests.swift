@@ -21,6 +21,13 @@ class MySwiftTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        for _ in 0...9 {
+            let uuid0 = UUID()
+            let uuid = "\(uuid0)"
+            print("uuid : ", uuid)
+            let uuid_2 = uuid.replacingOccurrences(of: "-", with: "")
+            print("uuid_2 : ", uuid_2," count : ", uuid_2.count)
+        }
     }
     
     public func test_json(){

@@ -9,12 +9,16 @@
 import UIKit
 
 class VenderViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
-
+    
     @IBOutlet weak var myTableView: UITableView!
     
     //懒加载
     lazy var dataArray:[UIViewController] = {
         var dataArray = Array<UIViewController>()
+        
+        let nativeNetworkVC = NativeNetworkVC()
+        nativeNetworkVC.title = "自己封装的网络请求"
+        dataArray.append(nativeNetworkVC)
         
         let networkVC = NetworkVC()
         networkVC.title = "测试封装的Alamofire"
@@ -114,21 +118,21 @@ class VenderViewController: UIViewController, UITableViewDataSource,UITableViewD
         self.navigationController?.pushViewController(vc, animated: true)
         self.hidesBottomBarWhenPushed = false
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

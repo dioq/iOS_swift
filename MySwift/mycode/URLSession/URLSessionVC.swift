@@ -40,15 +40,11 @@ class URLSessionVC: UIViewController {
             
             if(error == nil){
                 //.解析服务器返回的数据
-                //说明：（此处返回的数据是JSON格式的，因此使用NSJSONSerialization进行反序列化处理）
-                do {
-                    let dict  = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
-                    print(dict)
+                //说明：（返回的数据是二进制,将二进制数据转换成String,便于后续处理）
+                if let result = String(data: data!, encoding: String.Encoding.utf8){
                     DispatchQueue.main.async {
-                        self.showLB.text = String.init(data: data!, encoding: String.Encoding.utf8)
+                        self.showLB.text = result
                     }
-                } catch {
-                    print("catch")
                 }
             }
         }
@@ -67,30 +63,26 @@ class URLSessionVC: UIViewController {
          let param_json_str = "{\"username\":\"Dio\",\"password\":\"13131313\",\"argot\":\"You are geat!\",\"num\":11111}"
          request.httpBody = param_json_str.data(using: String.Encoding.utf8)
          */
-        //为了使用拼接参数,将所有参数放在Dictionary里然后 将Dictionary整体 转成 二进制json的Data
+        //为了便于拼接参数,将所有参数放在Dictionary里然后 将Dictionary整体 转成 json的二进制
         var param_dict = Dictionary<String,Any>()
         param_dict["username"] = "Dio"
         param_dict["password"] = "1231313"
         param_dict["argot"] = "You are geat!"
         param_dict["num"] = 1999
         let param_data = try? JSONSerialization.data(withJSONObject: param_dict, options: JSONSerialization.WritingOptions.init(rawValue: 0))
+        
         request.httpBody = param_data
         let config:URLSessionConfiguration = URLSessionConfiguration.default
         config.httpAdditionalHeaders = ["Content-Type":"application/json"]
         config.timeoutIntervalForRequest = 30
         config.requestCachePolicy = .reloadRevalidatingCacheData
         let session:URLSession = URLSession(configuration: config)
-        let dataTask: URLSessionDataTask = session.dataTask(with: request as URLRequest) { (data, response, error) in
+        let dataTask: URLSessionDataTask = session.dataTask(with: request) { (data, response, error) in
             if(error == nil){
-                //（此处返回的数据是JSON格式的，因此使用NSJSONSerialization进行反序列化处理）
-                do {
-                    let dict  = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
-                    print(dict)
+                if let result = String(data: data!, encoding: String.Encoding.utf8){
                     DispatchQueue.main.async {
-                        self.showLB.text = String.init(data: data!, encoding: String.Encoding.utf8)
+                        self.showLB.text = result
                     }
-                } catch {
-                    print("catch")
                 }
             }
         }
@@ -115,15 +107,10 @@ class URLSessionVC: UIViewController {
         let session:URLSession = URLSession(configuration: config)
         let dataTask: URLSessionDataTask = session.dataTask(with: request) { (data, response, error) in
             if(error == nil){
-                //（此处返回的数据是JSON格式的，因此使用NSJSONSerialization进行反序列化处理）
-                do {
-                    let dict  = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
-                    print(dict)
+                if let result = String(data: data!, encoding: String.Encoding.utf8){
                     DispatchQueue.main.async {
-                        self.showLB.text = String.init(data: data!, encoding: String.Encoding.utf8)
+                        self.showLB.text = result
                     }
-                } catch {
-                    print("catch")
                 }
             }
         }
@@ -210,15 +197,10 @@ class URLSessionVC: UIViewController {
             if error != nil{
                 print(error!)
             }else{
-                //（此处返回的数据是JSON格式的，因此使用NSJSONSerialization进行反序列化处理）
-                do {
-                    let dict  = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
-                    print(dict)
+                if let result = String(data: data!, encoding: String.Encoding.utf8){
                     DispatchQueue.main.async {
-                        self.showLB.text = String.init(data: data!, encoding: String.Encoding.utf8)
+                        self.showLB.text = result
                     }
-                } catch {
-                    print("catch")
                 }
             }
         }
@@ -250,14 +232,10 @@ class URLSessionVC: UIViewController {
             if error != nil{
                 print(error!)
             }else{
-                do {
-                    let dict  = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
-                    print(dict)
+                if let result = String(data: data!, encoding: String.Encoding.utf8){
                     DispatchQueue.main.async {
-                        self.showLB.text = String.init(data: data!, encoding: String.Encoding.utf8)
+                        self.showLB.text = result
                     }
-                } catch {
-                    print("catch")
                 }
             }
         }

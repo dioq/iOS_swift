@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5F2F0F172592653600197207 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2F0F162592653600197207 /* MD5.swift */; };
+		5FBADA33259A4CF1000A6EC0 /* NativeNetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBADA31259A4CF1000A6EC0 /* NativeNetworkVC.swift */; };
+		5FBADA34259A4CF1000A6EC0 /* NativeNetworkVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBADA32259A4CF1000A6EC0 /* NativeNetworkVC.xib */; };
+		5FBADA39259A55F0000A6EC0 /* DioNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBADA38259A55F0000A6EC0 /* DioNetwork.swift */; };
 		5FE898372593656A0020059D /* MySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE898362593656A0020059D /* MySwiftUITests.swift */; };
 		5FE8990725940D9D0020059D /* AuxiliarySkillsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8990525940D9D0020059D /* AuxiliarySkillsVC.swift */; };
 		5FE8990825940D9D0020059D /* AuxiliarySkillsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FE8990625940D9D0020059D /* AuxiliarySkillsVC.xib */; };
@@ -419,6 +422,9 @@
 /* Begin PBXFileReference section */
 		32F7714E770754C61BBD0BA8 /* Pods-MySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwift.debug.xcconfig"; path = "Target Support Files/Pods-MySwift/Pods-MySwift.debug.xcconfig"; sourceTree = "<group>"; };
 		5F2F0F162592653600197207 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		5FBADA31259A4CF1000A6EC0 /* NativeNetworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeNetworkVC.swift; sourceTree = "<group>"; };
+		5FBADA32259A4CF1000A6EC0 /* NativeNetworkVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeNetworkVC.xib; sourceTree = "<group>"; };
+		5FBADA38259A55F0000A6EC0 /* DioNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DioNetwork.swift; sourceTree = "<group>"; };
 		5FE898342593656A0020059D /* MySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE898362593656A0020059D /* MySwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUITests.swift; sourceTree = "<group>"; };
 		5FE898382593656A0020059D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -854,6 +860,16 @@
 				C790BE9ABE19EB49FDF58AFD /* Pods-MySwift.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5FBADA2D259A43FE000A6EC0 /* native_network */ = {
+			isa = PBXGroup;
+			children = (
+				5FBADA31259A4CF1000A6EC0 /* NativeNetworkVC.swift */,
+				5FBADA32259A4CF1000A6EC0 /* NativeNetworkVC.xib */,
+				5FBADA38259A55F0000A6EC0 /* DioNetwork.swift */,
+			);
+			path = native_network;
 			sourceTree = "<group>";
 		};
 		5FE898352593656A0020059D /* MySwiftUITests */ = {
@@ -2046,6 +2062,7 @@
 		CE69C267224B6E07004F4FA4 /* vender */ = {
 			isa = PBXGroup;
 			children = (
+				5FBADA2D259A43FE000A6EC0 /* native_network */,
 				5FF092E62590C1B2002B2D70 /* network */,
 				CE7D203C2259E7B600DEE23E /* lottie */,
 				CE69C2B9224B6E07004F4FA4 /* share */,
@@ -2561,6 +2578,7 @@
 				CE69C314224B6E07004F4FA4 /* AudioViewController.xib in Resources */,
 				CE757CEE237E70AC0039C29D /* msyhbd.ttf in Resources */,
 				CE69C3C5224B6E07004F4FA4 /* image2.png in Resources */,
+				5FBADA34259A4CF1000A6EC0 /* NativeNetworkVC.xib in Resources */,
 				CE757CE4237E70AC0039C29D /* 苏新诗卵石体.ttf in Resources */,
 				CE69C37F224B6E07004F4FA4 /* WKWebViewVC.xib in Resources */,
 				CE69C366224B6E07004F4FA4 /* CollectionViewVC.xib in Resources */,
@@ -2878,6 +2896,7 @@
 				CE69C2F8224B6E07004F4FA4 /* PropertyViewController.swift in Sources */,
 				CE69C2FB224B6E07004F4FA4 /* MyViewController.swift in Sources */,
 				CE69C36F224B6E07004F4FA4 /* AlertViewController.swift in Sources */,
+				5FBADA39259A55F0000A6EC0 /* DioNetwork.swift in Sources */,
 				CE1CBAC423224AAC00D3AE39 /* MyFontViewController.swift in Sources */,
 				5FF092E92590C1E4002B2D70 /* NetworkVC.swift in Sources */,
 				CE69C3EA224B6E07004F4FA4 /* PointView.swift in Sources */,
@@ -2903,6 +2922,7 @@
 				CE69C3D9224B6E07004F4FA4 /* FWMenuViewDemoVC.swift in Sources */,
 				CE69C361224B6E07004F4FA4 /* SelectedCollectionCell.swift in Sources */,
 				CE69C3E2224B6E07004F4FA4 /* FWPopupItem.swift in Sources */,
+				5FBADA33259A4CF1000A6EC0 /* NativeNetworkVC.swift in Sources */,
 				CE69C30C224B6E07004F4FA4 /* MyDelegateVC.swift in Sources */,
 				CE69C336224B6E07004F4FA4 /* LZDCell.swift in Sources */,
 				CE69C339224B6E07004F4FA4 /* MoveCellVC.swift in Sources */,
