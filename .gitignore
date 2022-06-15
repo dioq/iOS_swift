@@ -4,5 +4,5 @@
 .DS_Store
 
 #/MySwift.xcworkspace
-MySwift.xcodeproj/project.xcworkspace/xcuserdata/
-MySwift.xcodeproj/xcuserdata/
+#MySwift.xcodeproj/project.xcworkspace/xcuserdata/
+#MySwift.xcodeproj/xcuserdata/
