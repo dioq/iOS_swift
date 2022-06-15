@@ -1,0 +1,58 @@
+PODS:
+  - Alamofire (4.8.0)
+  - DNSPageView (1.2.1)
+  - GTMRefresh (1.3.6)
+  - HandyJSON (5.0.0)
+  - JXPopupView (0.0.3)
+  - Kingfisher (5.3.0)
+  - KSGuideController (0.1.2)
+  - lottie-ios (3.1.5)
+  - SnapKit (5.0.1)
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire (= 4.8.0)
+  - DNSPageView (= 1.2.1)
+  - GTMRefresh (= 1.3.6)
+  - HandyJSON (= 5.0.0)
+  - JXPopupView (= 0.0.3)
+  - Kingfisher (= 5.3.0)
+  - KSGuideController (= 0.1.2)
+  - lottie-ios (= 3.1.5)
+  - SnapKit (= 5.0.1)
+  - SQLite.swift (= 0.12.2)
+  - SwiftyJSON (= 4.2.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - DNSPageView
+    - GTMRefresh
+    - HandyJSON
+    - JXPopupView
+    - Kingfisher
+    - KSGuideController
+    - lottie-ios
+    - SnapKit
+    - SQLite.swift
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  DNSPageView: 1a1972df33a08dbad8e43188da97b31997e1d109
+  GTMRefresh: 9231cbdc1dca88d0a29daead8d6bd83314aa84dc
+  HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
+  JXPopupView: 7e433344caeb09ed08327f370f53cf597389c2b7
+  Kingfisher: 4692c783ffb99e9e2e40a6eb3e518c3b96c6fa8c
+  KSGuideController: a3829b33b65ca56eacd530c7b4917e973f756ee5
+  lottie-ios: 32bf84389337d86fbc8b12266e88452e0abf1dee
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: e23569fc29f33ac7bd1311a8598d3eb917e980a3
+
+COCOAPODS: 1.11.3

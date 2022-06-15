@@ -1,0 +1,6 @@
+framework module JXPopupView {
+  umbrella header "JXPopupView-umbrella.h"
+
+  export *
+  module * { export * }
+}

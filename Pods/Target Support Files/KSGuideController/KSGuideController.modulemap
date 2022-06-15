@@ -1,0 +1,6 @@
+framework module KSGuideController {
+  umbrella header "KSGuideController-umbrella.h"
+
+  export *
+  module * { export * }
+}
