@@ -1,8 +1,8 @@
-Podfile.lock
-/Pods
+#Podfile.lock
+#/Pods
 
 .DS_Store
 
-/MySwift.xcworkspace
+#/MySwift.xcworkspace
 MySwift.xcodeproj/project.xcworkspace/xcuserdata/
 MySwift.xcodeproj/xcuserdata/
