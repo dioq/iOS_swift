@@ -16,6 +16,10 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
     lazy var dataArray:[UIViewController] = {
         var dataArray = Array<UIViewController>()
         
+        let steperVC = UISteperVC()
+        steperVC.title = "UIStepper"
+        dataArray.append(steperVC)
+        
         let fontVC = MyFontViewController()
         fontVC.title = "自定义字体"
         dataArray.append(fontVC)

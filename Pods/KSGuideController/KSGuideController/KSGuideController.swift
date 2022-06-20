@@ -177,7 +177,7 @@ public class KSGuideController: UIViewController {
         } else {
             arrowImageView.image = UIImage(named: "guide_arrow", in: Bundle(for: KSGuideController.self), compatibleWith: nil)
         }
-        arrowImageView.image = arrowImageView.image?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        arrowImageView.image = arrowImageView.image?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
         arrowImageView.tintColor = arrowColor
         view.addSubview(arrowImageView)
         
@@ -203,7 +203,7 @@ public class KSGuideController: UIViewController {
         let toPath = UIBezierPath(rect: view.bounds)
         toPath.append(highlightedPath)
         maskLayer.path = toPath.cgPath
-        maskLayer.fillRule = kCAFillRuleEvenOdd
+        maskLayer.fillRule = CAShapeLayerFillRule.evenOdd
         view.layer.mask = maskLayer
         
         if animatedMask {

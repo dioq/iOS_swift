@@ -13,7 +13,7 @@ target 'MySwift' do
   pod 'Kingfisher', '5.3.0'
   pod 'Alamofire', '4.8.0'
   pod 'HandyJSON', '5.0.0'
-  pod 'SnapKit', '5.0.1'
+  pod 'SnapKit', '~> 5.6.0'
   pod 'JXPopupView', '0.0.3' #自定义弹出框
   pod 'SwiftyJSON', '4.2.0'
   pod 'KSGuideController', '0.1.2'#新手引导
