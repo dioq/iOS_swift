@@ -19,7 +19,7 @@ class ViewVC: UIViewController {
         self.navigationItem.title = "自定义xib view"
         
         setUpView1()
-//        setUpView2()
+        setUpView2()
     }
     
     func setUpView1() {
@@ -29,7 +29,7 @@ class ViewVC: UIViewController {
         myview.backgroundColor = UIColor.red
         let model = TestModel.init(imageName: "girl", text: "这是一个自定义的view")
         myview.model = model
-//        self.view.addSubview(myview)
+        //        self.view.addSubview(myview)
         print(#line, "--> myview.frame : ",myview.frame)
         //nib 视图在刚加载进来时长宽是在xxx.nib里设置的,需要加载进来后等一会新设置的frame才会生效
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {//在主线程执行
@@ -49,7 +49,7 @@ class ViewVC: UIViewController {
         self.view.addSubview(myview)
         print(#line, "--> myview.frame : ",myview.frame)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {//在主线程执行
-            //            self.view.addSubview(myview)
+//            self.view.addSubview(myview)
             print(#line, "--> myview.frame : ",myview.frame)
         }
         print(#line, "--> myview.frame : ",myview.frame)

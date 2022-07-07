@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A849C102867508B00D5D9B3 /* DefineViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A849C0F2867508B00D5D9B3 /* DefineViewVC.swift */; };
 		3AC2071A2860AECA007BCE0E /* UISteperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC207192860AECA007BCE0E /* UISteperVC.swift */; };
 		5F2F0F172592653600197207 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2F0F162592653600197207 /* MD5.swift */; };
 		5FBADA33259A4CF1000A6EC0 /* NativeNetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBADA31259A4CF1000A6EC0 /* NativeNetworkVC.swift */; };
@@ -422,6 +423,7 @@
 
 /* Begin PBXFileReference section */
 		32F7714E770754C61BBD0BA8 /* Pods-MySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwift.debug.xcconfig"; path = "Target Support Files/Pods-MySwift/Pods-MySwift.debug.xcconfig"; sourceTree = "<group>"; };
+		3A849C0F2867508B00D5D9B3 /* DefineViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineViewVC.swift; sourceTree = "<group>"; };
 		3AC207192860AECA007BCE0E /* UISteperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISteperVC.swift; sourceTree = "<group>"; };
 		5F2F0F162592653600197207 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
 		5FBADA31259A4CF1000A6EC0 /* NativeNetworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeNetworkVC.swift; sourceTree = "<group>"; };
@@ -862,6 +864,14 @@
 				C790BE9ABE19EB49FDF58AFD /* Pods-MySwift.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3A849C0E2867505600D5D9B3 /* defineview */ = {
+			isa = PBXGroup;
+			children = (
+				3A849C0F2867508B00D5D9B3 /* DefineViewVC.swift */,
+			);
+			path = defineview;
 			sourceTree = "<group>";
 		};
 		3AC207162860AE45007BCE0E /* stepper */ = {
@@ -1451,6 +1461,7 @@
 		CE69C188224B6E06004F4FA4 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				3A849C0E2867505600D5D9B3 /* defineview */,
 				3AC207162860AE45007BCE0E /* stepper */,
 				CE1CBAC123224A7200D3AE39 /* font */,
 				CED3B9312266D6E3008988CE /* imageview */,
@@ -1638,8 +1649,8 @@
 		CE69C1BD224B6E07004F4FA4 /* video */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C1BE224B6E07004F4FA4 /* VideoPlayerViewController.xib */,
 				CE69C1BF224B6E07004F4FA4 /* VideoPlayerViewController.swift */,
+				CE69C1BE224B6E07004F4FA4 /* VideoPlayerViewController.xib */,
 			);
 			path = video;
 			sourceTree = "<group>";
@@ -2899,6 +2910,7 @@
 				CE69C3DD224B6E07004F4FA4 /* FWRadioButton.swift in Sources */,
 				CE69C3E8224B6E07004F4FA4 /* ToastViewController.swift in Sources */,
 				CED832EF22A7C7AB00ABC725 /* WaterFallLayout.swift in Sources */,
+				3A849C102867508B00D5D9B3 /* DefineViewVC.swift in Sources */,
 				CE69C33F224B6E07004F4FA4 /* MyTabelviewVC.swift in Sources */,
 				CE69C3CF224B6E07004F4FA4 /* ContentViewController.swift in Sources */,
 				CE6DC08823362F5700A894DC /* Animal.swift in Sources */,

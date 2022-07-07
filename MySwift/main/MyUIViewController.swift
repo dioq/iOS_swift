@@ -228,6 +228,10 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
         textFieldViewController.title = "TextField"
         dataArray.append(textFieldViewController)
         
+        let defineView = DefineViewVC()
+        defineView.title = "定义一个视图"
+        dataArray.append(defineView)
+        
         return dataArray
     }()
     

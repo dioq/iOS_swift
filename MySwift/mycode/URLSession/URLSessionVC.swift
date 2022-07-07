@@ -20,7 +20,7 @@ class URLSessionVC: UIViewController {
     }
     
     @IBAction func get_func(_ sender: UIButton) {
-        let urlStr:String = "http://103.100.211.187:8848/getTest"
+        let urlStr:String = "http://jobs8.cn:8081/getdata"
         let url = URL.init(string: urlStr)
         let request = URLRequest(url: url!)
         
@@ -52,7 +52,7 @@ class URLSessionVC: UIViewController {
     }
     
     @IBAction func post_func(_ sender: UIButton) {
-        let urlStr = "http://www.anant.club:8848/getPost"
+        let urlStr = "http://jobs8.cn:8081/postdata"
         let url = URL(string: urlStr)
         var request = URLRequest.init(url: url!)
         //修改请求方法为POST
@@ -65,10 +65,10 @@ class URLSessionVC: UIViewController {
          */
         //为了便于拼接参数,将所有参数放在Dictionary里然后 将Dictionary整体 转成 json的二进制
         var param_dict = Dictionary<String,Any>()
-        param_dict["username"] = "Dio"
-        param_dict["password"] = "1231313"
-        param_dict["argot"] = "You are geat!"
-        param_dict["num"] = 1999
+        param_dict["name"] = "Dio"
+//        param_dict["password"] = "1231313"
+//        param_dict["argot"] = "You are geat!"
+        param_dict["age"] = 18
         let param_data = try? JSONSerialization.data(withJSONObject: param_dict, options: JSONSerialization.WritingOptions.init(rawValue: 0))
         
         request.httpBody = param_data
@@ -91,14 +91,14 @@ class URLSessionVC: UIViewController {
     }
     
     @IBAction func formdata_func(_ sender: UIButton) {
-        let urlStr = "http://www.anant.club:8848/testFormdata"
+        let urlStr = "http://jobs8.cn:8081/formdata"
         let url = URL(string: urlStr)
         var request = URLRequest.init(url: url!)
         //修改请求方法为POST
         request.httpMethod = "POST"
         //设置请求体
         //form-data拼接成字符后 转成 二进制的Data
-        let param = "username=dio&area=guiyang&age=18&action=testaction"
+        let param = "name=Dio&age=20"//"username=dio&area=guiyang&age=18&action=testaction"
         request.httpBody = param.data(using: String.Encoding.utf8)
         let config:URLSessionConfiguration = URLSessionConfiguration.default
         config.httpAdditionalHeaders = ["Content-Type":"application/x-www-form-urlencoded"]
@@ -148,7 +148,7 @@ class URLSessionVC: UIViewController {
     }
     
     @IBAction func uploadTask_func(_ sender: Any) {
-        let urlStr = "http://103.100.211.187:8848/upload"
+        let urlStr = "http://jobs8.cn:8081/upload"
         let url = URL.init(string: urlStr)
         //创建请求
         var request:URLRequest  = URLRequest(url: url!)
@@ -170,7 +170,8 @@ class URLSessionVC: UIViewController {
         
         let name = "file";//后台服务器根据这个名取到Request
         let filename = "anewname"
-        let content = "Content-Disposition: form-data; name=\(name); filename=\(filename)"
+        let type = "png"
+        let content = "Content-Disposition: form-data; name=\(name); filename=\(filename); type=\(type)"
         param_data += content.data(using: String.Encoding.utf8)!
         param_data += newLine.data(using: String.Encoding.utf8)!
         param_data += newLine.data(using: String.Encoding.utf8)!
@@ -240,6 +241,14 @@ class URLSessionVC: UIViewController {
             }
         }
         upTask.resume()
+    }
+    
+    @IBAction func httpsOneWay(_ sender: UIButton) {
+
+    }
+    
+    @IBAction func httpsTwoWay(_ sender: UIButton) {
+        
     }
     
 }
