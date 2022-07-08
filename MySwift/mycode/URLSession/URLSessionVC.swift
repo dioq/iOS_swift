@@ -22,10 +22,16 @@ class URLSessionVC: UIViewController {
     @IBAction func get_func(_ sender: UIButton) {
         let urlStr:String = "http://jobs8.cn:8081/getdata"
         let url = URL.init(string: urlStr)
-        let request = URLRequest(url: url!)
+        var request = URLRequest(url: url!)
+        request.httpMethod = "GET"
         
         let config:URLSessionConfiguration = URLSessionConfiguration.default
-        config.httpAdditionalHeaders = ["Content-Type":"application/json"]
+        var headers:Dictionary<String,Any> = Dictionary()
+        headers["Content-Type"] = "application/json"
+        headers["User-Agent"] = "iOS"
+        headers["Accept-Encoding"] = "gzip, deflate, br"
+        headers["Accept"] = "*/*"
+        config.httpAdditionalHeaders = headers
         config.timeoutIntervalForRequest = 30
         config.requestCachePolicy = .reloadIgnoringLocalCacheData
         let session:URLSession = URLSession(configuration: config)
@@ -73,7 +79,12 @@ class URLSessionVC: UIViewController {
         
         request.httpBody = param_data
         let config:URLSessionConfiguration = URLSessionConfiguration.default
-        config.httpAdditionalHeaders = ["Content-Type":"application/json"]
+        var headers:Dictionary<String,Any> = Dictionary()
+        headers["Content-Type"] = "application/json"
+        headers["User-Agent"] = "iOS"
+        headers["Accept-Encoding"] = "gzip, deflate, br"
+        headers["Accept"] = "*/*"
+        config.httpAdditionalHeaders = headers
         config.timeoutIntervalForRequest = 30
         config.requestCachePolicy = .reloadRevalidatingCacheData
         let session:URLSession = URLSession(configuration: config)
@@ -98,10 +109,15 @@ class URLSessionVC: UIViewController {
         request.httpMethod = "POST"
         //设置请求体
         //form-data拼接成字符后 转成 二进制的Data
-        let param = "name=Dio&age=20"//"username=dio&area=guiyang&age=18&action=testaction"
+        let param = "name=Dio&age=20"
         request.httpBody = param.data(using: String.Encoding.utf8)
         let config:URLSessionConfiguration = URLSessionConfiguration.default
-        config.httpAdditionalHeaders = ["Content-Type":"application/x-www-form-urlencoded"]
+        var headers:Dictionary<String,Any> = Dictionary()
+        headers["Content-Type"] = "application/x-www-form-urlencoded"
+        headers["User-Agent"] = "iOS"
+        headers["Accept-Encoding"] = "gzip, deflate, br"
+        headers["Accept"] = "*/*"
+        config.httpAdditionalHeaders = headers
         config.timeoutIntervalForRequest = 30
         config.requestCachePolicy = .reloadIgnoringLocalCacheData
         let session:URLSession = URLSession(configuration: config)
