@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A29093D288E4B4300A9F701 /* UIPasteboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A29093B288E4B4300A9F701 /* UIPasteboardVC.swift */; };
+		3A29093E288E4B4300A9F701 /* UIPasteboardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A29093C288E4B4300A9F701 /* UIPasteboardVC.xib */; };
 		3A849C102867508B00D5D9B3 /* DefineViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A849C0F2867508B00D5D9B3 /* DefineViewVC.swift */; };
 		3AC2071A2860AECA007BCE0E /* UISteperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC207192860AECA007BCE0E /* UISteperVC.swift */; };
 		5F2F0F172592653600197207 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2F0F162592653600197207 /* MD5.swift */; };
@@ -159,7 +161,6 @@
 		CE69C344224B6E07004F4FA4 /* TwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C1B8224B6E07004F4FA4 /* TwoCell.swift */; };
 		CE69C345224B6E07004F4FA4 /* OneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C1B9224B6E07004F4FA4 /* OneCell.xib */; };
 		CE69C346224B6E07004F4FA4 /* OneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C1BA224B6E07004F4FA4 /* OneCell.swift */; };
-		CE69C347224B6E07004F4FA4 /* UIPasteboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C1BC224B6E07004F4FA4 /* UIPasteboardVC.swift */; };
 		CE69C348224B6E07004F4FA4 /* VideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C1BE224B6E07004F4FA4 /* VideoPlayerViewController.xib */; };
 		CE69C349224B6E07004F4FA4 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C1BF224B6E07004F4FA4 /* VideoPlayerViewController.swift */; };
 		CE69C34A224B6E07004F4FA4 /* TextViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C1C1224B6E07004F4FA4 /* TextViewVC.xib */; };
@@ -423,6 +424,8 @@
 
 /* Begin PBXFileReference section */
 		32F7714E770754C61BBD0BA8 /* Pods-MySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwift.debug.xcconfig"; path = "Target Support Files/Pods-MySwift/Pods-MySwift.debug.xcconfig"; sourceTree = "<group>"; };
+		3A29093B288E4B4300A9F701 /* UIPasteboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPasteboardVC.swift; sourceTree = "<group>"; };
+		3A29093C288E4B4300A9F701 /* UIPasteboardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIPasteboardVC.xib; sourceTree = "<group>"; };
 		3A849C0F2867508B00D5D9B3 /* DefineViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineViewVC.swift; sourceTree = "<group>"; };
 		3AC207192860AECA007BCE0E /* UISteperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISteperVC.swift; sourceTree = "<group>"; };
 		5F2F0F162592653600197207 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
@@ -582,7 +585,6 @@
 		CE69C1B8224B6E07004F4FA4 /* TwoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoCell.swift; sourceTree = "<group>"; };
 		CE69C1B9224B6E07004F4FA4 /* OneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneCell.xib; sourceTree = "<group>"; };
 		CE69C1BA224B6E07004F4FA4 /* OneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneCell.swift; sourceTree = "<group>"; };
-		CE69C1BC224B6E07004F4FA4 /* UIPasteboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPasteboardVC.swift; sourceTree = "<group>"; };
 		CE69C1BE224B6E07004F4FA4 /* VideoPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayerViewController.xib; sourceTree = "<group>"; };
 		CE69C1BF224B6E07004F4FA4 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		CE69C1C1224B6E07004F4FA4 /* TextViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewVC.xib; sourceTree = "<group>"; };
@@ -1641,7 +1643,8 @@
 		CE69C1BB224B6E07004F4FA4 /* UIPasteboard */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C1BC224B6E07004F4FA4 /* UIPasteboardVC.swift */,
+				3A29093B288E4B4300A9F701 /* UIPasteboardVC.swift */,
+				3A29093C288E4B4300A9F701 /* UIPasteboardVC.xib */,
 			);
 			path = UIPasteboard;
 			sourceTree = "<group>";
@@ -2593,6 +2596,7 @@
 				CE757CE9237E70AC0039C29D /* 华康少女体.ttf in Resources */,
 				CE69C3BE224B6E07004F4FA4 /* taobaoLogo.png in Resources */,
 				CE69C3B2224B6E07004F4FA4 /* Favor_00011.png in Resources */,
+				3A29093E288E4B4300A9F701 /* UIPasteboardVC.xib in Resources */,
 				CE69C329224B6E07004F4FA4 /* Scroll2ViewController.xib in Resources */,
 				CE69C32E224B6E07004F4FA4 /* HeaderFooterTBVC.xib in Resources */,
 				CE69C2D4224B6E07004F4FA4 /* CacheViewController.xib in Resources */,
@@ -2852,6 +2856,7 @@
 				CE69C2EA224B6E07004F4FA4 /* LLSnakePageControl.swift in Sources */,
 				CE427A3E237006F0001A90B4 /* DownloadManager.swift in Sources */,
 				CE69C337224B6E07004F4FA4 /* HandleCellVC.swift in Sources */,
+				3A29093D288E4B4300A9F701 /* UIPasteboardVC.swift in Sources */,
 				CE69C3FB224B6E07004F4FA4 /* Handy3Model.swift in Sources */,
 				CE69C2CD224B6E07004F4FA4 /* MyComentVC.swift in Sources */,
 				CE69C2F6224B6E07004F4FA4 /* MyClosureVC.swift in Sources */,
@@ -2975,7 +2980,6 @@
 				CE69C386224B6E07004F4FA4 /* MyUIViewController.swift in Sources */,
 				CE69C40B224B6E08004F4FA4 /* HGImageCell.swift in Sources */,
 				CED3B9342266D706008988CE /* IMGVViewController.swift in Sources */,
-				CE69C347224B6E07004F4FA4 /* UIPasteboardVC.swift in Sources */,
 				CE69C2E9224B6E07004F4FA4 /* LLCycleScrollView.swift in Sources */,
 				CE69C309224B6E07004F4FA4 /* BrowserVC.swift in Sources */,
 				CE69C331224B6E07004F4FA4 /* SessionViewController.swift in Sources */,
@@ -3264,7 +3268,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dio.MySwift;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.MySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -3285,7 +3289,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dio.MySwift;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.MySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -209,6 +209,8 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
         dataArray.append(ani2)
         
         let pasteboardVC = UIPasteboardVC()
+//        let pasteboardSB = UIStoryboard.init(name: "UIPasteboard", bundle: nil)
+//        let pasteboardVC = pasteboardSB.instantiateViewController(withIdentifier: "UIPasteboardVC")
         pasteboardVC.title = "UIPasteboard"
         dataArray.append(pasteboardVC)
         

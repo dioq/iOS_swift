@@ -134,6 +134,16 @@
 	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>jobs8.cn</key>
+			<true/>
+		</dict>
+	</dict>
 	<key>NSAppleMusicUsageDescription</key>
 	<string>是否允许App访问您的媒体资料库？</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
@@ -204,15 +214,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>jobs8.cn</key>
-			<true/>
-		</dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 </dict>
 </plist>
