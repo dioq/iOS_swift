@@ -33,7 +33,6 @@
 		936DCD1F23B225DF00E38DB5 /* FoldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936DCD1C23B225DF00E38DB5 /* FoldModel.swift */; };
 		93EFF48623BDC09600A4BC67 /* Nib1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EFF48423BDC09600A4BC67 /* Nib1ViewController.swift */; };
 		93EFF48723BDC09600A4BC67 /* Nib1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93EFF48523BDC09600A4BC67 /* Nib1ViewController.xib */; };
-		CB1FA90C3B5B02927B5D38D3 /* Pods_MySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD046A5AA03CAB50BACDEC1 /* Pods_MySwift.framework */; };
 		CE1CBAC423224AAC00D3AE39 /* MyFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CBAC223224AAC00D3AE39 /* MyFontViewController.swift */; };
 		CE1CBAC523224AAC00D3AE39 /* MyFontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1CBAC323224AAC00D3AE39 /* MyFontViewController.xib */; };
 		CE24EA0122BCD6CC00CB80BB /* ChangeIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24E9FF22BCD6CC00CB80BB /* ChangeIconViewController.swift */; };
@@ -427,12 +426,14 @@
 		3A29093B288E4B4300A9F701 /* UIPasteboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPasteboardVC.swift; sourceTree = "<group>"; };
 		3A29093C288E4B4300A9F701 /* UIPasteboardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIPasteboardVC.xib; sourceTree = "<group>"; };
 		3A849C0F2867508B00D5D9B3 /* DefineViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineViewVC.swift; sourceTree = "<group>"; };
+		3A99EE3F289301DC00EBF6D4 /* MySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MySwift.app; path = "/Users/dio/Repository/MySwift/build/Debug-iphoneos/MySwift.app"; sourceTree = "<absolute>"; };
+		3A99EE40289301DC00EBF6D4 /* MySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MySwiftTests.xctest; path = "/Users/dio/Repository/MySwift/build/Debug-iphoneos/MySwiftTests.xctest"; sourceTree = "<absolute>"; };
+		3A99EE41289301DC00EBF6D4 /* MySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MySwiftUITests.xctest; path = "/Users/dio/Repository/MySwift/build/Debug-iphoneos/MySwiftUITests.xctest"; sourceTree = "<absolute>"; };
 		3AC207192860AECA007BCE0E /* UISteperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISteperVC.swift; sourceTree = "<group>"; };
 		5F2F0F162592653600197207 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
 		5FBADA31259A4CF1000A6EC0 /* NativeNetworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeNetworkVC.swift; sourceTree = "<group>"; };
 		5FBADA32259A4CF1000A6EC0 /* NativeNetworkVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeNetworkVC.xib; sourceTree = "<group>"; };
 		5FBADA38259A55F0000A6EC0 /* DioNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DioNetwork.swift; sourceTree = "<group>"; };
-		5FE898342593656A0020059D /* MySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE898362593656A0020059D /* MySwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUITests.swift; sourceTree = "<group>"; };
 		5FE898382593656A0020059D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FE8990525940D9D0020059D /* AuxiliarySkillsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliarySkillsVC.swift; sourceTree = "<group>"; };
@@ -441,7 +442,6 @@
 		5FF092E72590C1E4002B2D70 /* NetworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkVC.swift; sourceTree = "<group>"; };
 		5FF092E82590C1E4002B2D70 /* NetworkVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkVC.xib; sourceTree = "<group>"; };
 		5FF092EC2590C65A002B2D70 /* MyNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNet.swift; sourceTree = "<group>"; };
-		5FFCAF7225910D420073009E /* MySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFCAF7425910D420073009E /* MySwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftTests.swift; sourceTree = "<group>"; };
 		5FFCAF7625910D420073009E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FFCAF8A2591E95E0073009E /* URLSessionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionVC.swift; sourceTree = "<group>"; };
@@ -454,7 +454,6 @@
 		936DCD1C23B225DF00E38DB5 /* FoldModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldModel.swift; sourceTree = "<group>"; };
 		93EFF48423BDC09600A4BC67 /* Nib1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib1ViewController.swift; sourceTree = "<group>"; };
 		93EFF48523BDC09600A4BC67 /* Nib1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Nib1ViewController.xib; sourceTree = "<group>"; };
-		9AD046A5AA03CAB50BACDEC1 /* Pods_MySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C790BE9ABE19EB49FDF58AFD /* Pods-MySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwift.release.xcconfig"; path = "Target Support Files/Pods-MySwift/Pods-MySwift.release.xcconfig"; sourceTree = "<group>"; };
 		CE1CBAC223224AAC00D3AE39 /* MyFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFontViewController.swift; sourceTree = "<group>"; };
 		CE1CBAC323224AAC00D3AE39 /* MyFontViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFontViewController.xib; sourceTree = "<group>"; };
@@ -462,7 +461,6 @@
 		CE24EA0022BCD6CC00CB80BB /* ChangeIconViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeIconViewController.xib; sourceTree = "<group>"; };
 		CE28CC882347309B00444FCD /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
 		CE427A3D237006F0001A90B4 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
-		CE69C0EE224B6C92004F4FA4 /* MySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE69C0F8224B6C93004F4FA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE69C0FD224B6C93004F4FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE69C10A224B6E06004F4FA4 /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
@@ -852,7 +850,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB1FA90C3B5B02927B5D38D3 /* Pods_MySwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -982,14 +979,6 @@
 			path = skill;
 			sourceTree = "<group>";
 		};
-		9659CEB6C5FFEDEC8B9BD34A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9AD046A5AA03CAB50BACDEC1 /* Pods_MySwift.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CE1CBAC123224A7200D3AE39 /* font */ = {
 			isa = PBXGroup;
 			children = (
@@ -1037,20 +1026,8 @@
 				CE69C0F0224B6C92004F4FA4 /* MySwift */,
 				5FFCAF7325910D420073009E /* MySwiftTests */,
 				5FE898352593656A0020059D /* MySwiftUITests */,
-				CE69C0EF224B6C92004F4FA4 /* Products */,
 				260B268476C2C1B73538CA04 /* Pods */,
-				9659CEB6C5FFEDEC8B9BD34A /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		CE69C0EF224B6C92004F4FA4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CE69C0EE224B6C92004F4FA4 /* MySwift.app */,
-				5FFCAF7225910D420073009E /* MySwiftTests.xctest */,
-				5FE898342593656A0020059D /* MySwiftUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		CE69C0F0224B6C92004F4FA4 /* MySwift */ = {
@@ -2439,7 +2416,7 @@
 			);
 			name = MySwiftUITests;
 			productName = MySwiftUITests;
-			productReference = 5FE898342593656A0020059D /* MySwiftUITests.xctest */;
+			productReference = 3A99EE41289301DC00EBF6D4 /* MySwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		5FFCAF7125910D420073009E /* MySwiftTests */ = {
@@ -2457,7 +2434,7 @@
 			);
 			name = MySwiftTests;
 			productName = MySwiftTests;
-			productReference = 5FFCAF7225910D420073009E /* MySwiftTests.xctest */;
+			productReference = 3A99EE40289301DC00EBF6D4 /* MySwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CE69C0ED224B6C92004F4FA4 /* MySwift */ = {
@@ -2476,7 +2453,7 @@
 			);
 			name = MySwift;
 			productName = MySwift;
-			productReference = CE69C0EE224B6C92004F4FA4 /* MySwift.app */;
+			productReference = 3A99EE3F289301DC00EBF6D4 /* MySwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2513,7 +2490,7 @@
 				"zh-Hant",
 			);
 			mainGroup = CE69C0E5224B6C92004F4FA4;
-			productRefGroup = CE69C0EF224B6C92004F4FA4 /* Products */;
+			productRefGroup = CE69C0E5224B6C92004F4FA4;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
