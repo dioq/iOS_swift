@@ -16,6 +16,10 @@ class LanguageViewController: UIViewController,UITableViewDataSource,UITableView
     lazy var dataArray:[UIViewController] = {
         var dataArray = Array<UIViewController>()
         
+        let exceptionVC = ExceptionViewController()
+        exceptionVC.title = "异常处理"
+        dataArray.append(exceptionVC)
+        
         let auxiliarySkillsVC = AuxiliarySkillsVC()
         auxiliarySkillsVC.title = "开发中一些辅助技巧"
         dataArray.append(auxiliarySkillsVC)

@@ -10,6 +10,8 @@
 		3A29093D288E4B4300A9F701 /* UIPasteboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A29093B288E4B4300A9F701 /* UIPasteboardVC.swift */; };
 		3A29093E288E4B4300A9F701 /* UIPasteboardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A29093C288E4B4300A9F701 /* UIPasteboardVC.xib */; };
 		3A849C102867508B00D5D9B3 /* DefineViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A849C0F2867508B00D5D9B3 /* DefineViewVC.swift */; };
+		3A99EE6228945D2B00EBF6D4 /* ExceptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99EE6028945D2B00EBF6D4 /* ExceptionViewController.swift */; };
+		3A99EE6328945D2B00EBF6D4 /* ExceptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A99EE6128945D2B00EBF6D4 /* ExceptionViewController.xib */; };
 		3AC2071A2860AECA007BCE0E /* UISteperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC207192860AECA007BCE0E /* UISteperVC.swift */; };
 		5F2F0F172592653600197207 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2F0F162592653600197207 /* MD5.swift */; };
 		5FBADA33259A4CF1000A6EC0 /* NativeNetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBADA31259A4CF1000A6EC0 /* NativeNetworkVC.swift */; };
@@ -426,9 +428,11 @@
 		3A29093B288E4B4300A9F701 /* UIPasteboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPasteboardVC.swift; sourceTree = "<group>"; };
 		3A29093C288E4B4300A9F701 /* UIPasteboardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIPasteboardVC.xib; sourceTree = "<group>"; };
 		3A849C0F2867508B00D5D9B3 /* DefineViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineViewVC.swift; sourceTree = "<group>"; };
-		3A99EE3F289301DC00EBF6D4 /* MySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MySwift.app; path = "/Users/dio/Repository/MySwift/build/Debug-iphoneos/MySwift.app"; sourceTree = "<absolute>"; };
-		3A99EE40289301DC00EBF6D4 /* MySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MySwiftTests.xctest; path = "/Users/dio/Repository/MySwift/build/Debug-iphoneos/MySwiftTests.xctest"; sourceTree = "<absolute>"; };
-		3A99EE41289301DC00EBF6D4 /* MySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MySwiftUITests.xctest; path = "/Users/dio/Repository/MySwift/build/Debug-iphoneos/MySwiftUITests.xctest"; sourceTree = "<absolute>"; };
+		3A99EE5C28945C8100EBF6D4 /* MySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A99EE5D28945C8100EBF6D4 /* MySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A99EE5E28945C8100EBF6D4 /* MySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A99EE6028945D2B00EBF6D4 /* ExceptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionViewController.swift; sourceTree = "<group>"; };
+		3A99EE6128945D2B00EBF6D4 /* ExceptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExceptionViewController.xib; sourceTree = "<group>"; };
 		3AC207192860AECA007BCE0E /* UISteperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISteperVC.swift; sourceTree = "<group>"; };
 		5F2F0F162592653600197207 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
 		5FBADA31259A4CF1000A6EC0 /* NativeNetworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeNetworkVC.swift; sourceTree = "<group>"; };
@@ -873,6 +877,15 @@
 			path = defineview;
 			sourceTree = "<group>";
 		};
+		3A99EE5F28945D1800EBF6D4 /* Exception */ = {
+			isa = PBXGroup;
+			children = (
+				3A99EE6028945D2B00EBF6D4 /* ExceptionViewController.swift */,
+				3A99EE6128945D2B00EBF6D4 /* ExceptionViewController.xib */,
+			);
+			path = Exception;
+			sourceTree = "<group>";
+		};
 		3AC207162860AE45007BCE0E /* stepper */ = {
 			isa = PBXGroup;
 			children = (
@@ -1027,6 +1040,9 @@
 				5FFCAF7325910D420073009E /* MySwiftTests */,
 				5FE898352593656A0020059D /* MySwiftUITests */,
 				260B268476C2C1B73538CA04 /* Pods */,
+				3A99EE5C28945C8100EBF6D4 /* MySwift.app */,
+				3A99EE5D28945C8100EBF6D4 /* MySwiftTests.xctest */,
+				3A99EE5E28945C8100EBF6D4 /* MySwiftUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1223,6 +1239,7 @@
 		CE69C146224B6E06004F4FA4 /* language */ = {
 			isa = PBXGroup;
 			children = (
+				3A99EE5F28945D1800EBF6D4 /* Exception */,
 				5FE8990425940D0C0020059D /* AuxiliarySkills */,
 				CEC1648423363C0000F91A8D /* generic */,
 				CE6DC08423362EFF00A894DC /* polymorphism */,
@@ -2416,7 +2433,7 @@
 			);
 			name = MySwiftUITests;
 			productName = MySwiftUITests;
-			productReference = 3A99EE41289301DC00EBF6D4 /* MySwiftUITests.xctest */;
+			productReference = 3A99EE5E28945C8100EBF6D4 /* MySwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		5FFCAF7125910D420073009E /* MySwiftTests */ = {
@@ -2434,7 +2451,7 @@
 			);
 			name = MySwiftTests;
 			productName = MySwiftTests;
-			productReference = 3A99EE40289301DC00EBF6D4 /* MySwiftTests.xctest */;
+			productReference = 3A99EE5D28945C8100EBF6D4 /* MySwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CE69C0ED224B6C92004F4FA4 /* MySwift */ = {
@@ -2453,7 +2470,7 @@
 			);
 			name = MySwift;
 			productName = MySwift;
-			productReference = 3A99EE3F289301DC00EBF6D4 /* MySwift.app */;
+			productReference = 3A99EE5C28945C8100EBF6D4 /* MySwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2616,6 +2633,7 @@
 				CE69C3C1224B6E07004F4FA4 /* placeholder.png in Resources */,
 				CE716578237FC5CD00D476C3 /* iWiBi-orange-icon-light@2x.png in Resources */,
 				CE69C3C4224B6E07004F4FA4 /* image1.png in Resources */,
+				3A99EE6328945D2B00EBF6D4 /* ExceptionViewController.xib in Resources */,
 				CE69C30A224B6E07004F4FA4 /* BrowserVC.xib in Resources */,
 				CE69C3B6224B6E07004F4FA4 /* Favor_00022.png in Resources */,
 				CE69C399224B6E07004F4FA4 /* ShowPhotosVC.xib in Resources */,
@@ -2876,6 +2894,7 @@
 				CE69C2D7224B6E07004F4FA4 /* JudgeNetworkingVC.swift in Sources */,
 				CE69C3CD224B6E07004F4FA4 /* AutoImageViewController.swift in Sources */,
 				CE69C2FF224B6E07004F4FA4 /* FatherObject.swift in Sources */,
+				3A99EE6228945D2B00EBF6D4 /* ExceptionViewController.swift in Sources */,
 				CE69C40F224B6E08004F4FA4 /* MyTabBarController.swift in Sources */,
 				CE69C310224B6E07004F4FA4 /* SingletonTwo.swift in Sources */,
 				CE69C2EF224B6E07004F4FA4 /* HGImageCompleteButton.swift in Sources */,
