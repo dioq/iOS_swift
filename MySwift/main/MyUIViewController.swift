@@ -92,11 +92,7 @@ class MyUIViewController: UIViewController,UITableViewDataSource,UITableViewDele
         datePickerVC.title = "DatePicker"
         dataArray.append(datePickerVC)
         
-        let webVC = UIWebViewVC()
-        webVC.title = "UIWebView"
-        dataArray.append(webVC )
-        
-        let wk2 = WKWebViewHandleVC()
+        let wk2 = WKWebView2VC()
         wk2.title = "WKWebView使用delegate"
         dataArray.append(wk2)
         

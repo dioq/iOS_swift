@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class WKWebViewHandleVC: UIViewController,WKNavigationDelegate,WKUIDelegate {
+class WKWebView2VC: UIViewController,WKNavigationDelegate,WKUIDelegate {
     
     var myWebView:WKWebView!
     
@@ -20,6 +20,7 @@ class WKWebViewHandleVC: UIViewController,WKNavigationDelegate,WKUIDelegate {
         self.progressView.trackTintColor = UIColor.yellow // 进度条背景色
         return self.progressView
     }()
+    
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
         if keyPath == "estimatedProgress"{
@@ -40,7 +41,7 @@ class WKWebViewHandleVC: UIViewController,WKNavigationDelegate,WKUIDelegate {
         super.viewDidLoad()
         let webConfiguration = WKWebViewConfiguration()
         myWebView = WKWebView(frame: view.bounds, configuration: webConfiguration)
-        let myURL = URL(string: "https://www.google.com")
+        let myURL = URL(string: "https://www.baidu.com")
         let myRequest = URLRequest(url: myURL!)
         myWebView.load(myRequest)
         view.addSubview(myWebView)
@@ -79,13 +80,13 @@ class WKWebViewHandleVC: UIViewController,WKNavigationDelegate,WKUIDelegate {
         print("接收到服务器跳转请求")
     }
     // 在收到响应后，决定是否跳转
-//    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
-//        print("收到响应后，决定是否跳转")
-//    }
+    //    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+    //        print("收到响应后，决定是否跳转")
+    //    }
     // 在发送请求之前，决定是否跳转
-//    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-//        print("发送请求之前，决定是否跳转")
-//    }
+    //    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+    //        print("发送请求之前，决定是否跳转")
+    //    }
     
     
     /*************************************** WKUIDelegate *******************************************/
@@ -103,15 +104,5 @@ class WKWebViewHandleVC: UIViewController,WKNavigationDelegate,WKUIDelegate {
     deinit {
         myWebView.removeObserver(self, forKeyPath: "estimatedProgress")
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+
 }

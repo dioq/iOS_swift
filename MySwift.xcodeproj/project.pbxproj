@@ -209,10 +209,8 @@
 		CE69C37A224B6E07004F4FA4 /* DatePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C201224B6E07004F4FA4 /* DatePickerVC.swift */; };
 		CE69C37B224B6E07004F4FA4 /* DatePickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C202224B6E07004F4FA4 /* DatePickerVC.xib */; };
 		CE69C37D224B6E07004F4FA4 /* WKWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C205224B6E07004F4FA4 /* WKWebViewVC.swift */; };
-		CE69C37E224B6E07004F4FA4 /* UIWebViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C206224B6E07004F4FA4 /* UIWebViewVC.xib */; };
 		CE69C37F224B6E07004F4FA4 /* WKWebViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C207224B6E07004F4FA4 /* WKWebViewVC.xib */; };
-		CE69C380224B6E07004F4FA4 /* UIWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C208224B6E07004F4FA4 /* UIWebViewVC.swift */; };
-		CE69C381224B6E07004F4FA4 /* WKWebViewHandleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C209224B6E07004F4FA4 /* WKWebViewHandleVC.swift */; };
+		CE69C381224B6E07004F4FA4 /* WKWebView2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C209224B6E07004F4FA4 /* WKWebView2VC.swift */; };
 		CE69C382224B6E07004F4FA4 /* MyUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69C20A224B6E07004F4FA4 /* MyUIViewController.xib */; };
 		CE69C383224B6E07004F4FA4 /* ToolBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C20C224B6E07004F4FA4 /* ToolBarViewController.swift */; };
 		CE69C384224B6E07004F4FA4 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69C20E224B6E07004F4FA4 /* TextFieldViewController.swift */; };
@@ -427,10 +425,10 @@
 		32F7714E770754C61BBD0BA8 /* Pods-MySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwift.debug.xcconfig"; path = "Target Support Files/Pods-MySwift/Pods-MySwift.debug.xcconfig"; sourceTree = "<group>"; };
 		3A29093B288E4B4300A9F701 /* UIPasteboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPasteboardVC.swift; sourceTree = "<group>"; };
 		3A29093C288E4B4300A9F701 /* UIPasteboardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIPasteboardVC.xib; sourceTree = "<group>"; };
+		3A63EE9628B0C88A00ABD1CD /* MySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A63EE9728B0C88A00ABD1CD /* MySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A849C0F2867508B00D5D9B3 /* DefineViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineViewVC.swift; sourceTree = "<group>"; };
 		3A99EE5C28945C8100EBF6D4 /* MySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A99EE5D28945C8100EBF6D4 /* MySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A99EE5E28945C8100EBF6D4 /* MySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A99EE6028945D2B00EBF6D4 /* ExceptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionViewController.swift; sourceTree = "<group>"; };
 		3A99EE6128945D2B00EBF6D4 /* ExceptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExceptionViewController.xib; sourceTree = "<group>"; };
 		3AC207192860AECA007BCE0E /* UISteperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISteperVC.swift; sourceTree = "<group>"; };
@@ -634,10 +632,8 @@
 		CE69C201224B6E07004F4FA4 /* DatePickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerVC.swift; sourceTree = "<group>"; };
 		CE69C202224B6E07004F4FA4 /* DatePickerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerVC.xib; sourceTree = "<group>"; };
 		CE69C205224B6E07004F4FA4 /* WKWebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewVC.swift; sourceTree = "<group>"; };
-		CE69C206224B6E07004F4FA4 /* UIWebViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIWebViewVC.xib; sourceTree = "<group>"; };
 		CE69C207224B6E07004F4FA4 /* WKWebViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKWebViewVC.xib; sourceTree = "<group>"; };
-		CE69C208224B6E07004F4FA4 /* UIWebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWebViewVC.swift; sourceTree = "<group>"; };
-		CE69C209224B6E07004F4FA4 /* WKWebViewHandleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewHandleVC.swift; sourceTree = "<group>"; };
+		CE69C209224B6E07004F4FA4 /* WKWebView2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebView2VC.swift; sourceTree = "<group>"; };
 		CE69C20A224B6E07004F4FA4 /* MyUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyUIViewController.xib; sourceTree = "<group>"; };
 		CE69C20C224B6E07004F4FA4 /* ToolBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBarViewController.swift; sourceTree = "<group>"; };
 		CE69C20E224B6E07004F4FA4 /* TextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
@@ -1041,8 +1037,8 @@
 				5FE898352593656A0020059D /* MySwiftUITests */,
 				260B268476C2C1B73538CA04 /* Pods */,
 				3A99EE5C28945C8100EBF6D4 /* MySwift.app */,
-				3A99EE5D28945C8100EBF6D4 /* MySwiftTests.xctest */,
-				3A99EE5E28945C8100EBF6D4 /* MySwiftUITests.xctest */,
+				3A63EE9628B0C88A00ABD1CD /* MySwiftTests.xctest */,
+				3A63EE9728B0C88A00ABD1CD /* MySwiftUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1826,9 +1822,7 @@
 			children = (
 				CE69C205224B6E07004F4FA4 /* WKWebViewVC.swift */,
 				CE69C207224B6E07004F4FA4 /* WKWebViewVC.xib */,
-				CE69C208224B6E07004F4FA4 /* UIWebViewVC.swift */,
-				CE69C206224B6E07004F4FA4 /* UIWebViewVC.xib */,
-				CE69C209224B6E07004F4FA4 /* WKWebViewHandleVC.swift */,
+				CE69C209224B6E07004F4FA4 /* WKWebView2VC.swift */,
 			);
 			path = webview;
 			sourceTree = "<group>";
@@ -2433,7 +2427,7 @@
 			);
 			name = MySwiftUITests;
 			productName = MySwiftUITests;
-			productReference = 3A99EE5E28945C8100EBF6D4 /* MySwiftUITests.xctest */;
+			productReference = 3A63EE9728B0C88A00ABD1CD /* MySwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		5FFCAF7125910D420073009E /* MySwiftTests */ = {
@@ -2451,7 +2445,7 @@
 			);
 			name = MySwiftTests;
 			productName = MySwiftTests;
-			productReference = 3A99EE5D28945C8100EBF6D4 /* MySwiftTests.xctest */;
+			productReference = 3A63EE9628B0C88A00ABD1CD /* MySwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CE69C0ED224B6C92004F4FA4 /* MySwift */ = {
@@ -2684,7 +2678,6 @@
 				CE69C3EE224B6E07004F4FA4 /* SQLiteViewController.xib in Resources */,
 				CE69C3C6224B6E07004F4FA4 /* smile.png in Resources */,
 				CE69C34A224B6E07004F4FA4 /* TextViewVC.xib in Resources */,
-				CE69C37E224B6E07004F4FA4 /* UIWebViewVC.xib in Resources */,
 				CE69C30D224B6E07004F4FA4 /* SendValueVC.xib in Resources */,
 				CE69C38F224B6E07004F4FA4 /* MyPointView1.xib in Resources */,
 				CE69C31B224B6E07004F4FA4 /* RegularViewController.xib in Resources */,
@@ -2929,7 +2922,7 @@
 				CE69C40A224B6E08004F4FA4 /* HGImageViewController.swift in Sources */,
 				CE69C384224B6E07004F4FA4 /* TextFieldViewController.swift in Sources */,
 				CE69C2E5224B6E07004F4FA4 /* SegmentViewController.swift in Sources */,
-				CE69C381224B6E07004F4FA4 /* WKWebViewHandleVC.swift in Sources */,
+				CE69C381224B6E07004F4FA4 /* WKWebView2VC.swift in Sources */,
 				CE69C37D224B6E07004F4FA4 /* WKWebViewVC.swift in Sources */,
 				CE69C30E224B6E07004F4FA4 /* ReceiveVC.swift in Sources */,
 				CE69C392224B6E07004F4FA4 /* PointViewController.swift in Sources */,
@@ -2957,7 +2950,6 @@
 				CE69C38A224B6E07004F4FA4 /* GestureVC.swift in Sources */,
 				CE69C2E1224B6E07004F4FA4 /* CATransitionVC.swift in Sources */,
 				CE69C2E8224B6E07004F4FA4 /* LLPillPageControl.swift in Sources */,
-				CE69C380224B6E07004F4FA4 /* UIWebViewVC.swift in Sources */,
 				CE69C3F3224B6E07004F4FA4 /* TestAlertView.swift in Sources */,
 				CE69C341224B6E07004F4FA4 /* TwoCellTBVC.swift in Sources */,
 				CE69C300224B6E07004F4FA4 /* SonObject.swift in Sources */,
