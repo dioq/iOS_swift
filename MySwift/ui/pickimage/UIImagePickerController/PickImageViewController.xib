@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,13 +21,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bqz-7h-Zac">
-                    <rect key="frame" x="30" y="30" width="315" height="315"/>
+                    <rect key="frame" x="30" y="10" width="315" height="315"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="Bqz-7h-Zac" secondAttribute="height" id="uQD-wK-Lnk"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCz-Re-6ZG">
-                    <rect key="frame" x="64.5" y="401" width="246" height="40"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCz-Re-6ZG">
+                    <rect key="frame" x="64.5" y="381" width="246" height="40"/>
                     <color key="backgroundColor" red="0.62100448900000005" green="0.99193829300000003" blue="0.22318474990000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="246" id="bUM-Up-TxX"/>
@@ -41,7 +39,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="编辑:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNY-7B-oCu">
-                    <rect key="frame" x="258" y="355" width="40" height="31"/>
+                    <rect key="frame" x="258" y="335" width="40" height="31"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="IR9-Ng-9f3"/>
                         <constraint firstAttribute="height" constant="31" id="glV-su-Jxo"/>
@@ -51,14 +49,14 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7sY-ki-DsM">
-                    <rect key="frame" x="308" y="355" width="49" height="31"/>
+                    <rect key="frame" x="308" y="335" width="49" height="31"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="31" id="J7m-TC-WT9"/>
                         <constraint firstAttribute="width" constant="47" id="rea-KO-NMe"/>
                     </constraints>
                 </switch>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dX-ps-rMi">
-                    <rect key="frame" x="64.5" y="456" width="246" height="40"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dX-ps-rMi">
+                    <rect key="frame" x="64.5" y="436" width="246" height="40"/>
                     <color key="backgroundColor" red="0.62100448900000005" green="0.99193829300000003" blue="0.22318474990000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <state key="normal" title="拍照"/>
                     <connections>
@@ -66,6 +64,7 @@
                     </connections>
                 </button>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="zCz-Re-6ZG" firstAttribute="top" secondItem="QNY-7B-oCu" secondAttribute="bottom" constant="15" id="0w4-vc-3Rd"/>
@@ -82,7 +81,6 @@
                 <constraint firstItem="zCz-Re-6ZG" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Y6j-PF-INW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bqz-7h-Zac" secondAttribute="trailing" constant="30" id="lmD-ha-FOp"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
         </view>
     </objects>

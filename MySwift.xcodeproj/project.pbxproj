@@ -425,8 +425,8 @@
 		32F7714E770754C61BBD0BA8 /* Pods-MySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwift.debug.xcconfig"; path = "Target Support Files/Pods-MySwift/Pods-MySwift.debug.xcconfig"; sourceTree = "<group>"; };
 		3A29093B288E4B4300A9F701 /* UIPasteboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPasteboardVC.swift; sourceTree = "<group>"; };
 		3A29093C288E4B4300A9F701 /* UIPasteboardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIPasteboardVC.xib; sourceTree = "<group>"; };
-		3A63EE9628B0C88A00ABD1CD /* MySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A63EE9728B0C88A00ABD1CD /* MySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A63EE9628B0C88A00ABD1CD /* MySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MySwiftTests.xctest; path = "/Users/dio/Repository/MySwift/build/Debug-iphoneos/MySwiftTests.xctest"; sourceTree = "<absolute>"; };
+		3A63EE9728B0C88A00ABD1CD /* MySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MySwiftUITests.xctest; path = "/Users/dio/Repository/MySwift/build/Debug-iphoneos/MySwiftUITests.xctest"; sourceTree = "<absolute>"; };
 		3A849C0F2867508B00D5D9B3 /* DefineViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineViewVC.swift; sourceTree = "<group>"; };
 		3A99EE5C28945C8100EBF6D4 /* MySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A99EE6028945D2B00EBF6D4 /* ExceptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionViewController.swift; sourceTree = "<group>"; };
@@ -1037,8 +1037,6 @@
 				5FE898352593656A0020059D /* MySwiftUITests */,
 				260B268476C2C1B73538CA04 /* Pods */,
 				3A99EE5C28945C8100EBF6D4 /* MySwift.app */,
-				3A63EE9628B0C88A00ABD1CD /* MySwiftTests.xctest */,
-				3A63EE9728B0C88A00ABD1CD /* MySwiftUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};

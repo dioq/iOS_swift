@@ -10,7 +10,7 @@ import XCTest
 
 class MySwiftUITests: XCTestCase {
     
-    let app = XCUIApplication()
+//    let app = XCUIApplication()
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -19,54 +19,90 @@ class MySwiftUITests: XCTestCase {
         continueAfterFailure = false
         
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-        app.launch()
+//        app.launch()
     }
     
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+//    override func tearDownWithError() throws {
+//        // Put teardown code here. This method is called after the invocation of each test method in the class.
+//    }
     
     func testExample() throws {
-        // UI tests must launch the application that they test.
+//        let btn:XCUIElement = self.app.buttons["允许访问所有照片"]
+//        if(btn.exists) {
+//            btn.tap()
+//        }
+                
+        
+        let app = XCUIApplication()
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["多图选择HGImage"]/*[[".cells.staticTexts[\"多图选择HGImage\"]",".staticTexts[\"多图选择HGImage\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["HGImage"].buttons["选择"].tap()
+        
+        let elementsQuery = app.alerts["雨燕项目”想访问您的照片"].scrollViews.otherElements
+        elementsQuery.buttons["不允许"].tap()
+        
+        
+        elementsQuery.buttons["允许访问所有照片"].tap()
+        app.collectionViews.children(matching: .cell).element(boundBy: 8).otherElements.containing(.image, identifier:"hg_image_not_selected").element.tap()
+        app/*@START_MENU_TOKEN@*/.toolbars["Toolbar"]/*[[".toolbars[\"工具栏\"]",".toolbars[\"Toolbar\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.staticTexts["完成"].tap()
+                
+    }
+    
+    func test001() throws {
         let app = XCUIApplication()
         app.launch()
         
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.buttons["Vender"].tap()
+        
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["多图选择HGImage"]/*[[".cells.staticTexts[\"多图选择HGImage\"]",".staticTexts[\"多图选择HGImage\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["HGImage"].buttons["选择"].tap()
+        
+        let elementsQuery = app.alerts["雨燕项目”想访问您的照片"].scrollViews.otherElements
+        elementsQuery.buttons["允许访问所有照片"].tap()
+        sleep(5)
+        app.collectionViews.children(matching: .cell).element(boundBy: 8).otherElements.containing(.image, identifier:"hg_image_not_selected").element.tap()
+        app/*@START_MENU_TOKEN@*/.toolbars["Toolbar"]/*[[".toolbars[\"工具栏\"]",".toolbars[\"Toolbar\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.staticTexts["完成"].tap()
     }
     
-    func testNetwork() throws {
-////        app.tabBars["Tab Bar"].buttons["Other"].tap()
-//        let tabbar = app.tabBars.allElementsBoundByIndex[0]
-//        let tabbarItems = tabbar.children(matching: XCUIElement.ElementType.button)
-//        let page3 = tabbarItems.element(boundBy: 3)
-//        page3.tap()
-//
-//        app.tables/*@START_MENU_TOKEN@*/.cells.staticTexts["原生网络请求"]/*[[".cells.staticTexts[\"原生网络请求\"]",".staticTexts[\"原生网络请求\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
-//        app.buttons["Get"].tap()
-//        Thread.sleep(forTimeInterval: 5)
-//        app.buttons["Post"].tap()
-//        app.buttons["Form data"].tap()
-//        app/*@START_MENU_TOKEN@*/.staticTexts["uploadTask"]/*[[".buttons[\"uploadTask\"].staticTexts[\"uploadTask\"]",".staticTexts[\"uploadTask\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+    func test002() throws {
+        let app = XCUIApplication()
+        let elementsQuery = app.alerts["雨燕项目”想访问您的照片"].scrollViews.otherElements
         
-        
-        app.tabBars["Tab Bar"].buttons["Vender"].tap()
-        
-        let app2 = app
-        app2.tables/*@START_MENU_TOKEN@*/.staticTexts["测试封装的Alamofire"]/*[[".cells.staticTexts[\"测试封装的Alamofire\"]",".staticTexts[\"测试封装的Alamofire\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app.buttons["GET"].tap()
-        app2/*@START_MENU_TOKEN@*/.staticTexts["POST"]/*[[".buttons[\"POST\"].staticTexts[\"POST\"]",".staticTexts[\"POST\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app2/*@START_MENU_TOKEN@*/.staticTexts["Form Data"]/*[[".buttons[\"Form Data\"].staticTexts[\"Form Data\"]",".staticTexts[\"Form Data\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app.buttons["Uoload Image"].tap()
-        
-    }
-    
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
+        let btn = elementsQuery.buttons["允许访问所有照片"]
+        if btn.exists {
+            btn.tap()
         }
+        
+//        for index in 0...elementsQuery.count {
+//            let btn =  elementsQuery.index(ofAccessibilityElement: index)
+//            print(btn.description.debugDescription)
+//        }
+//        for i in Range(0,elementsQuery.count) {
+//            for btn in item.buttons {
+//
+//            }
+//        }
+    }
+    
+    func test003() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        app.buttons["Vender"].tap()
+        
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["多图选择HGImage"]/*[[".cells.staticTexts[\"多图选择HGImage\"]",".staticTexts[\"多图选择HGImage\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["HGImage"].buttons["选择"].tap()
+        
+        let elementsQuery = app.alerts["雨燕项目”想访问您的照片"].scrollViews.otherElements
+        let btn = elementsQuery.buttons["允许访问所有照片"]
+        if btn.exists {
+            btn.tap()
+        }
+    }
+    
+    func testWX() throws {
+        let app = XCUIApplication.init(bundleIdentifier: "com.tencent.xin")
+
+        let elementsQuery = app.alerts["雨燕项目”想访问您的照片"].scrollViews.otherElements
+        elementsQuery.buttons["不允许"].tap()
     }
 }

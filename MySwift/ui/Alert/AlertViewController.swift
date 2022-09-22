@@ -51,11 +51,29 @@ class AlertViewController: UIViewController {
     }
     
     @IBAction func action02(_ sender: UIButton) {
-
+        let alert = UIAlertController(title: "hello!", message: "good luck", preferredStyle: UIAlertController.Style.alert)
+        let btn1 = UIAlertAction(title: "sure1", style: .default, handler: nil)
+        alert.addAction(btn1)
+        let btn2 = UIAlertAction(title: "sure2", style: .default, handler: nil)
+        alert.addAction(btn2)
+        let btn3 = UIAlertAction(title: "sure3", style: .default, handler: nil)
+        alert.addAction(btn3)
+        let btn4 = UIAlertAction(title: "sure4", style: .default, handler: nil)
+        alert.addAction(btn4)
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func action3(_ sender: UIButton) {
-
+        let alert = UIAlertController(title: "hello!", message: "good luck", preferredStyle: UIAlertController.Style.actionSheet)
+        let btn1 = UIAlertAction(title: "sure1", style: .default, handler: nil)
+        alert.addAction(btn1)
+        let btn2 = UIAlertAction(title: "sure2", style: .default, handler: nil)
+        alert.addAction(btn2)
+        let btn3 = UIAlertAction(title: "sure3", style: .default, handler: nil)
+        alert.addAction(btn3)
+        let btn4 = UIAlertAction(title: "sure4", style: .default, handler: nil)
+        alert.addAction(btn4)
+        self.present(alert, animated: true, completion: nil)
     }
     
 }
