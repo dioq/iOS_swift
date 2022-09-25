@@ -12,8 +12,18 @@ class JumpAppVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var myTableView: UITableView!
     let indentifier = "mycell"
-    var dataArray:[String] = ["调自己的ObjectiveC","调微信","调起QQ","调起淘宝","调mail",]
-    var schemesInfoArray = ["ObjectiveC2.718://William2.718?message=hiOC","weixin://scanqrcode","mqq://qq2019","taobao://taobao2019","mailto:william17162018@gmail.com"]
+    var dataArray:[String] = ["调自己的ObjectiveC",
+                              "用Safria打开Url",
+                              "调微信(并进入扫码页面)",
+                              "调起QQ",
+                              "调起淘宝",
+                              "调mail"]
+    var schemesInfoArray = ["ObjectiveC2.718://William2.718?message=hiOC",
+                            "https://www.pgyer.com/tools/udid",
+                            "weixin://scanqrcode",
+                            "mqq://qq2019",
+                            "taobao://taobao2019",
+                            "mailto:william17162018@gmail.com"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

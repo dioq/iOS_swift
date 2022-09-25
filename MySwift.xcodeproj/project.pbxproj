@@ -12,6 +12,7 @@
 		3A849C102867508B00D5D9B3 /* DefineViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A849C0F2867508B00D5D9B3 /* DefineViewVC.swift */; };
 		3A99EE6228945D2B00EBF6D4 /* ExceptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99EE6028945D2B00EBF6D4 /* ExceptionViewController.swift */; };
 		3A99EE6328945D2B00EBF6D4 /* ExceptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A99EE6128945D2B00EBF6D4 /* ExceptionViewController.xib */; };
+		3AAF125228DE3FF000A948C0 /* DioNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAF125128DE3FF000A948C0 /* DioNetwork.swift */; };
 		3AC2071A2860AECA007BCE0E /* UISteperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC207192860AECA007BCE0E /* UISteperVC.swift */; };
 		5F2F0F172592653600197207 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2F0F162592653600197207 /* MD5.swift */; };
 		5FBADA33259A4CF1000A6EC0 /* NativeNetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBADA31259A4CF1000A6EC0 /* NativeNetworkVC.swift */; };
@@ -425,12 +426,13 @@
 		32F7714E770754C61BBD0BA8 /* Pods-MySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwift.debug.xcconfig"; path = "Target Support Files/Pods-MySwift/Pods-MySwift.debug.xcconfig"; sourceTree = "<group>"; };
 		3A29093B288E4B4300A9F701 /* UIPasteboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPasteboardVC.swift; sourceTree = "<group>"; };
 		3A29093C288E4B4300A9F701 /* UIPasteboardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIPasteboardVC.xib; sourceTree = "<group>"; };
-		3A63EE9628B0C88A00ABD1CD /* MySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MySwiftTests.xctest; path = "/Users/dio/Repository/MySwift/build/Debug-iphoneos/MySwiftTests.xctest"; sourceTree = "<absolute>"; };
-		3A63EE9728B0C88A00ABD1CD /* MySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MySwiftUITests.xctest; path = "/Users/dio/Repository/MySwift/build/Debug-iphoneos/MySwiftUITests.xctest"; sourceTree = "<absolute>"; };
 		3A849C0F2867508B00D5D9B3 /* DefineViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineViewVC.swift; sourceTree = "<group>"; };
 		3A99EE5C28945C8100EBF6D4 /* MySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A99EE6028945D2B00EBF6D4 /* ExceptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionViewController.swift; sourceTree = "<group>"; };
 		3A99EE6128945D2B00EBF6D4 /* ExceptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExceptionViewController.xib; sourceTree = "<group>"; };
+		3AAF125128DE3FF000A948C0 /* DioNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DioNetwork.swift; sourceTree = "<group>"; };
+		3AAF132E28E03CFF00A948C0 /* MySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AAF132F28E03CFF00A948C0 /* MySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC207192860AECA007BCE0E /* UISteperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISteperVC.swift; sourceTree = "<group>"; };
 		5F2F0F162592653600197207 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
 		5FBADA31259A4CF1000A6EC0 /* NativeNetworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeNetworkVC.swift; sourceTree = "<group>"; };
@@ -903,6 +905,7 @@
 		5FE898352593656A0020059D /* MySwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
+				3AAF125128DE3FF000A948C0 /* DioNetwork.swift */,
 				5FE898362593656A0020059D /* MySwiftUITests.swift */,
 				5FE898382593656A0020059D /* Info.plist */,
 			);
@@ -1037,13 +1040,15 @@
 				5FE898352593656A0020059D /* MySwiftUITests */,
 				260B268476C2C1B73538CA04 /* Pods */,
 				3A99EE5C28945C8100EBF6D4 /* MySwift.app */,
+				3AAF132E28E03CFF00A948C0 /* MySwiftTests.xctest */,
+				3AAF132F28E03CFF00A948C0 /* MySwiftUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
 		CE69C0F0224B6C92004F4FA4 /* MySwift */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C108224B6E06004F4FA4 /* mycode */,
+				CE69C108224B6E06004F4FA4 /* other */,
 				CE69C267224B6E07004F4FA4 /* vender */,
 				CE69C188224B6E06004F4FA4 /* ui */,
 				CE69C146224B6E06004F4FA4 /* language */,
@@ -1058,7 +1063,7 @@
 			path = MySwift;
 			sourceTree = "<group>";
 		};
-		CE69C108224B6E06004F4FA4 /* mycode */ = {
+		CE69C108224B6E06004F4FA4 /* other */ = {
 			isa = PBXGroup;
 			children = (
 				5FFCAF892591E9320073009E /* URLSession */,
@@ -1076,7 +1081,7 @@
 				CE69C12B224B6E06004F4FA4 /* CATransition */,
 				CE69C131224B6E06004F4FA4 /* segmentView */,
 			);
-			path = mycode;
+			path = other;
 			sourceTree = "<group>";
 		};
 		CE69C109224B6E06004F4FA4 /* drawer */ = {
@@ -2425,7 +2430,7 @@
 			);
 			name = MySwiftUITests;
 			productName = MySwiftUITests;
-			productReference = 3A63EE9728B0C88A00ABD1CD /* MySwiftUITests.xctest */;
+			productReference = 3AAF132F28E03CFF00A948C0 /* MySwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		5FFCAF7125910D420073009E /* MySwiftTests */ = {
@@ -2443,7 +2448,7 @@
 			);
 			name = MySwiftTests;
 			productName = MySwiftTests;
-			productReference = 3A63EE9628B0C88A00ABD1CD /* MySwiftTests.xctest */;
+			productReference = 3AAF132E28E03CFF00A948C0 /* MySwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CE69C0ED224B6C92004F4FA4 /* MySwift */ = {
@@ -2756,6 +2761,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FE898372593656A0020059D /* MySwiftUITests.swift in Sources */,
+				3AAF125228DE3FF000A948C0 /* DioNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3036,7 +3042,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 38D3676P2T;
+				DEVELOPMENT_TEAM = DZ4RUFAG9F;
 				INFOPLIST_FILE = MySwiftUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3056,7 +3062,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 38D3676P2T;
+				DEVELOPMENT_TEAM = DZ4RUFAG9F;
 				INFOPLIST_FILE = MySwiftUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3079,7 +3085,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 38D3676P2T;
+				DEVELOPMENT_TEAM = DZ4RUFAG9F;
 				INFOPLIST_FILE = MySwiftTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3102,7 +3108,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 38D3676P2T;
+				DEVELOPMENT_TEAM = DZ4RUFAG9F;
 				INFOPLIST_FILE = MySwiftTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3247,7 +3253,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 38D3676P2T;
+				DEVELOPMENT_TEAM = DZ4RUFAG9F;
 				INFOPLIST_FILE = MySwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3268,7 +3274,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 38D3676P2T;
+				DEVELOPMENT_TEAM = DZ4RUFAG9F;
 				INFOPLIST_FILE = MySwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (

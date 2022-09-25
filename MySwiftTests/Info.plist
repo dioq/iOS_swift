@@ -18,5 +18,17 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>google</key>
+	<string>bbbbbbbbbb</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>jobs8.cn</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

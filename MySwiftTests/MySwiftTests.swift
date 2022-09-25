@@ -30,6 +30,23 @@ class MySwiftTests: XCTestCase {
         }
     }
     
+    func test002() {
+//        for bundle in Bundle.allBundles {
+                    let infoDictionary = Bundle.main.infoDictionary! //获取Info.plist里的内容
+//            if(bundle.bundleIdentifier == "myself.MySwiftTests") {
+//                let infoDictionary = bundle.infoDictionary!
+                let appDisplayName = infoDictionary["google"]
+                if appDisplayName != nil {
+                    print("google: \(appDisplayName!)")
+                }
+//            }
+//        }
+    }
+    
+    func test003() {
+
+    }
+    
     public func test_json(){
         let tmp =  UUID()
         print(tmp)
