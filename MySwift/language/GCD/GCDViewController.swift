@@ -14,6 +14,28 @@ class GCDViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func delayAction(_ sender: UIButton) {
+        let deadline = DispatchTime.now() + 2.0
+        print(#line,"Start")
+        DispatchQueue.main.asyncAfter(deadline: deadline) {//在主线程执行
+            print(#line,"End")
+        }
+        print(#line," go here!")
+        
+        //把任务添加到主队列中,一般用在子线程任务完成后更新UI(无延迟或延迟为0)
+        print(#line,"Start")
+        DispatchQueue.main.async {
+            print(#line,"End")
+        }
+        print(#line," go here!")
+        
+        print(#line,"Start")
+        DispatchQueue.global().asyncAfter(deadline: deadline) {//在子线程执行
+            print(#line,"End")
+        }
+        print(#line," go here!")
+    }
+    
     //同步: 会阻塞当前线程.原因:不开启新的线程,使用当前线程
     @IBAction func syncAction(_ sender: UIButton) {
         let queue = DispatchQueue.global(qos: .default)
@@ -123,7 +145,7 @@ class GCDViewController: UIViewController {
     }
     
     //concurrentPerform 指定次数的Block追加到队列中
-    @IBAction func action02(_ sender: UIButton) {
+    @IBAction func manyTargetsAddAction(_ sender: UIButton) {
         /*
          DispatchQueue.concurrentPerform函数是sync函数和Dispatch Group的关联API。按指定的次数将指定的Block追加到指定的Dispatch Queue中,并等待全部处理执行结束。
          因为concurrentPerform函数也与sync函数一样,会等待处理结束,因此推荐在async函数中异步执行concurrentPerform函数。concurrentPerform函数可以实现高性能的循环迭代。
@@ -270,28 +292,6 @@ class GCDViewController: UIViewController {
             print("target4 finished --> \(Thread.current)")
         }
         print("the last line! ==== go here!")
-    }
-    
-    @IBAction func action01(_ sender: UIButton) {
-        let deadline = DispatchTime.now() + 2.0
-        print(#line,"Start")
-        DispatchQueue.main.asyncAfter(deadline: deadline) {//在主线程执行
-            print(#line,"End")
-        }
-        print(#line," go here!")
-        
-        //把任务添加到主队列中,一般用在子线程任务完成后更新UI(无延迟或延迟为0)
-        print(#line,"Start")
-        DispatchQueue.main.async {
-            print(#line,"End")
-        }
-        print(#line," go here!")
-        
-        print(#line,"Start")
-        DispatchQueue.global().asyncAfter(deadline: deadline) {//在子线程执行
-            print(#line,"End")
-        }
-        print(#line," go here!")
     }
     
 }

@@ -17,10 +17,6 @@ class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDel
     func getData() {
         dataArray = Array<UIViewController>()
         
-        let urlSessionVC = URLSessionVC()
-        urlSessionVC.title = "原生网络请求"
-        dataArray.append(urlSessionVC)
-        
         let encryptionVC = CryptoViewController()
         encryptionVC.title = "加密与解密"
         dataArray.append(encryptionVC)

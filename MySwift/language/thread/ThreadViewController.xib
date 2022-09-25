@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThreadViewController" customModule="Swift_stu" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThreadViewController" customModule="MySwift" customModuleProvider="target">
             <connections>
                 <outlet property="myImageView" destination="jvB-eZ-AE0" id="SxY-MA-Dhk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -21,60 +20,78 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwj-OK-LT7">
-                    <rect key="frame" x="116" y="111" width="142" height="37"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.4471215046" green="1" blue="0.60223137360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="线程休眠"/>
-                    <connections>
-                        <action selector="action01:" destination="-1" eventType="touchUpInside" id="Hr5-tA-mL5"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JS1-FA-gTo">
-                    <rect key="frame" x="116" y="172" width="142" height="37"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.4471215046" green="1" blue="0.60223137360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="手动开线程"/>
-                    <connections>
-                        <action selector="action02:" destination="-1" eventType="touchUpInside" id="KIL-ZY-OPo"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZ0-gn-lTk">
-                    <rect key="frame" x="116" y="229" width="142" height="37"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.4471215046" green="1" blue="0.60223137360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="多线程访问资源加锁"/>
-                    <connections>
-                        <action selector="action03:" destination="-1" eventType="touchUpInside" id="fb3-bO-gUo"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yB-Uc-xwY">
-                    <rect key="frame" x="116" y="289" width="142" height="37"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.4471215046" green="1" blue="0.60223137360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="开子线程"/>
-                    <connections>
-                        <action selector="action04:" destination="-1" eventType="touchUpInside" id="6HK-ln-zVH"/>
-                    </connections>
-                </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jvB-eZ-AE0">
-                    <rect key="frame" x="16" y="279" width="78" height="66"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hgI-b0-dHg">
+                    <rect key="frame" x="10" y="5" width="355" height="265"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwj-OK-LT7">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="45"/>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="OPC-Io-1eG"/>
+                            </constraints>
+                            <state key="normal" title="线程休眠"/>
+                            <connections>
+                                <action selector="action01:" destination="-1" eventType="touchUpInside" id="Hr5-tA-mL5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JS1-FA-gTo">
+                            <rect key="frame" x="0.0" y="55" width="355" height="45"/>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            <state key="normal" title="手动开线程"/>
+                            <connections>
+                                <action selector="action02:" destination="-1" eventType="touchUpInside" id="KIL-ZY-OPo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZ0-gn-lTk">
+                            <rect key="frame" x="0.0" y="110" width="355" height="45"/>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            <state key="normal" title="多线程访问资源加锁"/>
+                            <connections>
+                                <action selector="action03:" destination="-1" eventType="touchUpInside" id="fb3-bO-gUo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yB-Uc-xwY">
+                            <rect key="frame" x="0.0" y="165" width="355" height="45"/>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            <state key="normal" title="开子线程"/>
+                            <connections>
+                                <action selector="action04:" destination="-1" eventType="touchUpInside" id="6HK-ln-zVH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCu-Pk-mRN">
+                            <rect key="frame" x="0.0" y="220" width="355" height="45"/>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            <state key="normal" title="开子线程2"/>
+                            <connections>
+                                <action selector="action5:" destination="-1" eventType="touchUpInside" id="iE0-E8-c7B"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jvB-eZ-AE0">
+                    <rect key="frame" x="215" y="507" width="150" height="150"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="7CW-eV-6WQ"/>
+                        <constraint firstAttribute="width" constant="150" id="7Xw-Lf-RDi"/>
+                    </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCu-Pk-mRN">
-                    <rect key="frame" x="116" y="346" width="142" height="37"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.4471215046" green="1" blue="0.60223137360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="开子线程2"/>
-                    <connections>
-                        <action selector="action5:" destination="-1" eventType="touchUpInside" id="iE0-E8-c7B"/>
-                    </connections>
-                </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="24.5" y="51.5"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jvB-eZ-AE0" secondAttribute="trailing" constant="10" id="921-ws-Zo8"/>
+                <constraint firstItem="hgI-b0-dHg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="CHV-jW-6Oi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jvB-eZ-AE0" secondAttribute="bottom" constant="10" id="pGp-tj-ktz"/>
+                <constraint firstItem="hgI-b0-dHg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="qiB-Rs-HuK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hgI-b0-dHg" secondAttribute="trailing" constant="10" id="vUW-OP-dXA"/>
+            </constraints>
+            <point key="canvasLocation" x="23.199999999999999" y="50.824587706146929"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

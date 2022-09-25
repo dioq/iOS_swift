@@ -1066,7 +1066,6 @@
 		CE69C108224B6E06004F4FA4 /* other */ = {
 			isa = PBXGroup;
 			children = (
-				5FFCAF892591E9320073009E /* URLSession */,
 				9321B19523A222D80028B245 /* crypto */,
 				CE24E9FE22BCD6A800CB80BB /* changeIcon */,
 				CE69C2A5224B6E07004F4FA4 /* paraseJSON */,
@@ -1238,6 +1237,7 @@
 		CE69C146224B6E06004F4FA4 /* language */ = {
 			isa = PBXGroup;
 			children = (
+				5FFCAF892591E9320073009E /* URLSession */,
 				3A99EE5F28945D1800EBF6D4 /* Exception */,
 				5FE8990425940D0C0020059D /* AuxiliarySkills */,
 				CEC1648423363C0000F91A8D /* generic */,

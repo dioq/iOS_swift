@@ -16,6 +16,10 @@ class LanguageViewController: UIViewController,UITableViewDataSource,UITableView
     lazy var dataArray:[UIViewController] = {
         var dataArray = Array<UIViewController>()
         
+        let urlSessionVC = URLSessionVC()
+        urlSessionVC.title = "原生网络请求"
+        dataArray.append(urlSessionVC)
+        
         let exceptionVC = ExceptionViewController()
         exceptionVC.title = "异常处理"
         dataArray.append(exceptionVC)
@@ -108,10 +112,6 @@ class LanguageViewController: UIViewController,UITableViewDataSource,UITableView
         lazyViewController.title = "控件懒加载"
         dataArray.append(lazyViewController)
         
-        let gCDViewController = GCDViewController()
-        gCDViewController.title = "GCD"
-        dataArray.append(gCDViewController)
-        
         let bezierPathViewController = BezierPathViewController()
         bezierPathViewController.title = "BezierPath"
         dataArray.append(bezierPathViewController)
@@ -119,6 +119,10 @@ class LanguageViewController: UIViewController,UITableViewDataSource,UITableView
         let propertyViewController = PropertyViewController()
         propertyViewController.title = "property"
         dataArray.append(propertyViewController)
+        
+        let gCDViewController = GCDViewController()
+        gCDViewController.title = "GCD"
+        dataArray.append(gCDViewController)
         
         let threadViewController = ThreadViewController()
         threadViewController.title = "thread"
@@ -168,16 +172,5 @@ class LanguageViewController: UIViewController,UITableViewDataSource,UITableView
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
