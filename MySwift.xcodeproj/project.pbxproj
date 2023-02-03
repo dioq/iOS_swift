@@ -17,7 +17,7 @@
 		5F2F0F172592653600197207 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2F0F162592653600197207 /* MD5.swift */; };
 		5FBADA33259A4CF1000A6EC0 /* NativeNetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBADA31259A4CF1000A6EC0 /* NativeNetworkVC.swift */; };
 		5FBADA34259A4CF1000A6EC0 /* NativeNetworkVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBADA32259A4CF1000A6EC0 /* NativeNetworkVC.xib */; };
-		5FBADA39259A55F0000A6EC0 /* DioNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBADA38259A55F0000A6EC0 /* DioNetwork.swift */; };
+		5FBADA39259A55F0000A6EC0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBADA38259A55F0000A6EC0 /* NetworkManager.swift */; };
 		5FE898372593656A0020059D /* MySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE898362593656A0020059D /* MySwiftUITests.swift */; };
 		5FE8990725940D9D0020059D /* AuxiliarySkillsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8990525940D9D0020059D /* AuxiliarySkillsVC.swift */; };
 		5FE8990825940D9D0020059D /* AuxiliarySkillsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FE8990625940D9D0020059D /* AuxiliarySkillsVC.xib */; };
@@ -437,7 +437,7 @@
 		5F2F0F162592653600197207 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
 		5FBADA31259A4CF1000A6EC0 /* NativeNetworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeNetworkVC.swift; sourceTree = "<group>"; };
 		5FBADA32259A4CF1000A6EC0 /* NativeNetworkVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeNetworkVC.xib; sourceTree = "<group>"; };
-		5FBADA38259A55F0000A6EC0 /* DioNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DioNetwork.swift; sourceTree = "<group>"; };
+		5FBADA38259A55F0000A6EC0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		5FE898362593656A0020059D /* MySwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUITests.swift; sourceTree = "<group>"; };
 		5FE898382593656A0020059D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FE8990525940D9D0020059D /* AuxiliarySkillsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliarySkillsVC.swift; sourceTree = "<group>"; };
@@ -897,7 +897,7 @@
 			children = (
 				5FBADA31259A4CF1000A6EC0 /* NativeNetworkVC.swift */,
 				5FBADA32259A4CF1000A6EC0 /* NativeNetworkVC.xib */,
-				5FBADA38259A55F0000A6EC0 /* DioNetwork.swift */,
+				5FBADA38259A55F0000A6EC0 /* NetworkManager.swift */,
 			);
 			path = native_network;
 			sourceTree = "<group>";
@@ -954,8 +954,8 @@
 			isa = PBXGroup;
 			children = (
 				9321B1A523A2916C0028B245 /* CryptoViewController.swift */,
-				5F2F0F162592653600197207 /* MD5.swift */,
 				9321B1A623A2916C0028B245 /* CryptoViewController.xib */,
+				5F2F0F162592653600197207 /* MD5.swift */,
 			);
 			path = crypto;
 			sourceTree = "<group>";
@@ -2917,7 +2917,7 @@
 				CE69C2F8224B6E07004F4FA4 /* PropertyViewController.swift in Sources */,
 				CE69C2FB224B6E07004F4FA4 /* MyViewController.swift in Sources */,
 				CE69C36F224B6E07004F4FA4 /* AlertViewController.swift in Sources */,
-				5FBADA39259A55F0000A6EC0 /* DioNetwork.swift in Sources */,
+				5FBADA39259A55F0000A6EC0 /* NetworkManager.swift in Sources */,
 				CE1CBAC423224AAC00D3AE39 /* MyFontViewController.swift in Sources */,
 				5FF092E92590C1E4002B2D70 /* NetworkVC.swift in Sources */,
 				CE69C3EA224B6E07004F4FA4 /* PointView.swift in Sources */,

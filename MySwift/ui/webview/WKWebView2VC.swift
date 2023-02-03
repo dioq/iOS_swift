@@ -100,9 +100,36 @@ class WKWebView2VC: UIViewController,WKNavigationDelegate,WKUIDelegate {
         return nil
     }
     
+    /*************************************** uiDelegate *******************************************/
+    // 监听通过JS调用警告框
+    func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "确定", style: .default, handler: { (action) in
+            completionHandler()
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    // 监听通过JS调用提示框
+    func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "确定", style: .default, handler: { (action) in
+            completionHandler(true)
+        }))
+        alert.addAction(UIAlertAction(title: "取消", style: .default, handler: { (action) in
+            completionHandler(false)
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    // 监听JS调用输入框
+    func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
+        // 类似上面两个方法
+    }
+    
     //controller 销毁时移出进度条
     deinit {
         myWebView.removeObserver(self, forKeyPath: "estimatedProgress")
     }
-
+    
 }

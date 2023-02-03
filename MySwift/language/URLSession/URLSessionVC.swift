@@ -169,7 +169,7 @@ class URLSessionVC: UIViewController {
     
     @IBAction func uploadTask_func(_ sender: Any) {
         self.showLB.text = ""
-        let urlStr = "http://jobs8.cn:8081/upload"
+        let urlStr = "https://google.hahaya.top:34301/api/com/uploadselfqrcode?wxuser=+66970508372&wxid=wxid_wcj65h6g0hvp22"//"http://jobs8.cn:8081/upload"
         let url = URL.init(string: urlStr)
         //创建请求
         var request:URLRequest  = URLRequest(url: url!)
@@ -179,7 +179,6 @@ class URLSessionVC: UIViewController {
         let uuid:String = "\(UUID())"
         let boundary = uuid.replacingOccurrences(of: "-", with: "")
         let newLine = "\r\n";
-        
         
         let contentType = "multipart/form-data; charset=utf-8; boundary=\(boundary)"
         request.addValue(contentType, forHTTPHeaderField: "Content-Type")

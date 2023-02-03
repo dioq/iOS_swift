@@ -8,13 +8,13 @@
 
 import UIKit
 
-class DioNetwork {
-    private static var instance:DioNetwork?
+class NetworkManager {
+    private static var instance:NetworkManager?
     private init(){}
     
-    public static func shareManager() -> DioNetwork {
+    public static func shareManager() -> NetworkManager {
         if instance == nil {
-            instance = DioNetwork()
+            instance = NetworkManager()
         }
         return instance!
     }
@@ -32,7 +32,7 @@ class DioNetwork {
     func doGet(urlStr:String, success:@escaping(_ responseObject:String) -> Void, failure:@escaping(_ error:Error) -> Void) {
         
         let url = URL.init(string: urlStr)
-        let request = URLRequest(url: url!)
+        let request:URLRequest = URLRequest(url: url!)
         
         let session:URLSession = URLSession(configuration: config)
         
@@ -70,14 +70,14 @@ class DioNetwork {
     func doPost(urlStr:String, params:String, success:@escaping(_ responseObject:String) -> Void, failure:@escaping(_ error:Error) -> Void) {
         
         let url = URL(string: urlStr)
-        var request = URLRequest.init(url: url!)
+        var request:URLRequest = URLRequest.init(url: url!)
         //修改请求方法为POST
         request.httpMethod = "POST"
         //设置请求体
         request.httpBody = params.data(using: String.Encoding.utf8)
         
         let session:URLSession = URLSession(configuration: config)
-        let dataTask: URLSessionDataTask = session.dataTask(with: request as URLRequest) { (data, response, error) in
+        let dataTask: URLSessionDataTask = session.dataTask(with: request) { (data, response, error) in
             
             if(error == nil){
                 if let param_json_str = String(data: data!, encoding: String.Encoding.utf8){
@@ -101,7 +101,7 @@ class DioNetwork {
     func submitFormdata(urlStr:String, params:String, success:@escaping(_ responseObject:String) -> Void, failure:@escaping(_ error:Error) -> Void) {
         
         let url = URL(string: urlStr)
-        var request = URLRequest.init(url: url!)
+        var request:URLRequest = URLRequest.init(url: url!)
         //修改请求方法为POST
         request.httpMethod = "POST"
         //设置请求体
@@ -109,7 +109,7 @@ class DioNetwork {
         
         config.httpAdditionalHeaders = ["Content-Type":"application/x-www-form-urlencoded"]
         let session:URLSession = URLSession(configuration: config)
-        let dataTask: URLSessionDataTask = session.dataTask(with: request as URLRequest) { (data, response, error) in
+        let dataTask: URLSessionDataTask = session.dataTask(with: request) { (data, response, error) in
             
             if(error == nil){
                 if let param_json_str = String(data: data!, encoding: String.Encoding.utf8){
