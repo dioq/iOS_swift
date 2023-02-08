@@ -13,23 +13,24 @@ class WKWebView2VC: UIViewController,WKNavigationDelegate,WKUIDelegate {
     
     var myWebView:WKWebView!
     
-    //加进度条
+    // 进度条
     lazy private var progressView:UIProgressView = {
-        self.progressView = UIProgressView.init(frame: CGRect(x: 0, y: 1, width: UIScreen.main.bounds.width, height: 2))
-        self.progressView.tintColor = UIColor.green      // 进度条颜色
-        self.progressView.trackTintColor = UIColor.yellow // 进度条背景色
+        self.progressView = UIProgressView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 0))
+        self.progressView.tintColor = UIColor.green    // 进度条颜色
+        self.progressView.trackTintColor = UIColor.red // 进度条背景色
         return self.progressView
     }()
-    
+    // 监控 web加载进度
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        
         if keyPath == "estimatedProgress"{
-            progressView.alpha = 1.0
+            self.progressView.alpha = 1.0
+            progressView.isHidden = false
             progressView.setProgress(Float(myWebView.estimatedProgress), animated: true)
             if myWebView.estimatedProgress >= 1.0 {
-                UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveEaseOut, animations: {
+                UIView.animate(withDuration: 0.25, delay: 0.3, options: .curveEaseOut, animations: {
                     self.progressView.alpha = 0
                 }, completion: { (finish) in
+                    self.progressView.isHidden = true
                     self.progressView.setProgress(0.0, animated: false)
                 })
             }
@@ -41,15 +42,15 @@ class WKWebView2VC: UIViewController,WKNavigationDelegate,WKUIDelegate {
         super.viewDidLoad()
         let webConfiguration = WKWebViewConfiguration()
         myWebView = WKWebView(frame: view.bounds, configuration: webConfiguration)
-        let myURL = URL(string: "https://www.baidu.com")
+        let myURL = URL(string: "https://oa.hahaya.top/touch")
         let myRequest = URLRequest(url: myURL!)
         myWebView.load(myRequest)
         view.addSubview(myWebView)
         myWebView.navigationDelegate = self //WKNavigationDelegate
         myWebView.uiDelegate = self //WKUIDelegate
         
-        //加进度条
-        view.addSubview(progressView)
+        // 加载进度条
+        self.view.addSubview(progressView)
         myWebView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
     }
     
@@ -80,13 +81,23 @@ class WKWebView2VC: UIViewController,WKNavigationDelegate,WKUIDelegate {
         print("接收到服务器跳转请求")
     }
     // 在收到响应后，决定是否跳转
-    //    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
-    //        print("收到响应后，决定是否跳转")
-    //    }
+    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+        print("收到响应后，决定是否跳转")
+        if let urlStr = navigationResponse.response.url?.absoluteString as? String {
+            print(urlStr)
+        }
+        decisionHandler(WKNavigationResponsePolicy.allow) //允许
+        //            decisionHandler(WKNavigationResponsePolicy.cancel) //拒绝
+    }
     // 在发送请求之前，决定是否跳转
-    //    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-    //        print("发送请求之前，决定是否跳转")
-    //    }
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        print("发送请求之前，决定是否跳转")
+        if let urlStr = navigationAction.request.url?.absoluteString as? String {
+            print(urlStr)
+        }
+        decisionHandler(WKNavigationActionPolicy.allow) //允许
+        //            decisionHandler(WKNavigationActionPolicy.cancel) //拒绝
+    }
     
     
     /*************************************** WKUIDelegate *******************************************/
@@ -100,7 +111,6 @@ class WKWebView2VC: UIViewController,WKNavigationDelegate,WKUIDelegate {
         return nil
     }
     
-    /*************************************** uiDelegate *******************************************/
     // 监听通过JS调用警告框
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
