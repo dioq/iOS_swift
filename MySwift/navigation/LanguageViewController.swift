@@ -105,7 +105,7 @@ class LanguageViewController: UIViewController,UITableViewDataSource,UITableView
         dataArray.append(myFirstVC)
         
         let myNotificationVC = MyNotificationVC()
-        myNotificationVC.title = "通知"
+        myNotificationVC.title = "Notification 通知"
         dataArray.append(myNotificationVC)
         
         let lazyViewController = LazyViewController()

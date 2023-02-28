@@ -9,43 +9,25 @@
 import UIKit
 
 class MyNotificationVC: UIViewController {
-
+    
+    var recMsg:RecNotificationMsg!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*
-         创建通知中心
-         设置监听方法
-         设置通知的名字
-         */
-        NotificationCenter.default.addObserver(self, selector: #selector(test), name: NSNotification.Name(rawValue:"isTest"), object:nil)
+        recMsg = RecNotificationMsg()
+        recMsg.addNotificationObserver()
     }
     
-    //    实现通知监听方法
-    @objc func test(nofi : Notification){
-        let str = nofi.userInfo!["post"]
-        print(str!,"\tthis notifi in MyNotificationVC")
-    }
-    
-    @IBAction func notificationBtn(_ sender: UIButton) {
-        let vc = MyViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
-        self.hidesBottomBarWhenPushed = true
+    @IBAction func sendNo(_ sender: UIButton) {
+        //点击发送通知进行
+        var userInfo:Dictionary = Dictionary<String, Any>()
+        userInfo["k1"] = "this is a test value"
+        userInfo["k2"] = "a new test msg"
+        NotificationCenter.default.post(name: NSNotification.Name("testname"), object: self, userInfo: userInfo)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
