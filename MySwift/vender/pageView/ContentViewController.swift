@@ -20,6 +20,11 @@ class ContentViewController: UIViewController  {
 }
 
 extension ContentViewController: PageTitleViewDelegate {
+    var eventHandler: DNSPageView.PageEventHandleable? {
+      
+        return nil;
+    }
+    
     
     func titleView(_ titleView: PageTitleView, didSelectAt index: Int) {
         print("点击了第\(index)个title")

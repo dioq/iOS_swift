@@ -26,63 +26,76 @@
 
 import UIKit
 
-public typealias TitleClickHandler = (PageTitleView, Int) -> ()
-typealias ColorRGB = (red: CGFloat, green: CGFloat, blue: CGFloat)
+
+
+public struct DNSExtension<ExtendedType> {
+    internal let type: ExtendedType
+    internal init(_ type: ExtendedType) {
+        self.type = type
+    }
+}
+
+
+public protocol DNSExtended {
+
+}
+
+extension DNSExtended {
+    public var dns: DNSExtension<Self> {
+        get { DNSExtension(self) }
+    }
+    public static var dns: DNSExtension<Self>.Type {
+        get { DNSExtension<Self>.self }
+    }
+}
+
+extension UIColor: DNSExtended {}
+public extension DNSExtension where ExtendedType: UIColor {
+    
+    @available(iOS 13.0, *)
+    static func dynamic(_ light: UIColor, dark: UIColor) -> UIColor {
+        return UIColor { traitCollection -> UIColor in
+            if traitCollection.userInterfaceStyle == .light {
+                return light
+            } else {
+                return dark
+            }
+        }
+    }
+}
+
+extension UIView: DNSExtended {}
+public extension DNSExtension where ExtendedType: UIView {
+    static func isRightToLeftLayoutDirection(_ view: UIView? = nil) -> Bool {
+        let context: UIView = view ?? UIView.appearance()
+        if UIView.userInterfaceLayoutDirection(for: context.semanticContentAttribute) == .rightToLeft {
+            return true
+        } else {
+            return false
+        }
+    }
+}
 
 
 
+
+typealias ColorRGBA = (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
 
 extension UIColor {
     
-    convenience init(r: CGFloat, g: CGFloat, b: CGFloat, alpha: CGFloat = 1.0) {
-        self.init(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: alpha)
+    convenience init(_ rgba: ColorRGBA) {
+        self.init(red: rgba.red / 255.0, green: rgba.green / 255.0, blue: rgba.blue / 255.0, alpha: rgba.alpha)
     }
     
-
     
-    convenience init?(hex: String, alpha: CGFloat = 1.0) {
-
-        guard hex.count >= 6 else {
-            return nil
-        }
-        
-        var hexString = hex.uppercased()
-        
-        if (hexString.hasPrefix("##") || hexString.hasPrefix("0x")) {
-
-            hexString = (hexString as NSString).substring(from: 2)
-        }
-        
-        if (hexString.hasPrefix("#")) {
-
-            hexString = (hexString as NSString).substring(from: 1)
-        }
-        
-        
-        var range = NSRange(location: 0, length: 2)
-        let rStr = (hexString as NSString).substring(with: range)
-        range.location = 2
-        let gStr = (hexString as NSString).substring(with: range)
-        range.location = 4
-        let bStr = (hexString as NSString).substring(with: range)
-        
-
-        var r: UInt32 = 0
-        var g: UInt32 = 0
-        var b: UInt32 = 0
-        Scanner(string: rStr).scanHexInt32(&r)
-        Scanner(string: gStr).scanHexInt32(&g)
-        Scanner(string: bStr).scanHexInt32(&b)
-        
-        self.init(r: CGFloat(r), g: CGFloat(g), b: CGFloat(b), alpha: alpha)
-    }
-    
-    func getRGB() -> (CGFloat, CGFloat, CGFloat) {
+    func getRGBA() -> ColorRGBA {
         var red: CGFloat = 0
         var green: CGFloat = 0
         var blue: CGFloat = 0
-        getRed(&red, green: &green, blue: &blue, alpha: nil)
-        return (red * 255, green * 255, blue * 255)
+        var alpha: CGFloat = 0
+        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        return (red * 255, green * 255, blue * 255, alpha)
     }
 }
+
 

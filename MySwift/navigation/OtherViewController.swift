@@ -53,9 +53,9 @@ class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDel
         segmentVC.title = "自定义SegmentView"
         dataArray.append(segmentVC)
         
-        let beginnerguideVC = BeginnerguideVC()
-        beginnerguideVC.title = "新手引导"
-        dataArray.append(beginnerguideVC)
+//        let beginnerguideVC = BeginnerguideVC()
+//        beginnerguideVC.title = "新手引导"
+//        dataArray.append(beginnerguideVC)
         
         let judgeNetVC = JudgeNetworkingVC()
         judgeNetVC.title = "网络监听"

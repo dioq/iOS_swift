@@ -8,7 +8,7 @@
 //
 
 import UIKit
-import HandyJSON
+//import HandyJSON
 
 class Handy2Model: HandyJSON {
     var name:String!

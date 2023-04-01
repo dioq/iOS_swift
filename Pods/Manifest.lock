@@ -1,58 +1,36 @@
 PODS:
-  - Alamofire (4.8.0)
-  - DNSPageView (1.2.1)
-  - GTMRefresh (1.3.6)
-  - HandyJSON (5.0.0)
-  - JXPopupView (0.0.3)
-  - Kingfisher (5.3.0)
-  - KSGuideController (0.1.2)
-  - lottie-ios (3.1.5)
+  - Alamofire (5.6.2)
+  - DNSPageView (2.2.0)
+  - Kingfisher (6.3.1)
+  - lottie-ios (3.4.3)
   - SnapKit (5.6.0)
-  - SQLite.swift (0.12.2):
-    - SQLite.swift/standard (= 0.12.2)
-  - SQLite.swift/standard (0.12.2)
-  - SwiftyJSON (4.2.0)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
-  - Alamofire (= 4.8.0)
-  - DNSPageView (= 1.2.1)
-  - GTMRefresh (= 1.3.6)
-  - HandyJSON (= 5.0.0)
-  - JXPopupView (= 0.0.3)
-  - Kingfisher (= 5.3.0)
-  - KSGuideController (= 0.1.2)
-  - lottie-ios (= 3.1.5)
+  - Alamofire (~> 5.6.2)
+  - DNSPageView (~> 2.2.0)
+  - Kingfisher (~> 6.3.1)
+  - lottie-ios (~> 3.4.3)
   - SnapKit (~> 5.6.0)
-  - SQLite.swift (= 0.12.2)
-  - SwiftyJSON (= 4.2.0)
+  - SwiftyJSON (~> 5.0.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - DNSPageView
-    - GTMRefresh
-    - HandyJSON
-    - JXPopupView
     - Kingfisher
-    - KSGuideController
     - lottie-ios
     - SnapKit
-    - SQLite.swift
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
-  DNSPageView: 1a1972df33a08dbad8e43188da97b31997e1d109
-  GTMRefresh: 9231cbdc1dca88d0a29daead8d6bd83314aa84dc
-  HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
-  JXPopupView: 7e433344caeb09ed08327f370f53cf597389c2b7
-  Kingfisher: 4692c783ffb99e9e2e40a6eb3e518c3b96c6fa8c
-  KSGuideController: a3829b33b65ca56eacd530c7b4917e973f756ee5
-  lottie-ios: 32bf84389337d86fbc8b12266e88452e0abf1dee
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  DNSPageView: dd002960df2d87bbfa4d7bfe48f9684ea8a8993a
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  lottie-ios: 9ae750cdc7820fecbd3c2f0cfc493038208fcdc4
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
-  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: faf227f3a23e83d4849ff31690d5373963fd2865
+PODFILE CHECKSUM: eb107e1b94f83478be4c976b54c1fc745a45ea3a
 
 COCOAPODS: 1.11.3

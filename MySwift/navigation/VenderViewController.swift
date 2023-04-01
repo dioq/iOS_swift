@@ -20,9 +20,9 @@ class VenderViewController: UIViewController, UITableViewDataSource,UITableViewD
         nativeNetworkVC.title = "自己封装的网络请求"
         dataArray.append(nativeNetworkVC)
         
-        let networkVC = NetworkVC()
-        networkVC.title = "测试封装的Alamofire"
-        dataArray.append(networkVC)
+//        let networkVC = NetworkVC()
+//        networkVC.title = "测试封装的Alamofire"
+//        dataArray.append(networkVC)
         
         let lottieVC = LottieViewController()
         lottieVC.title = "Lottie"
@@ -36,9 +36,9 @@ class VenderViewController: UIViewController, UITableViewDataSource,UITableViewD
         pageVC.title = "顶部滑动导航"
         dataArray.append(pageVC)
         
-        let kingfisherVC = KingfisherViewController()
-        kingfisherVC.title = "Kingfisher"
-        dataArray.append(kingfisherVC)
+//        let kingfisherVC = KingfisherViewController()
+//        kingfisherVC.title = "Kingfisher"
+//        dataArray.append(kingfisherVC)
         
         let autoImageVC = AutoImageViewController()
         autoImageVC.title = "轮播图"
@@ -60,9 +60,9 @@ class VenderViewController: UIViewController, UITableViewDataSource,UITableViewD
         gestureVC.title = "手势解锁"
         dataArray.append(gestureVC)
         
-        let jxpopupVC = JXPopupViewVC()
-        jxpopupVC.title = "自定义弹出功能框"
-        dataArray.append(jxpopupVC)
+//        let jxpopupVC = JXPopupViewVC()
+//        jxpopupVC.title = "自定义弹出功能框"
+//        dataArray.append(jxpopupVC)
         
         let toastVC = ToastViewController()
         toastVC.title = "提示框"
@@ -72,17 +72,17 @@ class VenderViewController: UIViewController, UITableViewDataSource,UITableViewD
         snapVC.title = "SnapKit约束"
         dataArray.append(snapVC)
         
-        let request = RequestVC()
-        request.title = "Alamofire"
-        dataArray.append(request)
+//        let request = RequestVC()
+//        request.title = "Alamofire"
+//        dataArray.append(request)
         
-        let gTMViewController = GTMViewController()
-        gTMViewController.title = "GTMRefresh"
-        dataArray.append(gTMViewController)
+//        let gTMViewController = GTMViewController()
+//        gTMViewController.title = "GTMRefresh"
+//        dataArray.append(gTMViewController)
         
-        let sQLiteViewController = SQLiteViewController()
-        sQLiteViewController.title = "SQLite"
-        dataArray.append(sQLiteViewController)
+//        let sQLiteViewController = SQLiteViewController()
+//        sQLiteViewController.title = "SQLite"
+//        dataArray.append(sQLiteViewController)
         
         return dataArray
     }()

@@ -14,9 +14,9 @@ class MyTabBarController: UITabBarController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myswift = LanguageViewController()
+        let myswift = SystemViewController()
         let nav1 = MyNavgationController.init(rootViewController: myswift)
-        nav1.tabBarItem.title = "language"
+        nav1.tabBarItem.title = "system"
         let image1Normal = UIImage.init(named: "tab_home_normal")
         let image1NormalOriRender = image1Normal!.withRenderingMode(.alwaysOriginal)
         let image1Selected = UIImage.init(named: "tab_home_50")

@@ -143,20 +143,20 @@ class HandleJSONVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         let jsonString = String(data: jsonData! as Data, encoding: String.Encoding.utf8)
         print(type(of: jsonString))
         //HandyJSON 再解析字符串
-        let handyModel = HandyModel.deserialize(from: jsonString!)
-        let handy2ModelArr:Array<Handy2Model> = (handyModel?.data)!
-        for item in handy2ModelArr {
-            let name1 = item.name!
-            let age = item.age!
-            print(name1,"\t\(age)","岁")
-            let handy3ModelArr:Array<Handy3Model> = item.phones
-            for item2 in handy3ModelArr {
-                let name2 = item2.name!
-                let number = item2.number!
-                print("单位:",name2,"\t电话号:", number)
-            }
-            print("==================== 结束了1人的信息处理 ======================")
-        }
+//        let handyModel = HandyModel.deserialize(from: jsonString!)
+//        let handy2ModelArr:Array<Handy2Model> = (handyModel?.data)!
+//        for item in handy2ModelArr {
+//            let name1 = item.name!
+//            let age = item.age!
+//            print(name1,"\t\(age)","岁")
+//            let handy3ModelArr:Array<Handy3Model> = item.phones
+//            for item2 in handy3ModelArr {
+//                let name2 = item2.name!
+//                let number = item2.number!
+//                print("单位:",name2,"\t电话号:", number)
+//            }
+//            print("==================== 结束了1人的信息处理 ======================")
+//        }
     }
 
 }

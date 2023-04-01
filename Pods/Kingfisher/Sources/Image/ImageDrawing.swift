@@ -26,7 +26,7 @@
 
 import Accelerate
 
-#if canImport(AppKit)
+#if canImport(AppKit) && !targetEnvironment(macCatalyst)
 import AppKit
 #endif
 #if canImport(UIKit)
@@ -34,7 +34,7 @@ import UIKit
 #endif
 
 // MARK: - Image Transforming
-extension KingfisherWrapper where Base: Image {
+extension KingfisherWrapper where Base: KFCrossPlatformImage {
     // MARK: Blend Mode
     /// Create image from `base` image and apply blend mode.
     ///
@@ -48,7 +48,7 @@ extension KingfisherWrapper where Base: Image {
     #if !os(macOS)
     public func image(withBlendMode blendMode: CGBlendMode,
                       alpha: CGFloat = 1.0,
-                      backgroundColor: Color? = nil) -> Image
+                      backgroundColor: KFCrossPlatformColor? = nil) -> KFCrossPlatformImage
     {
         guard let _ = cgImage else {
             assertionFailure("[Kingfisher] Blend mode image only works for CG-based image.")
@@ -63,6 +63,7 @@ extension KingfisherWrapper where Base: Image {
             }
             
             base.draw(in: rect, blendMode: blendMode, alpha: alpha)
+            return false
         }
     }
     #endif
@@ -80,7 +81,7 @@ extension KingfisherWrapper where Base: Image {
     /// - Note: This method only works for CG-based image. For any non-CG-based image, `base` itself is returned.
     public func image(withCompositingOperation compositingOperation: NSCompositingOperation,
                       alpha: CGFloat = 1.0,
-                      backgroundColor: Color? = nil) -> Image
+                      backgroundColor: KFCrossPlatformColor? = nil) -> KFCrossPlatformImage
     {
         guard let _ = cgImage else {
             assertionFailure("[Kingfisher] Compositing Operation image only works for CG-based image.")
@@ -94,6 +95,7 @@ extension KingfisherWrapper where Base: Image {
                 rect.fill()
             }
             base.draw(in: rect, from: .zero, operation: compositingOperation, fraction: alpha)
+            return false
         }
     }
     #endif
@@ -113,7 +115,7 @@ extension KingfisherWrapper where Base: Image {
     public func image(withRoundRadius radius: CGFloat,
                       fit size: CGSize,
                       roundingCorners corners: RectCorner = .all,
-                      backgroundColor: Color? = nil) -> Image
+                      backgroundColor: KFCrossPlatformColor? = nil) -> KFCrossPlatformImage
     {
         guard let _ = cgImage else {
             assertionFailure("[Kingfisher] Round corner image only works for CG-based image.")
@@ -130,17 +132,13 @@ extension KingfisherWrapper where Base: Image {
             }
             
             let path = NSBezierPath(roundedRect: rect, byRoundingCorners: corners, radius: radius)
-            #if swift(>=4.2)
             path.windingRule = .evenOdd
-            #else
-            path.windingRule = .evenOddWindingRule
-            #endif
             path.addClip()
             base.draw(in: rect)
             #else
             guard let context = UIGraphicsGetCurrentContext() else {
                 assertionFailure("[Kingfisher] Failed to create CG context for image.")
-                return
+                return false
             }
             
             if let backgroundColor = backgroundColor {
@@ -149,18 +147,21 @@ extension KingfisherWrapper where Base: Image {
                 rectPath.fill()
             }
             
-            let path = UIBezierPath(roundedRect: rect,
-                                    byRoundingCorners: corners.uiRectCorner,
-                                    cornerRadii: CGSize(width: radius, height: radius)).cgPath
-            context.addPath(path)
+            let path = UIBezierPath(
+                roundedRect: rect,
+                byRoundingCorners: corners.uiRectCorner,
+                cornerRadii: CGSize(width: radius, height: radius)
+            )
+            context.addPath(path.cgPath)
             context.clip()
             base.draw(in: rect)
             #endif
+            return false
         }
     }
     
     #if os(iOS) || os(tvOS)
-    func resize(to size: CGSize, for contentMode: UIView.ContentMode) -> Image {
+    func resize(to size: CGSize, for contentMode: UIView.ContentMode) -> KFCrossPlatformImage {
         switch contentMode {
         case .scaleAspectFit:
             return resize(to: size, for: .aspectFit)
@@ -179,7 +180,7 @@ extension KingfisherWrapper where Base: Image {
     /// - Returns: An image with new size.
     /// - Note: This method only works for CG-based image. The current image scale is kept.
     ///         For any non-CG-based image, `base` itself is returned.
-    public func resize(to size: CGSize) -> Image {
+    public func resize(to size: CGSize) -> KFCrossPlatformImage {
         guard let _ = cgImage else {
             assertionFailure("[Kingfisher] Resize only works for CG-based image.")
             return base
@@ -192,6 +193,7 @@ extension KingfisherWrapper where Base: Image {
             #else
             base.draw(in: rect)
             #endif
+            return false
         }
     }
     
@@ -204,7 +206,7 @@ extension KingfisherWrapper where Base: Image {
     ///
     /// - Note: This method only works for CG-based image. The current image scale is kept.
     ///         For any non-CG-based image, `base` itself is returned.
-    public func resize(to targetSize: CGSize, for contentMode: ContentMode) -> Image {
+    public func resize(to targetSize: CGSize, for contentMode: ContentMode) -> KFCrossPlatformImage {
         let newSize = size.kf.resize(to: targetSize, for: contentMode)
         return resize(to: newSize)
     }
@@ -219,7 +221,7 @@ extension KingfisherWrapper where Base: Image {
     ///
     /// - Note: This method only works for CG-based image. The current image scale is kept.
     ///         For any non-CG-based image, `base` itself is returned.
-    public func crop(to size: CGSize, anchorOn anchor: CGPoint) -> Image {
+    public func crop(to size: CGSize, anchorOn anchor: CGPoint) -> KFCrossPlatformImage {
         guard let cgImage = cgImage else {
             assertionFailure("[Kingfisher] Crop only works for CG-based image.")
             return base
@@ -242,7 +244,7 @@ extension KingfisherWrapper where Base: Image {
     ///
     /// - Note: This method only works for CG-based image. The current image scale is kept.
     ///         For any non-CG-based image, `base` itself is returned.
-    public func blurred(withRadius radius: CGFloat) -> Image {
+    public func blurred(withRadius radius: CGFloat) -> KFCrossPlatformImage {
         
         guard let cgImage = cgImage else {
             assertionFailure("[Kingfisher] Blur only works for CG-based image.")
@@ -252,12 +254,12 @@ extension KingfisherWrapper where Base: Image {
         // http://www.w3.org/TR/SVG/filters.html#feGaussianBlurElement
         // let d = floor(s * 3*sqrt(2*pi)/4 + 0.5)
         // if d is odd, use three box-blurs of size 'd', centered on the output pixel.
-        let s = Float(max(radius, 2.0))
+        let s = max(radius, 2.0)
         // We will do blur on a resized image (*0.5), so the blur radius could be half as well.
         
         // Fix the slow compiling time for Swift 3.
         // See https://github.com/onevcat/Kingfisher/issues/611
-        let pi2 = 2 * Float.pi
+        let pi2 = 2 * CGFloat.pi
         let sqrtPi2 = sqrt(pi2)
         var targetRadius = floor(s * 3.0 * sqrtPi2 / 4.0 + 0.5)
         
@@ -275,7 +277,6 @@ extension KingfisherWrapper where Base: Image {
         
         let w = Int(size.width)
         let h = Int(size.height)
-        let rowBytes = Int(CGFloat(cgImage.bytesPerRow))
         
         func createEffectBuffer(_ context: CGContext) -> vImage_Buffer {
             let data = context.data
@@ -285,21 +286,22 @@ extension KingfisherWrapper where Base: Image {
             
             return vImage_Buffer(data: data, height: height, width: width, rowBytes: rowBytes)
         }
-        
-        guard let context = beginContext(size: size, scale: scale, inverting: true) else {
+        GraphicsContext.begin(size: size, scale: scale)
+        guard let context = GraphicsContext.current(size: size, scale: scale, inverting: true, cgImage: cgImage) else {
             assertionFailure("[Kingfisher] Failed to create CG context for blurring image.")
             return base
         }
         context.draw(cgImage, in: CGRect(x: 0, y: 0, width: w, height: h))
-        endContext()
+        GraphicsContext.end()
         
         var inBuffer = createEffectBuffer(context)
         
-        guard let outContext = beginContext(size: size, scale: scale, inverting: true) else {
+        GraphicsContext.begin(size: size, scale: scale)
+        guard let outContext = GraphicsContext.current(size: size, scale: scale, inverting: true, cgImage: cgImage) else {
             assertionFailure("[Kingfisher] Failed to create CG context for blurring image.")
             return base
         }
-        defer { endContext() }
+        defer { GraphicsContext.end() }
         var outBuffer = createEffectBuffer(outContext)
         
         for _ in 0 ..< iterations {
@@ -316,7 +318,7 @@ extension KingfisherWrapper where Base: Image {
         }
         #else
         let result = outContext.makeImage().flatMap {
-            Image(cgImage: $0, scale: base.scale, orientation: base.imageOrientation)
+            KFCrossPlatformImage(cgImage: $0, scale: base.scale, orientation: base.imageOrientation)
         }
         #endif
         guard let blurredImage = result else {
@@ -338,7 +340,7 @@ extension KingfisherWrapper where Base: Image {
     ///
     /// - Note: This method only works for CG-based image. The current image scale is kept.
     ///         For any non-CG-based image, `base` itself is returned.
-    public func overlaying(with color: Color, fraction: CGFloat) -> Image {
+    public func overlaying(with color: KFCrossPlatformColor, fraction: CGFloat) -> KFCrossPlatformImage {
         
         guard let _ = cgImage else {
             assertionFailure("[Kingfisher] Overlaying only works for CG-based image.")
@@ -362,6 +364,7 @@ extension KingfisherWrapper where Base: Image {
                 base.draw(in: rect, blendMode: .sourceAtop, alpha: fraction)
             }
             #endif
+            return false
         }
     }
     
@@ -370,7 +373,7 @@ extension KingfisherWrapper where Base: Image {
     ///
     /// - Parameter color: The color should be used to tint `base`
     /// - Returns: An image with a color tint applied.
-    public func tinted(with color: Color) -> Image {
+    public func tinted(with color: KFCrossPlatformColor) -> KFCrossPlatformImage {
         #if os(watchOS)
         return base
         #else
@@ -388,7 +391,7 @@ extension KingfisherWrapper where Base: Image {
     ///   - saturation: Saturation changing to image.
     ///   - inputEV: InputEV changing to image.
     /// - Returns:  An image with color control applied.
-    public func adjusted(brightness: CGFloat, contrast: CGFloat, saturation: CGFloat, inputEV: CGFloat) -> Image {
+    public func adjusted(brightness: CGFloat, contrast: CGFloat, saturation: CGFloat, inputEV: CGFloat) -> KFCrossPlatformImage {
         #if os(watchOS)
         return base
         #else
@@ -400,7 +403,7 @@ extension KingfisherWrapper where Base: Image {
     ///
     /// - Parameter scale: Target scale factor the new image should have.
     /// - Returns: The image with target scale. If the base image is already in the scale, `base` will be returned.
-    public func scaled(to scale: CGFloat) -> Image {
+    public func scaled(to scale: CGFloat) -> KFCrossPlatformImage {
         guard scale != self.scale else {
             return base
         }
@@ -413,7 +416,7 @@ extension KingfisherWrapper where Base: Image {
 }
 
 // MARK: - Decoding Image
-extension KingfisherWrapper where Base: Image {
+extension KingfisherWrapper where Base: KFCrossPlatformImage {
     
     /// Returns the decoded image of the `base` image. It will draw the image in a plain context and return the data
     /// from it. This could improve the drawing performance when an image is just created from data but not yet
@@ -421,7 +424,7 @@ extension KingfisherWrapper where Base: Image {
     ///
     /// - Note: This method only works for CG-based image. The current image scale is kept.
     ///         For any non-CG-based image or animated image, `base` itself is returned.
-    public var decoded: Image { return decoded(scale: scale) }
+    public var decoded: KFCrossPlatformImage { return decoded(scale: scale) }
     
     /// Returns decoded image of the `base` image at a given scale. It will draw the image in a plain context and
     /// return the data from it. This could improve the drawing performance when an image is just created from
@@ -432,7 +435,7 @@ extension KingfisherWrapper where Base: Image {
     ///
     /// - Note: This method only works for CG-based image. The current image scale is kept.
     ///         For any non-CG-based image or animated image, `base` itself is returned.
-    public func decoded(scale: CGFloat) -> Image {
+    public func decoded(scale: CGFloat) -> KFCrossPlatformImage {
         // Prevent animated image (GIF) losing it's images
         #if os(iOS)
         if imageSource != nil { return base }
@@ -448,154 +451,78 @@ extension KingfisherWrapper where Base: Image {
         let size = CGSize(width: CGFloat(imageRef.width) / scale, height: CGFloat(imageRef.height) / scale)
         return draw(to: size, inverting: true, scale: scale) { context in
             context.draw(imageRef, in: CGRect(origin: .zero, size: size))
+            return true
         }
     }
-}
 
-extension KingfisherWrapper where Base: Image {
-    
-    func beginContext(size: CGSize, scale: CGFloat, inverting: Bool = false) -> CGContext? {
-        #if os(macOS)
-        guard let rep = NSBitmapImageRep(
-            bitmapDataPlanes: nil,
-            pixelsWide: Int(size.width),
-            pixelsHigh: Int(size.height),
-            bitsPerSample: cgImage?.bitsPerComponent ?? 8,
-            samplesPerPixel: 4,
-            hasAlpha: true,
-            isPlanar: false,
-            colorSpaceName: .calibratedRGB,
-            bytesPerRow: 0,
-            bitsPerPixel: 0) else
-        {
-            assertionFailure("[Kingfisher] Image representation cannot be created.")
-            return nil
-        }
-        rep.size = size
-        NSGraphicsContext.saveGraphicsState()
-        guard let context = NSGraphicsContext(bitmapImageRep: rep) else {
-            assertionFailure("[Kingfisher] Image context cannot be created.")
-            return nil
-        }
-        
-        NSGraphicsContext.current = context
-        return context.cgContext
+    /// Returns decoded image of the `base` image at a given scale. It will draw the image in a plain context and
+    /// return the data from it. This could improve the drawing performance when an image is just created from
+    /// data but not yet displayed for the first time.
+    ///
+    /// - Parameter context: The context for drawing.
+    /// - Returns: The decoded image ready to be displayed.
+    ///
+    /// - Note: This method only works for CG-based image. The current image scale is kept.
+    ///         For any non-CG-based image or animated image, `base` itself is returned.
+    public func decoded(on context: CGContext) -> KFCrossPlatformImage {
+        // Prevent animated image (GIF) losing it's images
+        #if os(iOS)
+        if imageSource != nil { return base }
         #else
-        UIGraphicsBeginImageContextWithOptions(size, false, scale)
-        guard let context = UIGraphicsGetCurrentContext() else { return nil }
-        if inverting { // If drawing a CGImage, we need to make context flipped.
-            context.scaleBy(x: 1.0, y: -1.0)
-            context.translateBy(x: 0, y: -size.height)
-        }
-        return context
+        if images != nil { return base }
         #endif
-    }
-    
-    func endContext() {
-        #if os(macOS)
-        NSGraphicsContext.restoreGraphicsState()
-        #else
-        UIGraphicsEndImageContext()
-        #endif
-    }
-    
-    func draw(to size: CGSize, inverting: Bool = false, scale: CGFloat? = nil, draw: (CGContext) -> Void) -> Image {
-        let targetScale = scale ?? self.scale
-        guard let context = beginContext(size: size, scale: targetScale, inverting: inverting) else {
-            assertionFailure("[Kingfisher] Failed to create CG context for blurring image.")
+
+        guard let refImage = cgImage else {
+            assertionFailure("[Kingfisher] Decoding only works for CG-based image.")
             return base
         }
-        defer { endContext() }
-        draw(context)
+
+        let size = CGSize(width: CGFloat(refImage.width) / scale, height: CGFloat(refImage.height) / scale)
+
+        context.draw(refImage, in: CGRect(origin: .zero, size: size))
+
         guard let cgImage = context.makeImage() else {
             return base
         }
-        return KingfisherWrapper.image(cgImage: cgImage, scale: targetScale, refImage: base)
+
+        return KingfisherWrapper.image(cgImage: cgImage, scale: scale, refImage: base)
+    }
+}
+
+extension KingfisherWrapper where Base: KFCrossPlatformImage {
+    func draw(
+        to size: CGSize,
+        inverting: Bool = false,
+        scale: CGFloat? = nil,
+        refImage: KFCrossPlatformImage? = nil,
+        draw: (CGContext) -> Bool // Whether use the refImage (`true`) or ignore image orientation (`false`)
+    ) -> KFCrossPlatformImage
+    {
+        let targetScale = scale ?? self.scale
+        GraphicsContext.begin(size: size, scale: targetScale)
+        guard let context = GraphicsContext.current(size: size, scale: targetScale, inverting: inverting, cgImage: cgImage) else {
+            assertionFailure("[Kingfisher] Failed to create CG context for blurring image.")
+            return base
+        }
+        defer { GraphicsContext.end() }
+        let useRefImage = draw(context)
+        guard let cgImage = context.makeImage() else {
+            return base
+        }
+        let ref = useRefImage ? (refImage ?? base) : nil
+        return KingfisherWrapper.image(cgImage: cgImage, scale: targetScale, refImage: ref)
     }
     
     #if os(macOS)
-    func fixedForRetinaPixel(cgImage: CGImage, to size: CGSize) -> Image {
+    func fixedForRetinaPixel(cgImage: CGImage, to size: CGSize) -> KFCrossPlatformImage {
         
-        let image = Image(cgImage: cgImage, size: base.size)
+        let image = KFCrossPlatformImage(cgImage: cgImage, size: base.size)
         let rect = CGRect(origin: CGPoint(x: 0, y: 0), size: size)
         
         return draw(to: self.size) { context in
             image.draw(in: rect, from: .zero, operation: .copy, fraction: 1.0)
+            return false
         }
     }
     #endif
-}
-
-extension CGImage: KingfisherCompatible {}
-/// High Performance Image Resizing
-/// @see https://nshipster.com/image-resizing/
-extension KingfisherWrapper where Base: CGImage {
-    var size: CGSize {
-        return CGSize(width: CGFloat(base.width), height: CGFloat(base.height))
-    }
-
-    /// Resizes `base` CGImage to a CGImage of new size, respecting the given content mode.
-    ///
-    /// - Parameters:
-    ///   - targetSize: The target size in point.
-    ///   - contentMode: Content mode of output image should be.
-    /// - Returns: A CGImage with new size.
-    #if os(iOS) || os(tvOS)
-    public func resize(to size: CGSize, for contentMode: UIView.ContentMode) -> CGImage {
-        switch contentMode {
-        case .scaleAspectFit:
-            return resize(to: size, for: .aspectFit)
-        case .scaleAspectFill:
-            return resize(to: size, for: .aspectFill)
-        default:
-            return resize(to: size)
-        }
-    }
-    #endif
-
-    // MARK: - Resize
-    /// Resizes `base` CGImage to a CGImage with new size.
-    ///
-    /// - Parameter size: The target size in point.
-    /// - Returns: A CGImage with new size.
-    public func resize(to size: CGSize) -> CGImage {
-        let alphaInfo = base.alphaInfo.rawValue & CGBitmapInfo.alphaInfoMask.rawValue
-        var hasAlpha = false
-        if alphaInfo == CGImageAlphaInfo.premultipliedLast.rawValue
-            || alphaInfo == CGImageAlphaInfo.premultipliedFirst.rawValue
-            || alphaInfo == CGImageAlphaInfo.first.rawValue
-            || alphaInfo == CGImageAlphaInfo.last.rawValue {
-            hasAlpha = true
-        }
-
-        var bitmapInfo = CGImageByteOrderInfo.order32Little.rawValue
-        bitmapInfo |= hasAlpha ? CGImageAlphaInfo.premultipliedFirst.rawValue : CGImageAlphaInfo.noneSkipFirst.rawValue
-
-        guard let context = CGContext(data: nil,
-                                      width: Int(size.width),
-                                      height: Int(size.height),
-                                      bitsPerComponent: base.bitsPerComponent,
-                                      bytesPerRow: base.bytesPerRow,
-                                      space: base.colorSpace ?? CGColorSpaceCreateDeviceRGB(),
-                                      bitmapInfo: bitmapInfo) else
-        {
-            return base
-        }
-
-        let rect = CGRect(origin: .zero, size: size)
-        context.interpolationQuality = .high
-        context.draw(base, in: rect)
-        return context.makeImage() ?? base
-    }
-
-    /// Resizes `base` CGImage to a CGImage of new size, respecting the given content mode.
-    ///
-    /// - Parameters:
-    ///   - targetSize: The target size in point.
-    ///   - contentMode: Content mode of output image should be.
-    /// - Returns: A CGImage with new size.
-    public func resize(to targetSize: CGSize, for contentMode: ContentMode) -> CGImage {
-        let newSize = size.kf.resize(to: targetSize, for: contentMode)
-        return resize(to: newSize)
-    }
 }

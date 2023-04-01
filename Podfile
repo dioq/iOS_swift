@@ -8,16 +8,16 @@ target 'MySwift' do
   use_frameworks!
   
   # Pods for MySwift
-  pod 'GTMRefresh', '1.3.6'
-  pod 'SQLite.swift', '0.12.2'
-  pod 'Kingfisher', '5.3.0'
-  pod 'Alamofire', '4.8.0'
-  pod 'HandyJSON', '5.0.0'
+  #  pod 'GTMRefresh' #, '1.3.6'
+  #  pod 'SQLite.swift', '~> 0.14.1'
+  pod 'Kingfisher', '~> 6.3.1'
+  pod 'Alamofire', '~> 5.6.2'
+  #pod 'HandyJSON', '5.0.2'
   pod 'SnapKit', '~> 5.6.0'
-  pod 'JXPopupView', '0.0.3' #自定义弹出框
-  pod 'SwiftyJSON', '4.2.0'
-  pod 'KSGuideController', '0.1.2'#新手引导
-  pod 'DNSPageView', '1.2.1'
-  pod 'lottie-ios', '3.1.5'
+  #  pod 'JXPopupView', '~> 1.1.0' #自定义弹出框
+  pod 'SwiftyJSON', '~> 5.0.1'
+  #  pod 'KSGuideController' #, '0.1.2'#新手引导
+  pod 'DNSPageView', '~> 2.2.0'
+  pod 'lottie-ios', '~> 3.4.3'
   
 end

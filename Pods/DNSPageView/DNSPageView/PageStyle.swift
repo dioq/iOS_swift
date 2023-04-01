@@ -28,20 +28,28 @@ import UIKit
 
 public class PageStyle {
     
+    public enum UserInterfaceLayoutDirection {
+        case unspecified
+        case forceLeftToRight
+        case forceRightToLeft
+    }
+    
     /// titleView
     public var titleViewHeight: CGFloat = 44
     public var titleColor: UIColor = UIColor.black
     public var titleSelectedColor: UIColor = UIColor.blue
     public var titleFont: UIFont = UIFont.systemFont(ofSize: 15)
+    public var titleSelectedFont: UIFont?
     public var titleViewBackgroundColor: UIColor = UIColor.white
-    public var titleMargin: CGFloat = 30
     public var titleViewSelectedColor: UIColor = UIColor.clear
+    public var titleMargin: CGFloat = 30
+    public var titleInset: CGFloat = 0
 
     
-    /// titleView滑动
+    /// titleView 滑动
     public var isTitleViewScrollEnabled: Bool = false
     
-    /// title下划线
+    /// title 下划线
     public var isShowBottomLine: Bool = false
     public var bottomLineColor: UIColor = UIColor.blue
     public var bottomLineHeight: CGFloat = 2
@@ -49,11 +57,11 @@ public class PageStyle {
     public var bottomLineRadius: CGFloat = 1
 
     
-    /// title缩放
+    /// title 缩放
     public var isTitleScaleEnabled: Bool = false
     public var titleMaximumScaleFactor: CGFloat = 1.2
 
-    /// title遮罩
+    /// title 遮罩
     public var isShowCoverView: Bool = false
     public var coverViewBackgroundColor: UIColor = UIColor.black
     public var coverViewAlpha: CGFloat = 0.4
@@ -66,8 +74,22 @@ public class PageStyle {
     public var isContentScrollEnabled : Bool = true
     public var contentViewBackgroundColor = UIColor.white
     
+    /// 设置布局方向，默认跟随系统
+    public var userInterfaceLayoutDirection: UserInterfaceLayoutDirection = .unspecified
     
-    public init() {
-        
+    /// 获取当前 PageView 实际的布局方向
+    public var isRTL: Bool {
+        get {
+            switch userInterfaceLayoutDirection {
+            case .unspecified:
+                return UIView.dns.isRightToLeftLayoutDirection()
+            case .forceLeftToRight:
+                return false
+            case .forceRightToLeft:
+                return true
+            }
+        }
     }
+    
+    public init() {}
 }

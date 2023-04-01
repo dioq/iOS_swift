@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import GTMRefresh
+//import GTMRefresh
 
 class GTMViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     

@@ -11,7 +11,7 @@ import Alamofire
 
 class RequestVC: UIViewController {
     
-    var dataArray = Array<Value>()
+    var dataArray = Array()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +36,8 @@ class RequestVC: UIViewController {
                     //再将data转换成字符串
                     let jsonStr = String(data: data!, encoding: String.Encoding.utf8)
                     //HandyJSON 再解析字符串
-                    let result3 = Model.deserialize(from: jsonStr)
-                    self.dataArray = result3!.content
+//                    let result3 = Model.deserialize(from: jsonStr)
+//                    self.dataArray = result3!.content
 //                    for item in (result3?.content)! {
 //                        self.dataArray.append(item)
 //                    }

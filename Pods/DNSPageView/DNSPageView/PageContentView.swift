@@ -26,26 +26,37 @@
 
 import UIKit
 
-public protocol PageContentViewDelegate: class {
+public protocol PageContentViewDelegate: AnyObject {
     func contentView(_ contentView: PageContentView, didEndScrollAt index: Int)
     func contentView(_ contentView: PageContentView, scrollingWith sourceIndex: Int, targetIndex: Int, progress: CGFloat)
 }
 
 
 private let CellID = "CellID"
-open class PageContentView: UIView {
+public class PageContentView: UIView {
     
     public weak var delegate: PageContentViewDelegate?
     
+    public weak var container: PageViewContainer?
+
     public weak var eventHandler: PageEventHandleable?
     
-    public var style: PageStyle
-    
-    public var childViewControllers : [UIViewController]
+    private (set) public var style: PageStyle = PageStyle() {
+        didSet {
+            collectionView.semanticContentAttribute = style.isRTL ? .forceRightToLeft : .forceLeftToRight
+        }
+    }
+
+    private (set) public var childViewControllers : [UIViewController] = [UIViewController]()
     
     /// 初始化后，默认显示的页数
-    public var currentIndex: Int
-    
+    private (set) public var currentIndex: Int {
+        didSet {
+            guard delegate == nil else { return }
+            container?.updateCurrentIndex(currentIndex)
+        }
+    }
+
     private var startOffsetX: CGFloat = 0
     
     private var isForbidDelegate: Bool = false
@@ -71,40 +82,52 @@ open class PageContentView: UIView {
     }()
     
     
-    public init(frame: CGRect, style: PageStyle, childViewControllers: [UIViewController], currentIndex: Int) {
-        self.childViewControllers = childViewControllers
-        self.style = style
+    public init(frame: CGRect, style: PageStyle, childViewControllers: [UIViewController], currentIndex: Int = 0) {
+        assert(currentIndex >= 0 && currentIndex < childViewControllers.count,
+               "currentIndex < 0 or currentIndex >= childViewControllers.count")
         self.currentIndex = currentIndex
         super.init(frame: frame)
-        setupUI()
+        addSubview(collectionView)
+        configure(childViewControllers: childViewControllers, style: style, currentIndex: currentIndex)
     }
     
     required public init?(coder aDecoder: NSCoder) {
-        self.childViewControllers = [UIViewController]()
-        self.style = PageStyle()
         self.currentIndex = 0
         super.init(coder: aDecoder)
-        
+        addSubview(collectionView)
     }
     
-
-    override open func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
-        collectionView.frame = bounds
+        collectionView.frame = CGRect(origin: CGPoint.zero, size: frame.size)
         let layout = collectionView.collectionViewLayout as! PageCollectionViewFlowLayout
-        layout.itemSize = bounds.size
-        layout.offset = CGFloat(currentIndex) * bounds.size.width
+        layout.itemSize = frame.size
+        layout.offset = CGFloat(currentIndex) * frame.size.width
+        layout.invalidateLayout()
     }
 }
 
 
 extension PageContentView {
-    public func setupUI() {
-        addSubview(collectionView)
-        
+    internal func configure(childViewControllers: [UIViewController]? = nil, style: PageStyle? = nil, currentIndex: Int? = nil) {
+        if let childViewControllers = childViewControllers {
+            self.childViewControllers = childViewControllers
+        }
+        if let style = style {
+            self.style = style
+        }
+        if let currentIndex = currentIndex {
+            collectionView.collectionViewLayout.invalidateLayout()
+            self.currentIndex = currentIndex
+        }
+        configureSubViews()
+        collectionView.reloadData()
+        setNeedsLayout()
+    }
+    
+    private func configureSubViews() {
         collectionView.backgroundColor = style.contentViewBackgroundColor
         collectionView.isScrollEnabled = style.isContentScrollEnabled
-
     }
 }
 
@@ -123,7 +146,8 @@ extension PageContentView: UICollectionViewDataSource {
         let childViewController = childViewControllers[indexPath.item]
 
         eventHandler = childViewController as? PageEventHandleable
-        childViewController.view.frame = cell.contentView.bounds
+        childViewController.view.frame = CGRect(origin: CGPoint.zero, size: cell.contentView.frame.size)
+            
         cell.contentView.addSubview(childViewController.view)
         
         return cell
@@ -142,7 +166,6 @@ extension PageContentView: UICollectionViewDelegate {
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         updateUI(scrollView)
-        
     }
     
     
@@ -158,20 +181,21 @@ extension PageContentView: UICollectionViewDelegate {
     
     
     private func collectionViewDidEndScroll(_ scrollView: UIScrollView) {
-        let index = Int(round(scrollView.contentOffset.x / scrollView.bounds.width))
+        
+        let index = Int(round(scrollView.contentOffset.x / scrollView.frame.width))
         
         delegate?.contentView(self, didEndScrollAt: index)
         
         if index != currentIndex {
             let childViewController = childViewControllers[currentIndex]
-            (childViewController as? PageEventHandleable)?.contentViewDidDisappear?()
+            (childViewController as? PageEventHandleable)?.contentViewDidDisappear()
         }
         
         currentIndex = index
         
         eventHandler = childViewControllers[currentIndex] as? PageEventHandleable
         
-        eventHandler?.contentViewDidEndScroll?()
+        eventHandler?.contentViewDidEndScroll()
         
     }
 
@@ -187,25 +211,21 @@ extension PageContentView: UICollectionViewDelegate {
         var sourceIndex = 0
         
         
-        progress = scrollView.contentOffset.x.truncatingRemainder(dividingBy: scrollView.bounds.width) / scrollView.bounds.width
+        progress = scrollView.contentOffset.x.truncatingRemainder(dividingBy: scrollView.frame.width) / scrollView.frame.width
         if progress == 0 || progress.isNaN {
             return
         }
-        
-        let index = Int(scrollView.contentOffset.x / scrollView.bounds.width)
-        
+        let index = Int(scrollView.contentOffset.x / scrollView.frame.width)
         if collectionView.contentOffset.x > startOffsetX { // 左滑动
             sourceIndex = index
             targetIndex = index + 1
-            guard targetIndex < childViewControllers.count else { return }
         } else {
             sourceIndex = index + 1
             targetIndex = index
             progress = 1 - progress
-            if targetIndex < 0 {
-                return
-            }
         }
+        guard targetIndex < childViewControllers.count && targetIndex >= 0 else { return }
+
         
         if progress > 0.998 {
             progress = 1
