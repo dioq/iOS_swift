@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,14 +20,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="显示内容..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Td1-wd-RqQ">
-                    <rect key="frame" x="10" y="498" width="69.5" height="17"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="B5r-N4-e6n">
-                    <rect key="frame" x="10" y="53" width="394" height="430"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="B5r-N4-e6n">
+                    <rect key="frame" x="10" y="53" width="394" height="295"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBh-cp-BrJ">
                             <rect key="frame" x="0.0" y="0.0" width="394" height="45"/>
@@ -41,7 +35,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L29-R5-o2L">
-                            <rect key="frame" x="0.0" y="55" width="394" height="45"/>
+                            <rect key="frame" x="0.0" y="50" width="394" height="45"/>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <state key="normal" title="Post"/>
                             <connections>
@@ -49,15 +43,15 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4h-Z9-R2z">
-                            <rect key="frame" x="0.0" y="110" width="394" height="45"/>
+                            <rect key="frame" x="0.0" y="100" width="394" height="45"/>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
-                            <state key="normal" title="Form data"/>
+                            <state key="normal" title="form data"/>
                             <connections>
                                 <action selector="formdata_func:" destination="-1" eventType="touchUpInside" id="idQ-bd-Iiz"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9u-mG-Htp">
-                            <rect key="frame" x="0.0" y="165" width="394" height="45"/>
+                            <rect key="frame" x="0.0" y="150" width="394" height="45"/>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <state key="normal" title="downloadTask"/>
                             <connections>
@@ -65,7 +59,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLZ-75-AOi">
-                            <rect key="frame" x="0.0" y="220" width="394" height="45"/>
+                            <rect key="frame" x="0.0" y="200" width="394" height="45"/>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <state key="normal" title="uploadTask"/>
                             <connections>
@@ -73,40 +67,31 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awq-dF-ze1">
-                            <rect key="frame" x="0.0" y="275" width="394" height="45"/>
+                            <rect key="frame" x="0.0" y="250" width="394" height="45"/>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <state key="normal" title="upload binary"/>
                             <connections>
                                 <action selector="uploadBinary_func:" destination="-1" eventType="touchUpInside" id="aRR-ZY-EBr"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NO0-rm-sMn">
-                            <rect key="frame" x="0.0" y="330" width="394" height="45"/>
-                            <color key="backgroundColor" systemColor="systemGray6Color"/>
-                            <state key="normal" title="Https one way"/>
-                            <connections>
-                                <action selector="httpsOneWay:" destination="-1" eventType="touchUpInside" id="gWW-gU-7HU"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a84-TY-YJT">
-                            <rect key="frame" x="0.0" y="385" width="394" height="45"/>
-                            <color key="backgroundColor" systemColor="systemGray6Color"/>
-                            <state key="normal" title="Https two way"/>
-                            <connections>
-                                <action selector="httpsTwoWay:" destination="-1" eventType="touchUpInside" id="Nhg-91-Kto"/>
-                            </connections>
-                        </button>
                     </subviews>
                 </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Td1-wd-RqQ">
+                    <rect key="frame" x="10" y="358" width="394" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="Td1-wd-RqQ" firstAttribute="top" secondItem="B5r-N4-e6n" secondAttribute="bottom" constant="15" id="2Tw-Pw-ZNe"/>
+                <constraint firstItem="Td1-wd-RqQ" firstAttribute="top" secondItem="B5r-N4-e6n" secondAttribute="bottom" constant="10" id="8Zt-da-GXH"/>
                 <constraint firstItem="B5r-N4-e6n" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="E3P-Zt-eGk"/>
                 <constraint firstItem="B5r-N4-e6n" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="NLU-RE-OHH"/>
-                <constraint firstItem="Td1-wd-RqQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="aWQ-4S-WNz"/>
+                <constraint firstItem="Td1-wd-RqQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Pe8-bn-8vt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="B5r-N4-e6n" secondAttribute="trailing" constant="10" id="g6g-sT-z8O"/>
+                <constraint firstAttribute="trailing" secondItem="Td1-wd-RqQ" secondAttribute="trailing" constant="10" id="l8L-Bu-vL9"/>
             </constraints>
             <point key="canvasLocation" x="-145" y="52"/>
         </view>

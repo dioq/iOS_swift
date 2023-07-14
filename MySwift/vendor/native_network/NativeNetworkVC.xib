@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,19 +19,22 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gEz-TN-lRF">
-                    <rect key="frame" x="0.0" y="44" width="414" height="270"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gEz-TN-lRF">
+                    <rect key="frame" x="0.0" y="48" width="414" height="195"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuZ-8x-HH2">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="46"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
                             <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="Mas-WL-UQg"/>
+                            </constraints>
                             <state key="normal" title="GET"/>
                             <connections>
                                 <action selector="get_func:" destination="-1" eventType="touchUpInside" id="aOR-Af-PsK"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gL-fA-xYY">
-                            <rect key="frame" x="0.0" y="56" width="414" height="46"/>
+                            <rect key="frame" x="0.0" y="50" width="414" height="45"/>
                             <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                             <state key="normal" title="POST"/>
                             <connections>
@@ -39,33 +42,22 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvG-kL-Bew">
-                            <rect key="frame" x="0.0" y="112" width="414" height="46"/>
+                            <rect key="frame" x="0.0" y="100" width="414" height="45"/>
                             <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
-                            <state key="normal" title="Form-data"/>
+                            <state key="normal" title="form"/>
                             <connections>
                                 <action selector="formdata_func:" destination="-1" eventType="touchUpInside" id="Iku-mf-sZU"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCC-fB-UGN">
-                            <rect key="frame" x="0.0" y="168" width="414" height="46"/>
+                            <rect key="frame" x="0.0" y="150" width="414" height="45"/>
                             <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                             <state key="normal" title="upload image"/>
                             <connections>
                                 <action selector="uploadImage_func:" destination="-1" eventType="touchUpInside" id="QER-ll-GQq"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2f-BM-R1u">
-                            <rect key="frame" x="0.0" y="224" width="414" height="46"/>
-                            <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
-                            <state key="normal" title="upload binary"/>
-                            <connections>
-                                <action selector="uploadBinary_func:" destination="-1" eventType="touchUpInside" id="LHu-gU-v47"/>
-                            </connections>
-                        </button>
                     </subviews>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="270" id="uMF-PC-mCA"/>
-                    </constraints>
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -83,9 +75,6 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiarySystemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>

@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '11.0'
+platform :ios, '13.0'
 
 source 'https://github.com/CocoaPods/Specs.git'
 
@@ -12,7 +12,6 @@ target 'MySwift' do
   #  pod 'SQLite.swift', '~> 0.14.1'
   pod 'Kingfisher', '~> 6.3.1'
   pod 'Alamofire', '~> 5.6.2'
-  #pod 'HandyJSON', '5.0.2'
   pod 'SnapKit', '~> 5.6.0'
   #  pod 'JXPopupView', '~> 1.1.0' #自定义弹出框
   pod 'SwiftyJSON', '~> 5.0.1'

@@ -15,13 +15,12 @@ class URLSessionVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "原生网络请求"
-        showLB.preferredMaxLayoutWidth = ScreenWIDTH - 20
         showLB.sizeToFit()
     }
     
     @IBAction func get_func(_ sender: UIButton) {
         self.showLB.text = ""
-        let urlStr:String = "http://jobs8.cn:8081/getdata"
+        let urlStr:String = "http://jobs8.cn:8090/get?name=Dio"
         let url = URL.init(string: urlStr)
         var request = URLRequest(url: url!)
         request.httpMethod = "GET"
@@ -60,7 +59,7 @@ class URLSessionVC: UIViewController {
     
     @IBAction func post_func(_ sender: UIButton) {
         self.showLB.text = ""
-        let urlStr = "http://jobs8.cn:8081/postdata"
+        let urlStr = "http://jobs8.cn:8090/post"
         let url = URL(string: urlStr)
         var request = URLRequest.init(url: url!)
         //修改请求方法为POST
@@ -74,8 +73,8 @@ class URLSessionVC: UIViewController {
         //为了便于拼接参数,将所有参数放在Dictionary里然后 将Dictionary整体 转成 json的二进制
         var param_dict = Dictionary<String,Any>()
         param_dict["name"] = "Dio"
-//        param_dict["password"] = "1231313"
-//        param_dict["argot"] = "You are geat!"
+        //        param_dict["password"] = "1231313"
+        //        param_dict["argot"] = "You are geat!"
         param_dict["age"] = 18
         let param_data = try? JSONSerialization.data(withJSONObject: param_dict, options: JSONSerialization.WritingOptions.init(rawValue: 0))
         
@@ -105,7 +104,7 @@ class URLSessionVC: UIViewController {
     
     @IBAction func formdata_func(_ sender: UIButton) {
         self.showLB.text = ""
-        let urlStr = "http://jobs8.cn:8081/formdata"
+        let urlStr = "http://jobs8.cn:8090/postform"
         let url = URL(string: urlStr)
         var request = URLRequest.init(url: url!)
         //修改请求方法为POST
@@ -140,17 +139,17 @@ class URLSessionVC: UIViewController {
     @IBAction func downloadTask_func(_ sender: UIButton) {
         self.showLB.text = ""
         //1.创建会话对象
-        let config:URLSessionConfiguration=URLSessionConfiguration.default
+        let config:URLSessionConfiguration = URLSessionConfiguration.default
         let session:URLSession = URLSession.init(configuration: config, delegate: self, delegateQueue: OperationQueue.main)
         //2.根据会话对象创建task
-        let urlStr = "" //目前还没有写后台接口,这个功能先不测试
+        let urlStr = "http://jobs8.cn:8090/download/test.png" //目前还没有写后台接口,这个功能先不测试
         let url = URL.init(string: urlStr)
         //3.创建可变的请求对象
         var request:URLRequest  = URLRequest(url: url!)
         //4.修改请求方法为POST
-        request.httpMethod = "POST"
+        request.httpMethod = "GET"
         //5.设置请求体-----可以不设置，有默认的
-        request.httpBody = "".data(using: String.Encoding.utf8)
+        //        request.httpBody = "".data(using: String.Encoding.utf8)
         //6.根据会话对象创建一个Task(发送请求）
         /*
          第一个参数：请求对象
@@ -160,8 +159,15 @@ class URLSessionVC: UIViewController {
          error：错误信息，如果请求失败，则error有值
          */
         let downTask=session.downloadTask(with: request) { (data, response, error) in
-            if(error == nil){
-                
+            if(error != nil){
+                print(error!.localizedDescription)
+            }else {
+                if let url = data {
+                    print(url)
+                }
+                if let resp = response {
+                    print(resp)
+                }
             }
         }
         downTask.resume()
@@ -169,11 +175,10 @@ class URLSessionVC: UIViewController {
     
     @IBAction func uploadTask_func(_ sender: Any) {
         self.showLB.text = ""
-        let urlStr = "https://google.hahaya.top:34301/api/com/uploadselfqrcode?wxuser=+66970508372&wxid=wxid_wcj65h6g0hvp22"//"http://jobs8.cn:8081/upload"
+        let urlStr = "http://jobs8.cn:8090/upload"
         let url = URL.init(string: urlStr)
         //创建请求
         var request:URLRequest  = URLRequest(url: url!)
-        //修改请求方法为POST
         request.httpMethod = "POST"
         
         let uuid:String = "\(UUID())"
@@ -189,14 +194,14 @@ class URLSessionVC: UIViewController {
         param_data += newLine.data(using: String.Encoding.utf8)!
         
         let name = "file";//后台服务器根据这个名取到Request
-        let filename = "anewname"
-        let type = "png"
+        let filename = "pingtaoge.png"
+        let type = "image/png"
         let content = "Content-Disposition: form-data; name=\(name); filename=\(filename); type=\(type)"
         param_data += content.data(using: String.Encoding.utf8)!
         param_data += newLine.data(using: String.Encoding.utf8)!
         param_data += newLine.data(using: String.Encoding.utf8)!
         
-        let image:UIImage = UIImage.init(named: "pingtaoge")!
+        let image:UIImage = UIImage.init(named: filename)!
         let imageData:Data  = UIImage.jpegData(image)(compressionQuality: 1.0)!
         param_data += imageData
         
@@ -230,15 +235,16 @@ class URLSessionVC: UIViewController {
     
     @IBAction func uploadBinary_func(_ sender: UIButton) {
         self.showLB.text = ""
-        let urlStr = "https://upload.gmugmu.com/api/v1/base/resource/image/upload?source_info=eyJhcHBpZCI6IjI2MDAwMyIsInVpZCI6IjMyNDk3MjMyIiwicGFnZSI6ImNvbS5lb21jaGF0Lm1vZHVsZS5ob21lLkhvbWVQYWdlQWN0aXZpdHkiLCJ0aW1lIjoiMTYwNjI0Mjc3MDA5NiJ9&cc=TG73257&dev_name=nubia&oaid=&cpu=[Adreno_(TM)_630][ARMv7_639_placeholder]&lc=37427d9d8660d3f7&osversion=android_22&sid=02Yok7jQeFpBTR+Uz1tDaONajE3oi6XdrdqPwUyM/joBe9tJRE6grYwCweYmrwWh&ndid=&conn=wifi&ram=3650129920&msid=363635333236303436313030303634&icc=89860081133720371180&statistics=9ad290c3317d39cc8be58b98f74c86e7&mtid=e6352e4b164246b8b0be20f9c36f5abe&atid=302e30&tourist=&ongd=302e30&mtxid=00812dc6db02&evid=3535303335643264616635632d343464382d626465332d373262342d3034366638353761&cv=GM4.6.30_Android&proto=&logid=2006201,2001902,2002202,201802,202101,204005,204401,2005402,2006102,2001701,2003301,2005601,2005502,2001501,2005202,204301,2001802,2005801,2003502,2004701,2000802,201007,2001602,2004901,2002101,2003802,2005902,204101,2006001,2004801,2001202&ua=nubiaNX629J&uid=32497232&vv=202010141815&meid=363834373537373230363631353638&smid=&aid=b35517406764bf51"
+        let urlStr = "http://jobs8.cn:8090/upload"
         let url = URL.init(string: urlStr)
         //创建请求
         var request:URLRequest  = URLRequest(url: url!)
         //修改请求方法为POST
         request.httpMethod = "POST"
         
-        let image:UIImage = UIImage.init(named: "pingtaoge")!
-        let imageData:Data  = UIImage.jpegData(image)(compressionQuality: 1.0)!
+        let filename = "pingtaoge.png"
+        let image:UIImage = UIImage.init(named: filename)!
+        let imageData:Data  = UIImage.jpegData(image)(compressionQuality: 0.1)!
         
         let config:URLSessionConfiguration = URLSessionConfiguration.default
         let session:URLSession=URLSession.init(configuration: config, delegate: self, delegateQueue: OperationQueue.main)
@@ -262,14 +268,6 @@ class URLSessionVC: UIViewController {
             }
         }
         upTask.resume()
-    }
-    
-    @IBAction func httpsOneWay(_ sender: UIButton) {
-
-    }
-    
-    @IBAction func httpsTwoWay(_ sender: UIButton) {
-        
     }
     
 }
