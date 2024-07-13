@@ -1,0 +1,24 @@
+"/Users/lzd/Repository/iOS_swift/Pods/Kingfisher/Sources/Image/GIFAnimatedImage.swift":
+  const-values: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/GIFAnimatedImage.swiftconstvalues"
+  object: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/GIFAnimatedImage.o"
+  dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/GIFAnimatedImage.d"
+  swift-dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/GIFAnimatedImage.swiftdeps"
+  diagnostics: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/GIFAnimatedImage.dia"
+"/Users/lzd/Repository/iOS_swift/Pods/Kingfisher/Sources/Image/Filter.swift":
+  const-values: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Filter.swiftconstvalues"
+  object: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Filter.o"
+  dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Filter.d"
+  diagnostics: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Filter.dia"
+  swift-dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Filter.swiftdeps"
+"/Users/lzd/Repository/iOS_swift/Pods/Kingfisher/Sources/Cache/FormatIndicatedCacheSerializer.swift":
+  const-values: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/FormatIndicatedCacheSerializer.swiftconstvalues"
+  swift-dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/FormatIndicatedCacheSerializer.swiftdeps"
+  object: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/FormatIndicatedCacheSerializer.o"
+  dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/FormatIndicatedCacheSerializer.d"
+  diagnostics: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/FormatIndicatedCacheSerializer.dia"
+"/Users/lzd/Repository/iOS_swift/Pods/Kingfisher/Sources/Utility/ExtensionHelpers.swift":
+  dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ExtensionHelpers.d"
+  const-values: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ExtensionHelpers.swiftconstvalues"
+  diagnostics: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ExtensionHelpers.dia"
+  swift-dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ExtensionHelpers.swiftdeps"
+  object: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ExtensionHelpers.o"

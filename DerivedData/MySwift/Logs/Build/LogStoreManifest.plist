@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>2674D5B1-2026-4883-8EA8-170E9E86F3DD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2674D5B1-2026-4883-8EA8-170E9E86F3DD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>47</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MySwift project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MySwift</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MySwift</string>
+			<key>timeStartedRecording</key>
+			<real>724826104.49012196</real>
+			<key>timeStoppedRecording</key>
+			<real>724826148.59511197</real>
+			<key>title</key>
+			<string>Build MySwift</string>
+			<key>uniqueIdentifier</key>
+			<string>2674D5B1-2026-4883-8EA8-170E9E86F3DD</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

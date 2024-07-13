@@ -9,7 +9,7 @@
 import UIKit
 
 class MyNibView: UIView {
- 
+    
     @IBOutlet weak var myIMGV: UIImageView!
     @IBOutlet weak var myLB: UILabel!
     

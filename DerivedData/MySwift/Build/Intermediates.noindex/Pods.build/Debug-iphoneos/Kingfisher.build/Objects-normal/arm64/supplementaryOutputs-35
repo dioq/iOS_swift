@@ -1,0 +1,18 @@
+"/Users/lzd/Repository/iOS_swift/Pods/Kingfisher/Sources/General/KingfisherOptionsInfo.swift":
+  swift-dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherOptionsInfo.swiftdeps"
+  diagnostics: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherOptionsInfo.dia"
+  dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherOptionsInfo.d"
+  const-values: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherOptionsInfo.swiftconstvalues"
+  object: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherOptionsInfo.o"
+"/Users/lzd/Repository/iOS_swift/Pods/Kingfisher/Sources/Cache/MemoryStorage.swift":
+  swift-dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/MemoryStorage.swiftdeps"
+  object: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/MemoryStorage.o"
+  const-values: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/MemoryStorage.swiftconstvalues"
+  dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/MemoryStorage.d"
+  diagnostics: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/MemoryStorage.dia"
+"/Users/lzd/Repository/iOS_swift/Pods/Kingfisher/Sources/General/KingfisherManager.swift":
+  const-values: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherManager.swiftconstvalues"
+  object: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherManager.o"
+  diagnostics: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherManager.dia"
+  dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherManager.d"
+  swift-dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherManager.swiftdeps"

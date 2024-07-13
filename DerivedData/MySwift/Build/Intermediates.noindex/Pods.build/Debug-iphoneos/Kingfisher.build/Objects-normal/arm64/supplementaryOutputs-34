@@ -1,0 +1,18 @@
+"/Users/lzd/Repository/iOS_swift/Pods/Kingfisher/Sources/General/KFOptionsSetter.swift":
+  swift-dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KFOptionsSetter.swiftdeps"
+  object: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KFOptionsSetter.o"
+  diagnostics: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KFOptionsSetter.dia"
+  const-values: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KFOptionsSetter.swiftconstvalues"
+  dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KFOptionsSetter.d"
+"/Users/lzd/Repository/iOS_swift/Pods/Kingfisher/Sources/General/Kingfisher.swift":
+  const-values: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Kingfisher.swiftconstvalues"
+  diagnostics: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Kingfisher.dia"
+  swift-dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Kingfisher.swiftdeps"
+  dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Kingfisher.d"
+  object: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Kingfisher.o"
+"/Users/lzd/Repository/iOS_swift/Pods/Kingfisher/Sources/General/KingfisherError.swift":
+  const-values: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherError.swiftconstvalues"
+  object: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherError.o"
+  swift-dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherError.swiftdeps"
+  diagnostics: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherError.dia"
+  dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherError.d"

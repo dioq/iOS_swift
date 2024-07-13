@@ -1,0 +1,18 @@
+"/Users/lzd/Repository/iOS_swift/Pods/Kingfisher/Sources/Utility/Result.swift":
+  const-values: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Result.swiftconstvalues"
+  swift-dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Result.swiftdeps"
+  object: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Result.o"
+  diagnostics: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Result.dia"
+  dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Result.d"
+"/Users/lzd/Repository/iOS_swift/Pods/Kingfisher/Sources/Networking/RetryStrategy.swift":
+  diagnostics: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/RetryStrategy.dia"
+  swift-dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/RetryStrategy.swiftdeps"
+  const-values: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/RetryStrategy.swiftconstvalues"
+  object: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/RetryStrategy.o"
+  dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/RetryStrategy.d"
+"/Users/lzd/Repository/iOS_swift/Pods/Kingfisher/Sources/Utility/Runtime.swift":
+  const-values: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Runtime.swiftconstvalues"
+  object: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Runtime.o"
+  dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Runtime.d"
+  swift-dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Runtime.swiftdeps"
+  diagnostics: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Runtime.dia"

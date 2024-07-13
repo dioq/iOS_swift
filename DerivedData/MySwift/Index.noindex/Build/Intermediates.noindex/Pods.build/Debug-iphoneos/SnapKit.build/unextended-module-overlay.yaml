@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Index.noindex/Build/Products/Debug-iphoneos/SnapKit/SnapKit.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Index.noindex/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/SnapKit.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Index.noindex/Build/Products/Debug-iphoneos/SnapKit/SnapKit.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "SnapKit-Swift.h",
+      'external-contents': "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Index.noindex/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/SnapKit.build/unextended-interface-header.h",
+    }]
+    }]
+}

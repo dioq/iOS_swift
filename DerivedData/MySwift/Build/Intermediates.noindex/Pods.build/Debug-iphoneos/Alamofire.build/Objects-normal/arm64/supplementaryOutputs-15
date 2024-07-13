@@ -1,0 +1,18 @@
+"/Users/lzd/Repository/iOS_swift/Pods/Alamofire/Source/HTTPMethod.swift":
+  dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/HTTPMethod.d"
+  object: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/HTTPMethod.o"
+  const-values: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/HTTPMethod.swiftconstvalues"
+  swift-dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/HTTPMethod.swiftdeps"
+  diagnostics: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/HTTPMethod.dia"
+"/Users/lzd/Repository/iOS_swift/Pods/Alamofire/Source/MultipartFormData.swift":
+  dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/MultipartFormData.d"
+  const-values: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/MultipartFormData.swiftconstvalues"
+  diagnostics: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/MultipartFormData.dia"
+  object: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/MultipartFormData.o"
+  swift-dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/MultipartFormData.swiftdeps"
+"/Users/lzd/Repository/iOS_swift/Pods/Alamofire/Source/HTTPHeaders.swift":
+  swift-dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/HTTPHeaders.swiftdeps"
+  const-values: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/HTTPHeaders.swiftconstvalues"
+  object: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/HTTPHeaders.o"
+  dependencies: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/HTTPHeaders.d"
+  diagnostics: "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/HTTPHeaders.dia"

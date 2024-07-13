@@ -1,0 +1,64 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "99ef996f31fb6259d6111ceaab04927332af60f521e01bdacd180e98e037394f"
+    }
+  ],
+  "containerPath" : "/Users/lzd/Repository/iOS_swift/MySwift.xcworkspace",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos17.0",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "arm64v8",
+        "arm64",
+        "armv8"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Products",
+      "derivedDataPath" : "/Users/lzd/Repository/iOS_swift/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone9,3",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "15.7.8",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone9,3",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "58dad54ccf463a7cf3752365408d766808f40ffd",
+          "TARGET_DEVICE_MODEL" : "iPhone9,3",
+          "TARGET_DEVICE_OS_VERSION" : "15.7.8",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphoneos"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

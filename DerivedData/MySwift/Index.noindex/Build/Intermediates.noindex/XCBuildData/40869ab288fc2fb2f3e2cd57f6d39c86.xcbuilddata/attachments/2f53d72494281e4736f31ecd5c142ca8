@@ -1,0 +1,15 @@
+{
+  "" : {
+    "dependencies" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Index.noindex/Build/Intermediates.noindex/MySwift.build/Debug-maccatalyst/MySwiftTests.build/Objects-normal/x86_64/MySwiftTests-master.d",
+    "diagnostics" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Index.noindex/Build/Intermediates.noindex/MySwift.build/Debug-maccatalyst/MySwiftTests.build/Objects-normal/x86_64/MySwiftTests-master.dia",
+    "emit-module-dependencies" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Index.noindex/Build/Intermediates.noindex/MySwift.build/Debug-maccatalyst/MySwiftTests.build/Objects-normal/x86_64/MySwiftTests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Index.noindex/Build/Intermediates.noindex/MySwift.build/Debug-maccatalyst/MySwiftTests.build/Objects-normal/x86_64/MySwiftTests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Index.noindex/Build/Intermediates.noindex/MySwift.build/Debug-maccatalyst/MySwiftTests.build/Objects-normal/x86_64/MySwiftTests-master.swiftdeps"
+  },
+  "/Users/lzd/Repository/iOS_swift/MySwiftTests/MySwiftTests.swift" : {
+
+  },
+  "/Users/lzd/Repository/iOS_swift/MySwiftTests/NetworkManager.swift" : {
+
+  }
+}

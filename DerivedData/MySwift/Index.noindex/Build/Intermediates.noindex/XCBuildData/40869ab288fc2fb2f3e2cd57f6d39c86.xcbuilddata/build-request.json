@@ -1,0 +1,90 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "99ef996f31fb6259d6111ceaab049273abc261215da6e5aded3759729235aa40"
+    },
+    {
+      "guid" : "99ef996f31fb6259d6111ceaab04927332af60f521e01bdacd180e98e037394f"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd42fa2e43183734e48231e71168c0841a74"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd421130daa4894db4a9220537a0c61d4fd9"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd423af7107ab1756b3e94f7a29e037f6ccc"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd42f78eea2067089f8aa4343bad29f23fba"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd4210f95f96c9da093b6a2c30db091f31b9"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd427add8fbbd12553af2fc6f71a250cc7d9"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd42ba3679b4c4428e6a6d83c5308d3af99b"
+    }
+  ],
+  "containerPath" : "/Users/lzd/Repository/iOS_swift/MySwift.xcworkspace",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "undefined_arch",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : true,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos17.0",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "armv4t",
+        "armv5",
+        "armv6",
+        "armv7",
+        "armv7f",
+        "armv7s",
+        "armv7k",
+        "arm64",
+        "arm64e"
+      ],
+      "targetArchitecture" : "undefined_arch"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/lzd/Repository/iOS_swift/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Index.noindex/PrecompiledHeaders",
+      "indexRegularBuildIntermediatesPath" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Intermediates.noindex",
+      "indexRegularBuildProductsPath" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Build/Products",
+      "pchPath" : "/Users/lzd/Repository/iOS_swift/DerivedData/MySwift/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "utility",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

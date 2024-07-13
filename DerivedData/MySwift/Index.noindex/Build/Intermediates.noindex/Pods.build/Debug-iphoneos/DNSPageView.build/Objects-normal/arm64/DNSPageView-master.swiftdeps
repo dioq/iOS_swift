@@ -1,0 +1,12 @@
+version: "Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)"
+options: "9bd9e50de4ac2946b8be9497a6f848a480cf4a83e93b9f8631f27626ab59b888"
+build_start_time: [1703132268, 40047000]
+build_end_time: [1703132273, 322303000]
+inputs:
+  "/Users/lzd/Repository/iOS_swift/Pods/DNSPageView/DNSPageView/Helper.swift": [1687233565, 42920903]
+  "/Users/lzd/Repository/iOS_swift/Pods/DNSPageView/DNSPageView/PageCollectionViewFlowLayout.swift": [1687233565, 43126232]
+  "/Users/lzd/Repository/iOS_swift/Pods/DNSPageView/DNSPageView/PageContentView.swift": [1687233565, 43331385]
+  "/Users/lzd/Repository/iOS_swift/Pods/DNSPageView/DNSPageView/PageStyle.swift": [1687233565, 43506032]
+  "/Users/lzd/Repository/iOS_swift/Pods/DNSPageView/DNSPageView/PageTitleView.swift": [1687233565, 43749421]
+  "/Users/lzd/Repository/iOS_swift/Pods/DNSPageView/DNSPageView/PageView.swift": [1687233565, 44110164]
+  "/Users/lzd/Repository/iOS_swift/Pods/DNSPageView/DNSPageView/PageViewManager.swift": [1687233565, 44252907]

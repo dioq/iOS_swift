@@ -44,9 +44,9 @@ class HeaderFooterTBVC: UIViewController, UITableViewDelegate,UITableViewDataSou
             self.myTableView.tableHeaderView = headerView
         }
         
-//        setUpOne()//不延迟直接添加nib视图，会形变
-//        setUpTwo()//加载代码创建的视图，不会出现视图变形的问题
-//        setUpThree()//添加懒加载的nib视图，也一样会变形
+        //        setUpOne()//不延迟直接添加nib视图，会形变
+        //        setUpTwo()//加载代码创建的视图，不会出现视图变形的问题
+        //        setUpThree()//添加懒加载的nib视图，也一样会变形
     }
     
     func setUpOne() {
@@ -55,7 +55,7 @@ class HeaderFooterTBVC: UIViewController, UITableViewDelegate,UITableViewDataSou
         footerView.backgroundColor = UIColor.green
         myTableView.tableFooterView = footerView
     }
-
+    
     func setUpTwo() {
         myTableView.tableFooterView = footerView
     }
@@ -80,10 +80,10 @@ class HeaderFooterTBVC: UIViewController, UITableViewDelegate,UITableViewDataSou
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //表示从现有的池子（标签已指定）取出排在队列最前面的那个 cell
-//使用dequeueReuseableCellWithIdentifier:可不注册，但是必须对获取回来的cell进行判断是否为空，若空则手动创建新的cell
+        //使用dequeueReuseableCellWithIdentifier:可不注册，但是必须对获取回来的cell进行判断是否为空，若空则手动创建新的cell
         var cell = tableView.dequeueReusableCell(withIdentifier: identifier)
         if cell == nil {
-             //如果为空，表示池子里并没有创建过可用来reuse的cell，就表示这是个新的cell，那么就创建一个cell并放到池子里用于后续可能的reuse
+            //如果为空，表示池子里并没有创建过可用来reuse的cell，就表示这是个新的cell，那么就创建一个cell并放到池子里用于后续可能的reuse
             cell = UITableViewCell(style: .value1, reuseIdentifier: identifier)
         }
         cell!.imageView?.image = UIImage.init(named: "girl")
@@ -92,5 +92,5 @@ class HeaderFooterTBVC: UIViewController, UITableViewDelegate,UITableViewDataSou
         cell!.accessoryType = .disclosureIndicator
         return cell!
     }
-
+    
 }

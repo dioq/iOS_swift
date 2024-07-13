@@ -1,0 +1,6 @@
+framework module Pods_MySwift {
+  umbrella header "Pods-MySwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

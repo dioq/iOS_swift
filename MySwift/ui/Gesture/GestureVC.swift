@@ -28,15 +28,15 @@ class GestureVC: UIViewController,UIGestureRecognizerDelegate {
         oneTap.delegate = self
         oneTap.numberOfTapsRequired = 1
         cureImage.addGestureRecognizer(oneTap)
- 
+        
         //1.双击手势
         let doubleTap = UITapGestureRecognizer(target: self, action: #selector(clickDoubleTap(sender:)))
         doubleTap.numberOfTapsRequired = 2
         cureImage.addGestureRecognizer(doubleTap);
         
         //2.拖动手势
-//        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panGestureRecognizer(sender:)))
-//        cureImage.addGestureRecognizer(panGestureRecognizer)//这个手势 与 上下左右划的手势 之间有冲突
+        //        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panGestureRecognizer(sender:)))
+        //        cureImage.addGestureRecognizer(panGestureRecognizer)//这个手势 与 上下左右划的手势 之间有冲突
         //3.旋转手势
         let RotationGesture = UIRotationGestureRecognizer (target: self, action: #selector(rotationGestureClick(sender:)))
         cureImage.addGestureRecognizer(RotationGesture);
@@ -64,7 +64,7 @@ class GestureVC: UIViewController,UIGestureRecognizerDelegate {
         //长按手势
         let longpressGesutre = UILongPressGestureRecognizer(target: self, action: #selector(handleLongpressGesture(gestureRecognizer:)))
         //代理
-//        longpressGesutre.delegate = self
+        //        longpressGesutre.delegate = self
         //长按时间为1秒
         longpressGesutre.minimumPressDuration = 1
         //允许15秒运动
@@ -177,16 +177,5 @@ class GestureVC: UIViewController,UIGestureRecognizerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }

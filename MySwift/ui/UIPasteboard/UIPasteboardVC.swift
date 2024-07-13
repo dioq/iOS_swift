@@ -9,7 +9,7 @@
 import UIKit
 
 class UIPasteboardVC: UIViewController {
-
+    
     @IBOutlet weak var show: UILabel!
     @IBOutlet weak var ShowImge: UIImageView!
     

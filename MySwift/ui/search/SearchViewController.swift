@@ -1,4 +1,3 @@
-
 //
 //  SearchViewController.swift
 //  Swift_Info
@@ -31,10 +30,10 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         
         return tempSearchBar
     }()
-
+    
     let identifier = "cellId"
     var dataArray:Array<String> = ["UI","UIView","View","ViewController","Controller",
-                               "UIViewController","Search","UISearchBar","Swift"]
+                                   "UIViewController","Search","UISearchBar","Swift"]
     var searchArray = Array<String>()
     var isSearch = false//默认在非搜索状态下
     
@@ -97,5 +96,5 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         print(searchText)
         filterBySubstring(filterStr:searchText)
     }
-
+    
 }

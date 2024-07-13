@@ -1,0 +1,59 @@
+Target dependency graph (26 targets)
+Target 'Pods-MySwift' in project 'Pods'
+➜ Explicit dependency on target 'Alamofire' in project 'Pods'
+➜ Explicit dependency on target 'DNSPageView' in project 'Pods'
+➜ Explicit dependency on target 'Kingfisher' in project 'Pods'
+➜ Explicit dependency on target 'SnapKit' in project 'Pods'
+➜ Explicit dependency on target 'SwiftyJSON' in project 'Pods'
+➜ Explicit dependency on target 'lottie-ios' in project 'Pods'
+Target 'SwiftyJSON' in project 'Pods' (no dependencies)
+Target 'Kingfisher' in project 'Pods' (no dependencies)
+Target 'Alamofire' in project 'Pods' (no dependencies)
+Target 'Pods-MySwift' in project 'Pods'
+➜ Explicit dependency on target 'Alamofire' in project 'Pods'
+➜ Explicit dependency on target 'DNSPageView' in project 'Pods'
+➜ Explicit dependency on target 'Kingfisher' in project 'Pods'
+➜ Explicit dependency on target 'SnapKit' in project 'Pods'
+➜ Explicit dependency on target 'SwiftyJSON' in project 'Pods'
+➜ Explicit dependency on target 'lottie-ios' in project 'Pods'
+Target 'Pods-MySwift' in project 'Pods'
+➜ Explicit dependency on target 'Alamofire' in project 'Pods'
+➜ Explicit dependency on target 'DNSPageView' in project 'Pods'
+➜ Explicit dependency on target 'Kingfisher' in project 'Pods'
+➜ Explicit dependency on target 'SnapKit' in project 'Pods'
+➜ Explicit dependency on target 'SwiftyJSON' in project 'Pods'
+➜ Explicit dependency on target 'lottie-ios' in project 'Pods'
+Target 'DNSPageView' in project 'Pods' (no dependencies)
+Target 'SnapKit' in project 'Pods' (no dependencies)
+Target 'lottie-ios' in project 'Pods' (no dependencies)
+Target 'MySwiftTests' in project 'MySwift' (no dependencies)
+Target 'MySwiftTests' in project 'MySwift'
+➜ Explicit dependency on target 'MySwift' in project 'MySwift'
+Target 'MySwift' in project 'MySwift'
+➜ Implicit dependency on target 'Alamofire' in project 'Pods' via options '-framework Alamofire' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'DNSPageView' in project 'Pods' via options '-framework DNSPageView' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'Kingfisher' in project 'Pods' via options '-framework Kingfisher' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'lottie-ios' in project 'Pods' via options '-framework Lottie' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'SnapKit' in project 'Pods' via options '-framework SnapKit' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'SwiftyJSON' in project 'Pods' via options '-framework SwiftyJSON' in build setting 'OTHER_LDFLAGS'
+Target 'SwiftyJSON' in project 'Pods' (no dependencies)
+Target 'SnapKit' in project 'Pods' (no dependencies)
+Target 'lottie-ios' in project 'Pods' (no dependencies)
+Target 'Kingfisher' in project 'Pods' (no dependencies)
+Target 'DNSPageView' in project 'Pods' (no dependencies)
+Target 'Alamofire' in project 'Pods' (no dependencies)
+Target 'MySwiftTests' in project 'MySwift'
+➜ Explicit dependency on target 'MySwift' in project 'MySwift'
+Target 'MySwift' in project 'MySwift'
+➜ Implicit dependency on target 'Alamofire' in project 'Pods' via options '-framework Alamofire' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'DNSPageView' in project 'Pods' via options '-framework DNSPageView' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'Kingfisher' in project 'Pods' via options '-framework Kingfisher' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'lottie-ios' in project 'Pods' via options '-framework Lottie' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'SnapKit' in project 'Pods' via options '-framework SnapKit' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'SwiftyJSON' in project 'Pods' via options '-framework SwiftyJSON' in build setting 'OTHER_LDFLAGS'
+Target 'SwiftyJSON' in project 'Pods' (no dependencies)
+Target 'SnapKit' in project 'Pods' (no dependencies)
+Target 'lottie-ios' in project 'Pods' (no dependencies)
+Target 'Kingfisher' in project 'Pods' (no dependencies)
+Target 'DNSPageView' in project 'Pods' (no dependencies)
+Target 'Alamofire' in project 'Pods' (no dependencies)

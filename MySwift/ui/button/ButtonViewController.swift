@@ -27,6 +27,7 @@ class ButtonViewController: UIViewController {
         button1.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         button1.addTarget(self, action: #selector(buttonTap1(button:)), for: UIControl.Event.touchUpInside)
         self.view.addSubview(button1)
+//        button1.isUserInteractionEnabled = false //不予许交互
 
 
         let button2 = UIButton(frame: CGRect(x: 100, y: 160, width: 250, height: 70))
