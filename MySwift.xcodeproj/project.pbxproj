@@ -396,7 +396,7 @@
 /* Begin PBXFileReference section */
 		10DE4136B8ADAA4C6C2451CA /* Pods_MySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		244035122B6CC04500D5A220 /* MySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		244035132B6CC04500D5A220 /* MySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MySwiftTests.xctest; path = "/Users/lzd/Repository/iOS_swift/build/Debug-iphoneos/MySwiftTests.xctest"; sourceTree = "<absolute>"; };
+		245D68612C42B29500F2D7C4 /* MySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MySwiftTests.xctest; path = "/Users/lzd/Repository/iOS_swift/build/Debug-iphoneos/MySwiftTests.xctest"; sourceTree = "<absolute>"; };
 		2478B31B2A41ED0B0094C0DD /* RequestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestVC.swift; sourceTree = "<group>"; };
 		2478B31E2A41ED0C0094C0DD /* RequestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestVC.xib; sourceTree = "<group>"; };
 		24808E792A5EF0F800FBF58A /* MySwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftTests.swift; sourceTree = "<group>"; };
@@ -2328,7 +2328,7 @@
 			);
 			name = MySwiftTests;
 			productName = MySwiftTests;
-			productReference = 244035132B6CC04500D5A220 /* MySwiftTests.xctest */;
+			productReference = 245D68612C42B29500F2D7C4 /* MySwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CE69C0ED224B6C92004F4FA4 /* MySwift */ = {

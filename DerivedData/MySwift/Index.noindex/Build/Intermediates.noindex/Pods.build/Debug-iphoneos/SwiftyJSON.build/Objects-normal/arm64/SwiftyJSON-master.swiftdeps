@@ -1,6 +1,0 @@
-version: "Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)"
-options: "a56a683eaa21bee826e4c0429807966c215ed07baecd0f4c445809b8d841dbc5"
-build_start_time: [1703132268, 40044000]
-build_end_time: [1703132273, 321063000]
-inputs:
-  "/Users/lzd/Repository/iOS_swift/Pods/SwiftyJSON/Source/SwiftyJSON/SwiftyJSON.swift": [1687233565, 74146789]
