@@ -17,10 +17,6 @@ class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDel
     func getData() {
         dataArray = Array<UIViewController>()
         
-        let encryptionVC = CryptoViewController()
-        encryptionVC.title = "加密与解密"
-        dataArray.append(encryptionVC)
-        
         let changeIconVC = ChangeIconViewController()
         changeIconVC.title = "更换App icon"
         dataArray.append(changeIconVC)
@@ -53,9 +49,9 @@ class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDel
         segmentVC.title = "自定义SegmentView"
         dataArray.append(segmentVC)
         
-//        let beginnerguideVC = BeginnerguideVC()
-//        beginnerguideVC.title = "新手引导"
-//        dataArray.append(beginnerguideVC)
+        //        let beginnerguideVC = BeginnerguideVC()
+        //        beginnerguideVC.title = "新手引导"
+        //        dataArray.append(beginnerguideVC)
         
         let judgeNetVC = JudgeNetworkingVC()
         judgeNetVC.title = "网络监听"
@@ -120,15 +116,5 @@ class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDel
         super.viewWillDisappear(animated)
         //        self.hidesBottomBarWhenPushed = false
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 class LocalizableVC: UIViewController {
-
+    
     @IBOutlet weak var myImaeV: UIImageView!
     @IBOutlet weak var myLabel: UILabel!
     
@@ -25,5 +25,5 @@ class LocalizableVC: UIViewController {
         let text =  Bundle.main.localizedString(forKey: "mainText", value: "", table: nil)
         self.myLabel.text = text
     }
-
+    
 }

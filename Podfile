@@ -9,7 +9,6 @@ target 'MySwift' do
   
   # Pods for MySwift
   #  pod 'GTMRefresh' #, '1.3.6'
-  #  pod 'SQLite.swift', '~> 0.14.1'
   pod 'Kingfisher', '~> 6.3.1'
   pod 'Alamofire', '~> 5.6.2'
   pod 'SnapKit', '~> 5.6.0'
