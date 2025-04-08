@@ -11,6 +11,7 @@
 		2478B3222A41ED0C0094C0DD /* RequestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2478B31E2A41ED0C0094C0DD /* RequestVC.xib */; };
 		24808E7A2A5EF0F800FBF58A /* MySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24808E792A5EF0F800FBF58A /* MySwiftTests.swift */; };
 		24808E812A5EF16B00FBF58A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24808E802A5EF16B00FBF58A /* NetworkManager.swift */; };
+		2483AFA12C4B9959006F7868 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2483AFA02C4B9958006F7868 /* README.md */; };
 		3A29093D288E4B4300A9F701 /* UIPasteboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A29093B288E4B4300A9F701 /* UIPasteboardVC.swift */; };
 		3A29093E288E4B4300A9F701 /* UIPasteboardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A29093C288E4B4300A9F701 /* UIPasteboardVC.xib */; };
 		3A65ACA529ADEEB5003C4C92 /* RecNotificationMsg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65ACA429ADEEB5003C4C92 /* RecNotificationMsg.swift */; };
@@ -392,12 +393,13 @@
 
 /* Begin PBXFileReference section */
 		10DE4136B8ADAA4C6C2451CA /* Pods_MySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		244035122B6CC04500D5A220 /* MySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MySwift.app; path = "/Users/lzd/Repository/iOS_swift/build/Debug-iphoneos/MySwift.app"; sourceTree = "<absolute>"; };
 		2478B31B2A41ED0B0094C0DD /* RequestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestVC.swift; sourceTree = "<group>"; };
 		2478B31E2A41ED0C0094C0DD /* RequestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestVC.xib; sourceTree = "<group>"; };
 		24808E792A5EF0F800FBF58A /* MySwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftTests.swift; sourceTree = "<group>"; };
 		24808E802A5EF16B00FBF58A /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		2483AF2F2C47B579006F7868 /* MySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MySwiftTests.xctest; path = "/Users/lzd/Repository/iOS_swift/build/Debug-iphoneos/MySwiftTests.xctest"; sourceTree = "<absolute>"; };
+		2483AF3E2C48E3BD006F7868 /* MySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2483AF3F2C48E3BD006F7868 /* MySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2483AFA02C4B9958006F7868 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		32F7714E770754C61BBD0BA8 /* Pods-MySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwift.debug.xcconfig"; path = "Target Support Files/Pods-MySwift/Pods-MySwift.debug.xcconfig"; sourceTree = "<group>"; };
 		3A29093B288E4B4300A9F701 /* UIPasteboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPasteboardVC.swift; sourceTree = "<group>"; };
 		3A29093C288E4B4300A9F701 /* UIPasteboardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIPasteboardVC.xib; sourceTree = "<group>"; };
@@ -951,6 +953,8 @@
 				260B268476C2C1B73538CA04 /* Pods */,
 				24808E782A5EF0F800FBF58A /* MySwiftTests */,
 				9B5B9D344AB5654BCC30CB6B /* Frameworks */,
+				2483AF3E2C48E3BD006F7868 /* MySwift.app */,
+				2483AF3F2C48E3BD006F7868 /* MySwiftTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1161,7 +1165,7 @@
 				CE69C16D224B6E06004F4FA4 /* singleton */,
 				CE69C171224B6E06004F4FA4 /* lazy */,
 				CE69C173224B6E06004F4FA4 /* audioAndShake */,
-				CE69C177224B6E06004F4FA4 /* device */,
+				CE69C177224B6E06004F4FA4 /* info */,
 				CE69C17A224B6E06004F4FA4 /* string */,
 				CE69C17D224B6E06004F4FA4 /* regular */,
 				CE69C180224B6E06004F4FA4 /* sendValue */,
@@ -1313,13 +1317,13 @@
 			path = audioAndShake;
 			sourceTree = "<group>";
 		};
-		CE69C177224B6E06004F4FA4 /* device */ = {
+		CE69C177224B6E06004F4FA4 /* info */ = {
 			isa = PBXGroup;
 			children = (
 				CECDACEF2272B3140020A98F /* DeviceViewController.swift */,
 				CECDACF02272B3140020A98F /* DeviceViewController.xib */,
 			);
-			path = device;
+			path = info;
 			sourceTree = "<group>";
 		};
 		CE69C17A224B6E06004F4FA4 /* string */ = {
@@ -1417,8 +1421,8 @@
 		CE69C192224B6E06004F4FA4 /* UISwitch */ = {
 			isa = PBXGroup;
 			children = (
-				CE69C193224B6E06004F4FA4 /* UISwitchVC.xib */,
 				CE69C194224B6E06004F4FA4 /* UISwitchVC.swift */,
+				CE69C193224B6E06004F4FA4 /* UISwitchVC.xib */,
 			);
 			path = UISwitch;
 			sourceTree = "<group>";
@@ -1437,6 +1441,7 @@
 				CE69C1AB224B6E07004F4FA4 /* selectedCell */,
 				CE69C1B0224B6E07004F4FA4 /* xibCell */,
 				CE69C1B4224B6E07004F4FA4 /* difficentCell */,
+				2483AFA02C4B9958006F7868 /* README.md */,
 			);
 			path = tableView;
 			sourceTree = "<group>";
@@ -2310,7 +2315,7 @@
 			);
 			name = MySwiftTests;
 			productName = MySwiftTests;
-			productReference = 2483AF2F2C47B579006F7868 /* MySwiftTests.xctest */;
+			productReference = 2483AF3F2C48E3BD006F7868 /* MySwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CE69C0ED224B6C92004F4FA4 /* MySwift */ = {
@@ -2329,7 +2334,7 @@
 			);
 			name = MySwift;
 			productName = MySwift;
-			productReference = 244035122B6CC04500D5A220 /* MySwift.app */;
+			productReference = 2483AF3E2C48E3BD006F7868 /* MySwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2401,6 +2406,7 @@
 				CE757CF0237E70AC0039C29D /* 文鼎霹雳体.TTF in Resources */,
 				CE69C2E2224B6E07004F4FA4 /* OtherViewController.xib in Resources */,
 				CE69C326224B6E07004F4FA4 /* ClosureVC.xib in Resources */,
+				2483AFA12C4B9959006F7868 /* README.md in Resources */,
 				CE7D2046225A10DF00DEE23E /* Boat_Loader.json in Resources */,
 				CE69C2FD224B6E07004F4FA4 /* GCDViewController.xib in Resources */,
 				CE69C419224B726B004F4FA4 /* Localizable.strings in Resources */,
@@ -3019,7 +3025,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5YBWG2X244;
+				DEVELOPMENT_TEAM = UKHRF32S6H;
 				INFOPLIST_FILE = MySwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3040,7 +3046,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5YBWG2X244;
+				DEVELOPMENT_TEAM = UKHRF32S6H;
 				INFOPLIST_FILE = MySwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

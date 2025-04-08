@@ -16,6 +16,8 @@ class MoveCellVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "cell交换位置"
+        
         let barButtonItem = UIBarButtonItem.init(title: "编辑", style: .plain, target: self, action: #selector(rightTopBtn(barButtonItem:)))
         self.navigationItem.rightBarButtonItem = barButtonItem
         

@@ -12,22 +12,30 @@ class SessionViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
     @IBOutlet weak var myTableView: UITableView!
     let identifier = "SwiftCell"
-    var dataArray = [["a","b","c"],["d","e","f"],["g","h","i","j"],["k","l","m","n"]]
+    var dataArray = [["a1","a2","a3"],
+                     ["b1","b2","b3"],
+                     ["c1","c2","c3","c4"],
+                     ["d1","d2","d3","d4"],
+                     ["e1","e2","e3","e4"]
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "session的相关处理"
         myTableView.delegate = self
         myTableView.dataSource = self
         myTableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: identifier)
-
+        
         let headerView = Bundle.main.loadNibNamed("MyNibView", owner: self, options: nil)?.last as! MyNibView
         headerView.frame.size = CGSize.init(width: ScreenWIDTH, height: 150)
         let deadline = DispatchTime.now() + 0.2
         DispatchQueue.main.asyncAfter(deadline: deadline) {//在主线程执行,延迟执行防止形变
             self.myTableView.tableHeaderView = headerView
         }
+        
+        self.myTableView.backgroundColor = UIColor.yellow
     }
-
+    
     //section数量
     func numberOfSections(in tableView: UITableView) -> Int {
         return dataArray.count
@@ -46,19 +54,19 @@ class SessionViewController: UIViewController,UITableViewDelegate,UITableViewDat
         return 20
     }
     //section头的视图
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let myView = UIView()
-//        myView.backgroundColor = UIColor.red
-//        return myView
-//    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let myView = UIView()
+        myView.backgroundColor = UIColor.red
+        return myView
+    }
     /** 上一个方法和下一个方法 不能同时执行，会相互覆盖 **/
     //section头的标题
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
-            return "评论"
-        }
-        return nil
-    }
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        if section != 3 {
+//            return "title of Header section"
+//        }
+//        return nil
+//    }
     //section尾的高度
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 30
@@ -71,15 +79,12 @@ class SessionViewController: UIViewController,UITableViewDelegate,UITableViewDat
     }
     /** 上一个方法和下一个方法 不能同时执行，会相互覆盖 **/
     //section尾的标题
-//    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-//        if section == 0 {
-//            return "评论"
-//        }
-//        return nil
-//    }
+    //    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+    //        return "title of Footer section"
+    //    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        ///使用dequeueReuseableCellWithIdentifier:forIndexPath:必须注册，但返回的cell可省略空值判断的步骤。
+        // 使用dequeueReuseableCellWithIdentifier:forIndexPath:必须注册，但返回的cell可省略空值判断的步骤。
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         cell.textLabel?.text = self.dataArray[indexPath.section][indexPath.row]
         cell.selectionStyle = .none //点击后背景颜色无变化

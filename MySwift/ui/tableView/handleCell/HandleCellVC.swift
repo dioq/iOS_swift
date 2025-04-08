@@ -9,7 +9,7 @@
 import UIKit
 
 class HandleCellVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
-
+    
     @IBOutlet weak var myTableView: UITableView!
     let identifier = "SwiftCell"
     var dataArray = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n"]
@@ -23,7 +23,7 @@ class HandleCellVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         myTableView.delegate = self
         myTableView.dataSource = self
         //在初始化tableview的时候就去register一个自顶的cell, 这种写法在cellForRowAtIndexPath部分就不用去判断这个cell是否非空
-        ///使用dequeueReuseableCellWithIdentifier:forIndexPath:必须注册，但返回的cell可省略空值判断的步骤。
+        //使用dequeueReuseableCellWithIdentifier:forIndexPath:必须注册，但返回的cell可省略空值判断的步骤。
         myTableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: identifier)
     }
     
@@ -41,12 +41,12 @@ class HandleCellVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        ///使用dequeueReuseableCellWithIdentifier:forIndexPath:必须注册，但返回的cell可省略空值判断的步骤。
+        // 使用dequeueReuseableCellWithIdentifier:forIndexPath:必须注册，但返回的cell可省略空值判断的步骤。
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         cell.textLabel?.text = self.dataArray[indexPath.row]
         return cell
     }
-
+    
     //返回编辑类型，滑动删除
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         if indexPath.row == 3 {//row等于3的cell不能删

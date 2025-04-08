@@ -19,6 +19,7 @@ class ScrollCellViewController: UIViewController,UITableViewDelegate,UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "滚动cell"
         self.view.backgroundColor = UIColor.green
         
         self.myTableView.delegate = self

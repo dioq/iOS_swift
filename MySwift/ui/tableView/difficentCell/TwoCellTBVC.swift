@@ -9,7 +9,7 @@
 import UIKit
 
 class TwoCellTBVC: UIViewController, UITableViewDataSource,UITableViewDelegate {
-
+    
     @IBOutlet weak var myTableView: UITableView!
     
     let identifier1 = "cell01"
@@ -50,5 +50,5 @@ class TwoCellTBVC: UIViewController, UITableViewDataSource,UITableViewDelegate {
             return cell
         }
     }
-
+    
 }

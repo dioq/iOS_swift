@@ -16,7 +16,23 @@ class FoldCellViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title =  "折叠 Cell"
         
+        //设置UItabView的位置
+        myTableView = UITableView.init(frame: self.view.frame, style: UITableView.Style.plain)
+        self.view.addSubview(myTableView)
+        myTableView.backgroundColor = UIColor.lightGray
+        
+        //设置数据源
+        myTableView.dataSource = self
+        //设置代理
+        myTableView.delegate = self
+        myTableView.register(UITableViewCell.self, forCellReuseIdentifier:identifier)
+        
+        loadData()
+    }
+    
+    func loadData() {
         for i in 0...3 {
             let model = FoldModel()
             model.sectionName = "Section \(i)"
@@ -29,24 +45,15 @@ class FoldCellViewController: UIViewController {
             self.dataArray.append(model)
         }
         
-        //设置UItabView的位置
-        myTableView = UITableView.init(frame: self.view.frame, style: UITableView.Style.plain)
-        self.view.addSubview(myTableView)
-        
-        //设置数据源
-        myTableView.dataSource = self
-        //设置代理
-        myTableView.delegate = self
-        myTableView.register(UITableViewCell.self, forCellReuseIdentifier:identifier)
+        self.myTableView.reloadData()
     }
-    
-    
 }
 
 extension FoldCellViewController:UITableViewDataSource,UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let sectionHeaderView = Bundle.main.loadNibNamed("MySetionHeaderView", owner: self, options: nil)?.last as! MySetionHeaderView
+        //        sectionHeaderView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50)
         let model = self.dataArray[section]
         sectionHeaderView.isOpen = model.isOpen
         sectionHeaderView.sectionTitle = model.sectionName!
@@ -54,9 +61,32 @@ extension FoldCellViewController:UITableViewDataSource,UITableViewDelegate {
         sectionHeaderView.openSectionDelegate = self
         return sectionHeaderView
     }
-
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = UIColor.red
+        return view
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 20
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
+        return 20
+    }
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 60
+        return 50
+    }
+    
+    //设置cell行高
+    func tableView(_ tableView:UITableView, heightForRowAt indexPath:IndexPath) ->CGFloat {
+        return 62
     }
     
     func numberOfSections(in tableView:UITableView) ->Int {
@@ -76,13 +106,8 @@ extension FoldCellViewController:UITableViewDataSource,UITableViewDelegate {
         let model = self.dataArray[indexPath.section]
         let valueStr = model.rowContent![indexPath.row]
         cell.textLabel?.text = valueStr
-        cell.selectionStyle = .none //点击后背景颜色无变化
+        //        cell.selectionStyle = .none //点击后背景颜色无变化
         return cell
-    }
-    
-    //设置cell行高
-    func tableView(_ tableView:UITableView, heightForRowAt indexPath:IndexPath) ->CGFloat {
-        return 80
     }
     
     //处理选中事件

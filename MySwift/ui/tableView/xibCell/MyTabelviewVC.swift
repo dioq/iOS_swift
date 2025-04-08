@@ -13,7 +13,22 @@ class MyTabelviewVC: UIViewController, UITableViewDataSource,UITableViewDelegate
     var myTableView:UITableView!
     let dataArray:[String] = ["我是谁", "我从哪里来", "要到哪里去","我是谁", "我从哪里来", "要到哪里去","我是谁", "我从哪里来", "要到哪里去","我是谁", "我从哪里来", "要到哪里去","我是谁", "我从哪里来", "要到哪里去"]
     
-    let identifier = "cell"
+    let identifier = "cellid"
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "table自定义xib cell"
+        //设置UITableView的位置
+        myTableView = UITableView(frame: self.view.frame, style: UITableView.Style.plain)
+        myTableView.backgroundColor = UIColor.blue
+        
+        //设置数据源
+        myTableView.dataSource = self
+        //设置代理
+        myTableView.delegate = self
+        self.view.addSubview(myTableView)
+        myTableView.register(UINib.init(nibName: "MyCell", bundle: nil), forCellReuseIdentifier: identifier)
+    }
     
     // 设置每个seccion的row数量
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,21 +62,4 @@ class MyTabelviewVC: UIViewController, UITableViewDataSource,UITableViewDelegate
         
         return cell!
     }
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.title = "table自定义xib cell"
-        //设置UITableView的位置
-        myTableView = UITableView(frame: self.view.frame, style: UITableView.Style.plain)
-        myTableView.backgroundColor = UIColor.blue
-        
-        //设置数据源
-        myTableView.dataSource = self
-        //设置代理
-        myTableView.delegate = self
-        self.view.addSubview(myTableView)
-        myTableView.register(UINib.init(nibName: "MyCell", bundle: nil), forCellReuseIdentifier: identifier)
-    }
-
 }
